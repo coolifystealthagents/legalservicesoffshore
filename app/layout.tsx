@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Plan offshore legal intake, matter administration, document preparation, billing support, and reporting with clear attorney review rules.',
   openGraph: {
     title: 'Offshore Legal Support for Law Firms',
-    description: 'Build a clear legal support role around your firm’s tasks, tools, access rules, and review points.',
+    description: "Build a clear legal support role around your firm's tasks, tools, access rules, and review points.",
     url: 'https://legalservicesoffshore.com',
     siteName: 'Legal Services Offshore',
     type: 'website',

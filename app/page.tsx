@@ -3,8 +3,8 @@ import { Footer, Header, JsonLd } from './components';
 
 const serviceMarks = ['01', '02', '03', '04'];
 const serviceNotes = [
-  'Keep intake facts complete and urgent messages moving.',
   'Give every routine matter update a clear next step.',
+  'Keep intake facts complete and urgent messages moving.',
   'Prepare files from firm-approved templates and rules.',
   'See output, rework, and exceptions in one short report.',
 ];
@@ -55,8 +55,8 @@ export default function Home() {
               </p>
               <ul className="lso-hero-list">
                 <li>Client intake notes and follow-up</li>
-                <li>Matter updates and deadline tracking</li>
-                <li>Document prep from firm templates</li>
+                <li>Matter status and deadlines</li>
+                <li>Document prep from templates</li>
                 <li>Billing and records cleanup</li>
               </ul>
               <a className="lso-button lso-button-primary" href="/contact">Request support plan</a>
@@ -158,7 +158,7 @@ export default function Home() {
               <article key={item.step}>
                 <span>{item.step}</span>
                 <h3>{item.title}</h3>
-                <p>{item.body.replace('our staffing team', 'The staffing team')}</p>
+                <p>{item.body}</p>
               </article>
             ))}
           </div>

@@ -77,67 +77,85 @@ export const serviceDetails = {
 } as const;
 export const blogPosts = [
   {
-    "slug": "legal-services-offshore-planning",
-    "title": "Legal Services Offshore: What does it plan?",
-    "excerpt": "A plain-English guide to staffing details, scope, and hidden planning.",
-    "minutes": 6
+    slug: 'legal-services-offshore-planning',
+    title: 'How to plan an offshore legal support role',
+    excerpt: 'Define the work, access limits, review owner, and first-week checks before you start hiring.',
+    minutes: 6,
   },
   {
-    "slug": "legal-services-offshore-tasks-to-outsource",
-    "title": "Legal Services Offshore: What tasks should you outsource first?",
-    "excerpt": "Start with recurring work that has examples and clear review rules.",
-    "minutes": 7
+    slug: 'legal-services-offshore-tasks-to-outsource',
+    title: 'Which legal support tasks should you outsource first?',
+    excerpt: 'Start with repeatable admin work that has a clean example and a clear approval point.',
+    minutes: 7,
   },
   {
-    "slug": "legal-services-offshore-provider-questions",
-    "title": "Legal Services Offshore: Questions to ask before hiring",
-    "excerpt": "Use these questions before you sign with a provider or freelancer.",
-    "minutes": 8
+    slug: 'legal-services-offshore-provider-questions',
+    title: 'Questions to ask an offshore legal support provider',
+    excerpt: 'Ask who screens staff, how access is controlled, and what happens when work needs correction.',
+    minutes: 8,
   },
   {
-    "slug": "legal-services-offshore-onboarding-checklist",
-    "title": "Legal Services Offshore: First week onboarding checklist",
-    "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
-    "minutes": 9
-  }
+    slug: 'legal-services-offshore-onboarding-checklist',
+    title: 'First-week checklist for offshore legal support',
+    excerpt: 'Set up sample files, limited access, escalation rules, and early work reviews before adding more tasks.',
+    minutes: 9,
+  },
 ] as const;
-export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
+
+export const blogDetails = {
+  'legal-services-offshore-planning': {
+    answer: 'Write the role around a real queue of work, not a broad job title. Name the inputs, expected output, access needed, review owner, and matters that must go straight to an attorney.',
+    prepareTitle: 'Write the role file',
+    prepare: ['Three recent examples of finished work', 'The systems and folders needed for the first task', 'A list of decisions reserved for attorneys', 'The person who reviews early work and handles exceptions'],
+    questionsTitle: 'Check the scope before hiring',
+    questions: ['Can a new team member follow the task from the examples alone?', 'Does each task have a clear done state?', 'Who answers questions when a matter falls outside the example?', 'Which access can wait until after the pilot?'],
+  },
+  'legal-services-offshore-tasks-to-outsource': {
+    answer: 'Begin with frequent, low-judgment work such as document formatting, intake notes, calendar checks, billing cleanup, and matter status updates from approved fields. Keep legal advice and case strategy with counsel.',
+    prepareTitle: 'Good signs for a first task',
+    prepare: ['The task happens often enough to practice', 'A clean finished example already exists', 'Errors can be found before the work reaches a client', 'The firm can limit access to only the files and tools required'],
+    questionsTitle: 'Tasks to hold back',
+    questions: ['Does the task require legal judgment?', 'Could a mistake change a filing or client promise?', 'Is the process still changing every week?', 'Would the worker need broad system access on day one?'],
+  },
+  'legal-services-offshore-provider-questions': {
+    answer: 'Ask the provider to explain who screens the worker, who supervises day-to-day work, how account access is handled, and how the firm can replace a poor fit. A useful answer names the person and the process.',
+    prepareTitle: 'Questions for the provider call',
+    prepare: ['Who checks legal support experience before a candidate reaches us?', 'How do you handle attendance, coaching, and replacement requests?', 'Can each worker use an individual account with limited permissions?', 'Who contacts us when a task or instruction is unclear?'],
+    questionsTitle: 'Listen for a concrete answer',
+    questions: ['Does the answer name an owner?', 'Does it explain what the firm must still manage?', 'Can the provider show a sample report without exposing client data?', 'Are security and replacement terms written in the agreement?'],
+  },
+  'legal-services-offshore-onboarding-checklist': {
+    answer: 'Keep the first week narrow. Teach one task with real examples, open only the access that task needs, review every early output, and write down the questions that the original instructions missed.',
+    prepareTitle: 'Before the first login',
+    prepare: ['Create a separate user account with limited permissions', 'Remove client details from training examples when possible', 'Name the attorney or manager who approves exceptions', 'Choose one scorecard for accuracy, missing details, and turnaround'],
+    questionsTitle: 'End-of-week review',
+    questions: ['Which instructions caused the most questions?', 'What errors appeared more than once?', 'Did urgent items reach the right person quickly?', 'Is the first task steady enough to add another one?'],
+  },
+} as const;
 
 export const staffingOffer = {
-  partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
-  fit: [
-    'business owners who need reliable remote staff but do not want to screen alone',
-    'teams that want trained support, backup coverage, and a clear manager path',
-    'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
-  ],
+  partner: 'the staffing team',
   included: [
-    'role planning call to turn your task list into a clear staffing scope',
-    'candidate matching based on skills, schedule, tools, and communication needs',
-    'onboarding guidance for SOPs, scorecards, reporting, and safe tool access',
-    'managed support so quality, attendance, and replacement questions do not sit only on the owner',
-  ],
-  proof: [
-    'clear task scope before hiring',
-    'weekly reporting rhythm',
-    'named accountability and escalation path',
-    'simple handoff plan for tools, SOPs, and quality checks',
+    'turn the firm\'s task list into a role with clear limits and review points',
+    'match candidates to the work, schedule, practice tools, and communication needs',
+    'set up sample work, a short scorecard, and limited tool access for the pilot',
+    'give the firm a named contact for attendance, quality, and replacement questions',
   ],
 } as const;
 
 export const leadQuestions = [
-  'What work do you want off your plate first?',
-  'Which tools, inboxes, phones, CRMs, or systems will the staff member use?',
-  'What hours, time zone, and response time do you need?',
-  'Who checks quality during the first two weeks?',
-  'What should the staff member never decide without approval?',
+  'Which legal admin task is taking the most time each week?',
+  'Which practice tools, inboxes, phones, or file systems will the person use?',
+  'What hours, time zone, and response time does the firm need?',
+  'Who will review work during the first two weeks?',
+  'Which decisions must always go to an attorney or firm manager?',
 ] as const;
 
 export const staffingProcess = [
-  { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and skill level you need.' },
-  { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
-  { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
+  { step: '1', title: 'Define the role', body: 'Turn the current task list into one role with a clear output, tool list, limits, and first-week checks.' },
+  { step: '2', title: 'Review candidates', body: 'The staffing team matches candidates to the work, schedule, practice tools, and communication needs.' },
+  { step: '3', title: 'Start with one lane', body: 'Use sample work, limited access, daily review, and a short scorecard while the new hire learns the task.' },
+  { step: '4', title: 'Add work carefully', body: 'Add another task only after the first one is accurate and the worker sends exceptions to the right person.' },
 ] as const;
 
-export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'The right setup depends on the task, schedule, practice tools, access limits, and review owner. Share those details so the staffing team can map the role.';
