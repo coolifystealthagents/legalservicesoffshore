@@ -8,7 +8,23 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
-  return { title: service?.title || 'Service', description: service?.desc };
+  const baseUrl = `https://${site.domain.toLowerCase()}`;
+  const serviceUrl = `${baseUrl}/services/${service?.slug || slug}`;
+  const title = service?.title || 'Service';
+  const description = service?.desc;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: serviceUrl },
+    openGraph: {
+      title,
+      description,
+      url: serviceUrl,
+      siteName: site.brand,
+      type: 'website',
+    },
+  };
 }
 
 export default async function Service({ params }: { params: Promise<{ slug: string }> }) {
@@ -21,10 +37,21 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'WebPage',
+        '@id': `${serviceUrl}#webpage`,
+        url: serviceUrl,
+        name: service.title,
+        description: service.desc,
+        mainEntity: { '@id': `${serviceUrl}#service` },
+        breadcrumb: { '@id': `${serviceUrl}#breadcrumb` },
+        hasPart: { '@id': `${serviceUrl}#faq` },
+      },
+      {
         '@type': 'Service',
         '@id': `${serviceUrl}#service`,
         name: service.title,
         description: service.desc,
+        url: serviceUrl,
         serviceType: 'Offshore legal support staffing',
         areaServed: 'United States',
         provider: { '@type': 'Organization', name: site.brand, url: baseUrl },
@@ -45,6 +72,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
       },
       {
         '@type': 'BreadcrumbList',
+        '@id': `${serviceUrl}#breadcrumb`,
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
           { '@type': 'ListItem', position: 2, name: 'Services', item: `${baseUrl}/#services` },
