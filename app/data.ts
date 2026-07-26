@@ -77,6 +77,12 @@ export const serviceDetails = {
 } as const;
 export const blogPosts = [
   {
+    slug: 'offshore-legal-assistant-philippines-data-security-plan',
+    title: 'Offshore legal assistant Philippines: a data security plan for law firms',
+    excerpt: 'Set the task boundary, access rules, review steps, and incident handoff before a Philippines-based legal assistant opens a client file.',
+    minutes: 11,
+  },
+  {
     slug: 'legal-services-offshore-planning',
     title: 'How to plan an offshore legal support role',
     excerpt: 'Define the work, access limits, review owner, and first-week checks before you start hiring.',
