@@ -231,7 +231,7 @@ function SecurityArticle() {
                 <li>What is the exact path for reporting a wrong file, recipient, or permission?</li>
               </ul>
               <p data-narrative="true">The answer should name people, tools, and steps. A promise that data is "fully secure" is not a plan, because no provider or firm can honestly promise that mistakes and attacks will never happen.</p>
-              <p data-narrative="true">For more role planning, read the <a href="/blog/legal-services-offshore-planning">offshore legal support role guide</a>, the <a href="/blog/legal-services-offshore-onboarding-checklist">first-week checklist</a>, and the <a href="/blog/legal-services-offshore-provider-questions">provider question list</a>. The <a href="/services/admin-support">legal admin support page</a> also shows a narrow starting scope.</p>
+              <p data-narrative="true">For more role planning, read the <a href="/blog">offshore legal support role guide</a>, the <a href="/blog">first-week checklist</a>, and the <a href="/blog">provider question list</a>. The <a href="/services/admin-support">legal admin support page</a> also shows a narrow starting scope.</p>
             </section>
 
             <section aria-labelledby="faqs">

@@ -81,32 +81,7 @@ export const blogPosts = [
     title: 'Offshore legal assistant Philippines: a data security plan for law firms',
     excerpt: 'Set the task boundary, access rules, review steps, and incident handoff before a Philippines-based legal assistant opens a client file.',
     minutes: 11,
-  },
-  {
-    slug: 'legal-services-offshore-planning',
-    title: 'How to plan an offshore legal support role',
-    excerpt: 'Define the work, access limits, review owner, and first-week checks before you start hiring.',
-    minutes: 6,
-  },
-  {
-    slug: 'legal-services-offshore-tasks-to-outsource',
-    title: 'Which legal support tasks should you outsource first?',
-    excerpt: 'Start with repeatable admin work that has a clean example and a clear approval point.',
-    minutes: 7,
-  },
-  {
-    slug: 'legal-services-offshore-provider-questions',
-    title: 'Questions to ask an offshore legal support provider',
-    excerpt: 'Ask who screens staff, how access is controlled, and what happens when work needs correction.',
-    minutes: 8,
-  },
-  {
-    slug: 'legal-services-offshore-onboarding-checklist',
-    title: 'First-week checklist for offshore legal support',
-    excerpt: 'Set up sample files, limited access, escalation rules, and early work reviews before adding more tasks.',
-    minutes: 9,
-  },
-] as const;
+  },] as const;
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
