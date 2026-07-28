@@ -8,6 +8,12 @@ const serviceNotes = [
   'Prepare files from firm-approved templates and rules.',
   'See output, rework, and exceptions in one short report.',
 ];
+const legalIcons = [
+  '/icons/getillustrations/sharpie-office-icons-svg/intake-checklist.svg',
+  '/icons/getillustrations/sharpie-office-icons-svg/matter-files.svg',
+  '/icons/getillustrations/sharpie-office-icons-svg/document-prep.svg',
+  '/icons/getillustrations/sharpie-office-icons-svg/quality-reporting.svg',
+];
 
 export default function Home() {
   const schema = {
@@ -42,7 +48,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="lso-home">
+      <main className="lso-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
 
         <section className="lso-hero">
@@ -65,7 +71,7 @@ export default function Home() {
 
             <div className="lso-hero-visual" aria-label="Legal support work organized around firm review">
               <div className="lso-image-frame">
-                <img src={site.heroImage} alt={site.alt} />
+                <img src="/illustrations/getillustrations/hannah-business-illustrations-svg/legal-admin-support.svg" alt="Illustration of offshore legal administration organized around firm rules and attorney review" />
                 <span className="lso-image-label">Built for law-firm handoffs</span>
               </div>
               <div className="lso-docket-card">
@@ -112,7 +118,7 @@ export default function Home() {
           <div className="lso-service-grid">
             {services.map((service, index) => (
               <a className="lso-service-card" href={`/services/${service.slug}`} key={service.slug}>
-                <span className="lso-card-number">{serviceMarks[index]}</span>
+                <span className="lso-card-number">{serviceMarks[index]} <img src={legalIcons[index]} alt="" width="32" height="32" /></span>
                 <div>
                   <h3>{service.title}</h3>
                   <p>{serviceNotes[index]}</p>
@@ -126,7 +132,7 @@ export default function Home() {
         <section className="lso-control">
           <div className="container lso-control-grid">
             <div className="lso-control-photo">
-              <img src={site.serviceImage} alt="Law firm team reviewing a legal support handoff" />
+              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/legal-document-handoff.svg" alt="" />
               <div className="lso-photo-caption">
                 <span>Firm review gate</span>
                 <strong>Prep work moves. Legal calls stay with counsel.</strong>
