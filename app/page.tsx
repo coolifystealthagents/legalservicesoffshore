@@ -65,7 +65,7 @@ export default function Home() {
                 <li>Document prep from templates</li>
                 <li>Billing and records cleanup</li>
               </ul>
-              <a className="lso-button lso-button-primary" href="/contact">Request support plan</a>
+              <a className="lso-button lso-button-primary" href="/contact-us">Request support plan</a>
               <p className="lso-micro">Start with one role, a short task list, and firm-set review rules.</p>
             </div>
 
@@ -157,7 +157,7 @@ export default function Home() {
               <p className="lso-kicker">From task list to working role</p>
               <h2>A plain four-step launch.</h2>
             </div>
-            <a className="lso-text-link" href="/contact">Request support plan →</a>
+            <a className="lso-text-link" href="/contact-us">Request support plan →</a>
           </div>
           <div className="lso-process-grid">
             {staffingProcess.map((item) => (
@@ -198,7 +198,7 @@ export default function Home() {
           </div>
           <div>
             <p>Share the work, tools, hours, and review needs. The next step is a practical staffing scope, not a public rate card.</p>
-            <a className="lso-button lso-button-light" href="/contact">Request support plan</a>
+            <a className="lso-button lso-button-light" href="/contact-us">Request support plan</a>
           </div>
         </section>
       </main>
