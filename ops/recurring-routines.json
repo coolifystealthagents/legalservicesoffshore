@@ -1,0 +1,29 @@
+{
+  "version": "2.4",
+  "site": "LegalServicesOffshore.com",
+  "timezone": "UTC",
+  "routines": [
+    {
+      "id": "daily-blog-publishing",
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "targetMin": 20,
+      "targetMax": 25,
+      "runbook": "Select a new inclusive random target from 20 through 25. Research, draft, validate, run the official blader/humanizer skill, revalidate, render a deterministic 1200x630 thumbnail, update the existing app/data.ts content layer, run the build and structural checks, commit only the validated batch, push to coolifystealthagents/legalservicesoffshore main, record SHA/files/result, then stop. Never call Coolify or GSC."
+    },
+    {
+      "id": "daily-research-publishing",
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "targetMin": 10,
+      "targetMax": 15,
+      "runbook": "Select a new inclusive random target from 10 through 15. Research with at least 10 real sources, draft, validate, run the official blader/humanizer skill, revalidate, render a deterministic 1200x630 thumbnail, update the existing app/fleet-data.ts research layer, run the build and structural checks, commit only the validated batch, push to coolifystealthagents/legalservicesoffshore main, record SHA/files/result, then stop. Never call Coolify or GSC."
+    }
+  ]
+}

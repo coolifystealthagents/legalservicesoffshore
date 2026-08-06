@@ -1,0 +1,15 @@
+{
+  "humanizer": {
+    "source": "https://github.com/blader/humanizer",
+    "skill": "humanizer",
+    "version": "2.9.1",
+    "requiredProcess": "draft-audit-final-rewrite",
+    "noFabrication": true
+  },
+  "thumbnail": {
+    "mode": "python_composite",
+    "dimensions": { "width": 1200, "height": 630 },
+    "apiPerArticle": false,
+    "sourceOfTruth": "ops/thumbnail-assignments.csv"
+  }
+}

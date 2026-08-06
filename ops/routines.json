@@ -1,0 +1,46 @@
+{
+  "version": "2.4",
+  "site": "LegalServicesOffshore.com",
+  "niche": "offshore legal support services",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "productionBranch": "main",
+  "framework": "Next.js 15 App Router",
+  "timezone": "UTC",
+  "secretInjection": {
+    "github": "protected environment injection",
+    "gemini": "protected environment injection",
+    "requiredVariables": ["GITHUB_TOKEN", "GEMINI_API_KEY"]
+  },
+  "terminalBoundary": "github_push",
+  "coolify": "prohibited",
+  "routines": [
+    {
+      "id": "daily-blog-publishing",
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "target": { "minimum": 20, "maximum": 25 },
+      "articleType": "blog",
+      "contentDirectory": "app/data.ts",
+      "thumbnailMode": "deterministic_python_composite",
+      "pushRequired": true
+    },
+    {
+      "id": "daily-research-publishing",
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "timezone": "UTC",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "target": { "minimum": 10, "maximum": 15 },
+      "articleType": "research",
+      "contentDirectory": "app/fleet-data.ts",
+      "thumbnailMode": "deterministic_python_composite",
+      "pushRequired": true
+    }
+  ]
+}
