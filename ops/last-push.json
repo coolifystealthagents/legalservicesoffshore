@@ -1,0 +1,28 @@
+{
+  "routineVersion": "2.4",
+  "site": "LegalServicesOffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "commit": "a22207965ed0f1fc3e122e1e3a612f12d186ce8a",
+  "pushConfirmed": true,
+  "pushConfirmedAtUtc": "2026-08-06",
+  "pushedFiles": [
+    "ops/routines.json",
+    "ops/recurring-routines.json",
+    "ops/quality-tools.json",
+    "scripts/validate-routines.mjs",
+    "package.json"
+  ],
+  "validation": {
+    "routineManifest": "pass",
+    "humanizer": "blader/humanizer 2.9.1 contract pass",
+    "geminiProtectedDiscovery": "pass",
+    "thumbnailContract": "pass",
+    "build": "pass",
+    "gitDiffCheck": "pass"
+  },
+  "coolifyCalled": false,
+  "gscCalled": false,
+  "liveSiteVerified": false,
+  "terminalBoundary": "github_push"
+}
