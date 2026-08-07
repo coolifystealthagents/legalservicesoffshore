@@ -81,7 +81,26 @@ export const blogPosts = [
     title: 'Offshore legal assistant Philippines: a data security plan for law firms',
     excerpt: 'Set the task boundary, access rules, review steps, and incident handoff before a Philippines-based legal assistant opens a client file.',
     minutes: 11,
-  },] as const;
+  },
+  { slug: 'offshore-legal-intake-support-workflow', title: 'How to scope offshore legal intake support for a law firm', excerpt: 'Turn intake notes, call routing, follow-up, and escalation into one reviewable support workflow.', minutes: 8 },
+  { slug: 'legal-admin-tasks-to-outsource-first', title: 'Legal admin tasks to outsource first', excerpt: 'Use repeatable document, calendar, billing, and records work to define a careful first support lane.', minutes: 7 },
+  { slug: 'offshore-legal-operations-support-checklist', title: 'Offshore legal operations support checklist', excerpt: 'Set owners, inputs, deadlines, permissions, and review points before matter administration moves to a remote team.', minutes: 9 },
+  { slug: 'legal-document-prep-offshore-workflow', title: 'A safe workflow for offshore legal document preparation', excerpt: 'Separate formatting and checklist work from legal substance with templates and a named approval gate.', minutes: 8 },
+  { slug: 'law-firm-offshore-support-access-controls', title: 'Access controls for offshore law firm support', excerpt: 'Start with individual accounts, narrow permissions, and a simple process for changing or removing access.', minutes: 8 },
+  { slug: 'legal-client-intake-virtual-assistant-scope', title: 'Legal client intake virtual assistant scope guide', excerpt: 'Define what an intake assistant can collect, record, schedule, and escalate without giving legal advice.', minutes: 7 },
+  { slug: 'offshore-legal-billing-support-process', title: 'How to scope offshore legal billing support', excerpt: 'Build a billing cleanup process that improves completeness while leaving write-offs and client decisions with the firm.', minutes: 7 },
+  { slug: 'legal-matter-status-updates-outsourcing', title: 'Outsourcing legal matter status updates', excerpt: 'Create a repeatable status process from approved fields, open tasks, deadlines, and exception notes.', minutes: 8 },
+  { slug: 'offshore-legal-support-quality-scorecard', title: 'A quality scorecard for offshore legal support', excerpt: 'Track accuracy, missing details, turnaround, rework, and escalation without turning the scorecard into busywork.', minutes: 8 },
+  { slug: 'law-firm-remote-support-first-week-plan', title: 'The first week plan for a remote legal support role', excerpt: 'Use a narrow task, redacted examples, limited access, daily review, and a written stop rule.', minutes: 7 },
+  { slug: 'offshore-legal-research-admin-boundaries', title: 'Where offshore legal research administration should stop', excerpt: 'Separate source gathering and organization from legal analysis, conclusions, and advice.', minutes: 8 },
+  { slug: 'law-firm-calendar-deadline-support', title: 'Calendar and deadline support for law firms', excerpt: 'Define how a support role can enter approved dates, flag gaps, and escalate uncertainty to the firm.', minutes: 7 },
+  { slug: 'offshore-legal-records-cleanup-guide', title: 'A controlled approach to offshore legal records cleanup', excerpt: 'Use naming rules, folder examples, sampling, and access limits to improve records without broad file exposure.', minutes: 7 },
+  { slug: 'legal-support-provider-interview-questions', title: 'Questions to ask an offshore legal support provider', excerpt: 'Compare supervision, replacement, access, quality reporting, and escalation using one written workflow.', minutes: 8 },
+  { slug: 'offshore-legal-support-role-brief-template', title: 'What belongs in an offshore legal support role brief', excerpt: 'Describe the work, tools, schedule, output, reviewer, quality bar, and decisions reserved for counsel.', minutes: 7 },
+  { slug: 'law-firm-offshore-support-communication-rhythm', title: 'Communication rhythms for offshore legal support teams', excerpt: 'Set a practical cadence for queues, questions, urgent items, review notes, and weekly improvements.', minutes: 7 },
+  { slug: 'legal-support-handoff-and-escalation-rules', title: 'Handoff and escalation rules for legal support work', excerpt: 'Make unusual facts, unclear instructions, sensitive files, and legal judgment calls easy to pause and route.', minutes: 8 },
+  { slug: 'offshore-legal-admin-pilot-success-measures', title: 'How to measure an offshore legal admin pilot', excerpt: 'Choose a small set of measures that show quality, speed, rework, access discipline, and manager effort.', minutes: 7 },
+  { slug: 'legal-support-role-access-review-checklist', title: 'Legal support access review checklist', excerpt: 'Review accounts, folders, permissions, open tasks, and removal steps as the role changes over time.', minutes: 7 },] as const;
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
