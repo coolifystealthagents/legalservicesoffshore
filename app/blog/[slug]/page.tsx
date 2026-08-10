@@ -253,20 +253,52 @@ function SecurityArticle() {
   );
 }
 
+function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
+  const related = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
+  const sourceUrl = 'https://www.americanbar.org/groups/law_practice/resources/law-practice-today/2023/january/outsourcing-legal-work/';
+  return (
+    <>
+      <Header />
+      <main>
+        <article className="section"><div className="container article-shell">
+          <p className="eyebrow">{site.brand} blog</p>
+          <h1>{post.title}</h1>
+          <p className="lead">{post.excerpt}</p>
+          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span><span>Reviewed July 2026</span></div>
+          <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
+          <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
+          <section className="card">
+            <h2>The useful starting point</h2>
+            <p>Begin with one repeatable support lane, a named reviewer, and a written definition of done. The worker can prepare facts, organize approved information, and flag gaps. The firm keeps legal advice, strategy, filings, settlement choices, and final client-facing decisions.</p>
+            <p>For this topic, write down the source inputs, expected output, systems used, response window, and stop rule. The <a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association guidance on outsourcing legal work</a> is a useful reminder that the firm remains responsible for supervision, confidentiality, and client interests.</p>
+            <aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Midpoint planning check</p><h2>Keep the control point visible</h2><p>Use one task lane, one reviewer, and one quality check so the firm can see where preparation ends and judgment begins.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
+            <h2>Build the workflow around four checks</h2>
+            <ol>
+              <li><strong>Receive:</strong> accept only approved requests with the matter, source files, owner, and due date identified.</li>
+              <li><strong>Prepare:</strong> follow the current example or template, record missing facts, and avoid expanding access to solve an unclear task.</li>
+              <li><strong>Review:</strong> route legal judgment, unusual facts, sensitive disclosures, and changed client promises to the named firm reviewer.</li>
+              <li><strong>Close:</strong> record the result, unresolved questions, rework reason, and next owner before marking the item complete.</li>
+            </ol>
+            <h2>Set a measurable first week</h2>
+            <p>Start with redacted examples, named accounts, and a small live sample. Review accuracy, missing details, turnaround, escalation quality, and access discipline each day. Add work only when the existing lane is steady and the manager can still review exceptions promptly.</p>
+            <p>A practical stop rule is simple: pause when the request needs legal judgment, broader access, a new recipient, or a changed promise to a client. Escalation is part of a good support workflow, not a failure.</p>
+            <h2>Related articles</h2>
+            <ul>{related.map((item) => <li key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></li>)}</ul>
+            <section className="sources" aria-labelledby="sources"><h2 id="sources">Source</h2><ol><li><a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association, outsourcing legal work guidance</a><p>Used for supervision, confidentiality, and responsibility boundaries in this planning guide.</p></li></ol></section>
+          </section>
+        </div></article>
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  );
+}
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
   if (slug === richArticle.slug) return <SecurityArticle />;
 
-  return (
-    <>
-      <Header />
-      <main>
-        <article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div><aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p><aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Midpoint planning check</p><h2>Compare providers against one written workflow</h2><p>Use one task lane, one reviewer, and one quality check so each provider conversation is easier to judge.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><h2>Prepare representative examples</h2><p>Use real, appropriately redacted examples to explain quality. Review early work together and update the written process when an exception appears.</p><h2>Plan access and handoffs</h2><p>Provide only the access needed for the position and use named accounts where possible. Write down which questions must be escalated and who receives them.</p><p>Connect this workflow to the <a href='/blog/legal-support-role-brief-template'>role brief template</a> and the <a href='/blog/legal-support-handoff-and-escalation-rules'>handoff and escalation guide</a> before the first assignment.</p><h2>Related articles</h2><ul><li><a href='/blog/legal-admin-tasks-to-outsource-first'>Legal admin tasks to outsource first</a></li><li><a href='/blog/offshore-legal-support-quality-scorecard'>Offshore legal support quality scorecard</a></li><li><a href='/blog/law-firm-remote-support-first-week-plan'>First week plan for a remote legal support role</a></li></ul></section></div></article>
-        <CTA />
-      </main>
-      <Footer />
-    </>
-  );
+  return <StandardArticle post={post} />;
 }
