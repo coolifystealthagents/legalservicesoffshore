@@ -75,7 +75,7 @@ export const serviceDetails = {
     ],
   },
 } as const;
-export const blogPosts = [
+const blogPostsSource = [
   {
     slug: 'offshore-legal-assistant-philippines-data-security-plan',
     title: 'Offshore legal assistant Philippines: a data security plan for law firms',
@@ -148,6 +148,24 @@ export const blogPosts = [
   { slug: 'offshore-legal-support-manager-playbook', title: 'A manager playbook for offshore legal support', excerpt: 'Create a repeatable rhythm for assigning work, reviewing samples, coaching, and escalating exceptions.', minutes: 8 },
   { slug: 'law-firm-offshore-support-risk-register', title: 'A risk register for offshore legal support', excerpt: 'Track access, quality, deadline, communication, and continuity risks with owners and next actions.', minutes: 8 },
 ] as const;
+
+const august10BlogSlugs = new Set([
+  'offshore-legal-virtual-receptionist-intake', 'law-firm-offshore-support-service-levels',
+  'offshore-legal-support-confidentiality-checklist', 'legal-offshore-support-work-queue-design',
+  'offshore-legal-support-client-communications', 'law-firm-offshore-support-document-review-prep',
+  'offshore-legal-support-matter-intake-form', 'legal-support-offshore-attorney-review-gates',
+  'offshore-legal-support-work-sample-test', 'law-firm-offshore-support-data-retention',
+  'offshore-legal-support-practice-area-pilot', 'legal-offshore-support-holiday-handover',
+  'offshore-legal-support-error-log', 'law-firm-offshore-support-weekly-report',
+  'offshore-legal-support-access-offboarding', 'legal-support-offshore-call-escalation',
+  'offshore-legal-support-workflow-documentation', 'law-firm-offshore-support-capacity-planning',
+  'offshore-legal-support-quality-calibration', 'legal-offshore-support-vendor-transition',
+  'offshore-legal-support-manager-playbook', 'law-firm-offshore-support-risk-register',
+]);
+
+export const blogPosts = blogPostsSource
+  .map((post) => august10BlogSlugs.has(post.slug) ? { ...post, published: '2026-08-10' } : post)
+  .sort((a, b) => Number(august10BlogSlugs.has(b.slug)) - Number(august10BlogSlugs.has(a.slug)));
 
 export const blogDetails = {
   'legal-services-offshore-planning': {

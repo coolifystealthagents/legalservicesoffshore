@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import assert from 'node:assert/strict';
+const manifest = JSON.parse(fs.readFileSync('.paperclip/aug10-2026/blog.json', 'utf8'));
+const data = fs.readFileSync('app/data.ts', 'utf8');
+const route = fs.readFileSync('app/blog/[slug]/page.tsx', 'utf8');
+const sitemap = fs.readFileSync('app/sitemap.xml/route.ts', 'utf8');
+assert.equal(manifest.contract, 'sites3-aug10-public-date-v6');
+assert.ok(manifest.entries.length >= manifest.minimum);
+assert.equal(new Set(manifest.entries.map((e) => e.slug)).size, manifest.entries.length);
+for (const entry of manifest.entries) {
+  assert.ok(/^\/blog\/[a-z0-9-]+$/.test(entry.route));
+  assert.equal(entry.sourcePath, 'app/data.ts');
+  assert.match(data, new RegExp("'" + entry.slug + "'"));
+  const before = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/data.ts`], { encoding: 'utf8' });
+  const after = execFileSync('git', ['show', `${entry.introducedByCommit}:app/data.ts`], { encoding: 'utf8' });
+  assert.equal(before.includes(`'${entry.slug}'`), false);
+  assert.equal(after.includes(`'${entry.slug}'`), true);
+  assert.equal(entry.sourceDateField, 'published');
+  assert.equal(entry.sourceDate, '2026-08-10');
+  assert.equal(entry.renderedDate, '2026-08-10');
+  assert.ok(entry.renderedDateFields.includes('datePublished'));
+  assert.match(route, /datePublished/);
+  assert.match(route, /time dateTime/);
+  assert.match(route, /alternates: \{ canonical:/);
+  assert.match(sitemap, /blogs\.map/);
+}
+assert.match(data, /august10BlogSlugs/);
+assert.match(data, /sort/);
+console.log('August 10 Blog manifest regression: PASS');
