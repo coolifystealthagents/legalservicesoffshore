@@ -12,7 +12,8 @@
   "validationCommands": [
     "node scripts/validate-aug10-blog.mjs",
     "npm run validate:routines",
-    "npm run build"
+    "npm run build",
+    "git rev-parse HEAD"
   ],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
