@@ -1,5 +1,5 @@
 export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
-export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; cluster: string; headlineStat: string; sections: readonly { heading: string; body: string }[]; sources: readonly { name: string; url: string }[]; relatedSlugs: readonly string[]; thumbnail: string; };
+export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate: string; cluster: string; headlineStat: string; sections: readonly { heading: string; body: string }[]; sources: readonly { name: string; url: string }[]; relatedSlugs: readonly string[]; thumbnail: string; };
 
 export const fleetServices: readonly FleetService[] = [
   { slug: 'legal-intake-support', title: 'Legal Intake Support', desc: 'Build a Philippines-based legal intake support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring legal operations work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
@@ -29,8 +29,26 @@ const researchSources = [
   { name: 'NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide', url: 'https://csrc.nist.gov/pubs/sp/800/61/r2/final' },
 ] as const;
 
-const makeResearch = (slug: string, title: string, excerpt: string, cluster: string, headlineStat: string, focus: string, relatedSlugs: readonly string[], published = '2026-08-07'): ResearchPost => ({
-  slug, title, excerpt, cluster, headlineStat, published, relatedSlugs, thumbnail: '/research-thumbnails/research-default.svg',
+const august10ResearchSourceDates: Readonly<Record<string, string>> = {
+  'legal-deadline-escalation-matrix': '2026-08-10',
+  'law-firm-document-intake-indexing': '2026-08-10',
+  'legal-privilege-review-administration': '2026-08-10',
+  'legal-matter-status-reporting': '2026-08-10',
+  'law-firm-secure-file-transfer-checklist': '2026-08-10',
+  'legal-form-completion-quality-controls': '2026-08-10',
+  'legal-citation-library-maintenance': '2026-08-10',
+  'legal-client-follow-up-queue-controls': '2026-08-10',
+  'legal-document-version-control': '2026-08-10',
+  'legal-data-retention-exception-queue': '2026-08-10',
+  'law-firm-intake-source-verification': '2026-08-10',
+  'legal-entity-records-change-log': '2026-08-10',
+  'legal-qa-sampling-plan': '2026-08-10',
+  'legal-access-deprovisioning-workflow': '2026-08-10',
+  'legal-work-product-handoff-checklist': '2026-08-10',
+};
+
+const makeResearch = (slug: string, title: string, excerpt: string, cluster: string, headlineStat: string, focus: string, relatedSlugs: readonly string[], published = '2026-08-07', sourceDate = august10ResearchSourceDates[slug] ?? published): ResearchPost => ({
+  slug, title, excerpt, cluster, headlineStat, published, sourceDate, relatedSlugs, thumbnail: '/research-thumbnails/research-default.svg',
   sections: [
     { heading: 'Methodology', body: `This report compares ${researchSources.length} regulator, standards, and professional-body sources against one practical question: ${focus} We separate source requirements from operating recommendations and treat attorney or firm-manager review as the final decision gate.` },
     { heading: 'Key Stats', body: `${headlineStat} The source set contains ${researchSources.length} named references; the number is a coverage count for this report, not a claim about market performance. Validate local professional, privacy, and client-contract requirements before implementation.` },
