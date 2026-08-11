@@ -149,8 +149,44 @@ const blogPostsSource = [
   { slug: 'law-firm-offshore-support-risk-register', title: 'A risk register for offshore legal support', excerpt: 'Track access, quality, deadline, communication, and continuity risks with owners and next actions.', minutes: 8, published: '2026-08-10' },
 ] as const;
 
+const frozenAug10BlogOrder = [
+  'law-firm-offshore-support-capacity-planning',
+  'law-firm-offshore-support-data-retention',
+  'law-firm-offshore-support-document-review-prep',
+  'law-firm-offshore-support-risk-register',
+  'law-firm-offshore-support-service-levels',
+  'law-firm-offshore-support-weekly-report',
+  'legal-offshore-support-holiday-handover',
+  'legal-offshore-support-vendor-transition',
+  'legal-offshore-support-work-queue-design',
+  'legal-support-offshore-attorney-review-gates',
+  'legal-support-offshore-call-escalation',
+  'offshore-legal-support-access-offboarding',
+  'offshore-legal-support-client-communications',
+  'offshore-legal-support-confidentiality-checklist',
+  'offshore-legal-support-error-log',
+  'offshore-legal-support-manager-playbook',
+  'offshore-legal-support-matter-intake-form',
+  'offshore-legal-support-practice-area-pilot',
+  'offshore-legal-support-quality-calibration',
+  'offshore-legal-support-work-sample-test',
+  'offshore-legal-support-workflow-documentation',
+  'offshore-legal-virtual-receptionist-intake',
+] as const;
+const frozenAug10BlogRank: Map<string, number> = new Map(frozenAug10BlogOrder.map((slug, index) => [slug, index]));
+
 export const blogPosts: Array<(typeof blogPostsSource)[number]> = [...blogPostsSource]
-  .sort((a, b) => Number('published' in b) - Number('published' in a));
+  .map((post, index) => ({ post, index }))
+  .sort((a, b) => {
+    const bDate = 'published' in b.post ? b.post.published : '';
+    const aDate = 'published' in a.post ? a.post.published : '';
+    const dateOrder = bDate.localeCompare(aDate);
+    if (dateOrder !== 0) return dateOrder;
+    const rankOrder = (frozenAug10BlogRank.get(a.post.slug) ?? frozenAug10BlogOrder.length + a.index)
+      - (frozenAug10BlogRank.get(b.post.slug) ?? frozenAug10BlogOrder.length + b.index);
+    return rankOrder;
+  })
+  .map(({ post }) => post);
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
