@@ -12,10 +12,17 @@ for (const entry of manifest.entries) {
   assert.ok(/^\/blog\/[a-z0-9-]+$/.test(entry.route));
   assert.equal(entry.sourcePath, 'app/data.ts');
   assert.match(data, new RegExp("'" + entry.slug + "'"));
+  const record = data.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
+  assert.ok(record, `source record missing for ${entry.slug}`);
+  assert.match(record, /published: '2026-08-10'/, `source date must be on ${entry.slug}`);
   const before = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/data.ts`], { encoding: 'utf8' });
   const after = execFileSync('git', ['show', `${entry.introducedByCommit}:app/data.ts`], { encoding: 'utf8' });
-  assert.equal(before.includes(`'${entry.slug}'`), false);
-  assert.equal(after.includes(`'${entry.slug}'`), true);
+  const beforeRecord = before.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
+  const afterRecord = after.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
+  assert.ok(beforeRecord, `prior source record missing for ${entry.slug}`);
+  assert.ok(afterRecord, `introduced source record missing for ${entry.slug}`);
+  assert.equal(/published: '2026-08-10'/.test(beforeRecord), false);
+  assert.match(afterRecord, /published: '2026-08-10'/);
   assert.equal(entry.sourceDateField, 'published');
   assert.equal(entry.sourceDate, '2026-08-10');
   assert.equal(entry.renderedDate, '2026-08-10');
@@ -25,6 +32,7 @@ for (const entry of manifest.entries) {
   assert.match(route, /alternates: \{ canonical:/);
   assert.match(sitemap, /blogs\.map/);
 }
-assert.match(data, /august10BlogSlugs/);
-assert.match(data, /sort/);
+assert.equal(manifest.entries.length, 22);
+assert.equal(manifest.entries.filter((entry) => entry.sourceDate === '2026-08-10').length, 22);
+assert.match(data, /blogPostsSource[\s\S]*sort/);
 console.log('August 10 Blog manifest regression: PASS');
