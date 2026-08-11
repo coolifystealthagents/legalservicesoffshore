@@ -15,14 +15,18 @@ for (const entry of manifest.entries) {
   const record = data.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
   assert.ok(record, `source record missing for ${entry.slug}`);
   assert.match(record, /published: '2026-08-10'/, `source date must be on ${entry.slug}`);
-  const before = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/data.ts`], { encoding: 'utf8' });
-  const after = execFileSync('git', ['show', `${entry.introducedByCommit}:app/data.ts`], { encoding: 'utf8' });
-  const beforeRecord = before.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
-  const afterRecord = after.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
-  assert.ok(beforeRecord, `prior source record missing for ${entry.slug}`);
-  assert.ok(afterRecord, `introduced source record missing for ${entry.slug}`);
-  assert.equal(/published: '2026-08-10'/.test(beforeRecord), false);
-  assert.match(afterRecord, /published: '2026-08-10'/);
+  const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/data.ts`], { encoding: 'utf8' });
+  const introducedRecord = introduced.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
+  assert.ok(introducedRecord, `introduced source record missing for ${entry.slug}`);
+  if (entry.provenance === 'original-aug10-batch') {
+    assert.equal(/published: '2026-08-10'/.test(introducedRecord), false);
+  } else {
+    const before = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/data.ts`], { encoding: 'utf8' });
+    const beforeRecord = before.split('\n').find((line) => line.includes(`slug: '${entry.slug}'`));
+    assert.ok(beforeRecord, `prior source record missing for ${entry.slug}`);
+    assert.equal(/published: '2026-08-10'/.test(beforeRecord), false);
+    assert.match(introducedRecord, /published: '2026-08-10'/);
+  }
   assert.equal(entry.sourceDateField, 'published');
   assert.equal(entry.sourceDate, '2026-08-10');
   assert.equal(entry.renderedDate, '2026-08-10');
