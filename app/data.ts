@@ -149,8 +149,8 @@ const blogPostsSource = [
   { slug: 'law-firm-offshore-support-risk-register', title: 'A risk register for offshore legal support', excerpt: 'Track access, quality, deadline, communication, and continuity risks with owners and next actions.', minutes: 8, published: '2026-08-10' },
 ] as const;
 
-export const blogPosts = blogPostsSource
-  .sort((a: (typeof blogPostsSource)[number], b: (typeof blogPostsSource)[number]) => Number(Boolean(b.published)) - Number(Boolean(a.published)));
+export const blogPosts: Array<(typeof blogPostsSource)[number]> = [...blogPostsSource]
+  .sort((a, b) => Number(Boolean(b.published)) - Number(Boolean(a.published)));
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
