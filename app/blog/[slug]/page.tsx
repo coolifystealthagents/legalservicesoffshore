@@ -275,7 +275,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
           <p className="eyebrow">{site.brand} blog</p>
           <h1>{post.title}</h1>
           <p className="lead">{post.excerpt}</p>
-          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published August 10, 2026</time> : <span>Reviewed July 2026</span>}</div>
+          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
           <JsonLd data={articleSchema} />
           <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
           <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
