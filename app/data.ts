@@ -150,7 +150,7 @@ const blogPostsSource = [
 ] as const;
 
 export const blogPosts: Array<(typeof blogPostsSource)[number]> = [...blogPostsSource]
-  .sort((a, b) => Number(Boolean(b.published)) - Number(Boolean(a.published)));
+  .sort((a, b) => Number('published' in b) - Number('published' in a));
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
