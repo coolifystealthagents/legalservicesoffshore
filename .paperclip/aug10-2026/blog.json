@@ -9,6 +9,13 @@
   "minimum": 22,
   "priorRunId": "2d6a2420-e457-4649-8722-6a681adfe425",
   "priorIssueId": "93359627-58a7-4eb3-bc9a-d61598782d79",
+  "validationCommands": [
+    "node scripts/validate-aug10-blog.mjs",
+    "npm run validate:routines",
+    "npm run build",
+    "git diff --check",
+    "git rev-parse HEAD"
+  ],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,
