@@ -267,6 +267,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
     author: { '@type': 'Organization', name: site.brand },
     publisher: { '@type': 'Organization', name: site.brand, url: base },
   };
+  const originalSections = 'sections' in post ? post.sections : undefined;
   return (
     <>
       <Header />
@@ -280,6 +281,10 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
           <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
           <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
           <section className="card">
+            {originalSections ? <>
+              {originalSections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
+              <aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Review checkpoint</p><h2>Keep preparation separate from judgment</h2><p>Give the reviewer the source record, the prepared output, and every unresolved question before release.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
+            </> : <>
             <h2>The useful starting point</h2>
             <p>Begin with one repeatable support lane, a named reviewer, and a written definition of done. The worker can prepare facts, organize approved information, and flag gaps. The firm keeps legal advice, strategy, filings, settlement choices, and final client-facing decisions.</p>
             <p>For this topic, write down the source inputs, expected output, systems used, response window, and stop rule. The <a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association guidance on outsourcing legal work</a> is a useful reminder that the firm remains responsible for supervision, confidentiality, and client interests.</p>
@@ -297,6 +302,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
             <h2>Related articles</h2>
             <ul>{related.map((item) => <li key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></li>)}</ul>
             <section className="sources" aria-labelledby="sources"><h2 id="sources">Source</h2><ol><li><a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association, outsourcing legal work guidance</a><p>Used for supervision, confidentiality, and responsibility boundaries in this planning guide.</p></li></ol></section>
+            </>}
           </section>
         </div></article>
         <CTA />
