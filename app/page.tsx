@@ -117,8 +117,8 @@ export default function Home() {
           </div>
           <div className="lso-service-grid">
             {services.map((service, index) => (
-              <a className="lso-service-card" href={`/services/${service.slug}`} key={service.slug}>
-                <span className="lso-card-number">{serviceMarks[index]} <img src={legalIcons[index]} alt="" width="32" height="32" /></span>
+              <a className="lso-service-card" href="/services" key={service.slug}>
+                <span className="lso-card-number">{serviceMarks[index]} <img src={legalIcons[index]} alt={`${service.title} service icon`} width="32" height="32" /></span>
                 <div>
                   <h3>{service.title}</h3>
                   <p>{serviceNotes[index]}</p>
@@ -132,7 +132,7 @@ export default function Home() {
         <section className="lso-control">
           <div className="container lso-control-grid">
             <div className="lso-control-photo">
-              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/legal-document-handoff.svg" alt="" />
+              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/legal-document-handoff.svg" alt="Legal document handoff prepared for attorney review" />
               <div className="lso-photo-caption">
                 <span>Firm review gate</span>
                 <strong>Prep work moves. Legal calls stay with counsel.</strong>

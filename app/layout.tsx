@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   metadataBase: new URL('https://legalservicesoffshore.com'),
   title: {
-    default: 'Offshore Legal Support for Law Firms | Legal Services Offshore',
+    default: 'Offshore Legal Support for Law Firms | LSO',
     template: '%s | Legal Services Offshore',
   },
   description: 'Plan offshore legal intake, matter administration, document preparation, billing support, and reporting with clear attorney review rules.',
