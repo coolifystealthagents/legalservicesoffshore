@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "contract": "fleet-authoring-2026-08-18-v1",
+  "targetDate": "2026-08-18",
+  "family": "research",
+  "domain": "legalservicesoffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "entries": [
+    {"slug":"legal-support-email-triage-boundary-study","route":"/research/legal-support-email-triage-boundary-study","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"law-firm-document-metadata-quality-research","route":"/research/law-firm-document-metadata-quality-research","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-client-portal-permission-review","route":"/research/legal-support-client-portal-permission-review","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-intake-duplicate-party-review","route":"/research/legal-intake-duplicate-party-review","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-deadline-source-reconciliation","route":"/research/legal-support-deadline-source-reconciliation","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-redaction-candidate-evidence","route":"/research/legal-support-redaction-candidate-evidence","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"law-firm-knowledge-base-source-expiry","route":"/research/law-firm-knowledge-base-source-expiry","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-matter-status-evidence","route":"/research/legal-support-matter-status-evidence","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-translation-source-preservation","route":"/research/legal-support-translation-source-preservation","sourcePaths":["app/fleet-data.ts"]},
+    {"slug":"legal-support-incident-timeline-reconstruction","route":"/research/legal-support-incident-timeline-reconstruction","sourcePaths":["app/fleet-data.ts"]}
+  ]
+}
