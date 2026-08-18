@@ -1,0 +1,28 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/offshore-legal-support-client-portal-message-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-entity-name-normalization","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-appointment-confirmation-record","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/legal-support-offshore-document-version-reconciliation","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-subpoena-service-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-client-identity-checklist","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-court-notice-routing","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/legal-support-offshore-deadline-reminder-source-card","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-client-document-request-tracker","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-agreement-signature-register","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-courier-chain-of-custody-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/legal-support-offshore-client-communication-index","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-document-translation-source-register","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-inspection-request-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-medical-record-request-tracker","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/legal-support-offshore-corporate-filing-calendar-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-insurance-notice-register","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-decision-log-administration","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-client-consent-expiry-tracker","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/legal-support-offshore-matter-owner-roster","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/offshore-legal-support-remote-workspace-access-register","sourcePaths":["app/blog/blog-2026-08-18.ts"]},
+    {"route":"/blog/law-firm-offshore-support-client-referral-log","sourcePaths":["app/blog/blog-2026-08-18.ts"]}
+  ]
+}

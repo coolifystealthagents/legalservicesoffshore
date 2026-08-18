@@ -75,6 +75,8 @@ export const serviceDetails = {
     ],
   },
 } as const;
+import { august18BlogPosts } from './blog/blog-2026-08-18';
+
 const blogPostsSource = [
   { slug: 'offshore-legal-support-deposition-prep-index', title: 'Deposition-preparation indexing with offshore legal support', excerpt: 'Organize notices, exhibits, witness materials, and open questions while counsel controls preparation strategy and examination choices.', minutes: 8, published: '2026-08-14', sections: [{ heading: 'Build the preparation index', body: 'List the deposition notice, scheduled details, witness identifier, approved exhibit set, prior statements, and source location. Keep versions and dates visible so the attorney can see what the packet contains.' }, { heading: 'Separate facts from strategy', body: 'A support role can flag missing exhibits, inconsistent names, or a document that is hard to locate. It should not predict testimony, rank topics, or suggest examination questions.' }, { heading: 'Give counsel a clean handoff', body: 'Deliver the index with a gap list, source links, and the person who resolved each administrative question. The attorney decides what to review and what belongs in the final preparation.' }] },
   { slug: 'law-firm-offshore-support-litigation-calendar-audit', title: 'Litigation-calendar audits with offshore legal support', excerpt: 'Compare approved matter dates, source notices, and assigned owners without turning a calendar check into legal deadline advice.', minutes: 8, published: '2026-08-14', sections: [{ heading: 'Compare the calendar to sources', body: 'Check each listed event against the approved notice, order, email, or internal instruction. Record the source date, event label, matter identifier, and any mismatch rather than silently correcting it.' }, { heading: 'Make uncertainty visible', body: 'Time-zone gaps, incomplete event descriptions, duplicate entries, and dates without a source belong in an exception queue. A support worker should not calculate a response period or assume which date controls.' }, { heading: 'Route the review', body: 'Send exceptions to the named attorney or docket owner with the relevant source attached. Keep the original calendar entry and the review disposition together for a clear audit trail.' }] },
@@ -308,7 +310,7 @@ const frozenAug10BlogOrder = [
 const frozenAug10BlogRank: Map<string, number> = new Map(frozenAug10BlogOrder.map((slug, index) => [slug, index]));
 const rejectedAug13BlogSlugs = new Set<string>();
 
-export const blogPosts: Array<(typeof blogPostsSource)[number]> = [...blogPostsSource]
+export const blogPosts: Array<(typeof blogPostsSource)[number] | (typeof august18BlogPosts)[number]> = [...blogPostsSource, ...august18BlogPosts]
   .map((post, index) => ({ post, index }))
   .filter(({ post }) => !rejectedAug13BlogSlugs.has(post.slug))
   .sort((a, b) => {
