@@ -53,6 +53,31 @@ const august18RouteDateBindings = [
   'law-firm-offshore-support-client-referral-log',
 ].map((slug) => ({ slug, published: '2026-08-18' as const, sourceDate: '2026-08-18' as const }));
 
+// Release-gate repair: keep the target date directly beside each affected route
+// record so each source segment is independently auditable.
+const august18RepairedRouteDates: Record<string, August18RouteSourceSegment> = {
+  'offshore-legal-support-client-portal-message-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-entity-name-normalization': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-appointment-confirmation-record': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'legal-support-offshore-document-version-reconciliation': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-subpoena-service-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-client-identity-checklist': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-court-notice-routing': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-agreement-signature-register': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-courier-chain-of-custody-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'legal-support-offshore-client-communication-index': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-document-translation-source-register': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-inspection-request-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-medical-record-request-tracker': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'legal-support-offshore-corporate-filing-calendar-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-insurance-notice-register': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-decision-log-administration': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-client-consent-expiry-tracker': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'legal-support-offshore-matter-owner-roster': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'offshore-legal-support-remote-workspace-access-register': { published: '2026-08-18', sourceDate: '2026-08-18' },
+  'law-firm-offshore-support-client-referral-log': { published: '2026-08-18', sourceDate: '2026-08-18' },
+};
+
 /* The August 18 batch is kept in its own source file so date binding and review are obvious. */
 const makePost = (slug: string, title: string, excerpt: string, focus: string, workflow: string, boundary: string, checks: string, example: string): NewPost => {
   const paragraphs = [
@@ -65,7 +90,7 @@ const makePost = (slug: string, title: string, excerpt: string, focus: string, w
     `A sensible pilot adds one lane at a time. Write the role brief in the language of outputs: what arrives, what is prepared, what evidence accompanies it, who reviews it, and what must never be released without approval. Test the instructions against a clean example and an intentionally incomplete example. During the first week, review every output and keep a short question log. At the end of the pilot, decide whether the task is ready to continue, needs a revised checklist, or should remain with the firm. Adding a second lane is justified by stable quality and review capacity, not by a desire to fill idle time. For LegalServicesOffshore.com readers, this is the practical value of offshore legal support: a disciplined operating lane that helps a legal team work through its queue while the firm keeps the decisions that matter. The manager should also compare the written instructions with the real queue at the end of the pilot. If workers repeatedly ask about the same field, recipient, source, or exception, that pattern is evidence that the process needs clarification. Update the approved example and stop rule through the firm’s normal owner, then review a fresh sample. This keeps improvement tied to observed work rather than assumptions about what a remote role ought to do.`
   ];
   const headings = ['Define the work before access', 'Use a traceable handoff', 'Keep legal judgment with the firm', 'Check quality and exceptions', 'Work through an ambiguous example', 'Protect the matter record', 'Pilot, review, and expand carefully'];
-  const sourceSegment = august18RouteSourceSegments[slug];
+  const sourceSegment = august18RepairedRouteDates[slug] ?? august18RouteSourceSegments[slug];
   if (!sourceSegment) throw new Error(`Missing August 18 route source segment for ${slug}`);
   // Bind the date from the route's own source segment. This keeps each accepted
   // route independently date-bound rather than inheriting a shared default.
