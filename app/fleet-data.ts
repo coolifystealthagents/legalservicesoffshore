@@ -476,10 +476,6 @@ const august18EvidenceAddenda: Readonly<Record<string, string>> = {
   'legal-support-translation-source-preservation': 'Translation preservation should be examined at the level of meaning-bearing features, not only file count. The sample should include a table, a signature block, a defined term, a handwritten mark, an attachment, and an unreadable scan. Support records the source page, working version, omitted or uncertain feature, supplied glossary, and reviewer question. It can compare layout and terminology against explicit instructions, but it cannot decide whether a phrase carries a different legal effect or whether the output is fit for filing. The reviewer determines semantic accuracy, certification, delivery, and client communication. Keeping the source and working versions together gives the firm an inspectable handoff even when the administrative comparison cannot answer the linguistic question.',
   'legal-support-incident-timeline-reconstruction': 'Timeline reconstruction should preserve disagreement between systems instead of smoothing it away. The sample should include a failed login, a successful login, a permission change, a download, a clock difference, duplicate records, and a missing segment. Support records each event identifier, source system, retrieval query, timestamp and time zone as shown, and any gap. It may sort the records for review, but it should not merge accounts, infer intent, or describe a disclosure. The incident owner decides which events are related, what evidence must be preserved, and whether legal or client-facing action follows. The value of the support lane is a protected factual packet that helps authorized reviewers reason without turning a chronology into an accusation.'
 };
-const august18RepairedPosts: readonly ResearchPost[] = august18RepairPosts.map(post => ({
-  ...post,
-  sections: [...post.sections, { heading: 'Route-specific evidence analysis', body: august18EvidenceAddenda[post.slug] }],
-}));
-const august18Slugs = new Set(august18RepairedPosts.map(p => p.slug));
-export const researchPosts: readonly ResearchPost[] = [...legacyResearchPosts.filter(p => !august18Slugs.has(p.slug)), ...august18RepairedPosts];
+const august18Slugs = new Set(august18ExplicitPosts.map(p => p.slug));
+export const researchPosts: readonly ResearchPost[] = [...legacyResearchPosts.filter(p => !august18Slugs.has(p.slug)), ...august18ExplicitPosts];
 export const postsPerPage = 20;
