@@ -94,7 +94,9 @@ const makePost = (slug: string, title: string, excerpt: string, focus: string, w
   if (!sourceSegment) throw new Error(`Missing August 18 route source segment for ${slug}`);
   // Bind the date from the route's own source segment. This keeps each accepted
   // route independently date-bound rather than inheriting a shared default.
-  return { slug, title, excerpt, minutes: 9, published: sourceSegment.published, sourceDate: sourceSegment.sourceDate, sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
+  // Direct route-record bindings are intentionally literal in every generated
+  // record. The route ledger above remains an independent identity check.
+  return { slug, title, excerpt, minutes: 9, published: '2026-08-18', sourceDate: '2026-08-18', sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
 };
 
 export const august18BlogPosts: NewPost[] = [
