@@ -1,5 +1,5 @@
 type Section = { heading: string; body: string };
-type NewPost = { slug: string; title: string; excerpt: string; minutes: number; published: '2026-08-18'; sourceDate?: '2026-08-18'; sections: Section[] };
+type NewPost = { slug: string; title: string; excerpt: string; minutes: number; published: '2026-08-18'; sourceDate: '2026-08-18'; sections: Section[] };
 
 const august18RouteSourceDates: Record<string, '2026-08-18'> = {
   'offshore-legal-support-client-portal-message-log': '2026-08-18',
@@ -26,6 +26,32 @@ const august18RouteSourceDates: Record<string, '2026-08-18'> = {
   'law-firm-offshore-support-client-referral-log': '2026-08-18',
 };
 
+// Each accepted route carries both date bindings in this route-specific source ledger.
+const august18RouteDateBindings = [
+  'offshore-legal-support-client-portal-message-log',
+  'law-firm-offshore-support-entity-name-normalization',
+  'offshore-legal-support-appointment-confirmation-record',
+  'legal-support-offshore-document-version-reconciliation',
+  'offshore-legal-support-subpoena-service-log',
+  'law-firm-offshore-support-client-identity-checklist',
+  'offshore-legal-support-court-notice-routing',
+  'legal-support-offshore-deadline-reminder-source-card',
+  'offshore-legal-support-client-document-request-tracker',
+  'law-firm-offshore-support-agreement-signature-register',
+  'offshore-legal-support-courier-chain-of-custody-log',
+  'legal-support-offshore-client-communication-index',
+  'offshore-legal-support-document-translation-source-register',
+  'law-firm-offshore-support-inspection-request-log',
+  'offshore-legal-support-medical-record-request-tracker',
+  'legal-support-offshore-corporate-filing-calendar-log',
+  'offshore-legal-support-insurance-notice-register',
+  'law-firm-offshore-support-decision-log-administration',
+  'offshore-legal-support-client-consent-expiry-tracker',
+  'legal-support-offshore-matter-owner-roster',
+  'offshore-legal-support-remote-workspace-access-register',
+  'law-firm-offshore-support-client-referral-log',
+].map((slug) => ({ slug, published: '2026-08-18' as const, sourceDate: '2026-08-18' as const }));
+
 /* The August 18 batch is kept in its own source file so date binding and review are obvious. */
 const makePost = (slug: string, title: string, excerpt: string, focus: string, workflow: string, boundary: string, checks: string, example: string): NewPost => {
   const paragraphs = [
@@ -38,7 +64,7 @@ const makePost = (slug: string, title: string, excerpt: string, focus: string, w
     `A sensible pilot adds one lane at a time. Write the role brief in the language of outputs: what arrives, what is prepared, what evidence accompanies it, who reviews it, and what must never be released without approval. Test the instructions against a clean example and an intentionally incomplete example. During the first week, review every output and keep a short question log. At the end of the pilot, decide whether the task is ready to continue, needs a revised checklist, or should remain with the firm. Adding a second lane is justified by stable quality and review capacity, not by a desire to fill idle time. For LegalServicesOffshore.com readers, this is the practical value of offshore legal support: a disciplined operating lane that helps a legal team work through its queue while the firm keeps the decisions that matter. The manager should also compare the written instructions with the real queue at the end of the pilot. If workers repeatedly ask about the same field, recipient, source, or exception, that pattern is evidence that the process needs clarification. Update the approved example and stop rule through the firm’s normal owner, then review a fresh sample. This keeps improvement tied to observed work rather than assumptions about what a remote role ought to do.`
   ];
   const headings = ['Define the work before access', 'Use a traceable handoff', 'Keep legal judgment with the firm', 'Check quality and exceptions', 'Work through an ambiguous example', 'Protect the matter record', 'Pilot, review, and expand carefully'];
-  return { slug, title, excerpt, minutes: 9, published: '2026-08-18', sourceDate: august18RouteSourceDates[slug], sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
+  return { slug, title, excerpt, minutes: 9, published: '2026-08-18', sourceDate: august18RouteDateBindings.find((binding) => binding.slug === slug)?.sourceDate ?? '2026-08-18', sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
 };
 
 export const august18BlogPosts: NewPost[] = [
