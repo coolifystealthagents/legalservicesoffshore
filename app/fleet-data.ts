@@ -416,5 +416,5 @@ const august18ExplicitPosts: readonly ResearchPost[] = [
   ], sources:researchSources }
 ];
 const august18Slugs = new Set(august18ExplicitPosts.map(p => p.slug));
-export const researchPosts: readonly ResearchPost[] = [...legacyResearchPosts.filter(p => !august18Slugs.has(p.slug)), ...august18RepairPosts];
+export const researchPosts: readonly ResearchPost[] = [...legacyResearchPosts.filter(p => !august18Slugs.has(p.slug)), ...august18ExplicitPosts];
 export const postsPerPage = 20;
