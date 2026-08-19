@@ -879,8 +879,8 @@ const august18ExplicitBasePosts: readonly ResearchPost[] = [
     "excerpt": "Original August 18, 2026 research on incident timeline reconstruction for supervised legal support.",
     "cluster": "Workflow Design",
     "headlineStat": "A bounded evidence study with source provenance, limitations, and owner review.",
-    published: '2026-08-18' as const,
-    sourceDate: '2026-08-18' as const,
+    "published": "2026-08-18",
+    "sourceDate": "2026-08-18",
     "relatedSlugs": [
       "legal-intake-support-control-benchmark",
       "legal-document-version-control",
