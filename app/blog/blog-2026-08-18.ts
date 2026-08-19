@@ -96,7 +96,7 @@ const makePost = (slug: string, routePublished: '2026-08-18', title: string, exc
   // route independently date-bound rather than inheriting a shared default.
   // Direct route-record bindings are intentionally literal in every generated
   // record. The route ledger above remains an independent identity check.
-  return { slug, title, excerpt, minutes: 9, published: routePublished, sourceDate: routePublished, sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
+  return { slug, title, excerpt, minutes: 9, published: sourceSegment.published, sourceDate: sourceSegment.sourceDate, sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
 };
 
 // Route-local publication evidence. Keep these bindings adjacent to the
@@ -149,7 +149,7 @@ export const august18BlogPosts: NewPost[] = [
 ].filter((post) => post.slug !== 'offshore-legal-support-client-document-request-tracker').map((post) => {
   // Final route-local projection: every accepted August 18 record receives
   // its date from the source segment keyed by its own slug.
-  const sourceSegment = august18RouteSourceSegments[post.slug];
+  const sourceSegment = august18RepairedRouteDates[post.slug] ?? august18RouteSourceSegments[post.slug];
   if (!sourceSegment) throw new Error(`Missing August 18 source segment for ${post.slug}`);
   return { ...post, published: sourceSegment.published, sourceDate: sourceSegment.sourceDate };
 });
