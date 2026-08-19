@@ -54,7 +54,7 @@ const august18RouteDateBindings = [
 ].map((slug) => ({ slug, published: '2026-08-18' as const, sourceDate: '2026-08-18' as const }));
 
 /* The August 18 batch is kept in its own source file so date binding and review are obvious. */
-const makePost = (slug: string, title: string, excerpt: string, focus: string, workflow: string, boundary: string, checks: string, example: string): NewPost => {
+const makePost = (slug: string, title: string, excerpt: string, focus: string, workflow: string, boundary: string, checks: string, example: string, published: '2026-08-18' = '2026-08-18', sourceDate: '2026-08-18' = '2026-08-18'): NewPost => {
   const paragraphs = [
     `Start with the actual ${focus} queue rather than an abstract job title. The firm should identify where each item arrives, which matter or client identifier travels with it, what a finished preparation looks like, and which person owns the next decision. For offshore legal support, the point is not to move responsibility out of the firm. It is to make repeatable preparation visible, consistent, and easy for a lawyer or manager to review. Before access is granted, collect two or three approved examples, mark sensitive fields, and write down the stop condition. If the source is missing, conflicting, or unexpectedly urgent, the worker records the gap and pauses. That small discipline prevents a neat-looking output from hiding an unexamined assumption.`,
     `A workable ${workflow} has a clear intake, preparation, review, and closeout path. At intake, record the requestor, matter, source location, received time, requested result, and owner. During preparation, preserve the source, use the current firm-approved format, and distinguish copied facts from notes or questions. The reviewer should be able to compare the output with the source without asking the worker to reconstruct what happened. Review is not a ceremonial sign-off: it is where the firm checks substance, confidentiality, client promises, and any unusual circumstance. At closeout, record the disposition, unresolved items, rework reason, and next owner. A queue is healthy when another person can understand its state without relying on private chat history.`,
@@ -66,7 +66,8 @@ const makePost = (slug: string, title: string, excerpt: string, focus: string, w
   ];
   const headings = ['Define the work before access', 'Use a traceable handoff', 'Keep legal judgment with the firm', 'Check quality and exceptions', 'Work through an ambiguous example', 'Protect the matter record', 'Pilot, review, and expand carefully'];
   const sourceSegment = august18RouteSourceSegments[slug];
-  return { slug, title, excerpt, minutes: 9, published: sourceSegment.published, sourceDate: sourceSegment.sourceDate, sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
+  if (!sourceSegment) throw new Error(`Missing August 18 route source segment for ${slug}`);
+  return { slug, title, excerpt, minutes: 9, published, sourceDate, sections: headings.map((heading, i) => ({ heading, body: paragraphs[i] })) };
 };
 
 export const august18BlogPosts: NewPost[] = [
