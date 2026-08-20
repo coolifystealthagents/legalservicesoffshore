@@ -1,14 +1,53 @@
-[
-  {"route":"/blog/offshore-legal-support-matter-opening-checklist","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/law-firm-offshore-support-docket-entry-reconciliation","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/offshore-legal-support-redaction-preparation-log","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/legal-support-offshore-client-update-draft-register","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/offshore-legal-support-discovery-collection-index","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/law-firm-offshore-support-invoice-supporting-records","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/offshore-legal-support-legal-hold-notice-register","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/legal-support-offshore-knowledge-transfer-matter-handoff","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/offshore-legal-support-legal-operations-metrics-dictionary","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/law-firm-offshore-support-evidence-request-escalation","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/offshore-legal-support-remote-team-incident-log","sourcePath":"app/blog/blog-2026-08-19.ts"},
-  {"route":"/blog/legal-support-offshore-practice-area-queue-design","sourcePath":"app/blog/blog-2026-08-19.ts"}
-]
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/legal-support-matter-intake-evidence-register",
+      "source": "content/blog/legal-support-matter-intake-evidence-register.md"
+    },
+    {
+      "route": "/blog/legal-support-approval-evidence-matrix",
+      "source": "content/blog/legal-support-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/legal-support-exception-queue-triage",
+      "source": "content/blog/legal-support-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/legal-support-quality-review-cadence",
+      "source": "content/blog/legal-support-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/legal-support-handoff-acceptance-log",
+      "source": "content/blog/legal-support-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/legal-support-access-recertification-review",
+      "source": "content/blog/legal-support-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/legal-support-weekly-decision-brief",
+      "source": "content/blog/legal-support-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/legal-support-source-of-truth-map",
+      "source": "content/blog/legal-support-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/legal-support-change-control-record",
+      "source": "content/blog/legal-support-change-control-record.md"
+    },
+    {
+      "route": "/blog/legal-support-work-queue-ownership",
+      "source": "content/blog/legal-support-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/legal-support-escalation-path-design",
+      "source": "content/blog/legal-support-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/legal-support-launch-readiness-review",
+      "source": "content/blog/legal-support-launch-readiness-review.md"
+    }
+  ]
+}

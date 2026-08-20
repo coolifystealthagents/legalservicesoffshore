@@ -1,0 +1,104 @@
+{
+  "legal-support-matter-intake-evidence-register": {
+    "family": "blog",
+    "title": "Legal Support Operations: Intake Source Register",
+    "description": "Legal Support Operations: Intake Source Register: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-matter-intake-evidence-register.webp"
+  },
+  "legal-support-approval-evidence-matrix": {
+    "family": "blog",
+    "title": "Legal Support Operations: Approval Evidence Matrix",
+    "description": "Legal Support Operations: Approval Evidence Matrix: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-approval-evidence-matrix.webp"
+  },
+  "legal-support-exception-queue-triage": {
+    "family": "blog",
+    "title": "Legal Support Operations: Exception Queue Triage",
+    "description": "Legal Support Operations: Exception Queue Triage: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-exception-queue-triage.webp"
+  },
+  "legal-support-quality-review-cadence": {
+    "family": "blog",
+    "title": "Legal Support Operations: Quality Review Cadence",
+    "description": "Legal Support Operations: Quality Review Cadence: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-quality-review-cadence.webp"
+  },
+  "legal-support-handoff-acceptance-log": {
+    "family": "blog",
+    "title": "Legal Support Operations: Handoff Acceptance Log",
+    "description": "Legal Support Operations: Handoff Acceptance Log: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-handoff-acceptance-log.webp"
+  },
+  "legal-support-access-recertification-review": {
+    "family": "blog",
+    "title": "Legal Support Operations: Access Recertification Review",
+    "description": "Legal Support Operations: Access Recertification Review: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-access-recertification-review.webp"
+  },
+  "legal-support-weekly-decision-brief": {
+    "family": "blog",
+    "title": "Legal Support Operations: Weekly Decision Brief",
+    "description": "Legal Support Operations: Weekly Decision Brief: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-weekly-decision-brief.webp"
+  },
+  "legal-support-source-of-truth-map": {
+    "family": "blog",
+    "title": "Legal Support Operations: Source of Truth Map",
+    "description": "Legal Support Operations: Source of Truth Map: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-source-of-truth-map.webp"
+  },
+  "legal-support-change-control-record": {
+    "family": "blog",
+    "title": "Legal Support Operations: Change Control Record",
+    "description": "Legal Support Operations: Change Control Record: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-change-control-record.webp"
+  },
+  "legal-support-work-queue-ownership": {
+    "family": "blog",
+    "title": "Legal Support Operations: Work Queue Ownership",
+    "description": "Legal Support Operations: Work Queue Ownership: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-work-queue-ownership.webp"
+  },
+  "legal-support-escalation-path-design": {
+    "family": "blog",
+    "title": "Legal Support Operations: Escalation Path Design",
+    "description": "Legal Support Operations: Escalation Path Design: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-escalation-path-design.webp"
+  },
+  "legal-support-launch-readiness-review": {
+    "family": "blog",
+    "title": "Legal Support Operations: Launch Readiness Review",
+    "description": "Legal Support Operations: Launch Readiness Review: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-launch-readiness-review.webp"
+  },
+  "legal-support-source-quality-evidence-research": {
+    "family": "research",
+    "title": "Research Brief: Legal Support Operations Source Quality Evidence",
+    "description": "Research Brief: Legal Support Operations Source Quality Evidence: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-source-quality-evidence-research.webp"
+  },
+  "legal-support-exception-aging-patterns-research": {
+    "family": "research",
+    "title": "Research Brief: Legal Support Operations Exception Aging Patterns",
+    "description": "Research Brief: Legal Support Operations Exception Aging Patterns: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-exception-aging-patterns-research.webp"
+  },
+  "legal-support-review-consistency-research": {
+    "family": "research",
+    "title": "Research Brief: Legal Support Operations Review Consistency",
+    "description": "Research Brief: Legal Support Operations Review Consistency: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-review-consistency-research.webp"
+  },
+  "legal-support-access-governance-research": {
+    "family": "research",
+    "title": "Research Brief: Legal Support Operations Access Governance",
+    "description": "Research Brief: Legal Support Operations Access Governance: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-access-governance-research.webp"
+  },
+  "legal-support-handoff-reliability-research": {
+    "family": "research",
+    "title": "Research Brief: Legal Support Operations Handoff Reliability",
+    "description": "Research Brief: Legal Support Operations Handoff Reliability: evidence-led guidance for Legal Services Offshore.",
+    "hero": "/aug19-heroes/legal-support-handoff-reliability-research.webp"
+  }
+}
