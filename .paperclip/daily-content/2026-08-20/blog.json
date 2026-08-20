@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/offshore-legal-support-intake-escalation-matrix","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/law-firm-offshore-support-matter-folder-governance","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/offshore-legal-support-hearing-preparation-source-board","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/legal-support-offshore-client-identity-resolution-log","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/offshore-legal-support-records-request-coverage-map","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/law-firm-offshore-support-amendment-version-register","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/offshore-legal-support-disclosure-packet-checklist","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/legal-support-offshore-court-correspondence-index","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/offshore-legal-support-vendor-records-reconciliation","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/law-firm-offshore-support-client-call-fact-log","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/offshore-legal-support-retention-exception-register","sourcePaths":["app/blog/blog-2026-08-20.ts"]},
+    {"route":"/blog/legal-support-offshore-review-capacity-board","sourcePaths":["app/blog/blog-2026-08-20.ts"]}
+  ]
+}
