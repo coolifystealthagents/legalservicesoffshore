@@ -1,0 +1,13 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "entries": [
+    {"slug":"offshore-legal-intake-source-provenance-study","route":"/research/offshore-legal-intake-source-provenance-study","sourcePaths":["app/research/research-2026-08-20.ts"]},
+    {"slug":"law-firm-offshore-document-version-lineage-research","route":"/research/law-firm-offshore-document-version-lineage-research","sourcePaths":["app/research/research-2026-08-20.ts"]},
+    {"slug":"offshore-legal-support-deadline-timezone-evidence-study","route":"/research/offshore-legal-support-deadline-timezone-evidence-study","sourcePaths":["app/research/research-2026-08-20.ts"]},
+    {"slug":"legal-support-access-recertification-entitlement-research","route":"/research/legal-support-access-recertification-entitlement-research","sourcePaths":["app/research/research-2026-08-20.ts"]},
+    {"slug":"offshore-legal-research-authority-currency-study","route":"/research/offshore-legal-research-authority-currency-study","sourcePaths":["app/research/research-2026-08-20.ts"]}
+  ]
+}

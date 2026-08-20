@@ -1,0 +1,12 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "generator": "Gemini unavailable in this run; generation retried twice (HTTP 403)",
+  "entries": [
+    {"route":"/research/offshore-legal-intake-source-provenance-study","imagePath":"public/research-heroes/aug20-intake-provenance.svg","prompt":"Editorial legal intake source provenance illustration with linked evidence cards."},
+    {"route":"/research/law-firm-offshore-document-version-lineage-research","imagePath":"public/research-heroes/aug20-version-lineage.svg","prompt":"Editorial legal document version lineage illustration with layered drafts."},
+    {"route":"/research/offshore-legal-support-deadline-timezone-evidence-study","imagePath":"public/research-heroes/aug20-timezone-evidence.svg","prompt":"Editorial legal deadline timezone evidence illustration with clock and source record."},
+    {"route":"/research/legal-support-access-recertification-entitlement-research","imagePath":"public/research-heroes/aug20-access-entitlement.svg","prompt":"Editorial legal support access entitlement illustration with shield and permission record."},
+    {"route":"/research/offshore-legal-research-authority-currency-study","imagePath":"public/research-heroes/aug20-authority-currency.svg","prompt":"Editorial legal research authority currency illustration with source pages and clock."}
+  ]
+}
