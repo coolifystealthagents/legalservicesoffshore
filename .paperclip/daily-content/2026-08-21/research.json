@@ -1,0 +1,13 @@
+{
+  "targetDate": "2026-08-21",
+  "family": "research",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "entries": [
+    { "slug": "offshore-legal-intake-provenance-research", "route": "/research/offshore-legal-intake-provenance-research", "sourcePaths": ["app/research/research-2026-08-21.ts"], "heroPath": "public/research-heroes/aug21-offshore-legal-intake-provenance.png" },
+    { "slug": "offshore-legal-deadline-chronology-research", "route": "/research/offshore-legal-deadline-chronology-research", "sourcePaths": ["app/research/research-2026-08-21.ts"], "heroPath": "public/research-heroes/aug21-offshore-legal-deadline-chronology.png" },
+    { "slug": "offshore-redaction-candidate-preparation-research", "route": "/research/offshore-redaction-candidate-preparation-research", "sourcePaths": ["app/research/research-2026-08-21.ts"], "heroPath": "public/research-heroes/aug21-offshore-redaction-candidates.png" },
+    { "slug": "offshore-legal-portal-entitlement-evidence-research", "route": "/research/offshore-legal-portal-entitlement-evidence-research", "sourcePaths": ["app/research/research-2026-08-21.ts"], "heroPath": "public/research-heroes/aug21-offshore-legal-portal-entitlement.png" },
+    { "slug": "offshore-legal-knowledge-source-expiry-research", "route": "/research/offshore-legal-knowledge-source-expiry-research", "sourcePaths": ["app/research/research-2026-08-21.ts"], "heroPath": "public/research-heroes/aug21-offshore-legal-knowledge-expiry.png" }
+  ]
+}
