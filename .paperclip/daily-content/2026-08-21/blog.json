@@ -1,0 +1,19 @@
+{
+  "contract": "fleet-authoring-contract-v6",
+  "campaignDate": "2026-08-21",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/offshore-legal-support-client-intake-triage","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-client-intake-triage.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-client-intake-triage.txt"},
+    {"route":"/blog/law-firm-offshore-support-document-naming-standard","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/law-firm-offshore-support-document-naming-standard.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/law-firm-offshore-support-document-naming-standard.txt"},
+    {"route":"/blog/offshore-legal-support-deadline-source-check","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-deadline-source-check.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-deadline-source-check.txt"},
+    {"route":"/blog/legal-support-offshore-redaction-prep-log","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/legal-support-offshore-redaction-prep-log.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/legal-support-offshore-redaction-prep-log.txt"},
+    {"route":"/blog/offshore-legal-support-matter-opening-checklist","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-matter-opening-checklist.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-matter-opening-checklist.txt"},
+    {"route":"/blog/law-firm-offshore-support-discovery-file-index","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/law-firm-offshore-support-discovery-file-index.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/law-firm-offshore-support-discovery-file-index.txt"},
+    {"route":"/blog/offshore-legal-support-client-call-fact-record","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-client-call-fact-record.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-client-call-fact-record.txt"},
+    {"route":"/blog/legal-support-offshore-invoice-support-register","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/legal-support-offshore-invoice-support-register.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/legal-support-offshore-invoice-support-register.txt"},
+    {"route":"/blog/offshore-legal-support-contract-version-lineage","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-contract-version-lineage.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-contract-version-lineage.txt"},
+    {"route":"/blog/law-firm-offshore-support-legal-research-source-log","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/law-firm-offshore-support-legal-research-source-log.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/law-firm-offshore-support-legal-research-source-log.txt"},
+    {"route":"/blog/offshore-legal-support-appeal-bundle-check","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/offshore-legal-support-appeal-bundle-check.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/offshore-legal-support-appeal-bundle-check.txt"},
+    {"route":"/blog/legal-support-offshore-access-review","sourcePaths":["app/blog/blog-2026-08-21.ts"],"imagePath":"public/aug21-heroes/legal-support-offshore-access-review.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/legal-support-offshore-access-review.txt"}
+  ]
+}

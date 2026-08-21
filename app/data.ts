@@ -79,6 +79,7 @@ import { august18BlogPosts } from './blog/blog-2026-08-18';
 import { august18ReplacementBlogPost } from './blog/blog-2026-08-18-replacement';
 import { august19BlogPosts } from './blog/blog-2026-08-19';
 import { august20BlogPosts } from './blog/blog-2026-08-20';
+import { august21BlogPosts } from './blog/blog-2026-08-21';
 
 const blogPostsSource = [
   { slug: 'offshore-legal-support-deposition-prep-index', title: 'Deposition-preparation indexing with offshore legal support', excerpt: 'Organize notices, exhibits, witness materials, and open questions while counsel controls preparation strategy and examination choices.', minutes: 8, published: '2026-08-14', sections: [{ heading: 'Build the preparation index', body: 'List the deposition notice, scheduled details, witness identifier, approved exhibit set, prior statements, and source location. Keep versions and dates visible so the attorney can see what the packet contains.' }, { heading: 'Separate facts from strategy', body: 'A support role can flag missing exhibits, inconsistent names, or a document that is hard to locate. It should not predict testimony, rank topics, or suggest examination questions.' }, { heading: 'Give counsel a clean handoff', body: 'Deliver the index with a gap list, source links, and the person who resolved each administrative question. The attorney decides what to review and what belongs in the final preparation.' }] },
@@ -313,7 +314,7 @@ const frozenAug10BlogOrder = [
 const frozenAug10BlogRank: Map<string, number> = new Map(frozenAug10BlogOrder.map((slug, index) => [slug, index]));
 const rejectedAug13BlogSlugs = new Set<string>();
 
-export const blogPosts: Array<(typeof blogPostsSource)[number] | (typeof august18BlogPosts)[number] | (typeof august19BlogPosts)[number] | (typeof august20BlogPosts)[number]> = [...blogPostsSource, ...august18BlogPosts, august18ReplacementBlogPost, ...august19BlogPosts, ...august20BlogPosts]
+export const blogPosts: Array<(typeof blogPostsSource)[number] | (typeof august18BlogPosts)[number] | (typeof august19BlogPosts)[number] | (typeof august20BlogPosts)[number] | (typeof august21BlogPosts)[number]> = [...blogPostsSource, ...august18BlogPosts, august18ReplacementBlogPost, ...august19BlogPosts, ...august20BlogPosts, ...august21BlogPosts]
   .map((post, index) => ({ post, index }))
   .filter(({ post }) => !rejectedAug13BlogSlugs.has(post.slug))
   .sort((a, b) => {
