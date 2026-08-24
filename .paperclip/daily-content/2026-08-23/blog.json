@@ -1,0 +1,34 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "contract": "fleet-authoring-v8",
+  "entries": [
+    {"route":"/blog/offshore-legal-support-deadline-source-checks","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/law-firm-offshore-support-intake-routing-matrix","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/legal-support-offshore-document-version-ledgers","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/offshore-legal-support-discovery-custodian-index","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/law-firm-offshore-support-client-update-digests","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/legal-support-offshore-billing-exception-queues","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/offshore-legal-support-privileged-folder-permissions","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/law-firm-offshore-support-legal-research-request-logs","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/offshore-legal-support-hearing-preparation-checklists","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/legal-support-offshore-matter-closeout-records","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/law-firm-offshore-support-translation-intake-registers","sourcePaths":["app/blog/blog-2026-08-23.ts"]},
+    {"route":"/blog/offshore-legal-support-vendor-evidence-trackers","sourcePaths":["app/blog/blog-2026-08-23.ts"]}
+  ],
+  "imageStatus": "complete",
+  "images": [
+    {"route":"/blog/offshore-legal-support-deadline-source-checks","imagePath":"public/aug23-heroes/deadline-source-checks.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/law-firm-offshore-support-intake-routing-matrix","imagePath":"public/aug23-heroes/intake-routing-matrix.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/legal-support-offshore-document-version-ledgers","imagePath":"public/aug23-heroes/document-version-ledgers.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/offshore-legal-support-discovery-custodian-index","imagePath":"public/aug23-heroes/discovery-custodian-index.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/law-firm-offshore-support-client-update-digests","imagePath":"public/aug23-heroes/client-update-digests.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/legal-support-offshore-billing-exception-queues","imagePath":"public/aug23-heroes/billing-exception-queues.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/offshore-legal-support-privileged-folder-permissions","imagePath":"public/aug23-heroes/privileged-folder-permissions.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/law-firm-offshore-support-legal-research-request-logs","imagePath":"public/aug23-heroes/legal-research-request-logs.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/offshore-legal-support-hearing-preparation-checklists","imagePath":"public/aug23-heroes/hearing-preparation-checklists.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/legal-support-offshore-matter-closeout-records","imagePath":"public/aug23-heroes/matter-closeout-records.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/law-firm-offshore-support-translation-intake-registers","imagePath":"public/aug23-heroes/translation-intake-registers.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"},
+    {"route":"/blog/offshore-legal-support-vendor-evidence-trackers","imagePath":"public/aug23-heroes/vendor-evidence-trackers.png","promptReceipt":".paperclip/daily-content/2026-08-23/image-prompts.json"}
+  ]
+}
