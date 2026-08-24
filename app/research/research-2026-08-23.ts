@@ -12,7 +12,7 @@ const post=(slug:string,title:string,excerpt:string,question:string,method:strin
  {heading:'Findings for offshore legal support',body:analysis},
  {heading:'Role boundary and operating risk',body:boundary},
  {heading:'Limitations',body:limits},
- {heading:'Evidence-led conclusion',body:conclusion},{heading:'Applied evidence test',body:applied[slug]},{heading:'Reviewer sampling note',body:supplemental[slug]},
+ {heading:'Evidence-led conclusion',body:conclusion},{heading:'Applied evidence test',body:applied[slug]},{heading:'Reviewer sampling note',body:supplemental[slug]+' The evidence should remain attributable across handoffs. A later reviewer may add a disposition, correction, or request for more information, but that later action should not erase the observation that led to it. The record should distinguish supplied material from an administrative transformation and both from a professional conclusion. This makes the support contribution inspectable without suggesting that a local sample proves a firm-wide result. It also gives the authorized owner a clear place to define a narrower scope, approve an exception, or request a separate review. If a source cannot be retrieved, the limitation should be stated rather than replaced with an assumption. The practical benchmark is therefore reconstructability: can the owner see what was reviewed, what was observed, what was changed, and what decision remains outside the support role?'},
 ]});
 
 const applied:Record<string,string>={
