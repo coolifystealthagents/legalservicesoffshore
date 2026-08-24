@@ -257,12 +257,13 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
   const related = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
   const sourceUrl = 'https://www.americanbar.org/groups/law_practice/resources/law-practice-today/2023/january/outsourcing-legal-work/';
   const published = (post as { published?: string }).published;
+  const modified = (post as { modified?: string }).modified ?? published;
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
-    ...(published ? { datePublished: published, dateModified: published } : {}),
+    ...(published ? { datePublished: published, dateModified: modified } : {}),
     mainEntityOfPage: `${base}/blog/${post.slug}`,
     author: { '@type': 'Organization', name: site.brand },
     publisher: { '@type': 'Organization', name: site.brand, url: base },
