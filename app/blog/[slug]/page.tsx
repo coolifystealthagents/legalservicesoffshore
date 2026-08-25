@@ -31,7 +31,7 @@ function ArticleBanner({ label, title, body }: { label: string; title: string; b
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
-      <a className="btn primary" href="/contact-us">Discuss the role</a>
+      <a className="btn primary" href="/contact-us" id="cta-blog-slug-action-1">Discuss the role</a>
     </aside>
   );
 }
