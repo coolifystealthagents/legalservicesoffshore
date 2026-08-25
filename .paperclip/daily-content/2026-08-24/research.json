@@ -1,5 +1,5 @@
 {
-  "campaignDate":"2026-08-23","family":"research",
+  "campaignDate":"2026-08-24","family":"research",
   "entries":[
     {"route":"/research/offshore-legal-matter-intake-duplicate-evidence-research","sourcePaths":["app/research/research-2026-08-23.ts"],"imagePath":"public/research-heroes/aug23-duplicate-evidence-signals.png"},
     {"route":"/research/offshore-legal-document-request-completeness-research","sourcePaths":["app/research/research-2026-08-23.ts"],"imagePath":"public/research-heroes/aug23-document-request-completeness.png"},
@@ -8,10 +8,10 @@
     {"route":"/research/offshore-legal-closure-record-evidence-research","sourcePaths":["app/research/research-2026-08-23.ts"],"imagePath":"public/research-heroes/aug23-closeout-evidence.png"}
   ],
   "promptReceipts":[
-    ".paperclip/daily-content/2026-08-23/prompts/duplicate-evidence.txt",
-    ".paperclip/daily-content/2026-08-23/prompts/document-request.txt",
-    ".paperclip/daily-content/2026-08-23/prompts/translation-lineage.txt",
-    ".paperclip/daily-content/2026-08-23/prompts/client-update.txt",
-    ".paperclip/daily-content/2026-08-23/prompts/closeout.txt"
+    ".paperclip/daily-content/2026-08-24/prompts/duplicate-evidence.txt",
+    ".paperclip/daily-content/2026-08-24/prompts/document-request.txt",
+    ".paperclip/daily-content/2026-08-24/prompts/translation-lineage.txt",
+    ".paperclip/daily-content/2026-08-24/prompts/client-update.txt",
+    ".paperclip/daily-content/2026-08-24/prompts/closeout.txt"
   ]
 }
