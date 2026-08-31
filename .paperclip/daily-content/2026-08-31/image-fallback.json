@@ -1,0 +1,7 @@
+{
+  "provider": "Gemini",
+  "status": "unavailable",
+  "reason": "No Gemini image-generation capability was available in the execution environment.",
+  "fallback": "Text and route work completed without stock, template, or substituted hero images.",
+  "routes": 12
+}

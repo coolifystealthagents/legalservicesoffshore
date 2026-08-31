@@ -78,6 +78,7 @@ export const serviceDetails = {
 import { august18BlogPosts } from './blog/blog-2026-08-18';
 import { august18ReplacementBlogPost } from './blog/blog-2026-08-18-replacement';
 import { august19BlogPosts } from './blog/blog-2026-08-19';
+import { august31Leg58BlogPosts } from './blog/blog-2026-08-31-leg58';
 import { august20BlogPosts } from './blog/blog-2026-08-20';
 import { august21BlogPosts } from './blog/blog-2026-08-21-repair';
 import { august23BlogPosts } from './blog/blog-2026-08-23';
@@ -316,7 +317,7 @@ const frozenAug10BlogOrder = [
 const frozenAug10BlogRank: Map<string, number> = new Map(frozenAug10BlogOrder.map((slug, index) => [slug, index]));
 const rejectedAug13BlogSlugs = new Set<string>();
 
-export const blogPosts: Array<(typeof blogPostsSource)[number] | (typeof august18BlogPosts)[number] | (typeof august19BlogPosts)[number] | (typeof august20BlogPosts)[number] | (typeof august21BlogPosts)[number] | (typeof august23BlogPosts)[number] | (typeof august31BlogPosts)[number]> = [...blogPostsSource, ...august18BlogPosts, august18ReplacementBlogPost, ...august19BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts]
+export const blogPosts: Array<(typeof blogPostsSource)[number] | (typeof august18BlogPosts)[number] | (typeof august19BlogPosts)[number] | (typeof august20BlogPosts)[number] | (typeof august21BlogPosts)[number] | (typeof august23BlogPosts)[number] | (typeof august31BlogPosts)[number] | (typeof august31Leg58BlogPosts)[number]> = [...blogPostsSource, ...august18BlogPosts, august18ReplacementBlogPost, ...august19BlogPosts, ...august20BlogPosts, ...august21BlogPosts, ...august23BlogPosts, ...august31BlogPosts, ...august31Leg58BlogPosts]
   .map((post, index) => ({ post, index }))
   .filter(({ post }) => !rejectedAug13BlogSlugs.has(post.slug))
   .sort((a, b) => {
