@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
-const blog = fs.readFileSync('app/blog/blog-2026-08-31.ts', 'utf8');
+const blog = fs.readFileSync('app/blog/blog-2026-08-31-leg58.ts', 'utf8');
 const research = fs.readFileSync('app/research/research-2026-08-31.ts', 'utf8');
 const blogSlugs = [...blog.matchAll(/slug: '([^']+)'/g)].map((m) => m[1]);
 const researchSlugs = [...research.matchAll(/slug: '([^']+)'/g)].map((m) => m[1]);
@@ -13,6 +13,8 @@ assert.match(research, /published: '2026-08-31'/);
 assert.match(blog, /August 31, 2026/);
 assert.match(research, /August 31, 2026/);
 assert.doesNotMatch(blog + research, /[—–]| -- /, 'humanizer punctuation check');
-assert.match(fs.readFileSync('app/data.ts', 'utf8'), /\.\.\.august31BlogPosts/);
+const data = fs.readFileSync('app/data.ts', 'utf8');
+assert.match(data, /\.\.\.august31Leg58BlogPosts/);
+assert.doesNotMatch(data, /august31BlogPosts/, 'duplicate August 31 blog family absent');
 assert.match(fs.readFileSync('app/fleet-data.ts', 'utf8'), /\.\.\.august31ResearchPosts/);
 console.log('August 31 release: PASS (12 blog, 5 research, unique slugs, visible and structured dates)');
