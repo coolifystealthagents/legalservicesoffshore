@@ -1,0 +1,17 @@
+{
+"generator":"built-in image generation tool",
+"commonPrompt":"Use case: stylized-concept. Asset type: 1536x1024 editorial hero for a law-firm operations blog. Style: polished modern editorial illustration with tactile paper textures and no photorealistic people. Composition: wide landscape, central visual story, safe margins. Palette: deep navy, muted teal, warm paper, restrained coral. Constraints: no readable text, letters, numbers, logos, watermark, identifiable person, gavels, scales of justice, flags, currency, or stock-photo appearance.",
+"routes":[
+  {"route":"/blog/expert-witness-conflict-intake-register","prompt":"Editorial expert profile cards, matter folders, relationship lines, attorney checkpoint."},
+  {"route":"/blog/legal-mail-service-proof-packet","prompt":"Legal mail desk, sealed envelopes, recipient cards, courier evidence, returned proof folder."},
+  {"route":"/blog/mediation-logistics-confirmation-log","prompt":"Mediation rooms, attendance cards, video connection, accessibility notes, lawyer checkpoint."},
+  {"route":"/blog/subpoena-witness-fee-disbursement-worksheet","prompt":"Controlled subpoena fee preparation, approval card, sealed delivery evidence, finance gate."},
+  {"route":"/blog/trademark-specimen-intake-inventory","prompt":"Trademark specimens, dated capture cards, source folders, attorney selection checkpoint."},
+  {"route":"/blog/board-consent-signature-collection-tracker","prompt":"Board consent packet, director signature cards, versioned resolutions, secretary review."},
+  {"route":"/blog/lease-abstraction-source-note-register","prompt":"Commercial lease, amendment tabs, clause cards, structured notes, attorney gate."},
+  {"route":"/blog/litigation-medical-records-chronology-intake","prompt":"Provider folders, date cards, duplicate flags, missing ranges, review boundary."},
+  {"route":"/blog/outside-counsel-guideline-exception-log","prompt":"Outside counsel guidelines, invoice rule cards, exception flags, billing attorney approval."},
+  {"route":"/blog/settlement-document-execution-status-board","prompt":"Settlement party packets, signatures, version controls, receipts, counsel release gate."},
+  {"route":"/blog/regulatory-comment-letter-source-packet","prompt":"Regulatory notice, issue cards, citations, draft lineage, counsel checkpoint."},
+  {"route":"/blog/deposition-errata-return-tracker","prompt":"Transcript pages, line cards, delivery envelope, correction sheet, attorney checkpoint."}
+]}

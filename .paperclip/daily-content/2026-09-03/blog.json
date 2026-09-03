@@ -1,0 +1,33 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/expert-witness-conflict-intake-register","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/legal-mail-service-proof-packet","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/mediation-logistics-confirmation-log","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/subpoena-witness-fee-disbursement-worksheet","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/trademark-specimen-intake-inventory","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/board-consent-signature-collection-tracker","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/lease-abstraction-source-note-register","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/litigation-medical-records-chronology-intake","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/outside-counsel-guideline-exception-log","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/settlement-document-execution-status-board","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/regulatory-comment-letter-source-packet","sourcePaths":["app/blog/blog-2026-09-03.ts"]},
+    {"route":"/blog/deposition-errata-return-tracker","sourcePaths":["app/blog/blog-2026-09-03.ts"]}
+  ],
+  "images": [
+    {"route":"/blog/expert-witness-conflict-intake-register","imagePath":"public/sep3-heroes/expert-witness-conflict-intake-register.png"},
+    {"route":"/blog/legal-mail-service-proof-packet","imagePath":"public/sep3-heroes/legal-mail-service-proof-packet.png"},
+    {"route":"/blog/mediation-logistics-confirmation-log","imagePath":"public/sep3-heroes/mediation-logistics-confirmation-log.png"},
+    {"route":"/blog/subpoena-witness-fee-disbursement-worksheet","imagePath":"public/sep3-heroes/subpoena-witness-fee-disbursement-worksheet.png"},
+    {"route":"/blog/trademark-specimen-intake-inventory","imagePath":"public/sep3-heroes/trademark-specimen-intake-inventory.png"},
+    {"route":"/blog/board-consent-signature-collection-tracker","imagePath":"public/sep3-heroes/board-consent-signature-collection-tracker.png"},
+    {"route":"/blog/lease-abstraction-source-note-register","imagePath":"public/sep3-heroes/lease-abstraction-source-note-register.png"},
+    {"route":"/blog/litigation-medical-records-chronology-intake","imagePath":"public/sep3-heroes/litigation-medical-records-chronology-intake.png"},
+    {"route":"/blog/outside-counsel-guideline-exception-log","imagePath":"public/sep3-heroes/outside-counsel-guideline-exception-log.png"},
+    {"route":"/blog/settlement-document-execution-status-board","imagePath":"public/sep3-heroes/settlement-document-execution-status-board.png"},
+    {"route":"/blog/regulatory-comment-letter-source-packet","imagePath":"public/sep3-heroes/regulatory-comment-letter-source-packet.png"},
+    {"route":"/blog/deposition-errata-return-tracker","imagePath":"public/sep3-heroes/deposition-errata-return-tracker.png"}
+  ],
+  "promptReceipt": ".paperclip/daily-content/2026-09-03/image-prompts.json"
+}
