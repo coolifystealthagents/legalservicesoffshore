@@ -1,0 +1,15 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "research",
+  "entries": [
+    {"route":"/research/offshore-legal-support-custodian-change-evidence-research","sourcePaths":["app/research/research-2026-09-03.ts"],"imagePath":"public/research-thumbnails/research-default.svg"},
+    {"route":"/research/law-firm-email-attachment-completeness-evidence-study","sourcePaths":["app/research/research-2026-09-03.ts"],"imagePath":"public/research-thumbnails/research-default.svg"},
+    {"route":"/research/offshore-legal-signature-packet-status-research","sourcePaths":["app/research/research-2026-09-03.ts"],"imagePath":"public/research-thumbnails/research-default.svg"},
+    {"route":"/research/law-firm-client-fund-instruction-transcription-study","sourcePaths":["app/research/research-2026-09-03.ts"],"imagePath":"public/research-thumbnails/research-default.svg"},
+    {"route":"/research/offshore-legal-expert-materials-provenance-research","sourcePaths":["app/research/research-2026-09-03.ts"],"imagePath":"public/research-thumbnails/research-default.svg"}
+  ],
+  "imageFallback": {
+    "status": "text-complete",
+    "reason": "Gemini image generation is unavailable in this workspace. No stock or substitute image was generated; the existing repository research thumbnail remains unchanged."
+  }
+}
