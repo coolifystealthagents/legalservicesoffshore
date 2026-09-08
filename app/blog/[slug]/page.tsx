@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: post.excerpt,
     alternates: { canonical: url },
-    openGraph: { title: post.title, description: post.excerpt, url, type: 'article' },
+    openGraph: { title: post.title, description: post.excerpt, url, type: 'article', ...('featuredImage' in post ? { images: [{ url: `${base}${post.featuredImage}` }] } : {}) },
   };
 }
 
