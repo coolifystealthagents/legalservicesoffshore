@@ -1,6 +1,6 @@
 # LegalServicesOffshore.com topical authority link ledger
 
-Updated: 2026-08-21
+Updated: 2026-09-09
 
 Purpose: keep one reader question per existing route and make future internal links serve a confirmed Philippines-based legal operations service. This is a planning record, not a performance claim, legal advice, or a publication queue.
 
@@ -27,6 +27,8 @@ Purpose: keep one reader question per existing route and make future internal li
 4. Build the source and target routes, inspect the rendered anchor and canonical URL, then verify sitemap coverage before a release.
 5. Do not repeat a handoff already present on the source route. Record the delivered source/target pair here before selecting a new one.
 
-## First eligible improvement
+## Reconciled execution state
 
-The highest-value unlinked pair to audit is the document-production source-map research route and the E-Discovery Support service page. Its practical question is already defined on both routes, but a release must first confirm that no contextual handoff exists in the rendered source page.
+The document-production source-map route now has one route-local E-Discovery Support handoff. It is delivered and non-duplicable; a future run must not add a second CTA.
+
+The next eligible improvement requires a fresh service-and-route audit that confirms an existing source page has no matching route-local handoff.

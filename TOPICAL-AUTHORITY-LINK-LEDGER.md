@@ -27,10 +27,11 @@ Legal Services Offshore helps law firms and legal teams set up supervised admini
 | --- | --- | --- | --- |
 | `/research/law-firm-billing-source-reconciliation` | `/services/billing-and-time-entry-support` | Present through the shared research handoff record. | Delivered; do not duplicate. |
 | `/research/legal-research-administration-boundaries` | `/services/legal-research-support` | Present once in the generated route-local main region through the existing research handoff record. | Delivered; do not duplicate. |
+| `/research/legal-document-production-source-map-research` | `/services/e-discovery-support` | Present once in the generated route-local main region through the existing research handoff record. | Delivered; do not duplicate. |
 
 ## Execution status
 
-Both listed research-to-service paths are already present in their generated route-local pages. This ledger has no ready link candidate until a separate, fresh service-and-route audit identifies an existing source page with an absent, relevant destination.
+All listed research-to-service paths are already present in their generated route-local pages. This ledger has no ready link candidate until a separate, fresh service-and-route audit identifies an existing source page with an absent, relevant destination.
 
 ## Verification record
 
