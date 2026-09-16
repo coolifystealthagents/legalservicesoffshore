@@ -28,10 +28,17 @@ Legal Services Offshore helps law firms and legal teams set up supervised admini
 | `/research/law-firm-billing-source-reconciliation` | `/services/billing-and-time-entry-support` | Present through the shared research handoff record. | Delivered; do not duplicate. |
 | `/research/legal-research-administration-boundaries` | `/services/legal-research-support` | Present once in the generated route-local main region through the existing research handoff record. | Delivered; do not duplicate. |
 | `/research/legal-document-production-source-map-research` | `/services/e-discovery-support` | Present once in the generated route-local main region through the existing research handoff record. | Delivered; do not duplicate. |
+| `/research/offshore-legal-support-source-to-field-reproducibility-study-campaign-assurance` | `/services/case-file-management` | Present once in the locally generated route-local main region through the typed research handoff record. | Delivered locally; do not duplicate. |
 
 ## Execution status
 
 All listed research-to-service paths are already present in their generated route-local pages. This ledger has no ready link candidate until a separate, fresh service-and-route audit identifies an existing source page with an absent, relevant destination.
+
+## 2026-09-16 source delivery status
+
+- Rendered source: 52f7ff64b74ddca7aa90477cbbcb4af4bd12e948 added the source-to-field reproducibility handoff to Case File Management. The local production artifact has the expected H1, canonical, one route-local href, Article dates `2026-09-14` and `2026-09-16`, and both sitemap locations; this sitemap intentionally has no `lastmod`.
+- Both cache-busted canonical and www route and sitemap probes returned HTTP 403. This is `deployment_pending_public_verification / public_unavailable`, not rollout proof.
+- Preserve rendered-source commit 52f7ff64b74ddca7aa90477cbbcb4af4bd12e948. A later public recheck must test the exact route-local marker and Case File Management href; it must not add a second CTA.
 
 ## Verification record
 
