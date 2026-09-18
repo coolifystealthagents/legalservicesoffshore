@@ -269,6 +269,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
     publisher: { '@type': 'Organization', name: site.brand, url: base },
   };
   const originalSections = 'sections' in post ? post.sections : undefined;
+  const sources = 'sources' in post ? post.sources : undefined;
   const contextualService = (post as { contextualService?: { slug: string; label: string; copy: string } }).contextualService;
   return (
     <>
@@ -287,6 +288,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
             {originalSections ? <>
               {originalSections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
               {contextualService ? <p data-contextual-service-link="true">{contextualService.copy} <a href={`/services/${contextualService.slug}`}>{contextualService.label}</a>.</p> : null}
+              {sources ? <section className="sources" aria-labelledby="sources"><h2 id="sources">Sources</h2><ol>{sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name}</a><p>{source.note}</p></li>)}</ol></section> : null}
               <aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Review checkpoint</p><h2>Keep preparation separate from judgment</h2><p>Give the reviewer the source record, the prepared output, and every unresolved question before release.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
             </> : <>
             <h2>The useful starting point</h2>
