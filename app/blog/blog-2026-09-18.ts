@@ -19,6 +19,21 @@ const topics:readonly Topic[]=[
 {slug:'offshore-legal-support-role-cost-comparison-workload',title:'How to compare an offshore legal support role with the work your firm actually has',excerpt:'Compare staffing options with a workload inventory, review cost, access needs, and service coverage instead of relying on a headline hourly rate.',family:'Legal staffing decisions',service:'reporting-and-qa',task:'support-role workload and option comparison',reader:'firm leaders deciding whether and how to add offshore legal support',inputs:'a four-week task log, queue arrival times, current owners, rework notes, coverage needs, systems involved, review capacity, and vendor or candidate terms',output:'a decision table that compares the same scoped role across service coverage, management load, controls, and total operating assumptions',fields:'task type, monthly volume, handling time, required hours, current owner, review minutes, access level, training need, coverage window, quoted cost basis, exclusions, and exit terms',exception:'options use different scopes, a quote omits management or technology, demand is estimated without a log, legal work is mixed with admin work, or savings depend on unsupported productivity claims',example:'One option quotes a lower monthly amount but excludes holiday coverage and quality review. The comparison records those exclusions and estimates no savings until the firm prices the missing coverage on the same basis.',metric:'queue coverage, attorney hours returned to legal work, review time, rework, missed handoffs, total invoiced cost, and service gaps',pilot:'one well-defined role using four weeks of observed workload and a 30-day controlled launch',sources:[aba451,rule53,nist]},
 ];
 
+const media=[
+ '/aug23-heroes/intake-routing-matrix.png',
+ '/aug23-heroes/translation-intake-registers.png',
+ '/sep3-heroes/expert-witness-conflict-intake-register.png',
+ '/aug21-heroes/law-firm-offshore-support-matter-file-index.png',
+ '/aug23-heroes/document-version-ledgers.png',
+ '/aug23-heroes/billing-exception-queues.png',
+ '/aug23-heroes/deadline-source-checks.png',
+ '/aug23-heroes/client-update-digests.png',
+ '/research-heroes/aug23-document-request-completeness.png',
+ '/sep3-heroes/lease-abstraction-source-note-register.png',
+ '/aug19-heroes/legal-support-quality-review-cadence.webp',
+ '/aug21-heroes/legal-support-offshore-review-queue-capacity-plan.png',
+] as const;
+
 function sections(t:Topic,index:number){
  const id=`S18-B${String(index+1).padStart(2,'0')}`;
  return [
@@ -36,4 +51,4 @@ function sections(t:Topic,index:number){
  ];
 }
 
-export const september18BlogPosts=topics.map((topic,index)=>({slug:topic.slug,title:topic.title,excerpt:topic.excerpt,published:'2026-09-18' as const,minutes:10,sections:sections(topic,index),sources:topic.sources,contextualService:{slug:topic.service,label:`${topic.family} service`,copy:'See how this workflow fits the'}}));
+export const september18BlogPosts=topics.map((topic,index)=>({slug:topic.slug,title:topic.title,excerpt:topic.excerpt,published:'2026-09-18' as const,minutes:10,featuredImage:media[index],socialImage:media[index],sections:sections(topic,index),sources:topic.sources,contextualService:{slug:topic.service,label:`${topic.family} service`,copy:'See how this workflow fits the'}}));

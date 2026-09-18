@@ -15,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) return {};
   const url = `${base}/blog/${post.slug}`;
+  const socialImage = 'socialImage' in post ? `${base}${post.socialImage}` : undefined;
   return {
     title: post.title,
     description: post.excerpt,
     alternates: { canonical: url },
     openGraph: { title: post.title, description: post.excerpt, url, type: 'article', ...('featuredImage' in post ? { images: [{ url: `${base}${post.featuredImage}` }] } : {}) },
+    ...(socialImage ? { twitter: { card: 'summary_large_image', title: post.title, description: post.excerpt, images: [socialImage] } } : {}),
   };
 }
 
