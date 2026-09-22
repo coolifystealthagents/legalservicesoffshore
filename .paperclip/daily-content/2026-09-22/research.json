@@ -18,5 +18,5 @@
   ],
   "build": {"status":"passed","command":"npm run build","staticPages":668},
   "validation": {"status":"passed","command":"node scripts/validate-sep22-research.mjs"},
-  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"pending","attempts":0,"deploymentUuid":"pending","lastObservedAt":"2026-09-22T16:17:52Z"}
+  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"blocked","attempts":3,"deploymentUuid":"unavailable: queue rejected all three requests","lastObservedAt":"2026-09-22T16:26:00Z","blocker":"Coolify3 global deployment queue is full; two older deployments for this application remain queued on commit 4b78ea097a971363f220e92fb621b16f13f2164d.","recoveryAction":"Coolify3 operator must restore queue capacity or allow the two stale queued deployments to drain, then deploy main at dd35329d9bf5cb62e00288dbe047e1f163784836 and live-verify all five URLs."}
 }
