@@ -16,7 +16,7 @@
     {"slug":"attorney-review-capacity-offshore-legal-support-study","route":"/research/attorney-review-capacity-offshore-legal-support-study","sourcePath":"app/research/research-2026-09-22.ts","family":"Hiring Controls","topic":"attorney review capacity for delegated work","sourcesCheckedAt":"2026-09-22","contentHash":"7a03ec6fe2265a70610d7aca94b768532c5e15353843901d508afd09a3331571","publicationDate":"2026-09-22","commitSha":"5acf994b54f7c79d89c93515473b9bce023e87a4","liveUrl":"https://legalservicesoffshore.com/research/attorney-review-capacity-offshore-legal-support-study","verificationTime":"pending","deploymentEvidence":"pending"},
     {"slug":"offshore-legal-support-scope-drift-request-study","route":"/research/offshore-legal-support-scope-drift-request-study","sourcePath":"app/research/research-2026-09-22.ts","family":"Hiring Controls","topic":"scope drift at work request intake","sourcesCheckedAt":"2026-09-22","contentHash":"836bab983b1444a335a61e1a221bd718d934b79cb8b36173553bd45f9314ded7","publicationDate":"2026-09-22","commitSha":"5acf994b54f7c79d89c93515473b9bce023e87a4","liveUrl":"https://legalservicesoffshore.com/research/offshore-legal-support-scope-drift-request-study","verificationTime":"pending","deploymentEvidence":"pending"}
   ],
-  "build": {"status":"passed","command":"npm run build","staticPages":655},
+  "build": {"status":"passed","command":"npm run build","staticPages":668},
   "validation": {"status":"passed","command":"node scripts/validate-sep22-research.mjs"},
   "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"pending","attempts":0,"deploymentUuid":"pending","lastObservedAt":"2026-09-22T16:17:52Z"}
 }
