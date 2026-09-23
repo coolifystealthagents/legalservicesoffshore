@@ -16,7 +16,7 @@
     {"slug":"offshore-legal-support-security-incident-handoff-study","route":"/research/offshore-legal-support-security-incident-handoff-study","sourcePath":"app/research/research-2026-09-23.ts","family":"Workflow Design","topic":"security incident fact preservation and firm-side escalation","sourcesCheckedAt":"2026-09-23","contentHash":"d8fac96d036db97ab15e9258ed0b0aa95dcd167c314650e8e86f82f195ddfe2f","publicationDate":"2026-09-23","commitSha":"0b813b1492b442c1e576c64deab1d97a3b38fc0c","liveUrl":"https://legalservicesoffshore.com/research/offshore-legal-support-security-incident-handoff-study","verificationTime":"pending","deploymentEvidence":"pending"},
     {"slug":"law-firm-offshore-matter-data-return-disposition-research","route":"/research/law-firm-offshore-matter-data-return-disposition-research","sourcePath":"app/research/research-2026-09-23.ts","family":"Scope Benchmarks","topic":"matter-data return and disposition at support closeout","sourcesCheckedAt":"2026-09-23","contentHash":"6321192f6cd828c86cf19561c88416be827dd5058f9997cb04009a0651f6c444","publicationDate":"2026-09-23","commitSha":"0b813b1492b442c1e576c64deab1d97a3b38fc0c","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-matter-data-return-disposition-research","verificationTime":"pending","deploymentEvidence":"pending"}
   ],
-  "build": {"status":"passed","command":"npm run build","staticPages":673},
+  "build": {"status":"passed","command":"npm run build","staticPages":685},
   "validation": {"status":"passed","command":"node scripts/validate-sep23-research.mjs"},
   "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"pending","deploymentUuid":"pending","lastObservedAt":"pending"}
 }
