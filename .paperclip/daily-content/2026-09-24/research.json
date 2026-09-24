@@ -18,5 +18,5 @@
   ],
   "build": {"status":"passed","command":"npm run build","staticPages":690},
   "validation": {"status":"passed","command":"node scripts/validate-sep24-research.mjs"},
-  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"pending","deploymentUuid":"pending","commit":"pending","finishedAt":"pending","liveVerifiedAt":"pending","verifiedCount":0,"evidence":"pending"}
+  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"blocked_auth_and_public_transition","deploymentUuid":"unavailable: configured Coolify3 token returned HTTP 401","commit":"9d608b76ed680c59b0e27cf661ed1daeb072099e","finishedAt":"unavailable: configured Coolify3 token returned HTTP 401","liveVerifiedAt":"not verified as of 2026-09-24T14:24:36Z","verifiedCount":0,"evidence":"Git push to origin main succeeded. Repeated bounded public checks returned the prior deployment 404 for all five new routes and no sitemap entries. Unblock owner: LegalServicesOffshore.com deployment administrator; action: restore this routine agent access to Coolify3 resource e9jxpgaxt81yy3fraxhwmky6 or deploy origin main, then rerun full live verification."}
 }
