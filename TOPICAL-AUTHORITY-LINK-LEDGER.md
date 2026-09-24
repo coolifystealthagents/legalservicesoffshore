@@ -2,7 +2,7 @@
 
 ## 2026-09-24 Blog publishing batch
 
-Twelve new operational guides strengthen the existing intake, litigation review, e-discovery, immigration, contract, corporate records, case file, real estate, billing, and reporting/QA service pillars. Each route links to its matching on-site service through the shared article handoff and is recorded in `.paperclip/daily-content/2026-09-24/blog.json`. Live verification remains pending until production deployment completes.
+Twelve new operational guides strengthen the existing intake, litigation review, e-discovery, immigration, contract, corporate records, case file, real estate, billing, and reporting/QA service pillars. Each route links to its matching on-site service through the shared article handoff and is recorded in `.paperclip/daily-content/2026-09-24/blog.json`. Source commit `4a14d3e68cf20dded795eeb3b1fd410ee0771b00` is on remote `main`; live verification is blocked because the Coolify API returned HTTP 401 and every bounded public route check through `2026-09-24T14:26:56Z` returned HTTP 404.
 
 ## Scope
 
