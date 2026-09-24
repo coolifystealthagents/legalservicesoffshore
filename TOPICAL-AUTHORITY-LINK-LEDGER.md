@@ -1,5 +1,9 @@
 # Legal Services Offshore topical-authority link ledger
 
+## 2026-09-24 Blog publishing batch
+
+Twelve new operational guides strengthen the existing intake, litigation review, e-discovery, immigration, contract, corporate records, case file, real estate, billing, and reporting/QA service pillars. Each route links to its matching on-site service through the shared article handoff and is recorded in `.paperclip/daily-content/2026-09-24/blog.json`. Live verification remains pending until production deployment completes.
+
 ## Scope
 
 This planning record covers existing Philippines-based legal operations service pages and existing research routes. It is a source-only planning artifact; it does not add a public link or claim that a change is live.
