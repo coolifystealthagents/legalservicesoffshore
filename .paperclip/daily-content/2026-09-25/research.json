@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "targetDate": "2026-09-25",
+  "timezone": "UTC",
+  "family": "research",
+  "domain": "legalservicesoffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "leg80-research-20260925",
+  "requiredCount": 5,
+  "releaseMode": "combined-12-blog-plus-5-research",
+  "releaseIntegrator": "Blog routine / browser operator",
+  "sourceCheckedAt": "2026-09-25",
+  "entries": [
+    {"slug":"offshore-legal-support-conflict-check-intake-preparation-study","route":"/research/offshore-legal-support-conflict-check-intake-preparation-study","sourcePath":"app/research/research-2026-09-25.ts","family":"Hiring Controls","topic":"conflict-check intake preparation and attorney-controlled decisions","sourcesCheckedAt":"2026-09-25","contentHash":"be747548a9cc4e4be7d6e0e7905ba030b57b0f195563cdef9d17725e3e914265","publicationDate":"2026-09-25","commitSha":"pending-commit","liveUrl":"https://legalservicesoffshore.com/research/offshore-legal-support-conflict-check-intake-preparation-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"law-firm-offshore-discovery-production-quality-control-research","route":"/research/law-firm-offshore-discovery-production-quality-control-research","sourcePath":"app/research/research-2026-09-25.ts","family":"Workflow Design","topic":"discovery production mechanical quality control","sourcesCheckedAt":"2026-09-25","contentHash":"40fe2e6b0df5b50eea66550417ee15c46fee10b748327c2c7d70755a1a24c649","publicationDate":"2026-09-25","commitSha":"pending-commit","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-discovery-production-quality-control-research","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"offshore-legal-support-entity-formation-filing-preparation-study","route":"/research/offshore-legal-support-entity-formation-filing-preparation-study","sourcePath":"app/research/research-2026-09-25.ts","family":"Scope Benchmarks","topic":"entity-formation filing preparation boundaries","sourcesCheckedAt":"2026-09-25","contentHash":"ddf64be657bc0e7ff38247bce20a1e0f1d5f3a07f81a072a9dee0c816df8bcf3","publicationDate":"2026-09-25","commitSha":"pending-commit","liveUrl":"https://legalservicesoffshore.com/research/offshore-legal-support-entity-formation-filing-preparation-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"law-firm-offshore-contract-obligation-extraction-study","route":"/research/law-firm-offshore-contract-obligation-extraction-study","sourcePath":"app/research/research-2026-09-25.ts","family":"Workflow Design","topic":"contract obligation extraction and lawyer validation","sourcesCheckedAt":"2026-09-25","contentHash":"3ee4ddbaf3608c84d2bad1b89c72771dcebe7eedd809068639d9b54e65dea9e1","publicationDate":"2026-09-25","commitSha":"pending-commit","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-contract-obligation-extraction-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"offshore-legal-support-records-retention-disposition-research","route":"/research/offshore-legal-support-records-retention-disposition-research","sourcePath":"app/research/research-2026-09-25.ts","family":"Hiring Controls","topic":"records retention disposition preparation and authorization","sourcesCheckedAt":"2026-09-25","contentHash":"d8390939200dbd651c516b25e87e8be07f511ae496300ddad092043eae6079cf","publicationDate":"2026-09-25","commitSha":"pending-commit","liveUrl":"https://legalservicesoffshore.com/research/offshore-legal-support-records-retention-disposition-research","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"}
+  ],
+  "build": {"status":"passed","command":"npm run build","staticPages":708},
+  "validation": {"status":"passed","command":"node scripts/validate-sep25-research.mjs"},
+  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"not-attempted-by-research-per-combined-release-override","deploymentUuid":"owned-by-browser-operator","verifiedCount":0,"evidence":"Research stages and pushes only its durable branch. Blog integrates exactly 12 Blog plus 5 Research into one production push; the user/browser operator owns deployment and route verification."}
+}
