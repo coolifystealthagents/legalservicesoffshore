@@ -56,3 +56,22 @@ Reconciled on 2026-09-04 from clean, synchronized `main` at `cc0b24ffeef25b689c1
 - Generated destination H1: `Legal Research Support`.
 - Generated destination canonical: `https://legalservicesoffshore.com/services/legal-research-support`.
 - Both canonical routes are present in the generated sitemap. This repository emits no sitemap `lastmod`; that is its current sitemap contract.
+
+## 2026-09-27 generated-route reconciliation
+
+Fresh production artifacts confirm that all ten mapped source and service routes exist, have their expected H1 and canonical URL, and appear in the sitemap. The sitemap still has no `lastmod` by repository contract.
+
+| Source route | Service route | Route-local href count | Status |
+| --- | --- | ---: | --- |
+| `/research/legal-research-administration-boundaries` | `/services/legal-research-support` | 1 | Delivered; do not duplicate. |
+| `/research/legal-document-production-source-map-research` | `/services/e-discovery-support` | 1 | Delivered; do not duplicate. |
+| `/research/law-firm-billing-source-reconciliation` | `/services/billing-and-time-entry-support` | 1 | Delivered; do not duplicate. |
+| `/research/law-firm-intake-fact-pattern-normalization-study` | `/services/legal-intake-support` | 0 | Verified absent. First eligible future handoff after a separate scoped content review. |
+| `/research/legal-document-production-source-map-research` | `/services/litigation-document-review` | 0 | Verified absent; retain the existing E-Discovery handoff. |
+| `/research/law-firm-contract-renewal-obligation-evidence` | `/services/contract-administration` | 0 | Verified absent. |
+| `/research/law-firm-calendar-event-provenance-study` | `/services/case-file-management` | 0 | Verified absent. |
+| `/research/immigration-case-administration-controls` | `/services/immigration-case-administration` | 0 | Verified absent. |
+| `/research/legal-support-matter-status-evidence` | `/services/real-estate-legal-support` | 0 | Verified absent. |
+| `/research/legal-support-entity-relationship-evidence` | `/services/corporate-records-support` | 0 | Verified absent. |
+
+The next reader-facing candidate is the intake fact-pattern source. It needs its own content and ownership-boundary review before any typed service handoff is added. This reconciliation changes no rendered route.

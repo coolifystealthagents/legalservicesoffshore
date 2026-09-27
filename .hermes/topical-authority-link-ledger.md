@@ -29,6 +29,10 @@ Purpose: keep one reader question per existing route and make future internal li
 
 ## Reconciled execution state
 
-The document-production source-map route now has one route-local E-Discovery Support handoff. It is delivered and non-duplicable; a future run must not add a second CTA.
+Fresh production artifacts were reconciled on 2026-09-27. All ten declared sources and destinations have generated artifacts, expected canonical URLs, and sitemap entries. This sitemap has no `lastmod` by repository contract.
 
-The next eligible improvement requires a fresh service-and-route audit that confirms an existing source page has no matching route-local handoff.
+- Delivered and non-duplicable: Legal Research Administration → Legal Research Support; Document Production Source Map → E-Discovery Support; Billing Source Reconciliation → Billing and Time Entry Support. Each has one route-local href.
+- Verified absent: Intake Fact Pattern Normalization → Legal Intake Support; Document Production Source Map → Litigation Document Review; Contract Renewal Obligation Evidence → Contract Administration; Calendar Event Provenance → Case File Management; Immigration Case Administration Controls → Immigration Case Administration; Matter Status Evidence → Real Estate Legal Support; Entity Relationship Evidence → Corporate Records Support. Each has zero route-local hrefs.
+- Promoted future candidate: Intake Fact Pattern Normalization → Legal Intake Support. Review that one source record, its buyer question, and its firm-only decision boundary before adding any reader-facing handoff.
+
+The document-production source-map route keeps its one E-Discovery Support handoff. Do not add a second CTA to that route.
