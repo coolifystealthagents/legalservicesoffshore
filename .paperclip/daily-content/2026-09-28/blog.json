@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "contract": "september-28-combined-release",
+  "targetDate": "2026-09-28",
+  "timezone": "UTC",
+  "family": "blog",
+  "domain": "legalservicesoffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "requiredCount": 12,
+  "entries": [
+    {
+      "family": "Litigation operations",
+      "topic": "deadline source chronology",
+      "slug": "litigation-deadline-source-chronology-offshore-support",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "3f963c4d65b7c531b7f0635fef7b1161dfc5a95498edc6d986474327813c901d",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/litigation-deadline-source-chronology-offshore-support",
+      "verificationTime": null
+    },
+    {
+      "family": "Corporate records support",
+      "topic": "virtual data room permission review",
+      "slug": "ma-virtual-data-room-permission-review",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "92a247c6f913327c7f7a61f5e448514847b0fcb0a0b464c57919f7c40ff62e74",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/ma-virtual-data-room-permission-review",
+      "verificationTime": null
+    },
+    {
+      "family": "Immigration case administration",
+      "topic": "request-for-evidence inventory",
+      "slug": "immigration-rfe-evidence-inventory-offshore-support",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "ff1baae763b8a3cfcef5f51fa4715cb5eb7917d6893bbe34339f30b03430dd7b",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/immigration-rfe-evidence-inventory-offshore-support",
+      "verificationTime": null
+    },
+    {
+      "family": "IP docketing support",
+      "topic": "renewal instruction receipt registration",
+      "slug": "trademark-renewal-instruction-receipt-register",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "72a32ddfdca50b81cc4cb894fceb537bb110af4fb05c6770e3ec717ab7c4685f",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/trademark-renewal-instruction-receipt-register",
+      "verificationTime": null
+    },
+    {
+      "family": "Contract administration",
+      "topic": "contract redline version lineage",
+      "slug": "contract-redline-version-lineage-offshore-admin",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "ceb2f6279e4588366238e5b499365f91401ecf2dfae04074208d3986abd00d44",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/contract-redline-version-lineage-offshore-admin",
+      "verificationTime": null
+    },
+    {
+      "family": "Billing and time entry support",
+      "topic": "timekeeper rate approval mapping",
+      "slug": "legal-billing-rate-approval-matrix-offshore-support",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "e5cda4eb1cb7ac0a82d142bc7d04d69d9547631a48fea05be3d76198f05c9760",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/legal-billing-rate-approval-matrix-offshore-support",
+      "verificationTime": null
+    },
+    {
+      "family": "Case file management",
+      "topic": "probate asset document intake indexing",
+      "slug": "probate-asset-document-intake-index",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "a40f4ac62c2d3d18728b3de4bf4e39080e8a27a5bb74eaf416944e8ce3df5ea7",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/probate-asset-document-intake-index",
+      "verificationTime": null
+    },
+    {
+      "family": "Corporate records support",
+      "topic": "board materials distribution logging",
+      "slug": "board-materials-distribution-evidence-log",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "dafffd5493a43e86afa0fb5758bcfd26f35a26402ff1e97f8c7fadc9c2ccd235",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/board-materials-distribution-evidence-log",
+      "verificationTime": null
+    },
+    {
+      "family": "Real estate legal support",
+      "topic": "lease abstraction exception triage",
+      "slug": "lease-abstraction-exception-queue-offshore-support",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "29fcd4cd34cd1843b3842d543d81b14f39277d19e4aa9e6891f0223053097030",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/lease-abstraction-exception-queue-offshore-support",
+      "verificationTime": null
+    },
+    {
+      "family": "Litigation operations",
+      "topic": "medical lien correspondence registration",
+      "slug": "medical-lien-correspondence-register-plaintiff-firms",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "264bcf22c8c9ffb2da96b6e73827d1e65e3600303e59c8b7b4c51d884a58dee4",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/medical-lien-correspondence-register-plaintiff-firms",
+      "verificationTime": null
+    },
+    {
+      "family": "Legal operations support",
+      "topic": "client funds instruction packet completeness checking",
+      "slug": "client-funds-instruction-packet-completeness-check",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "07ea4ea9ee3313a5b881efd5a8b251887c74a69c43844eec479e04355a8ac64c",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/client-funds-instruction-packet-completeness-check",
+      "verificationTime": null
+    },
+    {
+      "family": "Regulatory support",
+      "topic": "regulatory exhibit source mapping",
+      "slug": "regulatory-filing-exhibit-source-map-offshore-support",
+      "sources": [
+        "ABA Formal Opinion 08-451",
+        "ABA Model Rule 5.3",
+        "NIST Cybersecurity Framework 2.0"
+      ],
+      "contentHash": "cbedff4b3ae7c1e61aeeed777a7a2936cd91d3e3570b963c714fc07e6ddd916f",
+      "publicationDate": "2026-09-28",
+      "commitSha": "pending-final-release-commit",
+      "deploymentEvidence": "awaiting-browser-operator",
+      "liveUrl": "https://legalservicesoffshore.com/blog/regulatory-filing-exhibit-source-map-offshore-support",
+      "verificationTime": null
+    }
+  ],
+  "audit": {
+    "wordCounts": [
+      1058,
+      1060,
+      1046,
+      1050,
+      1063,
+      1084,
+      1086,
+      1069,
+      1078,
+      1070,
+      1105,
+      1067
+    ],
+    "maxFiveWordShingleJaccard": 0.47368421052631576,
+    "maxPair": [
+      "litigation-deadline-source-chronology-offshore-support",
+      "regulatory-filing-exhibit-source-map-offshore-support"
+    ]
+  },
+  "build": {
+    "status": "passed",
+    "command": "npm run build",
+    "staticPages": 738
+  },
+  "deployment": {
+    "provider": "Coolify3",
+    "resourceUuid": "e9jxpgaxt81yy3fraxhwmky6",
+    "status": "awaiting-browser-operator"
+  }
+}
