@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "cycleLabel": "September28",
+  "targetDate": "2026-09-28",
+  "timezone": "UTC",
+  "family": "research",
+  "domain": "legalservicesoffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "leg82-research-20260928",
+  "baselineSha": "5faf212f98ac519015e21a53980c56b683e62e41",
+  "contentCommitSha": "fa82bf7c5cdfc957892de9ba8a2a29411a38bfea",
+  "requiredCount": 5,
+  "releaseMode": "combined-12-blog-plus-5-research",
+  "releaseIntegrator": "LEG-83 Blog routine",
+  "taskId": "9a506897-fa80-4213-bff2-1e9946987257",
+  "runId": "a616d406-08fb-452e-8fa2-5df04c532ed3",
+  "sourceCheckedAt": "2026-09-28",
+  "entries": [
+    {"slug":"law-firm-offshore-citation-update-preparation-study","route":"/research/law-firm-offshore-citation-update-preparation-study","sourcePath":"app/research/research-2026-09-28.ts","family":"Workflow Design","topic":"citation-update preparation and attorney-controlled treatment analysis","sourcesCheckedAt":"2026-09-28","contentHash":"130e954988164c0155d915c213a5f48d1afeabd3aae0fd0ffce16d7a29c41acd","publicationDate":"2026-09-28","commitSha":"fa82bf7c5cdfc957892de9ba8a2a29411a38bfea","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-citation-update-preparation-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"offshore-litigation-chronology-source-normalization-research","route":"/research/offshore-litigation-chronology-source-normalization-research","sourcePath":"app/research/research-2026-09-28.ts","family":"Scope Benchmarks","topic":"litigation chronology source normalization","sourcesCheckedAt":"2026-09-28","contentHash":"b892f8ea897617404a7e5106613d26ce3707b41a3c05fcb4b102805735352ef7","publicationDate":"2026-09-28","commitSha":"fa82bf7c5cdfc957892de9ba8a2a29411a38bfea","liveUrl":"https://legalservicesoffshore.com/research/offshore-litigation-chronology-source-normalization-research","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"law-firm-offshore-immigration-translation-intake-study","route":"/research/law-firm-offshore-immigration-translation-intake-study","sourcePath":"app/research/research-2026-09-28.ts","family":"Hiring Controls","topic":"immigration translation intake controls","sourcesCheckedAt":"2026-09-28","contentHash":"a01d68286286a16e1ccfba72cf104e125ae7a4813d534ddb53775162c0ec9d36","publicationDate":"2026-09-28","commitSha":"fa82bf7c5cdfc957892de9ba8a2a29411a38bfea","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-immigration-translation-intake-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"offshore-real-estate-title-exception-packet-research","route":"/research/offshore-real-estate-title-exception-packet-research","sourcePath":"app/research/research-2026-09-28.ts","family":"Workflow Design","topic":"real-estate title-exception packet preparation","sourcesCheckedAt":"2026-09-28","contentHash":"9b2acae4fc31d94775ef2937df706a9c834b9b2483e8e611ecab13cdb4b4b01d","publicationDate":"2026-09-28","commitSha":"fa82bf7c5cdfc957892de9ba8a2a29411a38bfea","liveUrl":"https://legalservicesoffshore.com/research/offshore-real-estate-title-exception-packet-research","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"},
+    {"slug":"law-firm-offshore-billing-guideline-exception-preflight-study","route":"/research/law-firm-offshore-billing-guideline-exception-preflight-study","sourcePath":"app/research/research-2026-09-28.ts","family":"Hiring Controls","topic":"billing-guideline exception preflight","sourcesCheckedAt":"2026-09-28","contentHash":"936847eea2f69f56f17e27b6d0c10031c68173fef55c8670416513f59b98f3b6","publicationDate":"2026-09-28","commitSha":"fa82bf7c5cdfc957892de9ba8a2a29411a38bfea","liveUrl":"https://legalservicesoffshore.com/research/law-firm-offshore-billing-guideline-exception-preflight-study","verificationTime":"pending-user-browser-operator","deploymentEvidence":"pending-combined-release"}
+  ],
+  "bodyWordCounts": [1372,1322,1319,1292,1312],
+  "maximumPairwiseFiveWordShingleJaccard": 0.2309,
+  "build": {"status":"passed","command":"npm run build","staticPages":725},
+  "validation": {"status":"passed","command":"node scripts/validate-sep28-research.mjs"},
+  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"not-attempted-by-research","verifiedCount":0,"evidence":"Research is a local-only handoff. LEG-83 integrates exactly 12 Blog plus 5 Research; the browser operator owns deployment and the user owns public-route verification."}
+}
