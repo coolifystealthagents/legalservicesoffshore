@@ -6,7 +6,9 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
-    "validate:routines": "node scripts/validate-routines.mjs"
+    "validate:routines": "node scripts/validate-routines.mjs",
+    "validate:sep28-research": "node scripts/validate-sep28-research.mjs",
+    "validate:sep28-combined": "node scripts/validate-sep28-combined.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
