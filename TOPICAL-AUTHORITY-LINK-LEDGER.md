@@ -75,3 +75,10 @@ Fresh production artifacts confirm that all ten mapped source and service routes
 | `/research/legal-support-entity-relationship-evidence` | `/services/corporate-records-support` | 0 | Verified absent. |
 
 The intake fact-pattern source is the selected bounded handoff. Its typed record points to the existing Legal Intake Support service and retains firm ownership of conflict, urgency, acceptance, and advice decisions. The remaining verified-absent rows require separate reviews.
+
+## 2026-10-01 intake-handoff source delivery status
+
+- Rendered source: `9e8f45f9ad125792ca5b2a55b78b0c798cf17de9` adds one typed `Plan legal intake support` handoff. Local production output has the expected H1, apex canonical, route-local service href count of one, the ownership-boundary marker, Article modified date `2026-10-01`, and the canonical sitemap location. This sitemap intentionally emits no `lastmod`.
+- The repository routine makes GitHub push its terminal deployment boundary and prohibits direct Coolify use. No deployment handle was available and no deployment was triggered.
+- Cache-busted apex and www checks returned HTML `200` with the expected H1 and apex canonical, but neither contained the new handoff label, boundary marker, or modified date. The canonical public sitemap contains the route but no `lastmod`. This is `deployment_pending_public_verification / public_stale`, not rollout proof.
+- Preserve rendered-source commit `9e8f45f9ad125792ca5b2a55b78b0c798cf17de9`. A later recheck must inspect this exact route-local handoff; it must not add a second CTA.
