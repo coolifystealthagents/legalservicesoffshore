@@ -12,7 +12,7 @@ export const august19ResearchPosts: readonly ResearchPost[] = [
     slug: 'law-firm-intake-fact-pattern-normalization-study',
     title: 'When can offshore legal intake normalize a fact pattern without changing its meaning?',
     excerpt: 'A research study of structured intake preparation, provenance, and the point at which normalization becomes legal interpretation.',
-    published: '2026-08-19', sourceDate: '2026-08-19', cluster: 'Intake Evidence',
+    published: '2026-08-19', sourceDate: '2026-08-19', updated: '2026-10-01', serviceLink: { slug: 'legal-intake-support', label: 'Plan legal intake support', title: 'Set up an intake lane the firm can review', body: 'Use this service guide to set approved intake fields, source records, and a clear stop for conflict, urgency, acceptance, or advice questions.' }, cluster: 'Intake Evidence',
     headlineStat: 'A source-backed boundary study of intake fields, original wording, and reviewer decisions.',
     relatedSlugs: ['legal-intake-support-control-benchmark', 'legal-intake-source-verification'], thumbnail: '/research-thumbnails/research-default.svg', sources,
     sections: [
