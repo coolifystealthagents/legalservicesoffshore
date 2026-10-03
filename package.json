@@ -9,7 +9,8 @@
     "validate:routines": "node scripts/validate-routines.mjs",
     "validate:sep28-research": "node scripts/validate-sep28-research.mjs",
     "validate:sep28-combined": "node scripts/validate-sep28-combined.mjs",
-    "validate:intake-handoff": "node scripts/validate-intake-handoff.mjs"
+    "validate:intake-handoff": "node scripts/validate-intake-handoff.mjs",
+    "validate:contract-renewal-handoff": "node scripts/validate-contract-renewal-handoff.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
