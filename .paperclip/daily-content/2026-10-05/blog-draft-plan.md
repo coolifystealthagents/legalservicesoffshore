@@ -103,3 +103,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `npm run lint` passed with both drafts present.
 - The ABA Model Rule 1.9 and 1.10 pages were inspected through web retrieval, but both returned 403 to direct automated HTTP checks. They and the existing ABA Formal Opinion link remain explicit pre-release replacement or verification items; no successful direct check is claimed.
 - Pairwise five-word-shingle overlap with tranche 1 is 0.10% of the smaller shingle set (1 shared shingle of 992). Qualitative review found no repeated worked example, substantive paragraph, or argument sequence.
+
+### Tranche 3
+
+- `deposition-video-transcript-sync-exception-log-offshore-support` is drafted with 10 topic-specific sections and 991 normalized substantive body words.
+- The U.S. Courts Federal Rules PDF and Cornell LII Rule 32 page both returned HTTP 200 (`application/pdf` and `text/html`, respectively). `npm run lint` passed.
+- Pairwise five-word-shingle overlap is 0.20% with tranche 1 and 0.00% with tranche 2. Qualitative review found no repeated substantive paragraph, example, or argument sequence; this article centers on media anchors, file-boundary offset, transformations, and vendor reproduction evidence.
