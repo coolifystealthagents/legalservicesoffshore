@@ -157,3 +157,14 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `privilege-log-source-field-gap-queue-offshore-support` is drafted with 12 independently developed sections and 948 normalized substantive body words.
 - The current U.S. Courts civil-rules page and Cornell LII Federal Rule of Evidence 502 page returned HTTP 200; `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first ten drafts is 1.17%. Qualitative review found no repeated substantive paragraph, worked example, or argument sequence; this article centers on source/log separation, family conflicts, urgent disclosure escalation, restricted exports, and supplementation history.
+
+### Tranche 12 and full Blog-family audit
+
+- `client-file-export-acceptance-checksum-register-offshore-support` is drafted with 11 independently developed sections and 914 normalized substantive body words.
+- Final normalized body lengths in slug order: 1,156; 996; 991; 917; 920; 914; 908; 921; 920; 914; 937; 914. All 12 clear 900 words.
+- Maximum pairwise five-word-shingle overlap across the complete Blog family is 1.43%, between the citator-update and split-billing drafts. Exact repeated substantive paragraphs within the family: zero. Exact paragraph collisions against prior Blog source files: zero.
+- Qualitative review found no shared worked example or repeated substantive argument sequence. Each draft has its own source population, operational artifact, exception scenario, owners, and reader outcome. No reusable prose generator is present.
+- All 22 unique authority URLs in the source file returned HTTP 200 after inaccessible ABA destinations were replaced with directly accessible official state-bar sources. Two eCFR URLs resolved through the Federal Register's official unblock endpoint and returned 200.
+- All five reused repository images exist and have correct signatures: four PNG files begin `89504e470d0a1a0a`; the SVG begins `<svg xml`. Their sizes range from 629 bytes for the SVG to 3,257,133 bytes for the largest PNG. Full HTTP/MIME/decode checks remain a combined local-server gate after integration.
+- `npm run lint` passes with all 12 drafts. The file remains intentionally unimported and undated pending a valid five-article LEG-86 handoff and actual publication-date reconciliation.
+- Full ordered source/rendered paragraph hash comparison, local HTTP routes, canonicals, indexes, sitemap, image responses/decode, clean build, and production push cannot run until Research integration and release dating. Blog source body hashes have been captured in the run evidence and will be persisted in the final combined manifest.
