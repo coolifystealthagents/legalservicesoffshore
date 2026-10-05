@@ -95,3 +95,11 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - Direct HTTP checks returned 200 for two U.S. Courts HTML sources and for the D.C. Circuit PDF (`application/pdf`). The ABA Formal Opinion PDF returned 403 to automated retrieval; it must be rechecked or replaced before release and is not claimed as live-verified.
 - `npm run lint` passed after adding the draft.
 - The article uses a topic-specific consolidated-caption example and a routing-versus-calendaring analysis. It does not use a prior-cycle generator or section sequence. Family-level pairwise overlap will be calculated after all 12 Blog drafts exist.
+
+### Tranche 2
+
+- `lateral-lawyer-conflict-search-packet-offshore-support` is drafted with 10 sections and 973 substantive body words.
+- Its reasoning is organized around separate data populations, raw-versus-normalized terms, a company-name-change example, and the distinction between search hits and lawyer findings. This structure and example are independent of tranche 1.
+- `npm run lint` passed with both drafts present.
+- The ABA Model Rule 1.9 and 1.10 pages were inspected through web retrieval, but both returned 403 to direct automated HTTP checks. They and the existing ABA Formal Opinion link remain explicit pre-release replacement or verification items; no successful direct check is claimed.
+- Pairwise five-word-shingle overlap with tranche 1 is 0.10% of the smaller shingle set (1 shared shingle of 992). Qualitative review found no repeated worked example, substantive paragraph, or argument sequence.
