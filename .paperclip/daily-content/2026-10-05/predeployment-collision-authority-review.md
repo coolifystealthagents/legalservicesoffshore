@@ -1,7 +1,9 @@
 # October 5 predeployment collision and authority review
 
-Pushed production SHA reviewed: `4ca428c14855ca117fd8ceb3eecbb9efbf8cfeb2`  
-Review time: 2026-10-05 UTC  
+Pushed production SHA reviewed: `4ca428c14855ca117fd8ceb3eecbb9efbf8cfeb2`
+
+Review time: 2026-10-05 UTC
+
 Scope: every earlier Blog and Research source article plus all opposite-family articles in the current 17-article batch.
 
 ## Per-article decisions
