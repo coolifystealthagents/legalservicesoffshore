@@ -85,3 +85,13 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - Reconcile the actual release date in the configured site timezone immediately before the sole combined push. All source, visible, structured, manifest, index, sitemap, and ledger dates must match first public verification.
 - Integrate both families, validate every route and complete rendered body, verify local HTTP destinations and image responses, run typecheck/tests/clean production build, fetch and safely rebase, then make one non-force push.
 - Stop production mutations after the combined push. The browser operator owns Coolify3 application `e9jxpgaxt81yy3fraxhwmky6` deployment and must return exact-SHA success evidence before all 17 public routes can be counted.
+
+## Drafting progress
+
+### Tranche 1
+
+- `court-docket-alert-multi-matter-routing-offshore-support` is drafted in `app/blog/blog-2026-10-05-draft.ts` with 10 independently developed sections and 1,132 substantive body words.
+- The draft source is intentionally absent from `app/data.ts` and has no publication-date field. This prevents the October 5 cycle label from becoming a public date before deployment and live verification.
+- Direct HTTP checks returned 200 for two U.S. Courts HTML sources and for the D.C. Circuit PDF (`application/pdf`). The ABA Formal Opinion PDF returned 403 to automated retrieval; it must be rechecked or replaced before release and is not claimed as live-verified.
+- `npm run lint` passed after adding the draft.
+- The article uses a topic-specific consolidated-caption example and a routing-versus-calendaring analysis. It does not use a prior-cycle generator or section sequence. Family-level pairwise overlap will be calculated after all 12 Blog drafts exist.
