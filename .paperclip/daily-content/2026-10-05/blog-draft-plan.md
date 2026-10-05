@@ -151,3 +151,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `split-billing-allocation-evidence-worksheet-offshore-support` is drafted with 11 independent sections and 913 normalized substantive body words.
 - The eCFR allocable-cost example and State Bar of California Rule 1.5 page returned HTTP 200; the ABA Rule 1.5 page that returned 403 was replaced rather than claimed as directly verified. `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first nine drafts is 1.45%. Qualitative review found no repeated substantive paragraph, worked example, or argument sequence; this article distinguishes expense-only instructions, arithmetic tie-outs, system gates, and event-based reversals.
+
+### Tranche 11
+
+- `privilege-log-source-field-gap-queue-offshore-support` is drafted with 12 independently developed sections and 948 normalized substantive body words.
+- The current U.S. Courts civil-rules page and Cornell LII Federal Rule of Evidence 502 page returned HTTP 200; `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first ten drafts is 1.17%. Qualitative review found no repeated substantive paragraph, worked example, or argument sequence; this article centers on source/log separation, family conflicts, urgent disclosure escalation, restricted exports, and supplementation history.
