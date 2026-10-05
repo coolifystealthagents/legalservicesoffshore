@@ -133,3 +133,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `immigration-form-edition-barcode-preflight-offshore-support` is drafted with 10 independent sections and 908 normalized substantive body words.
 - USCIS's Forms Updates and Tips for Filing Forms by Mail pages returned HTTP 200; `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first six drafts is 0.88%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the article centers on page-set identity, generated barcodes, a form-edition transition, controlled answer migration, and attorney release.
+
+### Tranche 8
+
+- `title-survey-exception-source-packet-offshore-support` is drafted with 10 independent sections and 922 normalized substantive body words.
+- ALTA's current land-title survey standards page and the FGDC cadastral data standard PDF returned HTTP 200; `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first seven drafts is 0.69%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the article uses a former/current parcel-label mismatch and separates survey, title, and counsel dispositions.
