@@ -127,3 +127,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `discovery-native-file-metadata-exception-register-offshore-support` is drafted with 10 independent sections and 925 normalized substantive body words.
 - NIST's digital-evidence preservation page and the National Archives digital-preservation page returned HTTP 200; `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first five drafts is 0.65%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; this article uses a migrated-attachment timestamp example and distinguishes source, extracted, normalized, and derived metadata.
+
+### Tranche 7
+
+- `immigration-form-edition-barcode-preflight-offshore-support` is drafted with 10 independent sections and 908 normalized substantive body words.
+- USCIS's Forms Updates and Tips for Filing Forms by Mail pages returned HTTP 200; `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first six drafts is 0.88%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the article centers on page-set identity, generated barcodes, a form-edition transition, controlled answer migration, and attorney release.
