@@ -139,3 +139,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `title-survey-exception-source-packet-offshore-support` is drafted with 10 independent sections and 922 normalized substantive body words.
 - ALTA's current land-title survey standards page and the FGDC cadastral data standard PDF returned HTTP 200; `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first seven drafts is 0.69%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the article uses a former/current parcel-label mismatch and separates survey, title, and counsel dispositions.
+
+### Tranche 9
+
+- `subsidiary-officer-roster-reconciliation-offshore-support` is drafted with 11 independently developed sections and 920 normalized substantive body words.
+- The eCFR officer/director disclosure rule and IRS Form 8822-B page returned HTTP 200; a prior SEC page returning 403 was replaced rather than represented as directly verified. `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first eight drafts is 0.73%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; this article uses an unaccepted-resignation example, role periods, separate source populations, and controlled certification handoffs.
