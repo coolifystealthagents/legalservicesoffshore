@@ -121,3 +121,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `legal-research-citator-update-queue-offshore-support` is drafted with 10 independent sections and 923 normalized substantive body words.
 - PACER's Court Opinions page and GovInfo's United States Courts Opinions collection page returned HTTP 200; `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first four drafts is 0.45%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the draft is organized around proposition-level review, reproducible queries, mixed treatment, collection coverage, and counsel disposition.
+
+### Tranche 6
+
+- `discovery-native-file-metadata-exception-register-offshore-support` is drafted with 10 independent sections and 925 normalized substantive body words.
+- NIST's digital-evidence preservation page and the National Archives digital-preservation page returned HTTP 200; `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first five drafts is 0.65%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; this article uses a migrated-attachment timestamp example and distinguishes source, extracted, normalized, and derived metadata.
