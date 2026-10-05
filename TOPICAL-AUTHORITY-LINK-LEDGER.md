@@ -66,15 +66,21 @@ Fresh production artifacts confirm that all ten mapped source and service routes
 | `/research/legal-research-administration-boundaries` | `/services/legal-research-support` | 1 | Delivered; do not duplicate. |
 | `/research/legal-document-production-source-map-research` | `/services/e-discovery-support` | 1 | Delivered; do not duplicate. |
 | `/research/law-firm-billing-source-reconciliation` | `/services/billing-and-time-entry-support` | 1 | Delivered; do not duplicate. |
-| `/research/law-firm-intake-fact-pattern-normalization-study` | `/services/legal-intake-support` | Source release adds one typed research handoff. | Awaiting local artifact proof and separate rollout evidence; do not add another CTA. |
+| `/research/law-firm-intake-fact-pattern-normalization-study` | `/services/legal-intake-support` | 1 | Delivered; do not duplicate. |
 | `/research/legal-document-production-source-map-research` | `/services/litigation-document-review` | 0 | Verified absent; retain the existing E-Discovery handoff. |
-| `/research/law-firm-contract-renewal-obligation-evidence` | `/services/contract-administration` | 0 | Verified absent. |
+| `/research/law-firm-contract-renewal-obligation-evidence` | `/services/contract-administration` | 1 | Delivered; do not duplicate. |
 | `/research/law-firm-calendar-event-provenance-study` | `/services/case-file-management` | 0 | Verified absent. |
 | `/research/immigration-case-administration-controls` | `/services/immigration-case-administration` | 0 | Verified absent. |
 | `/research/legal-support-matter-status-evidence` | `/services/real-estate-legal-support` | 0 | Verified absent. |
 | `/research/legal-support-entity-relationship-evidence` | `/services/corporate-records-support` | 0 | Verified absent. |
 
-The intake fact-pattern source is the selected bounded handoff. Its typed record points to the existing Legal Intake Support service and retains firm ownership of conflict, urgency, acceptance, and advice decisions. The remaining verified-absent rows require separate reviews.
+The intake fact-pattern and contract-renewal sources now have one typed handoff each. Their records retain firm ownership of conflict, urgency, acceptance, advice, notice, obligations, and contract interpretation. The remaining verified-absent rows require separate reviews.
+
+## 2026-10-05 generated-route reconciliation
+
+A fresh production build verified every listed source and service artifact. All ten have one H1, one self-canonical URL, and a sitemap entry. The five delivered pairs each have one matching href inside the source route's `<main>`; the five remaining candidates have zero. The sitemap intentionally has no `lastmod`.
+
+This source-only correction changes no rendered route. Deployment and public proof are not applicable. Do not add a second CTA to either delivered row.
 
 ## 2026-10-01 intake-handoff source delivery status
 
