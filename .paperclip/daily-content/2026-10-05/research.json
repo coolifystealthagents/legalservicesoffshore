@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "contract": "october-5-combined-release",
+  "cycleLabel": "2026-10-05",
+  "timezone": "UTC",
+  "family": "research",
+  "domain": "legalservicesoffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "leg86-research-20261005",
+  "baselineSha": "5c1a40d50b0eacbb5c1937cccfe031c36f3a9276",
+  "contentCommitSha": "2f46e3c2d7a41a1f7b94fe1d2324cc79ef2d893e",
+  "requiredCount": 5,
+  "releaseMode": "combined-12-blog-plus-5-research",
+  "releaseIntegrator": "LEG-87",
+  "taskId": "27e6412b-ebf2-4bd0-81a2-345e872c8166",
+  "runId": "d5bf6260-1a8f-46b7-ade6-6ebd1011794b",
+  "sourceCheckedAt": "2026-10-05",
+  "publicationLifecycle": "October 5 is a cycle label and draft date. LEG-87 must reconcile visible, structured, index, sitemap, and ledger dates to the actual first-publication date in UTC immediately before the sole combined push.",
+  "entries": [
+    {
+      "slug": "deposition-exhibit-provenance-offshore-research",
+      "route": "/research/deposition-exhibit-provenance-offshore-research",
+      "sourcePath": "app/research/research-2026-10-05.ts",
+      "family": "Workflow Design",
+      "topic": "deposition exhibit source lineage, transformation history, and attorney approval",
+      "sources": [
+        {"title":"Formal Opinion 08-451","publisher":"American Bar Association","url":"https://www.americanbar.org/content/dam/aba/publications/YourABA/201106_08451.authcheckdam.pdf"},
+        {"title":"Model Rule 5.3","publisher":"American Bar Association","url":"https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/"},
+        {"title":"Federal Rules of Civil Procedure","publisher":"United States Courts","url":"https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure"},
+        {"title":"Federal Rules of Evidence","publisher":"United States Courts","url":"https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-evidence"},
+        {"title":"Data Privacy Act of 2012","publisher":"Philippines National Privacy Commission","url":"https://privacy.gov.ph/data-privacy-act/"}
+      ],
+      "contentHash": "cf3866d1cfe424aa7e9fb5e7633596cfa976414bc3779b304431754a1611e255",
+      "publicationDate": "pending-combined-release",
+      "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
+      "liveUrl": "https://legalservicesoffshore.com/research/deposition-exhibit-provenance-offshore-research",
+      "verificationTime": null,
+      "deploymentEvidence": "pending-browser-operator"
+    },
+    {
+      "slug": "bankruptcy-claim-packet-indexing-offshore-study",
+      "route": "/research/bankruptcy-claim-packet-indexing-offshore-study",
+      "sourcePath": "app/research/research-2026-10-05.ts",
+      "family": "Scope Benchmarks",
+      "topic": "bankruptcy claim packet source indexing and amendment history",
+      "sources": [
+        {"title":"Federal Rules of Bankruptcy Procedure","publisher":"United States Courts","url":"https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-bankruptcy-procedure"},
+        {"title":"Bankruptcy Forms","publisher":"United States Courts","url":"https://www.uscourts.gov/forms-rules/forms/bankruptcy-forms"},
+        {"title":"United States Bankruptcy Code","publisher":"Office of the Law Revision Counsel","url":"https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Ftitle11"},
+        {"title":"Formal Opinion 08-451","publisher":"American Bar Association","url":"https://www.americanbar.org/content/dam/aba/publications/YourABA/201106_08451.authcheckdam.pdf"},
+        {"title":"Data Privacy Act of 2012","publisher":"Philippines National Privacy Commission","url":"https://privacy.gov.ph/data-privacy-act/"}
+      ],
+      "contentHash": "2b1137a64ab21a9ba854333247e25c8a23efd0f31ea9887dcf3d5ce624a57e3b",
+      "publicationDate": "pending-combined-release",
+      "commitSha": "2f46e3c2d7a41a1f7b94fe1d2324cc79ef2d893e",
+      "liveUrl": "https://legalservicesoffshore.com/research/bankruptcy-claim-packet-indexing-offshore-study",
+      "verificationTime": null,
+      "deploymentEvidence": "pending-browser-operator"
+    },
+    {
+      "slug": "uscis-receipt-notice-reconciliation-offshore-research",
+      "route": "/research/uscis-receipt-notice-reconciliation-offshore-research",
+      "sourcePath": "app/research/research-2026-10-05.ts",
+      "family": "Workflow Design",
+      "topic": "USCIS receipt notice to filed-package reconciliation",
+      "sources": [
+        {"title":"USCIS Forms","publisher":"U.S. Citizenship and Immigration Services","url":"https://www.uscis.gov/forms/all-forms"},
+        {"title":"USCIS Policy Manual","publisher":"U.S. Citizenship and Immigration Services","url":"https://www.uscis.gov/policy-manual"},
+        {"title":"Case Status Online","publisher":"U.S. Citizenship and Immigration Services","url":"https://egov.uscis.gov/"},
+        {"title":"Formal Opinion 08-451","publisher":"American Bar Association","url":"https://www.americanbar.org/content/dam/aba/publications/YourABA/201106_08451.authcheckdam.pdf"},
+        {"title":"Data Privacy Act of 2012","publisher":"Philippines National Privacy Commission","url":"https://privacy.gov.ph/data-privacy-act/"}
+      ],
+      "contentHash": "5d0f3b97a65bfd68370c414471f3d57862255ad2fe233de7faca2fde918ca1fb",
+      "publicationDate": "pending-combined-release",
+      "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
+      "liveUrl": "https://legalservicesoffshore.com/research/uscis-receipt-notice-reconciliation-offshore-research",
+      "verificationTime": null,
+      "deploymentEvidence": "pending-browser-operator"
+    },
+    {
+      "slug": "trademark-specimen-evidence-inventory-offshore-study",
+      "route": "/research/trademark-specimen-evidence-inventory-offshore-study",
+      "sourcePath": "app/research/research-2026-10-05.ts",
+      "family": "Scope Benchmarks",
+      "topic": "trademark specimen candidate capture provenance and observation boundaries",
+      "sources": [
+        {"title":"Trademark Specimens","publisher":"United States Patent and Trademark Office","url":"https://www.uspto.gov/trademarks/laws/specimen-refusal-and-how-overcome-refusal"},
+        {"title":"Trademark Manual of Examining Procedure","publisher":"United States Patent and Trademark Office","url":"https://tmep.uspto.gov/RDMS/TMEP/current"},
+        {"title":"Formal Opinion 08-451","publisher":"American Bar Association","url":"https://www.americanbar.org/content/dam/aba/publications/YourABA/201106_08451.authcheckdam.pdf"},
+        {"title":"Model Rule 5.3","publisher":"American Bar Association","url":"https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/"},
+        {"title":"Data Privacy Act of 2012","publisher":"Philippines National Privacy Commission","url":"https://privacy.gov.ph/data-privacy-act/"}
+      ],
+      "contentHash": "9b54daddfc802f69ecf76967b661c54c750b4e31647e540f16b95480e83a14b8",
+      "publicationDate": "pending-combined-release",
+      "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
+      "liveUrl": "https://legalservicesoffshore.com/research/trademark-specimen-evidence-inventory-offshore-study",
+      "verificationTime": null,
+      "deploymentEvidence": "pending-browser-operator"
+    },
+    {
+      "slug": "service-of-process-proof-record-offshore-research",
+      "route": "/research/service-of-process-proof-record-offshore-research",
+      "sourcePath": "app/research/research-2026-10-05.ts",
+      "family": "Hiring Controls",
+      "topic": "service-of-process event evidence and source attribution",
+      "sources": [
+        {"title":"Federal Rules of Civil Procedure","publisher":"United States Courts","url":"https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure"},
+        {"title":"Service Section","publisher":"Hague Conference on Private International Law","url":"https://www.hcch.net/en/instruments/conventions/specialised-sections/service"},
+        {"title":"Formal Opinion 08-451","publisher":"American Bar Association","url":"https://www.americanbar.org/content/dam/aba/publications/YourABA/201106_08451.authcheckdam.pdf"},
+        {"title":"Model Rule 5.3","publisher":"American Bar Association","url":"https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/"},
+        {"title":"Data Privacy Act of 2012","publisher":"Philippines National Privacy Commission","url":"https://privacy.gov.ph/data-privacy-act/"}
+      ],
+      "contentHash": "1c7faec77f6968ccae698f93c1b96ea832cd1fc607c5505705ac43f9cffc4b38",
+      "publicationDate": "pending-combined-release",
+      "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
+      "liveUrl": "https://legalservicesoffshore.com/research/service-of-process-proof-record-offshore-research",
+      "verificationTime": null,
+      "deploymentEvidence": "pending-browser-operator"
+    }
+  ],
+  "bodyWordCounts": [1490,1516,1460,1442,1405],
+  "maximumPairwiseFiveWordShingleJaccard": 0.0230,
+  "repeatedParagraphCheck": "passed: no repeated substantive paragraphs across articles",
+  "sharedArgumentCheck": "passed: five distinct decisions, source populations, methods, edge cases, acceptance tests, and reader outcomes",
+  "priorCorpusCollisionCheck": "passed: no slug or topic duplicates, no repeated substantive paragraphs across 228 prior rendered Research pages, and maximum new-to-prior five-word-shingle Jaccard 0.0198",
+  "validation": {"status":"passed","command":"node scripts/validate-oct5-research.mjs"},
+  "typecheck": {"status":"passed","command":"npm run lint"},
+  "build": {"status":"passed","command":"npm run build","staticPages":761},
+  "deployment": {"provider":"Coolify3","resourceUuid":"e9jxpgaxt81yy3fraxhwmky6","status":"not-attempted-by-research","verifiedCount":0}
+}
