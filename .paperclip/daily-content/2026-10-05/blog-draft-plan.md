@@ -145,3 +145,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `subsidiary-officer-roster-reconciliation-offshore-support` is drafted with 11 independently developed sections and 920 normalized substantive body words.
 - The eCFR officer/director disclosure rule and IRS Form 8822-B page returned HTTP 200; a prior SEC page returning 403 was replaced rather than represented as directly verified. `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first eight drafts is 0.73%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; this article uses an unaccepted-resignation example, role periods, separate source populations, and controlled certification handoffs.
+
+### Tranche 10
+
+- `split-billing-allocation-evidence-worksheet-offshore-support` is drafted with 11 independent sections and 913 normalized substantive body words.
+- The eCFR allocable-cost example and State Bar of California Rule 1.5 page returned HTTP 200; the ABA Rule 1.5 page that returned 403 was replaced rather than claimed as directly verified. `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first nine drafts is 1.45%. Qualitative review found no repeated substantive paragraph, worked example, or argument sequence; this article distinguishes expense-only instructions, arithmetic tie-outs, system gates, and event-based reversals.
