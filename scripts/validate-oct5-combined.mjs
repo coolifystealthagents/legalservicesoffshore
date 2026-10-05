@@ -29,7 +29,7 @@ for(const definition of families){
     for(const paragraph of sourceParagraphs){const location=plain.indexOf(paragraph,cursor);assert.ok(location>=cursor,`${slug} ordered rendered paragraph`);cursor=location+paragraph.length;}
     const body=sourceParagraphs.join(' '),bodyWords=words(body);
     assert.ok(bodyWords.length>=definition.minimum,`${slug} ${bodyWords.length} words`);
-    const image=(html.match(/<img[^>]+src="([^"]+)"/)||[])[1];
+    const image=[...html.matchAll(/<img[^>]+src="([^"]+)"/g)].map(match=>match[1]).find(value=>!value.startsWith('/logo.svg'));
     assert.ok(image,`${slug} image`);
     const imageResponse=await fetch(new URL(image,root));
     assert.equal(imageResponse.status,200,`${slug} image HTTP`);
