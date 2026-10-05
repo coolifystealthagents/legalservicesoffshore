@@ -10,7 +10,7 @@ const families=[
 const normalize=value=>value.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#x27;|&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const words=value=>normalize(value).match(/\b[\w’'-]+\b/g)||[];
-const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',validatedAt:new Date().toISOString(),families:{},checks:{}};
+const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',validatedAt:'2026-10-05T19:29:15.653Z',families:{},checks:{}};
 
 for(const definition of families){
   const source=await readFile(definition.source,'utf8');
