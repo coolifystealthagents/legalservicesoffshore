@@ -1,0 +1,430 @@
+{
+  "cycleLabel": "2026-10-05",
+  "publicationDate": "2026-10-05",
+  "timezone": "UTC",
+  "validatedAt": "2026-10-05T19:28:38.062Z",
+  "families": {
+    "blog": {
+      "requiredCount": 12,
+      "verifiedCount": 12,
+      "entries": [
+        {
+          "slug": "court-docket-alert-multi-matter-routing-offshore-support",
+          "bodyWordCount": 1134,
+          "contentHash": "183b26dc34b47071b37278f9148ab87622d04af7415649dd3d29a1fa6af2ab67",
+          "orderedParagraphHashes": [
+            "44def5d7251328dcf534e8180b515ea2222aae0504fe84422fe2d45123030815",
+            "bd3df4ba4f7a216137fa2d464941d400c66ac78ae638826402d93434d7adf2e4",
+            "f4df0300fa8d28e221822d74ab7b26942deb03f592caa676f6cea30b461f1478",
+            "93c08dcb5bfb426a02440488e17c2dcdd8401df90791850ca3c0cab16317ba1f",
+            "beec17a6226eb0f2090b49d2591a20230a3ec71c849764d3e2284ccf413813a1",
+            "d612a4b0f0d9c70e07d71e7df57292ecc309834b21923a14a59a2c4b3869cac9",
+            "0c332911e3e7573f3d9fabcd383b72f5bc48c370461e7ec5444c64661bbbe6a7",
+            "a8096dc8dce780c94d9267adc2d16e947926f923e3adfd9e84a4a4f54dccfce9",
+            "b0f9ea5bd6dca4a67e19a9f6d553c941bfce56758aadc8c83c254cf0ba02b62c",
+            "11a6c1bc05fdb93c8e341f32b52438310603a1b21970867993cc4bedab5b73b5"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/case-file-management"
+          ]
+        },
+        {
+          "slug": "lateral-lawyer-conflict-search-packet-offshore-support",
+          "bodyWordCount": 976,
+          "contentHash": "3d0e491bc56d92d389f9a69a682f8237e4e6175bd6b409d34f858d124bb80a1d",
+          "orderedParagraphHashes": [
+            "111988d753daee8dc6196a53af9eab865e6a2f954402f1bf1d9600b73044bb48",
+            "32642f3fbe58e8691b139574511f167ac6c68c4f9ab748929d626c73d0cd918f",
+            "64d4a095d21c126e5081c92d46164fa38f3a4e7a44db5c81a70eb1bf75b48467",
+            "08301e94f7daa1c2a8dd6531c1ab51f38070a07fba287e33ebeaf6f06cc98a09",
+            "63fca1dc67df0bbccd7df3efe3821d63f35abd966c45eeed32e76a0fadb7a952",
+            "e8c957e5c1b599140f8ef1734dbbb6ef60e911d1b49da9e9e31ee4325ec1449d",
+            "3e2707d1d61bbfc74523f74eaa385df2dd5ed686970ae3297fe7d488a4df1923",
+            "859b08b37e8f3d04a6aa1994dd9faa768cc8494003f91e2915d9bda717989140",
+            "cbb5964713bbad96b1d332be3da9ea94d30ea397b37d5d6c78d76fca7155d434",
+            "b90960d08604500c7f70a8f0a25aa17feae0ba5f6267d5e2a7b35f07d219174a"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/legal-intake-support"
+          ]
+        },
+        {
+          "slug": "deposition-video-transcript-sync-exception-log-offshore-support",
+          "bodyWordCount": 974,
+          "contentHash": "171ca78346f043797dd877d0c309f344812bf8751125f62b5d04772ba4216287",
+          "orderedParagraphHashes": [
+            "207cdd5705b5e4a75501d88e8a89937fa34aba7d4c2535fbdf5dd77e51ede1c7",
+            "1a19712ddcc2fea1ba9e521ddbef27669b1968787443dbf244cb126f8c2658e5",
+            "d4b2d4db6c59a204d1459ccf0656b75a53302a270fc39e84594e5f7c52097ea0",
+            "8d56ca855e103eb802b08a0d95303f6b110073aec205ab9106f90d0a0a83a653",
+            "7f7af2fd10722f8eb94466d35006f2d2f9ab9306586a4dc065e8d02e9b630bf4",
+            "99aeea70d62a9c05f78b62e049fb858155fe19ed3153713a86f7982cabc96a87",
+            "8f12b665ebb7b2cfb2614e119042fb239d654a5bd700c84c778dddfe6ec72f2d",
+            "debe6154154f1eb7de4f2789f4d29039994f06e3129e046da59e935b22654c8f",
+            "f6c8f6d9618714f2f49483e56639b036797af514ad8a7dcd1ff4486dd362f7dd",
+            "6b62a24606b50d52c5825b278bd32c7f68011a436c6e5de2ef702619ba2a2ca2"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/litigation-document-review"
+          ]
+        },
+        {
+          "slug": "executed-contract-exhibit-incorporation-checklist-offshore-admin",
+          "bodyWordCount": 903,
+          "contentHash": "ec5a8c66f3746953fb9d45b3059727b1047573a5653fca5fc42d1c8e2f20f99c",
+          "orderedParagraphHashes": [
+            "d2110e15c8a03f3933d54dcfa1f85dca72e3b88077dad831f1f25587c1bb7442",
+            "c10994b11d601cbf4eb6f6989d2630befeec78dbffe08d1936c941feb0abe882",
+            "62ac0b48b4566ab529067fbda8f14472a58a88788a6d21881beeaeb2cf4ce9a4",
+            "ba753f54cdac6a9e497496459c7c019f99b3a1bc52add4039949dd7f37a12f80",
+            "379a911941c40cf60dfc9f0f9b39070b4f325317597d708b840212e020aafda5",
+            "d8fa78dc6849ec6094322406e88542532c64fba6940e6daba8827543fc357f41",
+            "f7f1b22e328dfe52e20204c41bdf19cd19e919cc90dfb68a6976a2b06466414b",
+            "6f313d2219c8ea49de8ed3d7d281172bbaae3d89b1350dab62571ec61a101000",
+            "63ab904f7313ea70b881b90c80bd4cec69ff000d8d876b29f5015882e25c4a83",
+            "e80a41dee9880b0c4b5385863110c34067c2499131b4ea6748eddc294365d142"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/contract-administration"
+          ]
+        },
+        {
+          "slug": "legal-research-citator-update-queue-offshore-support",
+          "bodyWordCount": 910,
+          "contentHash": "fb3eb6adeaecebbffc7aa3d870d98183a8c6a1dd09015977c73b303518a4efcf",
+          "orderedParagraphHashes": [
+            "96ad8544e53569c0fa6f8f2c9f5fc08bd4678da8194d3a7de266136610923b37",
+            "e02d8f9c9b4b44858aa4ed382f74c02500ed2d9458d89e15f7070985e22046a1",
+            "ea2357617924fc5b671a7e80e6032c64d109e2769229f78f7a1c9d65d6173161",
+            "e683c108a71c9c6fb2a11f7581977c9ea9f6c0310593edfcc17e32ebd7d59a2a",
+            "d157486d3f0b7544441c8198403e534d2be50f45d25c8f96884d566af4664c5c",
+            "afbfd2585f71b500b88b0954f489174002c69186964834f7e9936f77fd674417",
+            "b5907b63c104cc426c4a11a7ee427d21ba96f24b60cbe8ca1fe3bbeae3983853",
+            "df38fba80841cacb544567a321a19c18dde14b84370c8c03167bdfa292df1d76",
+            "8e037f3ac25a53fc9608f556427449a619c6c44e6389b60acbbdb3c7fb89997b",
+            "8de6261a49bf966c0aa42b4dd06c96dd44602ccc28a979be6b1d93590fe291c7"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/legal-research-support"
+          ]
+        },
+        {
+          "slug": "discovery-native-file-metadata-exception-register-offshore-support",
+          "bodyWordCount": 900,
+          "contentHash": "e24cbc6b2749d4c275b0dc5a1855b364c42b03a6e573adae3ee1bc9e2c9cf3bb",
+          "orderedParagraphHashes": [
+            "fc2357cf745de3cc2a0fce8e662d49b1bce58321974ddb907b8b4f5171cd7f72",
+            "1c90c69bcaee8bd39ae228559330dad6464d154d7a46f7d5aa1fd47507cde539",
+            "350a16aa8d4241907308b1b04d182e24b59c91eaeadfb1f8632a9038f3cfa104",
+            "d041ad3265b325a3eade1f4337a6e3651d2a7dfdd8a3982879601cb12e23ad0e",
+            "939997ab0b2cbbeccb3a168c7d73b95591c43d0cdd47bfd2aabb6f9723e622d2",
+            "1db3d2c8d4d1fa751a4c11496857aa4b529f4c2c5bf655f3c497d0f34c2dec05",
+            "4f99227691b7f64562cfa49c48fa15724cfe164aba0fa7c62c541ce808549ce7",
+            "ea2cb74c78b08d07d643e67b71b062a2ff5e443c4832c364d8d6851373982888",
+            "f96e0249c50c57fa2fafd71a9cbc3ff6bc6ff02c1b3a29c5efc30b25fd44fdda",
+            "d3f95ae0d034477d212d153f9c4e603f6816c0a852743b1fa086e6c3a52c3f9e"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/e-discovery-support"
+          ]
+        },
+        {
+          "slug": "immigration-form-edition-barcode-preflight-offshore-support",
+          "bodyWordCount": 935,
+          "contentHash": "e29564ee1da7ead5816d4328caf699f495536d2fd920b2633843774083c9365c",
+          "orderedParagraphHashes": [
+            "0d6eb91684f23d11b8d4b9c8e65c318cf04885de0a158156c3605705748ccea8",
+            "b0932485a13695411a2e48f487d38ec57cdb6172a3547a7acc672ee21e554861",
+            "e7c281c3e9c96615441b234394ce5c718b20bd3afee58b1b12242655521f6d39",
+            "bbb6e7713e531922f44054b2ad9fa4bf1d7ce12d562cd0b76a140125a7d29f25",
+            "af1a10a28d654da3916c5ef58862d4ff3ac997e9ecf18dc7feb423b36c8cc65c",
+            "3239fa26ac90c832d854ab1bb5cfb8faf4b6267867ee602dfba4ab90bc2a0513",
+            "489597ceb132fa227ddc009b8cf6c740f662ea8c60212d7e06dee78ea81c4aab",
+            "5072cd57b44ba9070b2e637b071b0a4f1a83c725d260ceab8a9e46a83972d1bc",
+            "3ed2b6b4f76d7b88a11f047cdb4f1712ee13ffbf05402f6fcd719df06f63444a",
+            "4ed59033627280659c4488a022ead49b7e7cd5c7ecb00810aeafca934816cee1"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/immigration-case-administration"
+          ]
+        },
+        {
+          "slug": "title-survey-exception-source-packet-offshore-support",
+          "bodyWordCount": 901,
+          "contentHash": "e607a468923018b3ba928ba6de4d5ee9fcaf8a5e4ec4f44e4044418170b87c60",
+          "orderedParagraphHashes": [
+            "ab7f68569afc861bb240dfca859dc3ffea7987893c85815bcbc1da0417c33c58",
+            "7b867fe1dfbd183c462194f243a17b5206d32fd31749c6273fb07077de13519a",
+            "bc0af1f2424eda25777f175148f38451dafbf4ce27f2a2673d36efb419c74f8a",
+            "e4995625beeee3720e0e5eee37e39df775f1cd678eed89ca8f669a9582057947",
+            "6afd5bde7f443024fa25f0844b35694dbd91345705134741571b003173ae4bbd",
+            "2bf0ae95d908ef2b1f476d9738ca0b362ffcb74424d5a79801463b5584caf62a",
+            "4414b2b53960d65924f9c2ed58a7a0638e1b92b4c1bdeb020dab30f38e53a136",
+            "0fff270bd2058c223bc19284d6c5c9b209b1eabd5f458b8158fe72eac8f00b41",
+            "646b59d9dfd4848e66458849b384726e7ea7de0169d4bc2c5c8432591b4d896a",
+            "21596a84c850c078b694edc87082c628caec1fabb153f4bd904d1210bcd3d878"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/real-estate-legal-support"
+          ]
+        },
+        {
+          "slug": "subsidiary-officer-roster-reconciliation-offshore-support",
+          "bodyWordCount": 900,
+          "contentHash": "e991f05869de047b1887f55762ea954118a159b622531eaa17273559920e5f42",
+          "orderedParagraphHashes": [
+            "07c742716cd49c152274002422e9960693fb3042982720440e7b5dae0d0d9bdb",
+            "faf6e9914260164be43c82dec573fe7696a9b02af7a9cc6f792bd530491ae926",
+            "90aa10cee5762be0a5f466e3219a82f3878db892b59f97019feac0c6255ca53f",
+            "f1cccb7f97c64a610e05a8f9667af056abe27f75e6451520be0717220f9c464b",
+            "31a8fa3b1b6fa226e3bea21096a8c962d86eda2dae9f5089d920c8cd40b2dc03",
+            "502ed0ef53f7b834adff4f641cf90e911e492688d42e79dd7005ac983cceee96",
+            "ec236baafe22a5e2173c7f390ebffe30a721ef215f2668da11ee64ca68870f5d",
+            "d176be6a61955fa2b06ced845071985ffc906bf693e1883afd23586ed98e6192",
+            "c264549a39e13fd77d7d0b21324c15925e8a94e06a909554321518e341442d35",
+            "2d633555497ee7dc607535292faecc2390f29671f583edd313ccf4a4ede51425",
+            "b42bc29006a4dc20495b7b0bd36982c0f06ce86d3565a820aae8a371ba021296"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/corporate-records-support"
+          ]
+        },
+        {
+          "slug": "split-billing-allocation-evidence-worksheet-offshore-support",
+          "bodyWordCount": 941,
+          "contentHash": "2fc19bb399759c9ee3abac711f2201daef5038211b6f90cabaed7a5fa60b9ba8",
+          "orderedParagraphHashes": [
+            "a3fd45524e5d6821f475fd4f8f42f7a58aee9da94bf708bfda91ab62811cbe52",
+            "683bb31a81fa521e4867918b7e711cd1fab2348d6fa6c9f345f8e47cbb92f76e",
+            "4f2eabaa9d35e3ec01d0fd26e30bbd41f746d5771f0d3737df24d7cab893b526",
+            "182c6e3f00aa2c032506d59b9231e18e81f03828c1e45a3166bfde2168731d02",
+            "6b95f757b75b60803b6cf951e4c20bb5dd36e462b2dc7301c2d495b6914b541b",
+            "721e0351d3b06784e1f4cb74a85ee4da77302e656a355f6d473bf27ffdf95525",
+            "49f0fdb48bfd2e5838bf02c7b0de42d35b48ed679f3ca4bea05b1fce8762077a",
+            "36d4deeecc4fc0766677b5207e14d961290e1b5edadaea7d35298a554e3a2cf0",
+            "a14d30c80a710b09b3a4eef13bba5f62ad8850b17187559d4dbcdc8285af81a5",
+            "fb1cce722818c38b3d6d9ac87a9e0e8f307456d89df4e9624d6fac8399edce29",
+            "cede27c82e0a7a20a842afe0e604490daa2f2e74a460e19c4bcec370d08a33af"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/billing-and-time-entry-support"
+          ]
+        },
+        {
+          "slug": "privilege-log-source-field-gap-queue-offshore-support",
+          "bodyWordCount": 919,
+          "contentHash": "ec3326d708f266c1527a707715dd9910acf12f076e8f373769c058717c7eb48a",
+          "orderedParagraphHashes": [
+            "b6af558ba626d5afd49762f66980453cbb8e7d761d22cca43c7724990ca7f4be",
+            "da1d759e9e2768fe7d37748d3c9c876a6d23e8cdb540fe9df0dda5b79f2f0f15",
+            "dd7178acf22d3d842adb44b280607873be55f5bf2a38cea6a2607eac9b9524ac",
+            "e08a18f0145d65931ba42ca01998491a5da57ad15a4ea244f607cc00cb24e310",
+            "0925b56be5153b86009866e37ea4edc5da13c237db6153322d73d0ade798636a",
+            "90175ec3c34eb972c0f5b4aab9c9119c9188d3da435a8503d413e6ba8f59537c",
+            "f7e682830911b8d6193dbce376df80dd0082ccb0489b5eae8f636291997caab9",
+            "c0c5b3624c70aa82e8a20c032578903d8d51ced08cf3ff00692876929205f118",
+            "e2657f3db52b7ba4f2d9b8ffa9f9aa3805ea053087a52f158e83f11f03a2992a",
+            "85e0a5b8861201ebb1f49b99dc5455c924782b95faa11d4e5144dac3f8912734",
+            "3cec454830e77b174ee795abc6ebde6f79e42efe0a3eac1489d8b4120bcc6866",
+            "878b9847ab9498b02fe4e12ecf4c558276cdc974de36217d020b217f5a4e9bf7"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/litigation-document-review"
+          ]
+        },
+        {
+          "slug": "client-file-export-acceptance-checksum-register-offshore-support",
+          "bodyWordCount": 936,
+          "contentHash": "75a8dd1a57b34f60506369a4b4cb3c6e86e61a6866203e0b85b877e45c530e52",
+          "orderedParagraphHashes": [
+            "d80495ae14815ef0aef003b4e504de125bb7386ae881e647740a2d7e43ee6067",
+            "6de402890cfaa4bff2fd74fbcfb6bd95ab70856f76eb6f4d8c584bd994739699",
+            "8e1985768d9f07a0b474fb88aa7ae1bf24c29bde0dc2f2efe1d7f8148cad8ed1",
+            "c0a88013d345e0d1190d38ad8b6909e406401e550c63d6b110c7d8cd9f95d382",
+            "61f4f48e06cea3ec330e176f596193f4cd2d0aa247c6fbd2848e38f83aa01eeb",
+            "10044d6cfd75d43fa1af26be7f29f33d36a9995645178d6cb5440c3e030084bf",
+            "b84c6607b5030711cdc214ae27c103d419eccc7cde1b04eba35ab67d4a893a8a",
+            "4b23709a77c02ff734074945a58f7a88cd4287fd3b363f71d934f45ad2f8792b",
+            "342c6af459ea2efc8e1a08f37d195997221f1799bf5086488106822c893a21da",
+            "0b69903d78d2544b872a0e5611214eb728b88292307ce9ce461f856480d3e869",
+            "d10ff6b4dd64a5439e0fff51722d41ee817df73107098c36ee261ba59ce55890"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/case-file-management"
+          ]
+        }
+      ]
+    },
+    "research": {
+      "requiredCount": 5,
+      "verifiedCount": 5,
+      "entries": [
+        {
+          "slug": "deposition-exhibit-provenance-offshore-research",
+          "bodyWordCount": 1313,
+          "contentHash": "9e1dcd63a11bf5672499b8001aca1ee59e0537c86fc1b05b92ad8b54843c88e1",
+          "orderedParagraphHashes": [
+            "95b7c94d26cb44a74089a0ba02272d255444f9c289406170250a5ee988a687ec",
+            "ee373af5b1fb860efb0cb197e06a3d90b53f613fe1a788e917ecce6492eed68e",
+            "d7d1ff02cd7f9bd95c123729b4911aa91379d3067820a4d1e17ce692b175bcc0",
+            "ff676164ea2e03cdac2ee7cad5f12c3bb012835501f156d22f99452d3061a06f",
+            "427b0513c92be4d5a01cb21cec0d4ee197a8d875fbc4dfb684369785e9d8d1c4",
+            "5d9302383ad1e2ece6cfe20afe490f279e0c8cd681958b64bedc3c084a062da1",
+            "36095ba77e00949b6c3325fa299f46616fe850f01908adad557140ceff1b0c1e",
+            "62009712bb9064ddb34987cef0b013da7b53c06a77465b1da842807a440ada91",
+            "fd3c78edc0b89731f8cb48a16a38907f49d4c8110837466fa39917039e8acec6"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/litigation-document-review",
+            "/research/bankruptcy-claim-packet-indexing-offshore-study",
+            "/research/uscis-receipt-notice-reconciliation-offshore-research"
+          ]
+        },
+        {
+          "slug": "bankruptcy-claim-packet-indexing-offshore-study",
+          "bodyWordCount": 1329,
+          "contentHash": "a7e3d1bf9d84b8e9c98fe9a06f234bbbdae077382457cc971f24a36e7d5219d6",
+          "orderedParagraphHashes": [
+            "98a68b5c1c3fce43f0f55110500d03acbc01d6d93be313b64155e5af3bef0273",
+            "bca6a686443d0ecc25faba67a9446958e87b240d9970c2813611eed7f9583ed7",
+            "78f00e39b7919d485b7e8d9c2cf104608f7258655a486d227911edaed5c762cf",
+            "c5278812db6e638f063b503f1633f40e28aea6853edd283793aafb55db48b5dc",
+            "9370026ac134da8b211f4de2cd420b4148d8d1325d683d22eedf364ff37d584e",
+            "bd98eb452bbe12f0f5700150c3be731a701c1189790aa3b91e121dc604c29695",
+            "1f0170e9f3042dfcd8825324af1fc6b5c6857f126294159ebfdf2d256757c600",
+            "19680348aee4fdb463969f60b7cf322764653b7719a348dc49139c72b4fa61b8",
+            "ee02f7ddd1551127c6168d29ee479edb2631651850dd50fd59d4bd74a4a54e99"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/case-file-management",
+            "/research/uscis-receipt-notice-reconciliation-offshore-research",
+            "/research/trademark-specimen-evidence-inventory-offshore-study"
+          ]
+        },
+        {
+          "slug": "uscis-receipt-notice-reconciliation-offshore-research",
+          "bodyWordCount": 1275,
+          "contentHash": "f558fcfdbf712919199db7bd47d6580b1e316d5798be92f57db195d91de54d14",
+          "orderedParagraphHashes": [
+            "f569320416bdcd01433e3cce29d3b9159259c0d6641d9e4d9fc2f4a5f471c55a",
+            "7a500edfd42fd90d23d18561806fe79f6a71e4dbdb02091b9a9bea6437e96353",
+            "0a8ceb4f36af13b1ac8f04057cfb2a1bca188d2d6102e522a4829fb88e6772eb",
+            "b956da7669e6c68f0e33974774d32bd8dd32e3d82657879d80274bd01dee47d0",
+            "af55312dd9b72690e213fe3819143adcc20b42405caa671698f3d8500cf8c653",
+            "2e7fec3fd3045bc81eb4753c80da05e5fae7af76cc0b6b7009d770c4fdb4f9de",
+            "23329c850dd501e1ae484cbe8005f4dda5038227789e9b1d90e66ba936195054",
+            "4151525e00a4cedcd6ffa2326d86b040fa7280b854318a3c6321cbe4463c371d",
+            "ffda4b56463cdfdff58e283d188147c6896b15bf3c45399fa0dec28527cf700d"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/immigration-case-administration",
+            "/research/trademark-specimen-evidence-inventory-offshore-study",
+            "/research/service-of-process-proof-record-offshore-research"
+          ]
+        },
+        {
+          "slug": "trademark-specimen-evidence-inventory-offshore-study",
+          "bodyWordCount": 1273,
+          "contentHash": "ed6e30b8d01d57d6c4a777b1a8994d3c71d26e15cae0847511326abdbf992575",
+          "orderedParagraphHashes": [
+            "478937a158e004ecf3a3459ef659a6fa91cd7badbc89d5e57410dc8fba228eab",
+            "77bf8c922afad8c54d810878f4d3bcd8ab1c8c2b3cf02d043540e36eb4dc5de1",
+            "037c7196b5c637c47bd1c3d7fe94a9294b26755becdc03a7aba1904d0205fc9e",
+            "e4edd65728f7149f34201b3364ca55d8cca0fb5ef211391a6952531d7677453a",
+            "dc7567126998849075a72993c23204c052bd049a85a13b569a58a7800977d217",
+            "62e1f38384bde5c0446007cc7f7e7f20fe14b1fcba259192e0fa960f67153ba7",
+            "7cfb8cc4d3788141a8a32cb625d05b8409ac960ce24df77d3a07426ea18354a0",
+            "630eb18c466304ab23b237c8b5ed5fb68c70e6e6d9043727e5f4576fc5225ed7",
+            "eb0426910d259251e44220c19a5e2c09a4ca2a24cf60d98ae024edc16642f0db"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/legal-research-support",
+            "/research/deposition-exhibit-provenance-offshore-research",
+            "/research/bankruptcy-claim-packet-indexing-offshore-study"
+          ]
+        },
+        {
+          "slug": "service-of-process-proof-record-offshore-research",
+          "bodyWordCount": 1236,
+          "contentHash": "5ed45490b054bf16f79e15a6357d74b487deb8734de533dfb0121ed9e47342e5",
+          "orderedParagraphHashes": [
+            "68e4d3ede2018372180376b14f98919e5f4642f313c98fe1bef40428a7df6845",
+            "ccfba55d95ae016fa034427283b3341141b934f796c36b158c6d5bfffef8defe",
+            "716308b8576f554b757a6cccb38e4fccb636775c2c7076158be91e6bc9ed3772",
+            "429b678e9bcf9a46d51bfd5d1f99e94a8fd47753e9814af21aa7ae45126fc9d8",
+            "d61b6e03337f8424de7482544d33db41bcca3b0f982eb54fe9e0b096454f3f65",
+            "d84766d9aa4044fcfeaa8f6deae58ab7fa5dc5f2d99239bfd95b09bff57c69ef",
+            "084a97fe8734576a244e39b94d0ce71e928fabe7dc31201918eb52d6ce929598",
+            "90aaa1172e4326d536ae6e76d96e1efec8f661147499dead7e26f54ba06f8010",
+            "cd6d2335b569a9355113ade9435e985242ad3000ab96080f982629b9793aafce"
+          ],
+          "image": "/logo.svg?v=20260730-niche-logo",
+          "mime": "image/svg+xml",
+          "signature": "3c73766720786d6c",
+          "internalDestinations": [
+            "/services/case-file-management",
+            "/research/bankruptcy-claim-packet-indexing-offshore-study",
+            "/research/uscis-receipt-notice-reconciliation-offshore-research"
+          ]
+        }
+      ]
+    }
+  },
+  "checks": {
+    "cleanBuild": "passed: 773 static pages",
+    "typecheck": "passed",
+    "fullOrderedSourceRenderedParagraphHashes": "passed",
+    "actualImageHttpMimeSignatureDecode": "passed",
+    "contextualInternalDestinations": "passed",
+    "familyIndexes": "passed",
+    "sitemap": "passed"
+  }
+}
