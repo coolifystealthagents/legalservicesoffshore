@@ -23,6 +23,18 @@
       "image": "/aug23-heroes/deadline-source-checks.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/deadline-source-checks.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3975010,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/case-file-management"
       ]
@@ -46,6 +58,18 @@
       "image": "/aug23-heroes/document-version-ledgers.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/document-version-ledgers.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1402,
+        "height": 1122,
+        "channels": 4,
+        "decodedRasterBytes": 6292176,
+        "rasterizedPngBytes": 2917075,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/legal-intake-support"
       ]
@@ -69,6 +93,18 @@
       "image": "/aug23-heroes/document-version-ledgers.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/document-version-ledgers.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1402,
+        "height": 1122,
+        "channels": 4,
+        "decodedRasterBytes": 6292176,
+        "rasterizedPngBytes": 2917075,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/litigation-document-review"
       ]
@@ -92,6 +128,18 @@
       "image": "/aug23-heroes/document-version-ledgers.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/document-version-ledgers.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1402,
+        "height": 1122,
+        "channels": 4,
+        "decodedRasterBytes": 6292176,
+        "rasterizedPngBytes": 2917075,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/contract-administration"
       ]
@@ -115,6 +163,18 @@
       "image": "/aug23-heroes/deadline-source-checks.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/deadline-source-checks.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3975010,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/legal-research-support"
       ]
@@ -138,6 +198,18 @@
       "image": "/research-heroes/aug20-access-entitlement.svg",
       "mime": "image/svg+xml",
       "signature": "3c73766720786d6c",
+      "decode": {
+        "image": "/research-heroes/aug20-access-entitlement.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 33853,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/e-discovery-support"
       ]
@@ -161,6 +233,18 @@
       "image": "/aug23-heroes/deadline-source-checks.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/deadline-source-checks.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3975010,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/immigration-case-administration"
       ]
@@ -184,6 +268,18 @@
       "image": "/aug23-heroes/matter-closeout-records.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/matter-closeout-records.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3635969,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/real-estate-legal-support"
       ]
@@ -208,6 +304,18 @@
       "image": "/aug23-heroes/matter-closeout-records.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/matter-closeout-records.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3635969,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/corporate-records-support"
       ]
@@ -232,6 +340,18 @@
       "image": "/aug23-heroes/billing-exception-queues.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/billing-exception-queues.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 4063735,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/billing-and-time-entry-support"
       ]
@@ -257,6 +377,18 @@
       "image": "/aug23-heroes/document-version-ledgers.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/document-version-ledgers.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1402,
+        "height": 1122,
+        "channels": 4,
+        "decodedRasterBytes": 6292176,
+        "rasterizedPngBytes": 2917075,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/litigation-document-review"
       ]
@@ -281,6 +413,18 @@
       "image": "/aug23-heroes/matter-closeout-records.png",
       "mime": "image/png",
       "signature": "89504e470d0a1a0a",
+      "decode": {
+        "image": "/aug23-heroes/matter-closeout-records.png",
+        "httpStatus": 200,
+        "mime": "image/png",
+        "sourceFormat": "png",
+        "width": 1536,
+        "height": 1024,
+        "channels": 4,
+        "decodedRasterBytes": 6291456,
+        "rasterizedPngBytes": 3635969,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      },
       "internalDestinations": [
         "/services/case-file-management"
       ]

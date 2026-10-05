@@ -60,3 +60,30 @@ Exact pushed-head body hashes, in the same 12 Blog then five Research order used
 15. `f558fcfdbf712919199db7bd47d6580b1e316d5798be92f57db195d91de54d14`
 16. `ed6e30b8d01d57d6c4a777b1a8994d3c71d26e15cae0847511326abdbf992575`
 17. `5ed45490b054bf16f79e15a6357d74b487deb8734de533dfb0121ed9e47342e5`
+
+## Full decoder and rasterizer receipts
+
+The local validator fetched each featured asset through the production server, passed the returned bytes to Sharp/libvips, decoded the complete image to an RGBA raw raster, asserted `raw bytes = width × height × channels`, and encoded the decoded result to PNG. For SVG inputs, this is an actual vector rasterization rather than an XML-presence check. Every encoded result begins with the PNG signature `89504e470d0a1a0a`.
+
+| Featured asset | HTTP/MIME | Decoder format | Dimensions | Channels | Full decoded raster bytes | Encoded PNG bytes |
+| --- | --- | --- | --- | ---: | ---: | ---: |
+| `/aug23-heroes/deadline-source-checks.png` | 200 `image/png` | PNG | 1536 × 1024 | 4 | 6,291,456 | 3,975,010 |
+| `/aug23-heroes/document-version-ledgers.png` | 200 `image/png` | PNG | 1402 × 1122 | 4 | 6,292,176 | 2,917,075 |
+| `/research-heroes/aug20-access-entitlement.svg` | 200 `image/svg+xml` | SVG | 1200 × 630 | 4 | 3,024,000 | 33,853 |
+| `/aug23-heroes/matter-closeout-records.png` | 200 `image/png` | PNG | 1536 × 1024 | 4 | 6,291,456 | 3,635,969 |
+| `/aug23-heroes/billing-exception-queues.png` | 200 `image/png` | PNG | 1536 × 1024 | 4 | 6,291,456 | 4,063,735 |
+| `/research-thumbnails/research-default.svg` | 200 `image/svg+xml` | SVG | 1200 × 630 | 4 | 3,024,000 | 22,309 |
+
+All 17 routes map to one of these six successfully decoded assets. The per-route `decode` object and the deduplicated `distinctFeaturedAssets` receipt are persisted in `combined-validation.json` and the Blog receipt in `blog.json`.
+
+## Exact local-candidate difference from production
+
+Production remains frozen at `4ca428c14855ca117fd8ceb3eecbb9efbf8cfeb2`. The local candidate is a descendant and changes only:
+
+- `app/blog/blog-2026-10-05-draft.ts`: replace the dead D.C. Circuit PDF citation with the live official D.C. Circuit CM/ECF page; article body, date, slug, and body hash do not change.
+- `scripts/validate-oct5-combined.mjs`: select featured article images rather than the header logo and require Sharp full-image raw decoding plus PNG encoding/rasterization assertions.
+- `.paperclip/daily-content/2026-10-05/blog.json`: refresh the 12 Blog image receipts with actual featured assets and decoder output.
+- `.paperclip/daily-content/2026-10-05/combined-validation.json`: refresh the all-17 image receipts and add six deduplicated decoder/rasterizer receipts.
+- `.paperclip/daily-content/2026-10-05/predeployment-collision-authority-review.md`: add all-17 collision decisions, restricted-authority browser evidence, exact body hashes, and decoder receipts.
+
+No public article body, title, slug, publication date, canonical, index entry, sitemap entry, or featured-asset file changes. No production push or deployment occurred.

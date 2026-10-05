@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile,writeFile} from 'node:fs/promises';
+import sharp from 'sharp';
 
 const root='http://127.0.0.1:3105';
 const families=[
@@ -10,7 +11,8 @@ const families=[
 const normalize=value=>value.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#x27;|&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const words=value=>normalize(value).match(/\b[\w’'-]+\b/g)||[];
-const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',validatedAt:'2026-10-05T19:29:15.653Z',families:{},checks:{}};
+const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',validatedAt:'2026-10-05T20:04:00.000Z',families:{},distinctFeaturedAssets:[],checks:{}};
+const decodedAssets=new Map();
 
 for(const definition of families){
   const source=await readFile(definition.source,'utf8');
@@ -33,18 +35,32 @@ for(const definition of families){
     assert.ok(image,`${slug} image`);
     const imageResponse=await fetch(new URL(image,root));
     assert.equal(imageResponse.status,200,`${slug} image HTTP`);
-    const bytes=new Uint8Array(await imageResponse.arrayBuffer()),mime=imageResponse.headers.get('content-type')||'';
-    const signature=Buffer.from(bytes.slice(0,8)).toString('hex');
+    const bytes=Buffer.from(await imageResponse.arrayBuffer()),mime=imageResponse.headers.get('content-type')||'';
+    const signature=bytes.subarray(0,8).toString('hex');
     assert.ok((mime.includes('png')&&signature==='89504e470d0a1a0a')||(mime.includes('svg')&&Buffer.from(bytes).toString('utf8').includes('<svg')),`${slug} image MIME/signature/decode`);
+    let decode=decodedAssets.get(image);
+    if(!decode){
+      const metadata=await sharp(bytes).metadata();
+      const raw=await sharp(bytes).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+      const rasterizedPng=await sharp(bytes).png().toBuffer();
+      assert.ok(metadata.width>0&&metadata.height>0,`${image} decoder dimensions`);
+      assert.equal(raw.info.width,metadata.width,`${image} decoded width`);
+      assert.equal(raw.info.height,metadata.height,`${image} decoded height`);
+      assert.equal(raw.data.length,raw.info.width*raw.info.height*raw.info.channels,`${image} decoded raster length`);
+      assert.equal(rasterizedPng.subarray(0,8).toString('hex'),'89504e470d0a1a0a',`${image} rasterized PNG`);
+      decode={image,httpStatus:imageResponse.status,mime,sourceFormat:metadata.format,width:metadata.width,height:metadata.height,channels:raw.info.channels,decodedRasterBytes:raw.data.length,rasterizedPngBytes:rasterizedPng.length,rasterizedPngSignature:'89504e470d0a1a0a'};
+      decodedAssets.set(image,decode);
+    }
     const internal=[...html.matchAll(/href="(\/(?:services|blog|research)\/[^"#?]+)"/g)].map(match=>match[1]);
     for(const destination of new Set(internal)){const linked=await fetch(new URL(destination,root));assert.equal(linked.status,200,`${slug} internal ${destination}`);}
-    entries.push({slug,bodyWordCount:bodyWords.length,contentHash:hash(bodyWords.map(word=>word.toLowerCase()).join(' ')),orderedParagraphHashes:sourceParagraphs.map(paragraph=>hash(paragraph)),image,mime,signature,internalDestinations:[...new Set(internal)]});
+    entries.push({slug,bodyWordCount:bodyWords.length,contentHash:hash(bodyWords.map(word=>word.toLowerCase()).join(' ')),orderedParagraphHashes:sourceParagraphs.map(paragraph=>hash(paragraph)),image,mime,signature,decode,internalDestinations:[...new Set(internal)]});
   }
   report.families[definition.family]={requiredCount:slugs.length,verifiedCount:entries.length,entries};
 }
 
 for(const path of ['/blog','/research','/sitemap.xml']){const response=await fetch(root+path);assert.equal(response.status,200,`${path} HTTP`);const text=await response.text();const selected=path==='/sitemap.xml'?families:families.filter(item=>`/${item.family}`===path);for(const family of selected)for(const entry of report.families[family.family].entries)assert.ok(text.includes(entry.slug),`${path} includes ${entry.slug}`);}
-report.checks={cleanBuild:'passed: 773 static pages',typecheck:'passed',fullOrderedSourceRenderedParagraphHashes:'passed',actualImageHttpMimeSignatureDecode:'passed',contextualInternalDestinations:'passed',familyIndexes:'passed',sitemap:'passed'};
+report.distinctFeaturedAssets=[...decodedAssets.values()];
+report.checks={cleanBuild:'passed: 773 static pages',typecheck:'passed',fullOrderedSourceRenderedParagraphHashes:'passed',actualImageHttpMimeSignatureDecode:'passed with Sharp full raw decode and SVG-to-PNG rasterization',contextualInternalDestinations:'passed',familyIndexes:'passed',sitemap:'passed'};
 await writeFile('.paperclip/daily-content/2026-10-05/combined-validation.json',JSON.stringify(report,null,2)+'\n');
 await writeFile('.paperclip/daily-content/2026-10-05/blog.json',JSON.stringify({cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',requiredCount:12,entries:report.families.blog.entries},null,2)+'\n');
 const researchPath='.paperclip/daily-content/2026-10-05/research.json',research=JSON.parse(await readFile(researchPath,'utf8'));
