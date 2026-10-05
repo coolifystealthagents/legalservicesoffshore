@@ -40,3 +40,23 @@ No current cross-family pair shares the same population, decision owner, worked-
 ## Exact-head body and image evidence
 
 The pushed SHA's 17 normalized substantive-body SHA-256 values remain recorded in `combined-validation.json`. The local correction changes only one authority record and the validator's image selector, so the body hashes are unchanged. The corrected local run fetched each actual article image: Blog PNG assets returned `image/png` with signature `89504e470d0a1a0a`; the one Blog SVG and all five Research SVGs returned `image/svg+xml`, contained a decodable `<svg` document, and began with signature bytes `3c73766720786d6c`. All 17 actual image requests returned HTTP 200.
+
+Exact pushed-head body hashes, in the same 12 Blog then five Research order used above:
+
+1. `183b26dc34b47071b37278f9148ab87622d04af7415649dd3d29a1fa6af2ab67`
+2. `3d0e491bc56d92d389f9a69a682f8237e4e6175bd6b409d34f858d124bb80a1d`
+3. `171ca78346f043797dd877d0c309f344812bf8751125f62b5d04772ba4216287`
+4. `ec5a8c66f3746953fb9d45b3059727b1047573a5653fca5fc42d1c8e2f20f99c`
+5. `fb3eb6adeaecebbffc7aa3d870d98183a8c6a1dd09015977c73b303518a4efcf`
+6. `e24cbc6b2749d4c275b0dc5a1855b364c42b03a6e573adae3ee1bc9e2c9cf3bb`
+7. `e29564ee1da7ead5816d4328caf699f495536d2fd920b2633843774083c9365c`
+8. `e607a468923018b3ba928ba6de4d5ee9fcaf8a5e4ec4f44e4044418170b87c60`
+9. `e991f05869de047b1887f55762ea954118a159b622531eaa17273559920e5f42`
+10. `2fc19bb399759c9ee3abac711f2201daef5038211b6f90cabaed7a5fa60b9ba8`
+11. `ec3326d708f266c1527a707715dd9910acf12f076e8f373769c058717c7eb48a`
+12. `75a8dd1a57b34f60506369a4b4cb3c6e86e61a6866203e0b85b877e45c530e52`
+13. `9e1dcd63a11bf5672499b8001aca1ee59e0537c86fc1b05b92ad8b54843c88e1`
+14. `a7e3d1bf9d84b8e9c98fe9a06f234bbbdae077382457cc971f24a36e7d5219d6`
+15. `f558fcfdbf712919199db7bd47d6580b1e316d5798be92f57db195d91de54d14`
+16. `ed6e30b8d01d57d6c4a777b1a8994d3c71d26e15cae0847511326abdbf992575`
+17. `5ed45490b054bf16f79e15a6357d74b487deb8734de533dfb0121ed9e47342e5`
