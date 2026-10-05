@@ -115,3 +115,9 @@ These are drafting briefs, not publishable articles. Each article must be indepe
 - `executed-contract-exhibit-incorporation-checklist-offshore-admin` is drafted with 10 independently structured sections and 903 substantive body words.
 - NIST's hash glossary and the Cornell LII Federal Rule of Evidence 1002 page returned HTTP 200. The article treats both as limited context, not a basis for an incorporation, authenticity, or admissibility conclusion. `npm run lint` passed.
 - Maximum five-word-shingle overlap with the first three drafts is 0.22%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the article uses competing Schedule 3 files and separates packet identity evidence from counsel's legal-effect decision.
+
+### Tranche 5
+
+- `legal-research-citator-update-queue-offshore-support` is drafted with 10 independent sections and 923 normalized substantive body words.
+- PACER's Court Opinions page and GovInfo's United States Courts Opinions collection page returned HTTP 200; `npm run lint` passed.
+- Maximum five-word-shingle overlap with the first four drafts is 0.45%. Qualitative review found no repeated substantive paragraph, example, or argument sequence; the draft is organized around proposition-level review, reproducible queries, mixed treatment, collection coverage, and counsel disposition.
