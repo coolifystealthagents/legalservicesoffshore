@@ -82,6 +82,20 @@ A fresh production build verified every listed source and service artifact. All 
 
 This source-only correction changes no rendered route. Deployment and public proof are not applicable. Do not add a second CTA to either delivered row.
 
+## 2026-10-06 research service-link reconciliation
+
+The October 5 research batch already carries typed, route-local handoffs to existing Philippines-only legal operations service pages. This ledger records those rendered pairs so a later operator does not add a second CTA. Each handoff keeps legal advice, legal judgment, filing, status, and client commitments with the firm or qualified counsel.
+
+| Existing source route | Existing destination | Route-local result | Decision |
+| --- | --- | --- | --- |
+| `/research/deposition-exhibit-provenance-offshore-research` | `/services/litigation-document-review` | Present through the typed research service link. | Delivered; do not duplicate. |
+| `/research/bankruptcy-claim-packet-indexing-offshore-study` | `/services/case-file-management` | Present through the typed research service link. | Delivered; do not duplicate. |
+| `/research/uscis-receipt-notice-reconciliation-offshore-research` | `/services/immigration-case-administration` | Present through the typed research service link. | Delivered; do not duplicate. |
+| `/research/trademark-specimen-evidence-inventory-offshore-study` | `/services/legal-research-support` | Present through the typed research service link. | Delivered; do not duplicate. |
+| `/research/service-of-process-proof-record-offshore-research` | `/services/case-file-management` | Present through the typed research service link. | Delivered; do not duplicate. |
+
+This is a source-only reconciliation. It changes no rendered route, schema, sitemap, or publication date. Deployment and public proof are not applicable to this record.
+
 ## 2026-10-01 intake-handoff source delivery status
 
 - Rendered source: `9e8f45f9ad125792ca5b2a55b78b0c798cf17de9` adds one typed `Plan legal intake support` handoff. Local production output has the expected H1, apex canonical, route-local service href count of one, the ownership-boundary marker, Article modified date `2026-10-01`, and the canonical sitemap location. This sitemap intentionally emits no `lastmod`.
