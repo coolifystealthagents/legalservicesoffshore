@@ -11,7 +11,7 @@ const families=[
 const normalize=value=>value.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#x27;|&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const words=value=>normalize(value).match(/\b[\w’'-]+\b/g)||[];
-const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',validatedAt:'2026-10-05T20:04:00.000Z',families:{},distinctFeaturedAssets:[],checks:{}};
+const report={cycleLabel:'2026-10-05',publicationDate:'2026-10-06',timezone:'UTC',validatedAt:'2026-10-06T08:10:25.776Z',families:{},distinctFeaturedAssets:[],checks:{}};
 const decodedAssets=new Map();
 
 for(const definition of families){
@@ -25,8 +25,8 @@ for(const definition of families){
     assert.equal(response.status,200,`${slug} HTTP`);
     const html=await response.text(),plain=normalize(html);
     assert.match(html,new RegExp(`rel="canonical" href="https://legalservicesoffshore.com/${definition.family}/${slug}"`),`${slug} canonical`);
-    assert.match(html,/"datePublished":"2026-10-05"/,`${slug} structured date`);
-    assert.match(html,/dateTime="2026-10-05"/,`${slug} visible date`);
+    assert.match(html,/"datePublished":"2026-10-06"/,`${slug} structured date`);
+    assert.match(html,/dateTime="2026-10-06"/,`${slug} visible date`);
     let cursor=0;
     for(const paragraph of sourceParagraphs){const location=plain.indexOf(paragraph,cursor);assert.ok(location>=cursor,`${slug} ordered rendered paragraph`);cursor=location+paragraph.length;}
     const body=sourceParagraphs.join(' '),bodyWords=words(body);
@@ -62,8 +62,8 @@ for(const path of ['/blog','/research','/sitemap.xml']){const response=await fet
 report.distinctFeaturedAssets=[...decodedAssets.values()];
 report.checks={cleanBuild:'passed: 773 static pages',typecheck:'passed',fullOrderedSourceRenderedParagraphHashes:'passed',actualImageHttpMimeSignatureDecode:'passed with Sharp full raw decode and SVG-to-PNG rasterization',contextualInternalDestinations:'passed',familyIndexes:'passed',sitemap:'passed'};
 await writeFile('.paperclip/daily-content/2026-10-05/combined-validation.json',JSON.stringify(report,null,2)+'\n');
-await writeFile('.paperclip/daily-content/2026-10-05/blog.json',JSON.stringify({cycleLabel:'2026-10-05',publicationDate:'2026-10-05',timezone:'UTC',requiredCount:12,entries:report.families.blog.entries},null,2)+'\n');
+await writeFile('.paperclip/daily-content/2026-10-05/blog.json',JSON.stringify({cycleLabel:'2026-10-05',publicationDate:'2026-10-06',timezone:'UTC',requiredCount:12,entries:report.families.blog.entries},null,2)+'\n');
 const researchPath='.paperclip/daily-content/2026-10-05/research.json',research=JSON.parse(await readFile(researchPath,'utf8'));
-research.publicationDate='2026-10-05';research.entries=research.entries.map(entry=>({...entry,published:'2026-10-05'}));
+research.publicationDate='2026-10-06';research.bodyWordCounts=report.families.research.entries.map(entry=>entry.bodyWordCount);research.entries=research.entries.map(entry=>{const receipt=report.families.research.entries.find(item=>item.slug===entry.slug);return {...entry,published:'2026-10-06',contentHash:receipt.contentHash,orderedParagraphHashes:receipt.orderedParagraphHashes,image:receipt.image,decode:receipt.decode};});
 await writeFile(researchPath,JSON.stringify(research,null,2)+'\n');
 console.log(`October 5 combined: PASS (${report.families.blog.verifiedCount} Blog + ${report.families.research.verifiedCount} Research)`);

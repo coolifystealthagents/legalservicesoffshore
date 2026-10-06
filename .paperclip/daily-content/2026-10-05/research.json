@@ -50,13 +50,37 @@
           "url": "https://privacy.gov.ph/data-privacy-act/"
         }
       ],
-      "contentHash": "cf3866d1cfe424aa7e9fb5e7633596cfa976414bc3779b304431754a1611e255",
+      "contentHash": "9e1dcd63a11bf5672499b8001aca1ee59e0537c86fc1b05b92ad8b54843c88e1",
       "publicationDate": "pending-combined-release",
       "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
       "liveUrl": "https://legalservicesoffshore.com/research/deposition-exhibit-provenance-offshore-research",
       "verificationTime": null,
       "deploymentEvidence": "pending-browser-operator",
-      "published": "2026-10-05"
+      "published": "2026-10-06",
+      "orderedParagraphHashes": [
+        "95b7c94d26cb44a74089a0ba02272d255444f9c289406170250a5ee988a687ec",
+        "ee373af5b1fb860efb0cb197e06a3d90b53f613fe1a788e917ecce6492eed68e",
+        "d7d1ff02cd7f9bd95c123729b4911aa91379d3067820a4d1e17ce692b175bcc0",
+        "ff676164ea2e03cdac2ee7cad5f12c3bb012835501f156d22f99452d3061a06f",
+        "427b0513c92be4d5a01cb21cec0d4ee197a8d875fbc4dfb684369785e9d8d1c4",
+        "5d9302383ad1e2ece6cfe20afe490f279e0c8cd681958b64bedc3c084a062da1",
+        "36095ba77e00949b6c3325fa299f46616fe850f01908adad557140ceff1b0c1e",
+        "62009712bb9064ddb34987cef0b013da7b53c06a77465b1da842807a440ada91",
+        "fd3c78edc0b89731f8cb48a16a38907f49d4c8110837466fa39917039e8acec6"
+      ],
+      "image": "/research-thumbnails/research-default.svg",
+      "decode": {
+        "image": "/research-thumbnails/research-default.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 22309,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      }
     },
     {
       "slug": "bankruptcy-claim-packet-indexing-offshore-study",
@@ -91,13 +115,37 @@
           "url": "https://privacy.gov.ph/data-privacy-act/"
         }
       ],
-      "contentHash": "2b1137a64ab21a9ba854333247e25c8a23efd0f31ea9887dcf3d5ce624a57e3b",
+      "contentHash": "a7e3d1bf9d84b8e9c98fe9a06f234bbbdae077382457cc971f24a36e7d5219d6",
       "publicationDate": "pending-combined-release",
       "commitSha": "2f46e3c2d7a41a1f7b94fe1d2324cc79ef2d893e",
       "liveUrl": "https://legalservicesoffshore.com/research/bankruptcy-claim-packet-indexing-offshore-study",
       "verificationTime": null,
       "deploymentEvidence": "pending-browser-operator",
-      "published": "2026-10-05"
+      "published": "2026-10-06",
+      "orderedParagraphHashes": [
+        "98a68b5c1c3fce43f0f55110500d03acbc01d6d93be313b64155e5af3bef0273",
+        "bca6a686443d0ecc25faba67a9446958e87b240d9970c2813611eed7f9583ed7",
+        "78f00e39b7919d485b7e8d9c2cf104608f7258655a486d227911edaed5c762cf",
+        "c5278812db6e638f063b503f1633f40e28aea6853edd283793aafb55db48b5dc",
+        "9370026ac134da8b211f4de2cd420b4148d8d1325d683d22eedf364ff37d584e",
+        "bd98eb452bbe12f0f5700150c3be731a701c1189790aa3b91e121dc604c29695",
+        "1f0170e9f3042dfcd8825324af1fc6b5c6857f126294159ebfdf2d256757c600",
+        "19680348aee4fdb463969f60b7cf322764653b7719a348dc49139c72b4fa61b8",
+        "ee02f7ddd1551127c6168d29ee479edb2631651850dd50fd59d4bd74a4a54e99"
+      ],
+      "image": "/research-thumbnails/research-default.svg",
+      "decode": {
+        "image": "/research-thumbnails/research-default.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 22309,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      }
     },
     {
       "slug": "uscis-receipt-notice-reconciliation-offshore-research",
@@ -132,13 +180,37 @@
           "url": "https://privacy.gov.ph/data-privacy-act/"
         }
       ],
-      "contentHash": "5d0f3b97a65bfd68370c414471f3d57862255ad2fe233de7faca2fde918ca1fb",
+      "contentHash": "f558fcfdbf712919199db7bd47d6580b1e316d5798be92f57db195d91de54d14",
       "publicationDate": "pending-combined-release",
       "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
       "liveUrl": "https://legalservicesoffshore.com/research/uscis-receipt-notice-reconciliation-offshore-research",
       "verificationTime": null,
       "deploymentEvidence": "pending-browser-operator",
-      "published": "2026-10-05"
+      "published": "2026-10-06",
+      "orderedParagraphHashes": [
+        "f569320416bdcd01433e3cce29d3b9159259c0d6641d9e4d9fc2f4a5f471c55a",
+        "7a500edfd42fd90d23d18561806fe79f6a71e4dbdb02091b9a9bea6437e96353",
+        "0a8ceb4f36af13b1ac8f04057cfb2a1bca188d2d6102e522a4829fb88e6772eb",
+        "b956da7669e6c68f0e33974774d32bd8dd32e3d82657879d80274bd01dee47d0",
+        "af55312dd9b72690e213fe3819143adcc20b42405caa671698f3d8500cf8c653",
+        "2e7fec3fd3045bc81eb4753c80da05e5fae7af76cc0b6b7009d770c4fdb4f9de",
+        "23329c850dd501e1ae484cbe8005f4dda5038227789e9b1d90e66ba936195054",
+        "4151525e00a4cedcd6ffa2326d86b040fa7280b854318a3c6321cbe4463c371d",
+        "ffda4b56463cdfdff58e283d188147c6896b15bf3c45399fa0dec28527cf700d"
+      ],
+      "image": "/research-thumbnails/research-default.svg",
+      "decode": {
+        "image": "/research-thumbnails/research-default.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 22309,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      }
     },
     {
       "slug": "trademark-specimen-evidence-inventory-offshore-study",
@@ -173,13 +245,37 @@
           "url": "https://privacy.gov.ph/data-privacy-act/"
         }
       ],
-      "contentHash": "9b54daddfc802f69ecf76967b661c54c750b4e31647e540f16b95480e83a14b8",
+      "contentHash": "ed6e30b8d01d57d6c4a777b1a8994d3c71d26e15cae0847511326abdbf992575",
       "publicationDate": "pending-combined-release",
       "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
       "liveUrl": "https://legalservicesoffshore.com/research/trademark-specimen-evidence-inventory-offshore-study",
       "verificationTime": null,
       "deploymentEvidence": "pending-browser-operator",
-      "published": "2026-10-05"
+      "published": "2026-10-06",
+      "orderedParagraphHashes": [
+        "478937a158e004ecf3a3459ef659a6fa91cd7badbc89d5e57410dc8fba228eab",
+        "77bf8c922afad8c54d810878f4d3bcd8ab1c8c2b3cf02d043540e36eb4dc5de1",
+        "037c7196b5c637c47bd1c3d7fe94a9294b26755becdc03a7aba1904d0205fc9e",
+        "e4edd65728f7149f34201b3364ca55d8cca0fb5ef211391a6952531d7677453a",
+        "dc7567126998849075a72993c23204c052bd049a85a13b569a58a7800977d217",
+        "62e1f38384bde5c0446007cc7f7e7f20fe14b1fcba259192e0fa960f67153ba7",
+        "7cfb8cc4d3788141a8a32cb625d05b8409ac960ce24df77d3a07426ea18354a0",
+        "630eb18c466304ab23b237c8b5ed5fb68c70e6e6d9043727e5f4576fc5225ed7",
+        "eb0426910d259251e44220c19a5e2c09a4ca2a24cf60d98ae024edc16642f0db"
+      ],
+      "image": "/research-thumbnails/research-default.svg",
+      "decode": {
+        "image": "/research-thumbnails/research-default.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 22309,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      }
     },
     {
       "slug": "service-of-process-proof-record-offshore-research",
@@ -214,21 +310,45 @@
           "url": "https://privacy.gov.ph/data-privacy-act/"
         }
       ],
-      "contentHash": "1c7faec77f6968ccae698f93c1b96ea832cd1fc607c5505705ac43f9cffc4b38",
+      "contentHash": "5ed45490b054bf16f79e15a6357d74b487deb8734de533dfb0121ed9e47342e5",
       "publicationDate": "pending-combined-release",
       "commitSha": "745547d1cc75be84b41a724c66dc268acb6fa988",
       "liveUrl": "https://legalservicesoffshore.com/research/service-of-process-proof-record-offshore-research",
       "verificationTime": null,
       "deploymentEvidence": "pending-browser-operator",
-      "published": "2026-10-05"
+      "published": "2026-10-06",
+      "orderedParagraphHashes": [
+        "68e4d3ede2018372180376b14f98919e5f4642f313c98fe1bef40428a7df6845",
+        "ccfba55d95ae016fa034427283b3341141b934f796c36b158c6d5bfffef8defe",
+        "716308b8576f554b757a6cccb38e4fccb636775c2c7076158be91e6bc9ed3772",
+        "429b678e9bcf9a46d51bfd5d1f99e94a8fd47753e9814af21aa7ae45126fc9d8",
+        "d61b6e03337f8424de7482544d33db41bcca3b0f982eb54fe9e0b096454f3f65",
+        "d84766d9aa4044fcfeaa8f6deae58ab7fa5dc5f2d99239bfd95b09bff57c69ef",
+        "084a97fe8734576a244e39b94d0ce71e928fabe7dc31201918eb52d6ce929598",
+        "90aaa1172e4326d536ae6e76d96e1efec8f661147499dead7e26f54ba06f8010",
+        "cd6d2335b569a9355113ade9435e985242ad3000ab96080f982629b9793aafce"
+      ],
+      "image": "/research-thumbnails/research-default.svg",
+      "decode": {
+        "image": "/research-thumbnails/research-default.svg",
+        "httpStatus": 200,
+        "mime": "image/svg+xml",
+        "sourceFormat": "svg",
+        "width": 1200,
+        "height": 630,
+        "channels": 4,
+        "decodedRasterBytes": 3024000,
+        "rasterizedPngBytes": 22309,
+        "rasterizedPngSignature": "89504e470d0a1a0a"
+      }
     }
   ],
   "bodyWordCounts": [
-    1490,
-    1516,
-    1460,
-    1442,
-    1405
+    1313,
+    1329,
+    1275,
+    1273,
+    1236
   ],
   "maximumPairwiseFiveWordShingleJaccard": 0.023,
   "repeatedParagraphCheck": "passed: no repeated substantive paragraphs across articles",
@@ -253,5 +373,5 @@
     "status": "not-attempted-by-research",
     "verifiedCount": 0
   },
-  "publicationDate": "2026-10-05"
+  "publicationDate": "2026-10-06"
 }

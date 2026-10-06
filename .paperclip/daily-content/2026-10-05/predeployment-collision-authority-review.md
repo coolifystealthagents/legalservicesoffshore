@@ -87,3 +87,11 @@ Production remains frozen at `4ca428c14855ca117fd8ceb3eecbb9efbf8cfeb2`. The loc
 - `.paperclip/daily-content/2026-10-05/predeployment-collision-authority-review.md`: add all-17 collision decisions, restricted-authority browser evidence, exact body hashes, and decoder receipts.
 
 No public article body, title, slug, publication date, canonical, index entry, sitemap entry, or featured-asset file changes. No production push or deployment occurred.
+
+## October 6 approved release reconciliation
+
+The articles remained unpublished when the approved corrective release crossed UTC midnight. The configured rendering and manifest timezone is UTC, so all 17 new articles now use `2026-10-06` for visible publication date, `datePublished`, source records, indexes, sitemap output, and October 5 cycle manifests. The October 5 cycle label, source-check dates, directory names, and previous-cycle article dates remain unchanged. Body-only content hashes are date-independent and unchanged.
+
+The date-only correction exposed an older Research validator defect: its former hash included page metadata, including the visible date. The corrected validator now verifies the ordered source section paragraphs against rendered paragraphs and hashes only those substantive bodies, matching the combined validator. Strict Research body counts are 1,313, 1,329, 1,275, 1,273, and 1,236 words; maximum family five-word-shingle Jaccard is 0.0024, with zero repeated substantive paragraphs. The prior all-17 qualitative topic, argument-sequence, worked-example, and outcome decisions above remain unchanged.
+
+The locked install on October 6 surfaced new advisory `GHSA-68fv-2mgg-jv7q` for `source-map-js` 1.2.1. The compatible lockfile-only update to 1.2.2 clears the advisory. A fresh `npm ci`, full `npm audit`, TypeScript check, clean 773-page build, combined all-17 local HTTP validation, Research validation, internal-route checks, source checks, canonical/date/index/sitemap checks, and full image decode/rasterization checks pass.

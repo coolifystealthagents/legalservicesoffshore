@@ -91,7 +91,7 @@ const studies:readonly Study[]=[
 ];
 
 export const october5ResearchPosts:readonly ResearchPost[]=studies.map((study,index)=>({
-  slug:study.slug,title:study.title,excerpt:study.excerpt,published:'2026-10-05',sourceDate:'2026-10-05',cluster:study.cluster,headlineStat:study.stat,
+  slug:study.slug,title:study.title,excerpt:study.excerpt,published:'2026-10-06',sourceDate:'2026-10-05',cluster:study.cluster,headlineStat:study.stat,
   sections:study.sections,sources:study.sources,thumbnail:'/research-thumbnails/research-default.svg',serviceLink:study.service,
   relatedSlugs:studies.filter(candidate=>candidate.slug!==study.slug).slice(index%3,index%3+2).map(candidate=>candidate.slug)
 }));

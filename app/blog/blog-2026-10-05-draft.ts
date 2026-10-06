@@ -1,6 +1,6 @@
 // Publication date reconciled immediately before the combined release. The site
 // renders article dates in UTC, and the first public release is scheduled for
-// October 5, 2026 UTC.
+// October 6, 2026 UTC after the approved corrective release crossed midnight.
 const usCourtsCmEcf={name:'United States Courts, Electronic Filing (CM/ECF)',url:'https://www.uscourts.gov/court-records/electronic-filing-cm-ecf',note:'Checked for the federal Judiciary description of CM/ECF and court-specific access.'};
 const usCourtsFaq={name:'United States Courts, CM/ECF FAQs',url:'https://www.uscourts.gov/court-records/file-a-case-cm-ecf/faqs-case-management-electronic-case-files-cm-ecf',note:'Checked for how notices of electronic filing, docket entries, and document links operate.'};
 const cadcConsolidated={name:'United States Court of Appeals for the D.C. Circuit, E-Filing (CM/ECF)',url:'https://www.cadc.uscourts.gov/cmecf',note:'Checked for the court-specific filing system, help route, and warning that emailing documents to the help desk does not satisfy filing timeliness requirements.'};
@@ -212,5 +212,5 @@ sections:[
 
 export const october5BlogPosts=october5BlogDrafts.map(post=>({
   ...post,
-  published:'2026-10-05' as const,
+  published:'2026-10-06' as const,
 }));
