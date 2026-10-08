@@ -96,6 +96,15 @@ The October 5 research batch already carries typed, route-local handoffs to exis
 
 This is a source-only reconciliation. It changes no rendered route, schema, sitemap, or publication date. Deployment and public proof are not applicable to this record.
 
+## 2026-10-08 calendar-event handoff plan
+
+The calendar-event provenance research answers a different question from the document-production source-map route: how a firm preserves the source and uncertainty around a proposed calendar entry. It now has one planned Case File Management handoff, where the reader can set a calendar note, source reference, and reviewer without asking a support worker to decide a controlling date or legal action.
+
+- Source route: `/research/law-firm-calendar-event-provenance-study`
+- Existing Philippines-only destination: `/services/case-file-management`
+- Boundary: the firm retains control over whether a date has legal effect, requires action, or needs a client communication.
+- Delivery evidence is recorded only after a fresh build verifies the route-local handoff, metadata, and sitemap entry. Do not add a second service CTA to this source route.
+
 ## 2026-10-01 intake-handoff source delivery status
 
 - Rendered source: `9e8f45f9ad125792ca5b2a55b78b0c798cf17de9` adds one typed `Plan legal intake support` handoff. Local production output has the expected H1, apex canonical, route-local service href count of one, the ownership-boundary marker, Article modified date `2026-10-01`, and the canonical sitemap location. This sitemap intentionally emits no `lastmod`.
