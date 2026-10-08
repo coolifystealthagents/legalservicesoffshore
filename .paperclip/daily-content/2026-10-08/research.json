@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "family": "research",
+  "required": 5,
+  "publicationDate": "2026-10-08",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "articles": [
+    {
+      "slug": "legal-support-lawyer-review-capacity-study",
+      "route": "/research/legal-support-lawyer-review-capacity-study",
+      "published": "2026-10-08",
+      "title": "Lawyer Review Capacity for Offshore Legal Support",
+      "sources": 10
+    },
+    {
+      "slug": "legal-support-access-revocation-proof-study",
+      "route": "/research/legal-support-access-revocation-proof-study",
+      "published": "2026-10-08",
+      "title": "Access Revocation Proof After a Legal Support Role Change",
+      "sources": 10
+    },
+    {
+      "slug": "legal-support-source-provenance-reconstruction-study",
+      "route": "/research/legal-support-source-provenance-reconstruction-study",
+      "published": "2026-10-08",
+      "title": "Reconstructing Source Provenance in Offshore Legal Support",
+      "sources": 10
+    },
+    {
+      "slug": "legal-support-exception-aging-observational-study",
+      "route": "/research/legal-support-exception-aging-observational-study",
+      "published": "2026-10-08",
+      "title": "Exception Aging in a Supervised Offshore Legal Queue",
+      "sources": 10
+    },
+    {
+      "slug": "legal-support-confidential-transfer-reliability-study",
+      "route": "/research/legal-support-confidential-transfer-reliability-study",
+      "published": "2026-10-08",
+      "title": "Confidential Transfer Reliability in Legal Operations Support",
+      "sources": 10
+    }
+  ]
+}

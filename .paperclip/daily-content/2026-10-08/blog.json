@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "family": "blog",
+  "required": 12,
+  "publicationDate": "2026-10-08",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "articles": [
+    {
+      "slug": "legal-support-matter-opening-source-packet",
+      "route": "/blog/legal-support-matter-opening-source-packet",
+      "published": "2026-10-08",
+      "title": "Build a Source Packet Before Offshore Matter Opening"
+    },
+    {
+      "slug": "legal-support-deadline-instruction-register",
+      "route": "/blog/legal-support-deadline-instruction-register",
+      "published": "2026-10-08",
+      "title": "Keep a Deadline Instruction Register Without Calculating Legal Dates"
+    },
+    {
+      "slug": "legal-support-document-version-release-gate",
+      "route": "/blog/legal-support-document-version-release-gate",
+      "published": "2026-10-08",
+      "title": "Use a Release Gate for Legal Document Versions"
+    },
+    {
+      "slug": "legal-support-privilege-review-administrative-boundary",
+      "route": "/blog/legal-support-privilege-review-administrative-boundary",
+      "published": "2026-10-08",
+      "title": "Define the Administrative Boundary Around Privilege Review"
+    },
+    {
+      "slug": "legal-support-client-identity-change-control",
+      "route": "/blog/legal-support-client-identity-change-control",
+      "published": "2026-10-08",
+      "title": "Control Client Identity Changes Across Legal Systems"
+    },
+    {
+      "slug": "legal-support-billing-exception-evidence-packet",
+      "route": "/blog/legal-support-billing-exception-evidence-packet",
+      "published": "2026-10-08",
+      "title": "Prepare a Billing Exception Packet Without Making Fee Decisions"
+    },
+    {
+      "slug": "legal-support-court-notice-routing-rehearsal",
+      "route": "/blog/legal-support-court-notice-routing-rehearsal",
+      "published": "2026-10-08",
+      "title": "Rehearse Court Notice Routing Before the Shared Inbox Goes Live"
+    },
+    {
+      "slug": "legal-support-research-citation-provenance-log",
+      "route": "/blog/legal-support-research-citation-provenance-log",
+      "published": "2026-10-08",
+      "title": "Maintain Citation Provenance for Offshore Legal Research Support"
+    },
+    {
+      "slug": "legal-support-confidential-file-transfer-check",
+      "route": "/blog/legal-support-confidential-file-transfer-check",
+      "published": "2026-10-08",
+      "title": "Check Confidential File Transfers Before External Delivery"
+    },
+    {
+      "slug": "legal-support-access-recertification-sample",
+      "route": "/blog/legal-support-access-recertification-sample",
+      "published": "2026-10-08",
+      "title": "Sample Access Recertification Evidence for Offshore Legal Support"
+    },
+    {
+      "slug": "legal-support-backup-handoff-matter-queue",
+      "route": "/blog/legal-support-backup-handoff-matter-queue",
+      "published": "2026-10-08",
+      "title": "Prepare a Backup Handoff for a Legal Matter Queue"
+    },
+    {
+      "slug": "legal-support-scope-change-lawyer-approval",
+      "route": "/blog/legal-support-scope-change-lawyer-approval",
+      "published": "2026-10-08",
+      "title": "Require Lawyer Approval Before Expanding an Offshore Legal Support Scope"
+    }
+  ]
+}
