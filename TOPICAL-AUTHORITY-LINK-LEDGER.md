@@ -69,7 +69,7 @@ Fresh production artifacts confirm that all ten mapped source and service routes
 | `/research/law-firm-intake-fact-pattern-normalization-study` | `/services/legal-intake-support` | 1 | Delivered; do not duplicate. |
 | `/research/legal-document-production-source-map-research` | `/services/litigation-document-review` | 0 | Verified absent; retain the existing E-Discovery handoff. |
 | `/research/law-firm-contract-renewal-obligation-evidence` | `/services/contract-administration` | 1 | Delivered; do not duplicate. |
-| `/research/law-firm-calendar-event-provenance-study` | `/services/case-file-management` | 0 | Verified absent. |
+| `/research/law-firm-calendar-event-provenance-study` | `/services/case-file-management` | 1 | Delivered; do not duplicate. |
 | `/research/immigration-case-administration-controls` | `/services/immigration-case-administration` | 0 | Verified absent. |
 | `/research/legal-support-matter-status-evidence` | `/services/real-estate-legal-support` | 0 | Verified absent. |
 | `/research/legal-support-entity-relationship-evidence` | `/services/corporate-records-support` | 0 | Verified absent. |
@@ -78,7 +78,7 @@ The intake fact-pattern and contract-renewal sources now have one typed handoff 
 
 ## 2026-10-05 generated-route reconciliation
 
-A fresh production build verified every listed source and service artifact. All ten have one H1, one self-canonical URL, and a sitemap entry. The five delivered pairs each have one matching href inside the source route's `<main>`; the five remaining candidates have zero. The sitemap intentionally has no `lastmod`.
+A fresh production build verified every listed source and service artifact. All ten have one H1, one self-canonical URL, and a sitemap entry. The six delivered pairs each have one matching href inside the source route's `<main>`; the four remaining candidates have zero. The sitemap intentionally has no `lastmod`.
 
 This source-only correction changes no rendered route. Deployment and public proof are not applicable. Do not add a second CTA to either delivered row.
 
@@ -96,14 +96,15 @@ The October 5 research batch already carries typed, route-local handoffs to exis
 
 This is a source-only reconciliation. It changes no rendered route, schema, sitemap, or publication date. Deployment and public proof are not applicable to this record.
 
-## 2026-10-08 calendar-event handoff plan
+## 2026-10-10 calendar-event handoff reconciliation
 
-The calendar-event provenance research answers a different question from the document-production source-map route: how a firm preserves the source and uncertainty around a proposed calendar entry. It now has one planned Case File Management handoff, where the reader can set a calendar note, source reference, and reviewer without asking a support worker to decide a controlling date or legal action.
+The calendar-event provenance research has one Case File Management handoff in the generated route-local `<main>`. The link helps a firm preserve a calendar note, source reference, and reviewer without asking support staff to decide whether a date has legal effect or needs action.
 
 - Source route: `/research/law-firm-calendar-event-provenance-study`
 - Existing Philippines-only destination: `/services/case-file-management`
+- Fresh local artifact result: one source-route href, a self-canonical source artifact, expected H1, and sitemap inclusion; the sitemap has no `lastmod` by repository contract.
 - Boundary: the firm retains control over whether a date has legal effect, requires action, or needs a client communication.
-- Delivery evidence is recorded only after a fresh build verifies the route-local handoff, metadata, and sitemap entry. Do not add a second service CTA to this source route.
+- State: delivered in source. Do not add a second service CTA; any public verification belongs to the repository's push-triggered deployment workflow.
 
 ## 2026-10-01 intake-handoff source delivery status
 

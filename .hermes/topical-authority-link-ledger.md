@@ -31,8 +31,8 @@ Purpose: keep one reader question per existing route and make future internal li
 
 Fresh production artifacts were reconciled on 2026-10-05. All ten declared sources and destinations have generated artifacts, expected canonical URLs, and sitemap entries. This sitemap has no `lastmod` by repository contract.
 
-- Delivered and non-duplicable: Legal Research Administration → Legal Research Support; Document Production Source Map → E-Discovery Support; Billing Source Reconciliation → Billing and Time Entry Support; Intake Fact Pattern Normalization → Legal Intake Support; Contract Renewal Obligation Evidence → Contract Administration. Each has one route-local href.
-- Verified absent: Document Production Source Map → Litigation Document Review; Calendar Event Provenance → Case File Management; Immigration Case Administration Controls → Immigration Case Administration; Matter Status Evidence → Real Estate Legal Support; Entity Relationship Evidence → Corporate Records Support. Each has zero route-local href.
+- Delivered and non-duplicable: Legal Research Administration → Legal Research Support; Document Production Source Map → E-Discovery Support; Billing Source Reconciliation → Billing and Time Entry Support; Intake Fact Pattern Normalization → Legal Intake Support; Contract Renewal Obligation Evidence → Contract Administration; Calendar Event Provenance → Case File Management. Each has one route-local href.
+- Verified absent: Document Production Source Map → Litigation Document Review; Immigration Case Administration Controls → Immigration Case Administration; Matter Status Evidence → Real Estate Legal Support; Entity Relationship Evidence → Corporate Records Support. Each has zero route-local href.
 - No new candidate was promoted. The intake and contract-renewal rows are now delivered, so neither needs another CTA.
 
 The document-production source-map route keeps its one E-Discovery Support handoff. Do not add a second CTA to that route.
