@@ -9,7 +9,7 @@ const rendererPath = path.join(root, 'app', 'research', '[slug]', 'page.tsx');
 test('research Article schema keeps the site Organization and visible-source citations aligned', () => {
   const source = fs.readFileSync(rendererPath, 'utf8');
 
-  assert.match(source, /author:\{'@type':'Organization',name:site\.brand\}/);
-  assert.match(source, /publisher:\{'@type':'Organization',name:site\.brand,url:`https:\/\/\$\{site\.domain\}`\}/);
+  assert.match(source, /const organization=\{'@type':'Organization','@id':`https:\/\/\$\{site\.domain\}\/\#organization`,name:site\.brand,url:`https:\/\/\$\{site\.domain\}`\}/);
+  assert.match(source, /author:organization,publisher:organization/);
   assert.match(source, /citation:post\.sources\.map\(source=>source\.url\)/);
 });
