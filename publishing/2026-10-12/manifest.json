@@ -1,0 +1,141 @@
+{
+  "site": "LegalServicesOffshore.com",
+  "date": "2026-10-12",
+  "blog": [
+    {
+      "slug": "legal-support-court-rule-update-intake-log",
+      "title": "Build a Court Rule Update Intake Log Without Interpreting the Rule",
+      "route": "/blog/legal-support-court-rule-update-intake-log",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-court-rule-update-intake-log.webp"
+    },
+    {
+      "slug": "legal-support-signature-authority-evidence-packet",
+      "title": "Prepare a Signature Authority Evidence Packet for Lawyer Review",
+      "route": "/blog/legal-support-signature-authority-evidence-packet",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-signature-authority-evidence-packet.webp"
+    },
+    {
+      "slug": "offshore-legal-subpoena-service-vendor-status",
+      "title": "Track Subpoena Service Vendor Status Without Declaring Service Complete",
+      "route": "/blog/offshore-legal-subpoena-service-vendor-status",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/offshore-legal-subpoena-service-vendor-status.webp"
+    },
+    {
+      "slug": "legal-support-escrow-closing-document-inventory",
+      "title": "Create an Escrow Closing Document Inventory With Release Gates",
+      "route": "/blog/legal-support-escrow-closing-document-inventory",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-escrow-closing-document-inventory.webp"
+    },
+    {
+      "slug": "offshore-legal-deposition-designation-index",
+      "title": "Index Deposition Designations Without Choosing Testimony",
+      "route": "/blog/offshore-legal-deposition-designation-index",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/offshore-legal-deposition-designation-index.webp"
+    },
+    {
+      "slug": "legal-support-expert-invoice-source-review",
+      "title": "Review Expert Invoice Sources Without Approving Fees",
+      "route": "/blog/legal-support-expert-invoice-source-review",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-expert-invoice-source-review.webp"
+    },
+    {
+      "slug": "offshore-legal-entity-annual-report-source-queue",
+      "title": "Operate an Entity Annual Report Source Queue With Counsel-Owned Decisions",
+      "route": "/blog/offshore-legal-entity-annual-report-source-queue",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/offshore-legal-entity-annual-report-source-queue.webp"
+    },
+    {
+      "slug": "legal-support-demand-letter-delivery-evidence-log",
+      "title": "Maintain Demand Letter Delivery Evidence Without Making Legal Claims",
+      "route": "/blog/legal-support-demand-letter-delivery-evidence-log",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-demand-letter-delivery-evidence-log.webp"
+    },
+    {
+      "slug": "offshore-legal-settlement-payment-status-handoff",
+      "title": "Design a Settlement Payment Status Handoff With Strict Authority Limits",
+      "route": "/blog/offshore-legal-settlement-payment-status-handoff",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/offshore-legal-settlement-payment-status-handoff.webp"
+    },
+    {
+      "slug": "legal-support-client-consent-record-index",
+      "title": "Index Client Consent Records Without Deciding Their Scope",
+      "route": "/blog/legal-support-client-consent-record-index",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-client-consent-record-index.webp"
+    },
+    {
+      "slug": "offshore-legal-court-filing-rejection-triage",
+      "title": "Triage Court Filing Rejections Without Correcting Legal Substance",
+      "route": "/blog/offshore-legal-court-filing-rejection-triage",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/offshore-legal-court-filing-rejection-triage.webp"
+    },
+    {
+      "slug": "legal-support-litigation-cost-approval-register",
+      "title": "Maintain a Litigation Cost Approval Register Without Authorizing Spend",
+      "route": "/blog/legal-support-litigation-cost-approval-register",
+      "source": "app/blog/blog-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-blog/legal-support-litigation-cost-approval-register.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "offshore-legal-reviewer-capacity-saturation-study",
+      "title": "Reviewer Capacity Saturation in Offshore Legal Support: A Study Protocol",
+      "route": "/research/offshore-legal-reviewer-capacity-saturation-study",
+      "source": "app/research/research-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-research/offshore-legal-reviewer-capacity-saturation-study.png"
+    },
+    {
+      "slug": "legal-support-exception-taxonomy-reliability-study",
+      "title": "Exception Taxonomy Reliability in Legal Support Operations",
+      "route": "/research/legal-support-exception-taxonomy-reliability-study",
+      "source": "app/research/research-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-research/legal-support-exception-taxonomy-reliability-study.png"
+    },
+    {
+      "slug": "offshore-legal-matter-access-creep-study",
+      "title": "Matter Access Creep in Offshore Legal Teams: A Longitudinal Control Study",
+      "route": "/research/offshore-legal-matter-access-creep-study",
+      "source": "app/research/research-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-research/offshore-legal-matter-access-creep-study.png"
+    },
+    {
+      "slug": "legal-support-source-summary-traceability-study",
+      "title": "Source-to-Summary Traceability in Legal Support Work Products",
+      "route": "/research/legal-support-source-summary-traceability-study",
+      "source": "app/research/research-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-research/legal-support-source-summary-traceability-study.png"
+    },
+    {
+      "slug": "offshore-legal-completion-acceptance-divergence-study",
+      "title": "Completion and Acceptance Divergence in Offshore Legal Workflows",
+      "route": "/research/offshore-legal-completion-acceptance-divergence-study",
+      "source": "app/research/research-2026-10-12.ts",
+      "thumbnail": "/oct12/legal-research/offshore-legal-completion-acceptance-divergence-study.png"
+    }
+  ],
+  "registries": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routes": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexes": [
+    "app/blog/page.tsx",
+    "app/blog/page/[page]/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sitemap": "app/sitemap.xml/route.ts"
+}
