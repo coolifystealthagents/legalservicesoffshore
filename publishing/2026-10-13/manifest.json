@@ -1,0 +1,144 @@
+{
+  "site": "LegalServicesOffshore.com",
+  "repository": "coolifystealthagents/legalservicesoffshore",
+  "branch": "main",
+  "baseSha": "a194ed944267c83e6b7951d5ee4b84657295574d",
+  "date": "2026-10-13",
+  "blog": [
+    {
+      "slug": "legal-support-court-calendar-source-reconciliation",
+      "title": "Reconcile Court Calendar Sources Without Calculating Legal Deadlines",
+      "route": "/blog/legal-support-court-calendar-source-reconciliation",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-court-calendar-source-reconciliation.webp"
+    },
+    {
+      "slug": "legal-support-signer-identity-comparison-packet",
+      "title": "Prepare a Signer Identity Comparison Packet for Counsel Review",
+      "route": "/blog/legal-support-signer-identity-comparison-packet",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-signer-identity-comparison-packet.webp"
+    },
+    {
+      "slug": "offshore-legal-process-server-invoice-evidence",
+      "title": "Match Process Server Invoice Evidence Without Approving Payment",
+      "route": "/blog/offshore-legal-process-server-invoice-evidence",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/offshore-legal-process-server-invoice-evidence.webp"
+    },
+    {
+      "slug": "legal-support-matter-closing-access-checklist",
+      "title": "Close Matter Access With a Lawyer-Owned Verification Checklist",
+      "route": "/blog/legal-support-matter-closing-access-checklist",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-matter-closing-access-checklist.webp"
+    },
+    {
+      "slug": "offshore-legal-privilege-log-source-index",
+      "title": "Build a Privilege Log Source Index Without Classifying Privilege",
+      "route": "/blog/offshore-legal-privilege-log-source-index",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/offshore-legal-privilege-log-source-index.webp"
+    },
+    {
+      "slug": "legal-support-filing-fee-receipt-reconciliation",
+      "title": "Reconcile Filing Fee Receipts Without Approving Legal Costs",
+      "route": "/blog/legal-support-filing-fee-receipt-reconciliation",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-filing-fee-receipt-reconciliation.webp"
+    },
+    {
+      "slug": "offshore-legal-registered-agent-notice-routing",
+      "title": "Route Registered Agent Notices With Counsel-Owned Decisions",
+      "route": "/blog/offshore-legal-registered-agent-notice-routing",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/offshore-legal-registered-agent-notice-routing.webp"
+    },
+    {
+      "slug": "legal-support-discovery-export-custody-log",
+      "title": "Maintain a Discovery Export Custody Log Without Assessing Substance",
+      "route": "/blog/legal-support-discovery-export-custody-log",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-discovery-export-custody-log.webp"
+    },
+    {
+      "slug": "offshore-legal-redaction-verification-packet",
+      "title": "Prepare a Redaction Verification Packet With Strict Authority Limits",
+      "route": "/blog/offshore-legal-redaction-verification-packet",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/offshore-legal-redaction-verification-packet.webp"
+    },
+    {
+      "slug": "legal-support-client-instruction-acknowledgment-log",
+      "title": "Log Client Instruction Acknowledgments Without Interpreting Scope",
+      "route": "/blog/legal-support-client-instruction-acknowledgment-log",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-client-instruction-acknowledgment-log.webp"
+    },
+    {
+      "slug": "offshore-legal-regulatory-submission-receipt-triage",
+      "title": "Triage Regulatory Submission Receipts Without Assessing Legal Effect",
+      "route": "/blog/offshore-legal-regulatory-submission-receipt-triage",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/offshore-legal-regulatory-submission-receipt-triage.webp"
+    },
+    {
+      "slug": "legal-support-contract-exhibit-version-register",
+      "title": "Maintain a Contract Exhibit Version Register Without Choosing Terms",
+      "route": "/blog/legal-support-contract-exhibit-version-register",
+      "source": "app/blog/blog-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-blog/legal-support-contract-exhibit-version-register.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "offshore-legal-review-queue-interruption-study",
+      "title": "Review Queue Interruption in Offshore Legal Support: A Study Protocol",
+      "route": "/research/offshore-legal-review-queue-interruption-study",
+      "source": "app/research/research-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-research/offshore-legal-review-queue-interruption-study.png"
+    },
+    {
+      "slug": "legal-support-matter-code-reclassification-study",
+      "title": "Matter Code Reclassification Reliability in Legal Support Operations",
+      "route": "/research/legal-support-matter-code-reclassification-study",
+      "source": "app/research/research-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-research/legal-support-matter-code-reclassification-study.png"
+    },
+    {
+      "slug": "offshore-legal-shared-link-revocation-study",
+      "title": "Shared Link Revocation in Offshore Legal Teams: A Control Study",
+      "route": "/research/offshore-legal-shared-link-revocation-study",
+      "source": "app/research/research-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-research/offshore-legal-shared-link-revocation-study.png"
+    },
+    {
+      "slug": "legal-support-citation-location-replay-study",
+      "title": "Citation Location Replay in Legal Support Work Products",
+      "route": "/research/legal-support-citation-location-replay-study",
+      "source": "app/research/research-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-research/legal-support-citation-location-replay-study.png"
+    },
+    {
+      "slug": "offshore-legal-reviewer-acknowledgment-lag-study",
+      "title": "Reviewer Acknowledgment Lag in Offshore Legal Workflows",
+      "route": "/research/offshore-legal-reviewer-acknowledgment-lag-study",
+      "source": "app/research/research-2026-10-13.ts",
+      "thumbnail": "/oct13/legal-research/offshore-legal-reviewer-acknowledgment-lag-study.png"
+    }
+  ],
+  "registries": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routes": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexes": [
+    "app/blog/page.tsx",
+    "app/blog/page/[page]/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sitemap": "app/sitemap.xml/route.ts"
+}
