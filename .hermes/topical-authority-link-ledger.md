@@ -18,6 +18,7 @@ Purpose: keep one reader question per existing route and make future internal li
 | Real Estate Legal Support | `/services/real-estate-legal-support` | How can support staff track supplied property or closing records without interpreting legal effect? | `/research/legal-support-matter-status-evidence` | Link only when the source states that status interpretation remains with the firm. |
 | Corporate Records Support | `/services/corporate-records-support` | How can an assistant preserve entity records and version history without deciding ownership or authority? | `/research/legal-support-entity-relationship-evidence` | Link only after the source says that ownership, control, and authority remain unresolved for review. |
 | Billing and Time Entry Support | `/services/billing-and-time-entry-support` | How can a team reconcile billing sources without deciding what is billable or client-facing? | `/research/law-firm-billing-source-reconciliation` | Link only where the source reserves billing judgment and client communication for the firm. |
+| Legal Reporting and QA | `/services/reporting-and-qa` | How can a support team prepare review evidence and flag exceptions without deciding the corrective action? | `/research/offshore-legal-review-queue-interruption-study` | Link only where the source keeps legal judgment, access, client commitments, and corrective action with the firm. |
 
 ## Execution rules
 
@@ -36,3 +37,11 @@ Fresh production artifacts were reconciled on 2026-10-05. All ten declared sourc
 - No new candidate was promoted. The intake and contract-renewal rows are now delivered, so neither needs another CTA.
 
 The document-production source-map route keeps its one E-Discovery Support handoff. Do not add a second CTA to that route.
+
+## 2026-10-14 reconciliation
+
+Fresh local production artifacts show that the October 13 research batch already delivers five Legal Reporting and QA handoffs. Each source has one route-local `/services/reporting-and-qa` anchor, a self-canonical URL, an expected H1, and a sitemap entry; the destination has the same artifact coverage. The sitemap intentionally has no `lastmod`.
+
+- Delivered and non-duplicable: Review Queue Interruption; Matter Code Reclassification; Shared Link Revocation; Citation Location Replay; and Reviewer Acknowledgment Lag → Legal Reporting and QA.
+- Boundary retained: Philippines-based support can prepare evidence and flag exceptions. The firm keeps legal judgment, access, client commitments, and corrective-action decisions.
+- This is a source-only planning reconciliation. It does not alter a visitor-facing route or create public rollout evidence.

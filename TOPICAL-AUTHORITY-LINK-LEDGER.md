@@ -24,6 +24,7 @@ Legal Services Offshore helps law firms and legal teams set up supervised admini
 | `/services/real-estate-legal-support` | Prepare real-estate legal operations work for review. | Counsel controls legal interpretation and transaction decisions. |
 | `/services/corporate-records-support` | Maintain approved corporate records and reminders. | Counsel and the client control governance decisions. |
 | `/services/billing-and-time-entry-support` | Prepare time-entry and billing records for review. | The firm decides billing judgment, invoice release, and client communication. |
+| `/services/reporting-and-qa` | Prepare review records and surface exceptions for the firm's review. | The firm controls legal judgment, client commitments, access decisions, and any corrective action. |
 
 ## Route-local handoff inventory
 
@@ -112,3 +113,17 @@ The calendar-event provenance research has one Case File Management handoff in t
 - The repository routine makes GitHub push its terminal deployment boundary and prohibits direct Coolify use. No deployment handle was available and no deployment was triggered.
 - Cache-busted apex and www checks returned HTML `200` with the expected H1 and apex canonical, but neither contained the new handoff label, boundary marker, or modified date. The canonical public sitemap contains the route but no `lastmod`. This is `deployment_pending_public_verification / public_stale`, not rollout proof.
 - Preserve rendered-source commit `9e8f45f9ad125792ca5b2a55b78b0c798cf17de9`. A later recheck must inspect this exact route-local handoff; it must not add a second CTA.
+
+## 2026-10-14 reporting and QA handoff reconciliation
+
+The October 13 research batch already sends five route-local research questions to the existing Legal Reporting and QA service. Each source has exactly one `/services/reporting-and-qa` link inside its generated `<main>`, so these paths are delivered and must not receive another CTA.
+
+| Existing source route | Existing destination | Route-local result | Decision |
+| --- | --- | --- | --- |
+| `/research/offshore-legal-review-queue-interruption-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
+| `/research/legal-support-matter-code-reclassification-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
+| `/research/offshore-legal-shared-link-revocation-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
+| `/research/legal-support-citation-location-replay-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
+| `/research/offshore-legal-reviewer-acknowledgment-lag-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
+
+Fresh local artifacts confirm every source and the destination has an expected H1, a self-canonical URL, and a sitemap entry. The sitemap has no `lastmod` by repository contract. Philippines-based support may prepare evidence and flag exceptions; the firm retains legal judgment, client commitments, access decisions, and corrective-action decisions. This is a source-only ledger reconciliation and does not change a rendered route, schema, or publication date.
