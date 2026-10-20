@@ -22,7 +22,7 @@ export default function Research() {
   return (
     <>
       <Header />
-      <main className="research-index-page">
+      <main id="main-content" tabIndex={-1} className="research-index-page">
         <section className="research-hero">
           <div className="container research-hero-grid">
             <div>

@@ -13,7 +13,7 @@ export default function Blog() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <section className="fleet-hero variant-3">
           <div className="container">
             <p className="eyebrow">Blog</p>

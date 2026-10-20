@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="lso-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
+      <main id="main-content" tabIndex={-1} className="lso-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
 
         <section className="lso-hero">

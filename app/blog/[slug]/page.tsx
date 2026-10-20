@@ -75,7 +75,7 @@ function SecurityArticle() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <article className="rich-article" data-article-body="true" data-revision={richArticle.revision}>
           <JsonLd data={articleSchema} />
           <JsonLd data={faqSchema} />
@@ -282,7 +282,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <article className="section" data-article-body="true"><div className="container article-shell">
           <p className="eyebrow">{site.brand} blog</p>
           <h1>{post.title}</h1>

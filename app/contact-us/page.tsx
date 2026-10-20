@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactUsPage(){return <>
   <Header/>
-  <main className="legal-contact">
+  <main id="main-content" tabIndex={-1} className="legal-contact">
     <section className="contact-fold"><div className="container contact-fold-grid">
       <div className="contact-story"><p className="contact-kicker">A controlled first support lane</p><h1>Give legal work the preparation time it needs.</h1><p className="contact-lead">Tell us which recurring queue is slowing your firm down. We will help define a Philippines-based role with narrow access, written handoffs, and a named client-side reviewer.</p><ul className="scope-labels"><li>Free role consultation</li><li>Task and access mapping</li><li>Attorney review stays in place</li></ul><ReviewMarquee/></div>
       <StandardContactForm endpoint="/api/contact" encoding="form"/>

@@ -29,7 +29,7 @@ export default async function BlogPage({
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <section className="fleet-hero">
           <div className="container">
             <p className="eyebrow">Blog page {n}</p>

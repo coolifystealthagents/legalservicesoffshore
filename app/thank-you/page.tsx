@@ -12,7 +12,7 @@ export default function ThankYouPage() {
   return (
     <>
       <Header />
-      <main className="sa-booking-page">
+      <main id="main-content" tabIndex={-1} className="sa-booking-page">
         <div className="container sa-booking-grid">
           <div className="sa-booking-left">
             <p className="sa-booking-kicker">You’re one step away.</p>
