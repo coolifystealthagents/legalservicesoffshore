@@ -3,9 +3,18 @@ import { notFound } from "next/navigation";
 import { Header, Footer } from "../../../components";
 import { blogPosts, site } from "../../../data";
 import { postsPerPage } from "../../../fleet-data";
+import type { Metadata } from "next";
 export function generateStaticParams() {
   const pages = Math.max(1, Math.ceil(blogPosts.length / postsPerPage));
   return Array.from({ length: pages }, (_, i) => ({ page: String(i + 1) }));
+}
+export async function generateMetadata({ params }: { params: Promise<{ page: string }> }): Promise<Metadata> {
+  const { page } = await params;
+  return {
+    title: `Blog Page ${page} | ${site.brand}`,
+    description: `Browse page ${page} of practical legal support planning guides.`,
+    alternates: { canonical: page === '1' ? '/blog' : `/blog/page/${page}` },
+  };
 }
 export default async function BlogPage({
   params,

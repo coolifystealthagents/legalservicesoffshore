@@ -16,17 +16,17 @@ export const site = {
 } as const;
 export const services = [
   {
-    slug: 'operations-support',
+    slug: 'case-file-management',
     title: 'Legal operations support',
     desc: 'Offshore legal operations support for matter updates, deadline tracking, intake routing, and attorney-reviewed handoffs.',
   },
   {
-    slug: 'customer-support',
+    slug: 'legal-intake-support',
     title: 'Legal client intake support',
     desc: 'Remote intake support for law firms that need faster call notes, lead routing, appointment follow-up, and clear escalation rules.',
   },
   {
-    slug: 'admin-support',
+    slug: 'contract-administration',
     title: 'Legal admin support',
     desc: 'Offshore legal admin help for document prep, billing support, calendar upkeep, records cleanup, and task lists your team can review.',
   },

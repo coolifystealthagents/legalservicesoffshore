@@ -1,7 +1,6 @@
 import { blogPosts, services, site, staffingProcess } from './data';
 import { Footer, Header, JsonLd } from './components';
 
-const serviceMarks = ['01', '02', '03', '04'];
 const serviceNotes = [
   'Give every routine matter update a clear next step.',
   'Keep intake facts complete and urgent messages moving.',
@@ -72,7 +71,7 @@ export default function Home() {
             <div className="lso-hero-visual" aria-label="Legal support work organized around firm review">
               <div className="lso-image-frame">
                 <img src="/illustrations/getillustrations/hannah-business-illustrations-svg/legal-admin-support.svg" alt="Illustration of offshore legal administration organized around firm rules and attorney review" />
-                <span className="lso-image-label">Built for law-firm handoffs</span>
+
               </div>
               <div className="lso-docket-card">
                 <span>First role file</span>
@@ -117,8 +116,8 @@ export default function Home() {
           </div>
           <div className="lso-service-grid">
             {services.map((service, index) => (
-              <a id={`cta-home-services-open-${service.slug}`} className="lso-service-card" href="/services" key={service.slug}>
-                <span className="lso-card-number">{serviceMarks[index]} <img src={legalIcons[index]} alt={`${service.title} service icon`} width="32" height="32" /></span>
+              <a id={`cta-home-services-open-${service.slug}`} className="lso-service-card" href={`/services/${service.slug}`} key={service.slug}>
+                <span className="lso-card-number"><img src={legalIcons[index]} alt="" width="32" height="32" /></span>
                 <div>
                   <h3>{service.title}</h3>
                   <p>{serviceNotes[index]}</p>
@@ -143,9 +142,9 @@ export default function Home() {
               <h2>Write the boundary before you share the login.</h2>
               <p>Your first role plan should name the task, the source file, the expected output, and the person who approves exceptions. That is much safer than a vague job description.</p>
               <div className="lso-rule-list">
-                <div><span>01</span><p><strong>Show a clean example.</strong> Give the support team a finished file or note that meets the firm's standard.</p></div>
-                <div><span>02</span><p><strong>Limit the first access.</strong> Open only the tools and folders needed for the pilot.</p></div>
-                <div><span>03</span><p><strong>Review early work.</strong> Check the first batch before moving from daily review to weekly samples.</p></div>
+                <div><p><strong>Show a clean example.</strong> Give the support team a finished file or note that meets the firm's standard.</p></div>
+                <div><p><strong>Limit the first access.</strong> Open only the tools and folders needed for the pilot.</p></div>
+                <div><p><strong>Review early work.</strong> Check the first batch before moving from daily review to weekly samples.</p></div>
               </div>
             </div>
           </div>
@@ -162,7 +161,6 @@ export default function Home() {
           <div className="lso-process-grid">
             {staffingProcess.map((item) => (
               <article key={item.step}>
-                <span>{item.step}</span>
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </article>
@@ -180,9 +178,9 @@ export default function Home() {
               <a className="lso-text-link" href="/blog" id="cta-page-action-3">View all guides →</a>
             </div>
             <div className="lso-guide-grid">
-              {blogPosts.slice(0, 3).map((post, index) => (
+              {blogPosts.slice(0, 3).map((post) => (
                 <a href={`/blog/${post.slug}`} key={post.slug}>
-                  <span>{String(index + 1).padStart(2, '0')} / {post.minutes} min</span>
+                  <span>{post.minutes} minute guide</span>
                   <h3>{post.title.replace('Legal Services Offshore: ', '')}</h3>
                   <p>{post.excerpt}</p>
                 </a>

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Footer, Header, CTA, JsonLd } from '../../components';
 import { blogPosts, site } from '../../data';
 import { richArticle } from '../article-data';
+import { ArticleNavigator } from '../../article-navigation';
 
 const base = 'https://legalservicesoffshore.com';
 
@@ -88,7 +89,8 @@ function SecurityArticle() {
             </div>
           </header>
 
-          <div className="container article-narrow article-content">
+          <div className="container article-narrow article-content article-layout">
+            <div className="article-main">
             <section aria-labelledby="direct-answer">
               <h2 id="direct-answer">The direct answer</h2>
               <p data-narrative="true">Hire for a defined support lane, not for broad access to every matter. A strong first role might turn approved intake facts into a summary, prepare a document from a locked template, or update a matter record after a lawyer has chosen the next step.</p>
@@ -247,6 +249,8 @@ function SecurityArticle() {
               <h2 id="sources">Sources</h2>
               <ol>{richArticle.sources.map((source) => <li key={source.url}><a href={source.url}>{source.name}</a><p>{source.note}</p></li>)}</ol>
             </section>
+            </div>
+            <ArticleNavigator serviceHref="/services/legal-research-support" />
           </div>
         </article>
       </main>
@@ -257,6 +261,8 @@ function SecurityArticle() {
 
 function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
   const related = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
+  const fallbackImages = ['/aug19-heroes/legal-support-source-of-truth-map.webp','/aug19-heroes/legal-support-change-control-record.webp','/aug23-heroes/document-version-ledgers.png','/aug23-heroes/client-update-digests.png','/sep3-heroes/legal-mail-service-proof-packet.png'];
+  const heroImage = 'featuredImage' in post ? post.featuredImage : fallbackImages[Math.abs(post.slug.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0)) % fallbackImages.length];
   const sourceUrl = 'https://www.americanbar.org/groups/law_practice/resources/law-practice-today/2023/january/outsourcing-legal-work/';
   const published = (post as { published?: string }).published;
   const modified = (post as { modified?: string }).modified ?? published;
@@ -277,16 +283,16 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
     <>
       <Header />
       <main>
-        <article className="section"><div className="container article-shell">
+        <article className="section" data-article-body="true"><div className="container article-shell">
           <p className="eyebrow">{site.brand} blog</p>
           <h1>{post.title}</h1>
           <p className="lead">{post.excerpt}</p>
-          {'featuredImage' in post && <img src={post.featuredImage} alt={`${post.title} editorial illustration`} width="1536" height="1024" style={{width:'100%',height:'auto',borderRadius:'18px'}} />}
+          <img className="article-hero-image" src={heroImage} alt={`${post.title} editorial illustration`} width="1536" height="1024" fetchPriority="high" />
           <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published: {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
           <JsonLd data={articleSchema} />
           <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
           <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
-          <section className="card">
+          <div className="article-layout"><div className="article-main"><section className="card">
             {originalSections ? <>
               {originalSections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
               {contextualService ? <p data-contextual-service-link="true">{contextualService.copy} <a href={`/services/${contextualService.slug}`}>{contextualService.label}</a>.</p> : null}
@@ -312,7 +318,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
             <ul>{related.map((item) => <li key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></li>)}</ul>
             <section className="sources" aria-labelledby="sources"><h2 id="sources">Source</h2><ol><li><a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association, outsourcing legal work guidance</a><p>Used for supervision, confidentiality, and responsibility boundaries in this planning guide.</p></li></ol></section>
             </>}
-          </section>
+          </section></div><ArticleNavigator related={related.map(item=>({href:`/blog/${item.slug}`,label:item.title}))} serviceHref={contextualService ? `/services/${contextualService.slug}` : '/services/legal-research-support'} /></div>
         </div></article>
         <CTA />
       </main>

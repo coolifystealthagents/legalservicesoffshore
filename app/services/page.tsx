@@ -1,89 +1,11 @@
-import type { Metadata } from 'next';
 import { Header, Footer, CTA, JsonLd } from '../components';
 import { fleetServices } from '../fleet-data';
 import { site } from '../data';
 
-const baseUrl = `https://${site.domain.toLowerCase()}`;
-const servicesUrl = `${baseUrl}/services`;
-const description = 'Explore legal support services staffed only by Filipino talent based in the Philippines, with clear task limits, review points, and attorney handoffs.';
-
-export const metadata: Metadata = {
-  title: 'Philippines legal support services',
-  description,
-  alternates: { canonical: servicesUrl },
-  openGraph: {
-    title: 'Philippines legal support services',
-    description,
-    url: servicesUrl,
-    siteName: site.brand,
-    type: 'website',
-  },
-};
-
-export default function Services() {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'CollectionPage',
-        '@id': `${servicesUrl}#webpage`,
-        url: servicesUrl,
-        name: 'Philippines legal support services',
-        description,
-        mainEntity: { '@id': `${servicesUrl}#service-list` },
-        breadcrumb: { '@id': `${servicesUrl}#breadcrumb` },
-      },
-      {
-        '@type': 'ItemList',
-        '@id': `${servicesUrl}#service-list`,
-        name: 'Legal support services staffed in the Philippines',
-        numberOfItems: fleetServices.length,
-        itemListElement: fleetServices.map((service, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: service.title,
-          url: `${servicesUrl}/${service.slug}`,
-        })),
-      },
-      {
-        '@type': 'BreadcrumbList',
-        '@id': `${servicesUrl}#breadcrumb`,
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: servicesUrl },
-        ],
-      },
-    ],
-  };
-
-  return (
-    <>
-      <Header />
-      <main>
-        <JsonLd data={schema} />
-        <section className="fleet-hero variant-3">
-          <div className="container">
-            <p className="eyebrow">Philippines-based services</p>
-            <h1>Legal support services staffed in the Philippines</h1>
-            <p className="lead">Choose a legal operations task, then set the tools, schedule, approval points, and attorney handoffs before work begins.</p>
-            <p className="service-origin-note">We recruit and hire only in the Philippines. Every candidate is Filipino talent based in the Philippines.</p>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container fleet-service-grid">
-            {fleetServices.map((service, index) => (
-              <a className="card fleet-service-card" href={`/services/${service.slug}`} key={service.slug}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <h2>{service.title}</h2>
-                <p>{service.desc}</p>
-                <b>View service →</b>
-              </a>
-            ))}
-          </div>
-        </section>
-        <CTA />
-      </main>
-      <Footer />
-    </>
-  );
-}
+export const metadata={title:'Offshore Legal Support Services',description:'Explore supervised Philippines-based legal intake, document, matter, research, billing, and quality support for law firms.',alternates:{canonical:'/services'},openGraph:{images:[{url:'/aug19-heroes/legal-support-work-queue-ownership.webp'}]}};
+export default function Services(){const schema={'@context':'https://schema.org','@type':'ItemList',itemListElement:fleetServices.map((s,i)=>({'@type':'ListItem',position:i+1,url:`https://${site.domain}/services/${s.slug}`,name:s.title}))};return <><Header/><main className="services-index"><JsonLd data={schema}/><section className="services-index-hero"><div className="container services-index-hero-grid"><div><p className="eyebrow">Offshore legal operations services</p><h1>Preparation capacity with the review line left intact.</h1><p className="lead">Build a Philippines-based support role around the repeatable work that consumes lawyer and operations time. Each service begins with a defined queue, limited access, visible source records, and a client-side decision owner.</p><a className="btn primary" href="/contact-us">Map a support role</a></div><figure><img src="/aug19-heroes/legal-support-work-queue-ownership.webp" width="1536" height="1024" alt="Legal support work queue with visible ownership and review stages" fetchPriority="high"/><figcaption>Useful delegation makes ownership, exceptions, and approval visible.</figcaption></figure></div></section>
+<section className="services-principles"><div className="container"><h2>Choose the queue before choosing the job title.</h2><div><p>Start with work that has consistent inputs, a repeatable preparation method, and a clear definition of done. A broad request for “legal help” is difficult to train and difficult to review. A named intake, document, records, or billing queue is easier to control.</p><p>The service descriptions below explain both the work that can be prepared and the decisions that remain with your firm. Every detail page includes inputs, deliverables, quality checks, starting scenarios, and common questions.</p></div></div></section>
+<section className="container service-directory" aria-labelledby="service-directory-title"><h2 id="service-directory-title">Legal support lanes</h2>{fleetServices.map((service)=><article key={service.slug}><div><h3>{service.title}</h3><p>{service.desc}</p></div><a href={`/services/${service.slug}`}>Review scope and controls</a></article>)}</section>
+<section className="services-decision"><div className="container services-decision-grid"><div><h2>A good first service has three properties.</h2><p>It repeats often enough to document, uses a manageable set of systems, and reaches a clear review point before any legal or client-facing decision.</p></div><dl><div><dt>Traceable inputs</dt><dd>The worker can identify the source file, request, matter, owner, and due date.</dd></div><div><dt>Observable output</dt><dd>The reviewer can compare the result with a checklist or accepted example.</dd></div><div><dt>Safe escalation</dt><dd>The worker knows when to stop, what facts to preserve, and who must decide.</dd></div></dl></div></section>
+<section className="container services-launch"><h2>From task inventory to first live batch</h2><ol><li><strong>Inventory the queue.</strong><span>List the inputs, volume, current owner, systems, peak periods, and common exceptions.</span></li><li><strong>Draw the boundary.</strong><span>Separate preparation from legal advice, substantive approval, privilege decisions, and client commitments.</span></li><li><strong>Prepare the example.</strong><span>Choose one accepted output, remove unnecessary sensitive material, and mark the required checks.</span></li><li><strong>Review a small batch.</strong><span>Score accuracy, source traceability, escalation quality, access discipline, and turnaround.</span></li></ol></section>
+<section className="container services-faq"><h2>Service planning questions</h2><details><summary>Can a firm combine more than one service?</summary><p>Yes, after each queue has a clear input, output, access boundary, and reviewer. Launching one narrow lane first usually exposes the instructions and quality checks needed before combining work.</p></details><details><summary>Does the support professional provide legal advice?</summary><p>No. The role can prepare, organize, track, and report approved administrative work. Legal advice, strategy, privilege decisions, filing approval, and final client-facing work stay with qualified professionals at the firm.</p></details><details><summary>How does candidate matching begin?</summary><p>Share the recurring queue, schedule, systems, required experience, access limits, and reviewer. The consultation turns those details into a practical role brief before candidate discussion.</p></details></section><CTA/></main><Footer/></>}

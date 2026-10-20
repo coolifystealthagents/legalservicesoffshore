@@ -4,135 +4,36 @@ import { fleetServices } from '../../fleet-data';
 import { site } from '../../data';
 
 const baseUrl = `https://${site.domain.toLowerCase()}`;
+const heroImages = [
+  '/aug19-heroes/legal-support-matter-intake-evidence-register.webp','/aug23-heroes/discovery-custodian-index.png','/aug19-heroes/legal-support-change-control-record.webp','/aug23-heroes/legal-research-request-logs.png','/aug21-heroes/law-firm-offshore-support-matter-file-index.png','/aug23-heroes/document-version-ledgers.png','/aug19-heroes/legal-support-handoff-acceptance-log.webp','/sep3-heroes/lease-abstraction-source-note-register.png','/sep3-heroes/board-consent-signature-collection-tracker.png','/aug23-heroes/billing-exception-queues.png','/aug19-heroes/legal-support-quality-review-cadence.webp'
+];
+const specifics: Record<string,{audience:string;problem:string;inputs:string[];outputs:string[];scenarios:string[]}> = {
+  'legal-intake-support':{audience:'firms with growing inquiry volume and inconsistent intake follow-up',problem:'Inquiry facts arrive through several channels, required fields go missing, and lawyers spend time reconstructing a usable intake record.',inputs:['Approved intake questionnaire and conflict fields','Channel and response-time rules','Named attorney or intake-manager escalation path'],outputs:['Complete fact summary with missing items marked','Time-stamped contact and follow-up record','Review queue for conflicts, advice, and acceptance decisions'],scenarios:['A weekend inquiry needs an organized Monday review packet','A prospective client has omitted the adverse-party names','A caller asks a legal question outside the approved script']},
+  'litigation-document-review':{audience:'litigation teams with document-heavy preparation and supervised review queues',problem:'Files arrive in inconsistent formats, indexes drift, and attorneys lose time locating source material before substantive review.',inputs:['Approved matter folders and review protocol','Naming, tagging, and privilege-escalation rules','Example index and quality checklist'],outputs:['Organized source set and review-ready index','Exception log for unreadable, duplicate, or sensitive files','Clear handoff to the licensed reviewer'],scenarios:['A production set needs file naming and metadata checks','Potentially privileged material requires immediate escalation','A deposition packet needs source-to-index reconciliation']},
+  'contract-administration':{audience:'legal and commercial teams managing recurring agreement workflows',problem:'Approvals, versions, signatures, obligations, and renewal dates are spread across inboxes and disconnected trackers.',inputs:['Approved templates and clause library','Version, approval, and signature rules','Obligation and renewal fields'],outputs:['Current version register and signature status','Source-linked obligation and renewal tracker','Exception queue for legal or commercial decisions'],scenarios:['An exhibit arrives after an approval was recorded','A renewal notice needs source confirmation','A counterparty sends a redline outside the approved path']},
+  'legal-research-support':{audience:'lawyers who need better organized source collection before legal analysis',problem:'Research requests lack boundaries, sources are difficult to replay, and citations can become detached from the proposition they support.',inputs:['Written research question and jurisdiction','Approved source hierarchy and date cutoff','Citation and excerpt format'],outputs:['Source inventory with links and access dates','Excerpt packet organized by research question','Open-question list for attorney analysis'],scenarios:['A regulation needs a currency check','A citation must be traced to the original authority','Conflicting secondary sources require attorney review']},
+  'case-file-management':{audience:'firms that need consistent matter records and closeout discipline',problem:'Documents, status notes, permissions, and next actions become difficult to audit when matter hygiene depends on individual habits.',inputs:['Matter taxonomy and folder template','Access matrix and naming rules','Open, review, and closeout checklists'],outputs:['Consistent matter-file structure','Missing-record and permission exception log','Closeout packet with ownership confirmed'],scenarios:['A new matter needs a complete standard folder set','A worker encounters access to an unrelated matter','A closed matter still has active shared links']},
+  'e-discovery-support':{audience:'litigation teams coordinating defensible collection and production administration',problem:'Custodian records, transfers, processing status, and production checks need a visible chain of administrative evidence.',inputs:['Counsel-approved custodian and source lists','Collection and transfer protocol','Production specification and approval gates'],outputs:['Custodian and collection status register','Transfer receipt and exception record','Production-readiness checklist for counsel approval'],scenarios:['A custodian source is missing from the collection list','A transfer total does not match the receipt','A production cannot proceed without counsel signoff']},
+  'immigration-case-administration':{audience:'immigration practices with document-intensive client workflows',problem:'Client evidence, translations, forms, and notices move through many checkpoints where an incomplete record can delay attorney review.',inputs:['Attorney-approved case checklist','Client communication templates','Evidence, translation, and notice rules'],outputs:['Case evidence inventory and missing-item queue','Prepared administrative packet for legal review','Status record with client and attorney actions separated'],scenarios:['A client uploads an unreadable identity document','A translation lacks required provenance','A government notice needs prompt attorney routing']},
+  'real-estate-legal-support':{audience:'real-estate legal teams managing document and closing administration',problem:'Diligence records, title materials, signatures, conditions, and closing documents need coordinated status without outsourcing legal judgment.',inputs:['Transaction checklist and document index','Named source repositories and parties','Approval, signing, and closing conditions'],outputs:['Current diligence and document register','Signature and condition status log','Closing file prepared for lawyer review'],scenarios:['A lease abstraction needs source-note traceability','A closing document is missing a signer','An exception changes the agreed transaction terms']},
+  'corporate-records-support':{audience:'corporate legal teams maintaining entity and governance records',problem:'Consents, minutes, registers, filings, and annual obligations can drift when ownership and source evidence are unclear.',inputs:['Entity list and approved record templates','Authority and signature rules','Filing calendar and source documents'],outputs:['Organized entity record book','Consent, signature, and filing status tracker','Exception queue for lawyer or corporate-secretary decisions'],scenarios:['A consent needs signatures from multiple directors','An entity register conflicts with a source filing','A deadline requires jurisdiction-specific analysis']},
+  'billing-and-time-entry-support':{audience:'firms that need cleaner billing preparation and visible follow-up',problem:'Missing time, inconsistent narratives, outside-counsel rules, and invoice exceptions create avoidable rework before final billing review.',inputs:['Billing calendar and approved narrative rules','Timekeeper and matter list','Client guidelines and exception owners'],outputs:['Missing-time follow-up queue','Review-ready billing packet','Guideline exception register with source references'],scenarios:['A narrative needs clarification without changing legal substance','A client rule conflicts with a standard entry','A write-off or fee decision requires authorized review']},
+  'reporting-and-qa':{audience:'legal operations leaders who need reliable workflow evidence and exception visibility',problem:'Status reports can hide source gaps, unresolved exceptions, and rework unless quality checks are defined before reporting begins.',inputs:['Approved status fields and source systems','Quality checklist and acceptance criteria','Escalation owners and reporting cadence'],outputs:['Source-linked operational report','Quality findings and rework reasons','Decision queue with owner and due date'],scenarios:['A reported completion lacks acceptance evidence','Two systems show different matter status','A recurring error needs a documented correction plan']}
+};
 
-export function generateStaticParams() {
-  return fleetServices.map((service) => ({ slug: service.slug }));
-}
+export function generateStaticParams(){return fleetServices.map(service=>({slug:service.slug}))}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const service=fleetServices.find(item=>item.slug===slug);if(!service)return{title:'Not found'};const url=`${baseUrl}/services/${service.slug}`;return{title:service.title,description:service.desc,alternates:{canonical:url},openGraph:{title:service.title,description:service.desc,url,siteName:site.brand,type:'website',images:[{url:`${baseUrl}${heroImages[fleetServices.indexOf(service)]}`}]}}}
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const service = fleetServices.find((item) => item.slug === slug);
-
-  if (!service) return { title: 'Not found' };
-
-  const url = `${baseUrl}/services/${service.slug}`;
-
-  return {
-    title: service.title,
-    description: service.desc,
-    alternates: { canonical: url },
-    openGraph: {
-      title: service.title,
-      description: service.desc,
-      url,
-      siteName: site.brand,
-      type: 'website' as const,
-    },
-  };
-}
-
-export default async function Service({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const service = fleetServices.find((item) => item.slug === slug);
-
-  if (!service) notFound();
-
-  const url = `${baseUrl}/services/${service.slug}`;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebPage',
-        '@id': `${url}#webpage`,
-        url,
-        name: service.title,
-        description: service.desc,
-        mainEntity: { '@id': `${url}#service` },
-        hasPart: { '@id': `${url}#launch-plan` },
-        breadcrumb: { '@id': `${url}#breadcrumb` },
-      },
-      {
-        '@type': 'Service',
-        '@id': `${url}#service`,
-        name: service.title,
-        description: service.desc,
-        url,
-        serviceType: 'Philippines-based legal operations staffing',
-        areaServed: {
-          '@type': 'Country',
-          name: 'Philippines',
-        },
-        provider: {
-          '@type': 'Organization',
-          name: site.brand,
-          url: baseUrl,
-        },
-        hasOfferCatalog: {
-          '@type': 'OfferCatalog',
-          name: `${service.title} tasks`,
-          itemListElement: service.tasks.map((task) => ({
-            '@type': 'Offer',
-            itemOffered: { '@type': 'Service', name: task },
-          })),
-        },
-      },
-      {
-        '@type': 'HowTo',
-        '@id': `${url}#launch-plan`,
-        name: `How to start ${service.title.toLowerCase()}`,
-        description: `A first-week plan for adding Philippines-based ${service.title.toLowerCase()} to a legal team.`,
-        step: service.firstWeek.map((step, index) => ({
-          '@type': 'HowToStep',
-          position: index + 1,
-          name: step,
-          text: step,
-        })),
-      },
-      {
-        '@type': 'BreadcrumbList',
-        '@id': `${url}#breadcrumb`,
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: `${baseUrl}/services` },
-          { '@type': 'ListItem', position: 3, name: service.title, item: url },
-        ],
-      },
-    ],
-  };
-
-  return (
-    <>
-      <Header />
-      <main>
-        <JsonLd data={schema} />
-        <section className="fleet-hero variant-3">
-          <div className="container">
-            <p className="eyebrow">Philippines-based legal operations support</p>
-            <h1>{service.title}</h1>
-            <p className="lead">{service.desc}</p>
-            <p className="service-origin-note">We recruit only in the Philippines. Every candidate for this service is Filipino talent based in the Philippines.</p>
-            <a className="btn primary" href="/contact-us" id="cta-services-slug-action-1">Discuss this service</a>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container fleet-detail-grid">
-            <div className="card">
-              <h2>Tasks to assign</h2>
-              <ul>{service.tasks.map((task) => <li key={task}>{task}</li>)}</ul>
-            </div>
-            <div className="card">
-              <h2>Controls to keep</h2>
-              <ul>{service.controls.map((control) => <li key={control}>{control}</li>)}</ul>
-            </div>
-            <div className="card">
-              <h2>Launch steps</h2>
-              <ol>{service.firstWeek.map((step) => <li key={step}>{step}</li>)}</ol>
-            </div>
-          </div>
-        </section>
-        <CTA />
-      </main>
-      <Footer />
-    </>
-  );
+export default async function Service({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params;const service=fleetServices.find(item=>item.slug===slug);if(!service)notFound();const detail=specifics[service.slug];const index=fleetServices.indexOf(service);const url=`${baseUrl}/services/${service.slug}`;const related=[fleetServices[(index+1)%fleetServices.length],fleetServices[(index+4)%fleetServices.length],fleetServices[(index+7)%fleetServices.length]];
+ const faqs=[{q:`What can a ${service.title.toLowerCase()} professional own?`,a:'The professional can own approved preparation, organization, status tracking, and exception logging. Your firm keeps legal advice, substantive approval, privileged decisions, filings, and any action that changes a client position.'},{q:'What does the firm need before launch?',a:`Prepare the source systems, one correct work example, the access boundary, and the person who accepts completed work. For this service, the starting inputs include ${detail.inputs.join(', ').toLowerCase()}.`},{q:'How is early quality checked?',a:'Begin with a redacted example and a small live batch. The client-side reviewer checks accuracy, source traceability, escalation quality, access discipline, and turnaround before expanding the queue.'},{q:'Can the role change after launch?',a:'Yes. Add work through a documented scope review. Confirm the new input, expected output, access needed, reviewer, stop rule, and quality check before assigning it.'}];
+ const schema={'@context':'https://schema.org','@graph':[{'@type':'Service','@id':`${url}#service`,name:service.title,description:service.desc,url,provider:{'@type':'Organization',name:site.brand,url:baseUrl}},{'@type':'FAQPage',mainEntity:faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}]};
+ return <><Header/><main className="service-detail-page"><JsonLd data={schema}/><section className="service-hero"><div className="container service-hero-grid"><div><p className="eyebrow">Philippines-based legal operations support</p><h1>{service.title}</h1><p className="lead">{service.desc}</p><p>Designed for {detail.audience}. The role prepares and organizes work while your licensed professionals retain every legal decision.</p><a className="btn primary" href="/contact-us">Discuss this service</a></div><figure><img src={heroImages[index]} width="1536" height="1024" alt={`${service.title} workflow records prepared for client-side review`} fetchPriority="high"/><figcaption>A controlled support workflow starts with visible sources, owners, and review points.</figcaption></figure></div></section><nav className="service-jump" aria-label="On this page"><a href="#problem">The problem</a><a href="#scope">Scope</a><a href="#workflow">Workflow</a><a href="#quality">Quality</a><a href="#examples">Examples</a><a href="#questions">Questions</a></nav>
+ <section className="service-intro container" id="problem"><div><h2>Where this service earns its place</h2><p>{detail.problem}</p><p>{service.title} adds structured preparation capacity without turning administrative delegation into unauthorized legal work. The role should have a narrow queue, named accounts, a current written example, and a reviewer who can resolve exceptions.</p></div><aside><strong>Best fit</strong><p>{detail.audience.charAt(0).toUpperCase()+detail.audience.slice(1)}.</p></aside></section>
+ <section className="service-scope" id="scope"><div className="container service-scope-grid"><div><h2>What enters the workflow</h2><ul>{detail.inputs.map(x=><li key={x}>{x}</li>)}</ul></div><div><h2>What the role performs</h2><ul>{service.tasks.map(x=><li key={x}>{x}</li>)}</ul></div><div><h2>What comes out</h2><ul>{detail.outputs.map(x=><li key={x}>{x}</li>)}</ul></div></div></section>
+ <section className="service-workflow container" id="workflow"><header><h2>A launch workflow that can be inspected</h2><p>Each stage leaves enough evidence for the next owner to understand what happened, what remains unresolved, and whether the work is ready to advance.</p></header><ol>{service.firstWeek.map((step,i)=><li key={step}><strong>{step}</strong><p>{i===0?'Name the queue, source records, approved systems, schedule, reviewer, and stop rule before access is opened.':i===1?'Use a representative redacted example. Compare the prepared output with the accepted example and record every unclear instruction.':'Move a small live batch through the same path. Review quality and exceptions together before volume or access grows.'}</p></li>)}</ol></section>
+ <section className="service-boundaries" id="quality"><div className="container service-boundaries-grid"><div><h2>Quality controls the firm can see</h2><p>Quality is not a promise that errors never happen. It is a repeatable way to detect, explain, correct, and learn from them.</p><ul><li>Source record attached or linked to each prepared output</li><li>Required-field and naming checklist before handoff</li><li>Exception reason, owner, and due date kept visible</li><li>Small-sample review before wider assignment</li><li>Access review whenever scope or systems change</li></ul></div><div><h2>Decisions that stay with your firm</h2><ul>{service.controls.map(x=><li key={x}>{x}</li>)}<li>Give legal advice or interpret the law for a client</li><li>Approve a filing, disclosure, settlement, or final work product</li><li>Resolve privilege, conflict, deadline, or strategy questions</li></ul></div></div></section>
+ <section className="service-scenarios container" id="examples"><h2>Common starting scenarios</h2><div>{detail.scenarios.map(x=><article key={x}><h3>{x}</h3><p>The support professional follows the approved preparation path, records the source and open question, and routes the decision to the named client-side owner.</p></article>)}</div></section>
+ <section className="service-faq container" id="questions"><h2>Questions firms ask before starting</h2>{faqs.map(f=><details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>)}</section>
+ <section className="related-services container"><h2>Related legal support services</h2><div>{related.map(item=><a key={item.slug} href={`/services/${item.slug}`}><strong>{item.title}</strong><span>{item.desc}</span></a>)}</div></section><CTA/></main><Footer/></>;
 }
