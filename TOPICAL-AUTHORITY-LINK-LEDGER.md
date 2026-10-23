@@ -127,3 +127,13 @@ The October 13 research batch already sends five route-local research questions 
 | `/research/offshore-legal-reviewer-acknowledgment-lag-study` | `/services/reporting-and-qa` | Present once through the typed research service link. | Delivered; do not duplicate. |
 
 Fresh local artifacts confirm every source and the destination has an expected H1, a self-canonical URL, and a sitemap entry. The sitemap has no `lastmod` by repository contract. Philippines-based support may prepare evidence and flag exceptions; the firm retains legal judgment, client commitments, access decisions, and corrective-action decisions. This is a source-only ledger reconciliation and does not change a rendered route, schema, or publication date.
+
+## 2026-10-23 immigration handoff reconciliation
+
+The prior candidate row for immigration case administration is stale. Source commit `a83ed0b28675e84fe97cb76636af23bc61f3a73e` added the typed handoff after the October 5 audit, so a second CTA would duplicate the reader path.
+
+| Existing source route | Existing destination | Fresh route-local result | Decision |
+| --- | --- | --- | --- |
+| `/research/immigration-case-administration-controls` | `/services/immigration-case-administration` | Two deliberate anchors inside `<main>`: the typed planning handoff and the existing related-service exploration link. | Delivered; do not duplicate. |
+
+A fresh local production build and HTTPS-forwarded loopback check confirmed the source and service H1s, sole self-canonicals, and sitemap inclusion. This sitemap intentionally emits no `lastmod`. Philippines-based support may prepare document checks, status records, and follow-up evidence; counsel retains eligibility, filing, legal-advice, and client-commitment decisions. This record reconciles planning state only, so deployment and public checks are not applicable.
