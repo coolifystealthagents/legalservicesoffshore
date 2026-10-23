@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 
 type Heading = { id: string; label: string; level: number };
 
-export function ArticleNavigator({ related = [], serviceHref = '/services/legal-research-support' }: { related?: { href: string; label: string }[]; serviceHref?: string }) {
-  const [headings, setHeadings] = useState<Heading[]>([]);
+export function ArticleNavigator({ items = [], related = [], serviceHref = '/services/legal-research-support' }: { items?: Heading[]; related?: { href: string; label: string }[]; serviceHref?: string }) {
+  const [headings, setHeadings] = useState<Heading[]>(items);
   const [active, setActive] = useState('');
   useEffect(() => {
     const root = document.querySelector<HTMLElement>('[data-article-body="true"]');
@@ -30,10 +30,10 @@ export function ArticleNavigator({ related = [], serviceHref = '/services/legal-
   }, []);
 
   return <aside className="article-sidebar" data-article-sidebar aria-label="Article tools">
-    <details className="toc-disclosure" open>
+    <details className="toc-disclosure">
       <summary>In this article</summary>
       <nav aria-label="Table of contents">
-        {headings.length ? <ol>{headings.map(item => <li key={item.id} className={item.level === 3 ? 'toc-sub' : ''}><a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined}>{item.label}</a></li>)}</ol> : <p className="toc-loading">Article sections load here.</p>}
+        {headings.length ? <ol>{headings.map(item => <li key={item.id} className={item.level === 3 ? 'toc-sub' : ''}><a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined} onClick={(event) => { const details = event.currentTarget.closest('details'); if (details) details.removeAttribute('open'); }}>{item.label}</a></li>)}</ol> : <p className="toc-loading">Article sections load here.</p>}
       </nav>
     </details>
     <section className="sidebar-module"><h2>Publisher</h2><p><strong>Legal Services Offshore</strong><br />Powered by StealthAgents</p><p>Operational guidance for supervised Philippines-based legal support.</p></section>

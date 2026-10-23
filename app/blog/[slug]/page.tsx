@@ -277,6 +277,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
     publisher: { '@type': 'Organization', name: site.brand, url: base },
   };
   const originalSections = 'sections' in post ? post.sections : undefined;
+  const initialToc = (originalSections ?? []).map((section) => ({ label: section.heading, id: section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), level: 2 as const }));
   const sources = 'sources' in post ? post.sources : undefined;
   const contextualService = (post as { contextualService?: { slug: string; label: string; copy: string } }).contextualService;
   return (
@@ -288,13 +289,13 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
           <h1>{post.title}</h1>
           <p className="lead">{post.excerpt}</p>
           <img className="article-hero-image" src={heroImage} alt={`${post.title} editorial illustration`} width="1536" height="1024" fetchPriority="high" />
-          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published: {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
+          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
           <JsonLd data={articleSchema} />
           <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
           <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>
           <div className="article-layout"><div className="article-main"><section className="card">
             {originalSections ? <>
-              {originalSections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
+              {originalSections.map((section) => <section key={section.heading}><h2 id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}>{section.heading}</h2><p>{section.body}</p></section>)}
               {contextualService ? <p data-contextual-service-link="true">{contextualService.copy} <a href={`/services/${contextualService.slug}`}>{contextualService.label}</a>.</p> : null}
               {sources ? <section className="sources" aria-labelledby="sources"><h2 id="sources">Sources</h2><ol>{sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name}</a><p>{source.note}</p></li>)}</ol></section> : null}
               <section aria-labelledby="related-articles"><h2 id="related-articles">Related articles</h2><ul>{related.map((item) => <li key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></li>)}</ul></section>
@@ -318,7 +319,7 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
             <ul>{related.map((item) => <li key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></li>)}</ul>
             <section className="sources" aria-labelledby="sources"><h2 id="sources">Source</h2><ol><li><a href={sourceUrl} target="_blank" rel="noopener noreferrer">American Bar Association, outsourcing legal work guidance</a><p>Used for supervision, confidentiality, and responsibility boundaries in this planning guide.</p></li></ol></section>
             </>}
-          </section></div><ArticleNavigator related={related.map(item=>({href:`/blog/${item.slug}`,label:item.title}))} serviceHref={contextualService ? `/services/${contextualService.slug}` : '/services/legal-research-support'} /></div>
+          </section></div><ArticleNavigator items={initialToc} related={related.map(item=>({href:`/blog/${item.slug}`,label:item.title}))} serviceHref={contextualService ? `/services/${contextualService.slug}` : '/services/legal-research-support'} /></div>
         </div></article>
         <CTA />
       </main>
