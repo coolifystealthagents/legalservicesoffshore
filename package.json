@@ -13,7 +13,8 @@
     "validate:contract-renewal-handoff": "node scripts/validate-contract-renewal-handoff.mjs",
     "validate:calendar-event-case-file-handoff": "node scripts/validate-calendar-event-case-file-handoff.mjs",
     "test:research-organization-schema": "node --test tests/research-article-organization-schema.test.mjs",
-    "test:immigration-case-handoff": "node --test tests/immigration-case-handoff.test.mjs"
+    "test:immigration-case-handoff": "node --test tests/immigration-case-handoff.test.mjs",
+    "test:entity-records-handoff": "node --test tests/entity-records-handoff.test.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
