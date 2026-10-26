@@ -1,7 +1,7 @@
 export const october25BlogPosts = [
   {
     "slug": "legalservicesoffshore-report-privilege-log-without-vanity-metrics",
-    "title": "Report privilege log without vanity metrics",
+    "title": "Report privilege-log quality without vanity metrics",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: privilege log without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -36,7 +36,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-sample-quality-for-outside-counsel-invoice-without-guessing",
-    "title": "Sample quality for outside counsel invoice without guessing",
+    "title": "Sample outside-counsel invoice work without guessing",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: outside counsel invoice without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -71,7 +71,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-map-the-source-of-truth-for-conflict-packet",
-    "title": "Map the source of truth for conflict packet",
+    "title": "Map the source of truth for the conflict packet",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: conflict packet without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -88,7 +88,7 @@ export const october25BlogPosts = [
       },
       {
         "heading": "Separate preparation from approval",
-        "body": "Name the owner before the VA prepares any action. The VA may collect, compare, label, calculate, and route; the accountable owner decides whether the evidence is enough.\n\nWrite the boundary into the task brief. Name the systems the VA may use, the fields they may change, and the questions they must route.\n\nA complete packet is not an approval. A drafted message, a proposed schedule, or a reconciled total still needs the named owner decision when policy or risk is involved.\n\nWhen a source is unavailable, record that fact instead of leaving the field blank. Missing, unavailable, and confirmed negative are three different states and should not be collapsed."
+        "body": "Name the owner before the VA prepares any action. The VA may collect, compare, label, calculate, and route; the accountable owner decides whether the evidence is enough.\n\nWrite the boundary into the task brief. Name the systems the VA may use, the fields they may change, and the questions they must route.\n\nA complete packet is not an approval. A drafted message, a proposed schedule, or a reconciled total still needs the named owner decision when policy or risk is involved.\n\nWhen a source is unavailable, record that fact instead of leaving the field blank. Missing, unavailable, and confirmed negative are three different states and should not be collapsed. For the map the source of truth for the conflict packet lane, record this as a named review checkpoint."
       },
       {
         "heading": "Build the routine",
@@ -106,7 +106,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-write-a-handoff-protocol-for-document-index",
-    "title": "Write a handoff protocol for document index",
+    "title": "Write a handoff protocol for the document index",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: document index without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -141,7 +141,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-write-an-sop-for-document-index-that-people-use",
-    "title": "Write an SOP for document index that people use",
+    "title": "Write a document-index SOP people use",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: document index without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -211,7 +211,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-run-an-exception-queue-for-privilege-log",
-    "title": "Run an exception queue for privilege log",
+    "title": "Run an exception queue for the privilege log",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: privilege log without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -246,7 +246,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-set-approval-boundaries-around-deadline-calendar",
-    "title": "Set approval boundaries around deadline calendar",
+    "title": "Set approval boundaries around the deadline calendar",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: deadline calendar without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -281,7 +281,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-review-access-before-changing-client-update",
-    "title": "Review access before changing client update",
+    "title": "Review access before changing client updates",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: client update without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -316,7 +316,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-standardize-file-close-updates-across-the-team",
-    "title": "Standardize file close updates across the team",
+    "title": "Standardize file-close updates across the team",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: file close without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -351,7 +351,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-build-a-matter-intake-intake-record-that-survives-review",
-    "title": "Build a matter intake intake record that survives review",
+    "title": "Build a matter-intake record that survives review",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: matter intake without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",
@@ -386,7 +386,7 @@ export const october25BlogPosts = [
   },
   {
     "slug": "legalservicesoffshore-onboard-a-va-into-conflict-packet-in-the-first-week",
-    "title": "Onboard a VA into conflict packet in the first week",
+    "title": "Onboard a VA into the conflict packet in the first week",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: conflict packet without unsupported decisions.",
     "published": "2026-10-25",
     "modified": "2026-10-25",

@@ -1,7 +1,7 @@
 export const october25ResearchPosts = [
   {
     "slug": "legalservicesoffshore-early-warning-signals-in-client-update",
-    "title": "Early-warning signals in client update",
+    "title": "Early-warning signals in client updates",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: client update without unsupported decisions.",
     "published": "2026-10-25",
     "sourceDate": "2026-10-25",
@@ -59,11 +59,17 @@ export const october25ResearchPosts = [
         "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       }
+    ],
+    "thumbnail": "/oct25/legalservicesoffshore-early-warning-signals-in-client-update.png",
+    "relatedSlugs": [
+      "legalservicesoffshore-testing-completeness-in-privilege-log",
+      "legalservicesoffshore-capacity-planning-for-outside-counsel-invoice",
+      "legalservicesoffshore-attributing-rework-in-deadline-calendar"
     ]
   },
   {
     "slug": "legalservicesoffshore-testing-completeness-in-privilege-log",
-    "title": "Testing completeness in privilege log",
+    "title": "Testing completeness in privilege logs",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: privilege log without unsupported decisions.",
     "published": "2026-10-25",
     "sourceDate": "2026-10-25",
@@ -121,11 +127,17 @@ export const october25ResearchPosts = [
         "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       }
+    ],
+    "thumbnail": "/oct25/legalservicesoffshore-testing-completeness-in-privilege-log.png",
+    "relatedSlugs": [
+      "legalservicesoffshore-early-warning-signals-in-client-update",
+      "legalservicesoffshore-capacity-planning-for-outside-counsel-invoice",
+      "legalservicesoffshore-attributing-rework-in-deadline-calendar"
     ]
   },
   {
     "slug": "legalservicesoffshore-capacity-planning-for-outside-counsel-invoice",
-    "title": "Capacity planning for outside counsel invoice",
+    "title": "Capacity planning for outside-counsel invoices",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: outside counsel invoice without unsupported decisions.",
     "published": "2026-10-25",
     "sourceDate": "2026-10-25",
@@ -183,11 +195,17 @@ export const october25ResearchPosts = [
         "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       }
+    ],
+    "thumbnail": "/oct25/legalservicesoffshore-capacity-planning-for-outside-counsel-invoice.png",
+    "relatedSlugs": [
+      "legalservicesoffshore-early-warning-signals-in-client-update",
+      "legalservicesoffshore-testing-completeness-in-privilege-log",
+      "legalservicesoffshore-attributing-rework-in-deadline-calendar"
     ]
   },
   {
     "slug": "legalservicesoffshore-attributing-rework-in-deadline-calendar",
-    "title": "Attributing rework in deadline calendar",
+    "title": "Attributing rework in the deadline calendar",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: deadline calendar without unsupported decisions.",
     "published": "2026-10-25",
     "sourceDate": "2026-10-25",
@@ -245,11 +263,17 @@ export const october25ResearchPosts = [
         "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       }
+    ],
+    "thumbnail": "/oct25/legalservicesoffshore-attributing-rework-in-deadline-calendar.png",
+    "relatedSlugs": [
+      "legalservicesoffshore-early-warning-signals-in-client-update",
+      "legalservicesoffshore-testing-completeness-in-privilege-log",
+      "legalservicesoffshore-capacity-planning-for-outside-counsel-invoice"
     ]
   },
   {
     "slug": "legalservicesoffshore-measuring-response-time-for-document-index",
-    "title": "Measuring response time for document index",
+    "title": "Measuring response time for the document index",
     "excerpt": "A source-bounded legal support operations guide for law firm administrators: document index without unsupported decisions.",
     "published": "2026-10-25",
     "sourceDate": "2026-10-25",
@@ -307,6 +331,12 @@ export const october25ResearchPosts = [
         "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       }
+    ],
+    "thumbnail": "/oct25/legalservicesoffshore-measuring-response-time-for-document-index.png",
+    "relatedSlugs": [
+      "legalservicesoffshore-early-warning-signals-in-client-update",
+      "legalservicesoffshore-testing-completeness-in-privilege-log",
+      "legalservicesoffshore-capacity-planning-for-outside-counsel-invoice"
     ]
   }
 ];
