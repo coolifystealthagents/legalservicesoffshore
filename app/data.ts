@@ -363,6 +363,7 @@ blogPosts.unshift(...(october27BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october26BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october25BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october22BlogPosts as unknown as typeof blogPosts));
+blogPosts.sort((a: any, b: any) => String(b.published ?? b.date ?? "").localeCompare(String(a.published ?? a.date ?? "")));
 
 export const blogDetails = {
   'legal-services-offshore-planning': {
