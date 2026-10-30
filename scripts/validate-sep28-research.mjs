@@ -18,7 +18,7 @@ for(const slug of expected){
   const html=await readFile(`.next/server/app/research/${slug}.html`,'utf8');
   assert.match(html,new RegExp(`rel="canonical" href="https://legalservicesoffshore.com/research/${slug}`));
   assert.match(html,/"datePublished":"2026-09-28"/);
-  assert.match(html,/Published: <time dateTime="2026-09-28">September 28, 2026<\/time>/);
+  assert.match(html,/Published\s*<time dateTime="2026-09-28">September 28, 2026<\/time>/);
   assert.match(html,/\/research-thumbnails\/research-default\.svg/);
   const main=(html.match(/<main[\s\S]*?<\/main>/)||[''])[0].replace(/<section class="research-cta[\s\S]*/,'').replace(/<script[\s\S]*?<\/script>/g,' ').replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ');
   const words=(main.match(/\b[\w’'-]+\b/g)||[]).map(word=>word.toLowerCase());
