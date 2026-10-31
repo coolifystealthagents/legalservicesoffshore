@@ -14,7 +14,8 @@
     "validate:calendar-event-case-file-handoff": "node scripts/validate-calendar-event-case-file-handoff.mjs",
     "test:research-organization-schema": "node --test tests/research-article-organization-schema.test.mjs",
     "test:immigration-case-handoff": "node --test tests/immigration-case-handoff.test.mjs",
-    "test:entity-records-handoff": "node --test tests/entity-records-handoff.test.mjs"
+    "test:entity-records-handoff": "node --test tests/entity-records-handoff.test.mjs",
+    "test:matter-status-real-estate-handoff": "node --test tests/matter-status-real-estate-handoff.test.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",

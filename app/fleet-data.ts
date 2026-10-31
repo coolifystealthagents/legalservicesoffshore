@@ -771,6 +771,13 @@ const august18ExplicitBasePosts: readonly ResearchPost[] = [
     "headlineStat": "A bounded evidence study with source provenance, limitations, and owner review.",
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
+    "updated": "2026-10-31",
+    "serviceLink": {
+      "slug": "real-estate-legal-support",
+      "label": "Plan real estate legal support",
+      "title": "Set up a reviewable property-records lane",
+      "body": "Use this service guide to define approved status records, source checks, and the review owner. The firm decides legal meaning, client updates, transaction terms, filing, and closing decisions."
+    },
     "relatedSlugs": [
       "legal-intake-support-control-benchmark",
       "legal-document-version-control",
