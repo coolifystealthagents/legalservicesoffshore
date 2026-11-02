@@ -1,4 +1,5 @@
-export const november02ResearchPosts = [
+import type { ResearchPost } from '../fleet-data';
+export const november02ResearchPosts: ResearchPost[] = [
   {
     "slug": "legalservicesoffshore-build-a-data-dictionary-for-privilege-log-evidence-nov-2",
     "title": "Build a data dictionary for privilege log evidence",
