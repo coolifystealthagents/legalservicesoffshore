@@ -108,6 +108,7 @@ import { october27BlogPosts } from './blog/blog-2026-10-27';
 import { october26BlogPosts } from './blog/blog-2026-10-26';
 import { october25BlogPosts } from './blog/blog-2026-10-25';
 import { october22BlogPosts } from './blog/blog-2026-10-22';
+import { november01BlogPosts } from './blog/blog-2026-11-01';
 
 const blogPostsSource = [
   { slug: 'offshore-legal-support-deposition-prep-index', title: 'Deposition-preparation indexing with offshore legal support', excerpt: 'Organize notices, exhibits, witness materials, and open questions while counsel controls preparation strategy and examination choices.', minutes: 8, published: '2026-08-14', sections: [{ heading: 'Build the preparation index', body: 'List the deposition notice, scheduled details, witness identifier, approved exhibit set, prior statements, and source location. Keep versions and dates visible so the attorney can see what the packet contains.' }, { heading: 'Separate facts from strategy', body: 'A support role can flag missing exhibits, inconsistent names, or a document that is hard to locate. It should not predict testimony, rank topics, or suggest examination questions.' }, { heading: 'Give counsel a clean handoff', body: 'Deliver the index with a gap list, source links, and the person who resolved each administrative question. The attorney decides what to review and what belongs in the final preparation.' }] },
@@ -365,6 +366,7 @@ blogPosts.unshift(...(october28BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october26BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october25BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(october22BlogPosts as unknown as typeof blogPosts));
+blogPosts.unshift(...(november01BlogPosts as unknown as typeof blogPosts));
 blogPosts.sort((a: any, b: any) => String(b.published ?? b.date ?? "").localeCompare(String(a.published ?? a.date ?? "")));
 
 export const blogDetails = {
