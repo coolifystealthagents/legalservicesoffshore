@@ -44,27 +44,27 @@ export const november01ResearchPosts = [
     ],
     "sources": [
       {
-        "label": "American Bar Association",
+        "name": "American Bar Association",
         "url": "https://www.americanbar.org/"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
+        "name": "NALS, The Association for Legal Professionals",
         "url": "https://www.nals.org/"
       },
       {
-        "label": "U.S. Courts",
+        "name": "U.S. Courts",
         "url": "https://www.uscourts.gov/"
       },
       {
-        "label": "U.S. Government Accountability Office",
+        "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       },
       {
-        "label": "NIST Cybersecurity Framework",
+        "name": "NIST Cybersecurity Framework",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "label": "Federal Trade Commission",
+        "name": "Federal Trade Commission",
         "url": "https://www.ftc.gov/"
       }
     ],
@@ -119,27 +119,27 @@ export const november01ResearchPosts = [
     ],
     "sources": [
       {
-        "label": "American Bar Association",
+        "name": "American Bar Association",
         "url": "https://www.americanbar.org/"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
+        "name": "NALS, The Association for Legal Professionals",
         "url": "https://www.nals.org/"
       },
       {
-        "label": "U.S. Courts",
+        "name": "U.S. Courts",
         "url": "https://www.uscourts.gov/"
       },
       {
-        "label": "U.S. Government Accountability Office",
+        "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       },
       {
-        "label": "NIST Cybersecurity Framework",
+        "name": "NIST Cybersecurity Framework",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "label": "Federal Trade Commission",
+        "name": "Federal Trade Commission",
         "url": "https://www.ftc.gov/"
       }
     ],
@@ -194,27 +194,27 @@ export const november01ResearchPosts = [
     ],
     "sources": [
       {
-        "label": "American Bar Association",
+        "name": "American Bar Association",
         "url": "https://www.americanbar.org/"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
+        "name": "NALS, The Association for Legal Professionals",
         "url": "https://www.nals.org/"
       },
       {
-        "label": "U.S. Courts",
+        "name": "U.S. Courts",
         "url": "https://www.uscourts.gov/"
       },
       {
-        "label": "U.S. Government Accountability Office",
+        "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       },
       {
-        "label": "NIST Cybersecurity Framework",
+        "name": "NIST Cybersecurity Framework",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "label": "Federal Trade Commission",
+        "name": "Federal Trade Commission",
         "url": "https://www.ftc.gov/"
       }
     ],
@@ -269,27 +269,27 @@ export const november01ResearchPosts = [
     ],
     "sources": [
       {
-        "label": "American Bar Association",
+        "name": "American Bar Association",
         "url": "https://www.americanbar.org/"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
+        "name": "NALS, The Association for Legal Professionals",
         "url": "https://www.nals.org/"
       },
       {
-        "label": "U.S. Courts",
+        "name": "U.S. Courts",
         "url": "https://www.uscourts.gov/"
       },
       {
-        "label": "U.S. Government Accountability Office",
+        "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       },
       {
-        "label": "NIST Cybersecurity Framework",
+        "name": "NIST Cybersecurity Framework",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "label": "Federal Trade Commission",
+        "name": "Federal Trade Commission",
         "url": "https://www.ftc.gov/"
       }
     ],
@@ -344,27 +344,27 @@ export const november01ResearchPosts = [
     ],
     "sources": [
       {
-        "label": "American Bar Association",
+        "name": "American Bar Association",
         "url": "https://www.americanbar.org/"
       },
       {
-        "label": "NALS, The Association for Legal Professionals",
+        "name": "NALS, The Association for Legal Professionals",
         "url": "https://www.nals.org/"
       },
       {
-        "label": "U.S. Courts",
+        "name": "U.S. Courts",
         "url": "https://www.uscourts.gov/"
       },
       {
-        "label": "U.S. Government Accountability Office",
+        "name": "U.S. Government Accountability Office",
         "url": "https://www.gao.gov/"
       },
       {
-        "label": "NIST Cybersecurity Framework",
+        "name": "NIST Cybersecurity Framework",
         "url": "https://www.nist.gov/cyberframework"
       },
       {
-        "label": "Federal Trade Commission",
+        "name": "Federal Trade Commission",
         "url": "https://www.ftc.gov/"
       }
     ],
