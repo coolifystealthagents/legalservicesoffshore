@@ -39,23 +39,10 @@ export default function Research() {
                 <span>12-source reports</span>
               </div>
             </div>
-            <aside
-              className="research-hero-card"
-              aria-label="Research quality signals"
-            >
-              <div>
-                <strong>01</strong>
-                <span>Benchmarks and operating context</span>
-              </div>
-              <div>
-                <strong>02</strong>
-                <span>Practical screening questions</span>
-              </div>
-              <div>
-                <strong>03</strong>
-                <span>Implementation checks</span>
-              </div>
-            </aside>
+            <figure className="research-hero-photo">
+              <img src="/images/editorial/research-hero.webp" width="1400" height="934" alt="Professional reviewing research notes and source material" fetchPriority="high" />
+              <figcaption>Source material, notes, and review questions kept together.</figcaption>
+            </figure>
           </div>
         </section>
         <section className="section research-library-section">
@@ -87,6 +74,7 @@ export default function Research() {
                     href={`/research/${p.slug}`}
                     key={p.slug}
                   >
+                    <img className="research-card-image" src={p.thumbnail || "/images/editorial/research-card.webp"} width="1200" height="630" alt="" loading="lazy" />
                     <span className="research-card-badge">{p.cluster}</span>
                     <h2>{p.title}</h2>
                     <p className="research-card-highlight">{p.headlineStat}</p>

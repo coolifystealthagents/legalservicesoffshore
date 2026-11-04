@@ -1,6 +1,7 @@
 import { Header, Footer } from "../components";
 import { blogPosts, site } from "../data";
 import { postsPerPage } from "../fleet-data";
+import { getBlogCardImage } from "./blog-card-media";
 const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 export const metadata = {
   title: `Blog | ${site.brand}`,
@@ -14,20 +15,24 @@ export default function Blog() {
     <>
       <Header />
       <main id="main-content" tabIndex={-1}>
-        <section className="fleet-hero variant-3">
-          <div className="container">
+        <section className="fleet-hero variant-3 editorial-index-hero">
+          <div className="container editorial-index-hero-grid">
+            <div>
             <p className="eyebrow">Blog</p>
             <h1>Legal Services Offshore guides</h1>
             <p className="lead">
               Practical planning for Philippines-based legal operations roles,
               workflows, and manager handoffs.
             </p>
+            </div>
+            <figure><img src="/images/editorial/blog-hero.webp" width="1400" height="932" alt="Professional writing a legal operations guide at a laptop" fetchPriority="high" /></figure>
           </div>
         </section>
         <section className="section">
           <div className="container fleet-service-grid">
             {posts.map((p) => (
-              <a className="card" href={`/blog/${p.slug}`} key={p.slug}>
+              <a className="card blog-index-card" href={`/blog/${p.slug}`} key={p.slug}>
+                <img className="index-card-image" src={getBlogCardImage(p)} width="1200" height="675" alt="" loading="lazy" />
                 <h2>{p.title}</h2>
                 <p>{p.excerpt}</p>
                 {"published" in p && typeof p.published === "string" ? <time dateTime={p.published}>Published {formatDate(p.published)}</time> : null}

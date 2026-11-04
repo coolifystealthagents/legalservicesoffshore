@@ -4,6 +4,7 @@ import { Header, Footer } from "../../../components";
 import { blogPosts, site } from "../../../data";
 import { postsPerPage } from "../../../fleet-data";
 import type { Metadata } from "next";
+import { getBlogCardImage } from "../../blog-card-media";
 export function generateStaticParams() {
   const pages = Math.max(1, Math.ceil(blogPosts.length / postsPerPage));
   return Array.from({ length: pages }, (_, i) => ({ page: String(i + 1) }));
@@ -42,7 +43,8 @@ export default async function BlogPage({
         <section className="section">
           <div className="container fleet-service-grid">
             {posts.map((p) => (
-              <a className="card" href={`/blog/${p.slug}`} key={p.slug}>
+              <a className="card blog-index-card" href={`/blog/${p.slug}`} key={p.slug}>
+                <img className="index-card-image" src={getBlogCardImage(p)} width="1200" height="675" alt="" loading="lazy" />
                 <h2>{p.title}</h2>
                 <p>{p.excerpt}</p>
                 <b>Read article →</b>

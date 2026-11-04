@@ -28,3 +28,46 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}body{background:#fffdf8}.ski
   .article-sidebar{position:static!important;max-height:none;overflow:visible}
   .toc-disclosure{position:fixed!important;top:70px;left:12px;right:12px;z-index:40;margin:0}
 }
+
+/* Scoped editorial photography and spacing repair. */
+.lso-hero{padding-top:48px}
+.service-hero,.services-index-hero{padding:48px 0}
+.service-intro{padding-top:64px;padding-bottom:64px}
+.service-scope{padding:68px 0}
+.service-workflow{padding-top:72px;padding-bottom:72px}
+.service-boundaries{padding:72px 0}
+.service-scenarios{padding-top:72px;padding-bottom:56px}
+.service-faq{padding-bottom:68px}
+.related-services{padding-bottom:68px}
+.services-principles{padding:68px 0}
+.service-directory{padding-bottom:68px}
+.services-decision{padding:72px 0}
+.services-launch{padding-top:72px;padding-bottom:72px}
+.services-faq{padding-bottom:68px}
+.editorial-index-hero{padding:54px 0}
+.editorial-index-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:clamp(32px,6vw,72px);align-items:center}
+.variant-3 .editorial-index-hero-grid{border-left:0;padding-left:0}
+.editorial-index-hero figure,.research-hero-photo{margin:0}
+.editorial-index-hero figure img,.research-hero-photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.editorial-index-hero figure img{box-shadow:18px 18px 0 #b85b37}
+.blog-index-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;padding:0 24px 24px;border:1px solid #d9d2c5;background:#fff;box-shadow:0 10px 28px rgba(24,37,31,.05)}
+.blog-index-card h2{margin:22px 0 12px;font-family:Newsreader,Georgia,serif;font-size:26px;line-height:1.1}
+.blog-index-card p{color:#58645d;line-height:1.6}
+.blog-index-card time{margin-top:auto;padding-top:12px;color:#657069;font-size:13px}
+.blog-index-card b{display:block;margin-top:14px}
+.index-card-image{width:calc(100% + 48px);max-width:none;height:auto;aspect-ratio:16/9;margin-left:-24px;object-fit:cover;background:#e7e2d8}
+.research-hero-photo{position:relative}
+.research-hero-photo img{box-shadow:18px 18px 0 rgba(183,243,74,.72)}
+.research-hero-photo figcaption{margin-top:30px;color:#dbe5ff;font-size:13px}
+.research-card-image{width:calc(100% + 48px);max-width:none;aspect-ratio:16/9;margin:-24px -24px 20px;object-fit:cover;background:#e8edf4;border-radius:16px 16px 0 0}
+@media(max-width:900px){
+  .editorial-index-hero-grid{grid-template-columns:1fr}
+  .service-hero,.services-index-hero{padding:40px 0}
+  .service-intro,.service-scope,.service-workflow,.service-boundaries,.service-scenarios,.services-principles,.services-decision,.services-launch{padding-top:56px;padding-bottom:56px}
+}
+@media(max-width:600px){
+  .lso-hero{padding-top:32px}
+  .editorial-index-hero{padding:40px 0}
+  .service-hero,.services-index-hero{padding:34px 0}
+  .service-intro,.service-scope,.service-workflow,.service-boundaries,.service-scenarios,.services-principles,.services-decision,.services-launch{padding-top:48px;padding-bottom:48px}
+}

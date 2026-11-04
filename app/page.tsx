@@ -70,7 +70,7 @@ export default function Home() {
 
             <div className="lso-hero-visual" aria-label="Legal support work organized around firm review">
               <div className="lso-image-frame">
-                <img src="/illustrations/getillustrations/hannah-business-illustrations-svg/legal-admin-support.svg" alt="Illustration of offshore legal administration organized around firm rules and attorney review" />
+                <img src="/images/editorial/home-legal-team.webp" width="1400" height="919" alt="Legal operations professionals collaborating at computers in a modern office" fetchPriority="high" />
 
               </div>
               <div className="lso-docket-card">
