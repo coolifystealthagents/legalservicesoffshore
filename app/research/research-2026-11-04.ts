@@ -2,7 +2,7 @@ import type { ResearchPost } from '../fleet-data';
 
 export const november04ResearchPosts: ResearchPost[] = [
   {
-    "slug": "legalservicesoffshore-exhibit-cross-reference-study",
+    "slug": "legalservicesoffshore-do-deposition-exhibit-indexes-survive-a-cross-reference-check",
     "title": "Do deposition exhibit indexes survive a cross-reference check?",
     "excerpt": "A bounded method for testing whether an exhibit index matches the transcript, the source file, and the admission status recorded in the case.",
     "published": "2026-11-04",
@@ -58,12 +58,12 @@ export const november04ResearchPosts: ResearchPost[] = [
     "relatedSlugs": [
       "legalservicesoffshore-intake-completeness-study",
       "legalservicesoffshore-matter-handoff-evidence-study",
-      "legalservicesoffshore-contract-abstraction-accuracy-study"
+      "legalservicesoffshore-measuring-contract-abstraction-accuracy-against-the-source-clause"
     ],
-    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-exhibit-cross-reference-study.png"
+    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-do-deposition-exhibit-indexes-survive-a-cross-reference-check.png"
   },
   {
-    "slug": "legalservicesoffshore-contract-abstraction-accuracy-study",
+    "slug": "legalservicesoffshore-measuring-contract-abstraction-accuracy-against-the-source-clause",
     "title": "Measuring contract abstraction accuracy against the source clause",
     "excerpt": "A repeatable review that tests whether each abstraction row matches the operative clause, the defined term, and the version of the agreement that was reviewed.",
     "published": "2026-11-04",
@@ -117,14 +117,14 @@ export const november04ResearchPosts: ResearchPost[] = [
       { "name": "U.S. Small Business Administration — Contracting", "url": "https://www.sba.gov/business-guide/manage-your-business" }
     ],
     "relatedSlugs": [
-      "legalservicesoffshore-exhibit-cross-reference-study",
+      "legalservicesoffshore-do-deposition-exhibit-indexes-survive-a-cross-reference-check",
       "legalservicesoffshore-review-consistency-research",
       "legalservicesoffshore-source-quality-evidence-research"
     ],
-    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-contract-abstraction-accuracy-study.png"
+    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-measuring-contract-abstraction-accuracy-against-the-source-clause.png"
   },
   {
-    "slug": "legalservicesoffshore-document-dump-intake-study",
+    "slug": "legalservicesoffshore-where-client-document-dumps-stall-before-review",
     "title": "Where client document dumps stall before review",
     "excerpt": "A stage-by-stage method for locating the delay between a client production and the first substantive review, using a frozen collection and a written intake standard.",
     "published": "2026-11-04",
@@ -183,13 +183,13 @@ export const november04ResearchPosts: ResearchPost[] = [
     ],
     "relatedSlugs": [
       "legalservicesoffshore-intake-completeness-study",
-      "legalservicesoffshore-exhibit-cross-reference-study",
+      "legalservicesoffshore-do-deposition-exhibit-indexes-survive-a-cross-reference-check",
       "legalservicesoffshore-handoff-reliability-research"
     ],
-    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-document-dump-intake-study.png"
+    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-where-client-document-dumps-stall-before-review.png"
   },
   {
-    "slug": "legalservicesoffshore-trust-request-evidence-study",
+    "slug": "legalservicesoffshore-trust-request-evidence-what-a-disbursement-file-shows",
     "title": "Trust request evidence: what a disbursement file shows",
     "excerpt": "A bounded review of whether trust disbursement requests carry the ledger match, the authorization, the supporting document, and the posting confirmation.",
     "published": "2026-11-04",
@@ -249,12 +249,12 @@ export const november04ResearchPosts: ResearchPost[] = [
     "relatedSlugs": [
       "legalservicesoffshore-access-recertification-patterns-study",
       "legalservicesoffshore-access-governance-research",
-      "legalservicesoffshore-document-dump-intake-study"
+      "legalservicesoffshore-where-client-document-dumps-stall-before-review"
     ],
-    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-trust-request-evidence-study.png"
+    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-trust-request-evidence-what-a-disbursement-file-shows.png"
   },
   {
-    "slug": "legalservicesoffshore-redaction-qa-detection-study",
+    "slug": "legalservicesoffshore-redaction-qa-detecting-missed-identifiers-in-a-produced-set",
     "title": "Redaction QA: detecting missed identifiers in a produced set",
     "excerpt": "A sampling and search protocol for testing whether a redacted production still exposes names, account numbers, or metadata that should have been removed.",
     "published": "2026-11-04",
@@ -314,8 +314,8 @@ export const november04ResearchPosts: ResearchPost[] = [
     "relatedSlugs": [
       "legalservicesoffshore-source-quality-evidence-research",
       "legalservicesoffshore-review-consistency-research",
-      "legalservicesoffshore-exhibit-cross-reference-study"
+      "legalservicesoffshore-do-deposition-exhibit-indexes-survive-a-cross-reference-check"
     ],
-    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-redaction-qa-detection-study.png"
+    "thumbnail": "/thumbnails/november-04/legalservicesoffshore-redaction-qa-detecting-missed-identifiers-in-a-produced-set.png"
   }
 ];

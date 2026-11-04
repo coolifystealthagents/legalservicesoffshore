@@ -1,12 +1,12 @@
 export const november04BlogPosts = [
   {
-    "slug": "legalservicesoffshore-deposition-exhibit-index-trial-team",
+    "slug": "legalservicesoffshore-a-deposition-exhibit-index-that-survives-trial-use",
     "title": "A deposition exhibit index that survives trial use",
     "excerpt": "Build an exhibit index that ties every marked exhibit to its transcript reference, source file, and admission status so the trial team can rely on it later.",
     "published": "2026-11-04",
     "modified": "2026-11-04",
     "minutes": 8,
-    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-deposition-exhibit-index-trial-team.png",
+    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-a-deposition-exhibit-index-that-survives-trial-use.png",
     "sections": [
       {
         "heading": "Start from the transcript, not the exhibit list",
@@ -39,13 +39,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "legalservicesoffshore-contract-schedule-abstraction-worksheet",
+    "slug": "legalservicesoffshore-abstract-contract-schedules-without-losing-the-source-clause",
     "title": "Abstract contract schedules without losing the source clause",
     "excerpt": "A clause-level abstraction worksheet that keeps every schedule entry tied to the operative language, the defined term, and the reviewer who accepted it.",
     "published": "2026-11-04",
     "modified": "2026-11-04",
     "minutes": 8,
-    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-contract-schedule-abstraction-worksheet.png",
+    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-abstract-contract-schedules-without-losing-the-source-clause.png",
     "sections": [
       {
         "heading": "Decide what the schedule must answer",
@@ -78,13 +78,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "legalservicesoffshore-client-document-dump-triage",
+    "slug": "legalservicesoffshore-triage-a-client-document-dump-into-a-review-plan",
     "title": "Triage a client document dump into a review plan",
     "excerpt": "Turn an unstructured client production into an inventory, a privilege screen, and a review order without opening every file first or losing the chain of custody.",
     "published": "2026-11-04",
     "modified": "2026-11-04",
     "minutes": 8,
-    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-client-document-dump-triage.png",
+    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-triage-a-client-document-dump-into-a-review-plan.png",
     "sections": [
       {
         "heading": "Stop before opening every file",
@@ -117,13 +117,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "legalservicesoffshore-trust-request-triage-boundary",
+    "slug": "legalservicesoffshore-triage-trust-account-requests-before-any-disbursement",
     "title": "Triage trust account requests before any disbursement",
     "excerpt": "A preparation routine that gathers the ledger, the approval, and the supporting document for every trust request while leaving the disbursement decision with the authorized signer.",
     "published": "2026-11-04",
     "modified": "2026-11-04",
     "minutes": 8,
-    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-trust-request-triage-boundary.png",
+    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-triage-trust-account-requests-before-any-disbursement.png",
     "sections": [
       {
         "heading": "Identify the request type first",
@@ -156,13 +156,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "legalservicesoffshore-redaction-qa-produced-documents",
+    "slug": "legalservicesoffshore-a-redaction-qa-pass-for-produced-documents",
     "title": "A redaction QA pass for produced documents",
     "excerpt": "A second-pass redaction check that reviews native files, metadata, and sampled pages before a production leaves the firm.",
     "published": "2026-11-04",
     "modified": "2026-11-04",
     "minutes": 8,
-    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-redaction-qa-produced-documents.png",
+    "featuredImage": "/thumbnails/november-04/legalservicesoffshore-a-redaction-qa-pass-for-produced-documents.png",
     "sections": [
       {
         "heading": "Define the redaction categories before review",
