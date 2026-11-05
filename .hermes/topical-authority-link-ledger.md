@@ -45,3 +45,12 @@ Fresh local production artifacts show that the October 13 research batch already
 - Delivered and non-duplicable: Review Queue Interruption; Matter Code Reclassification; Shared Link Revocation; Citation Location Replay; and Reviewer Acknowledgment Lag → Legal Reporting and QA.
 - Boundary retained: Philippines-based support can prepare evidence and flag exceptions. The firm keeps legal judgment, access, client commitments, and corrective-action decisions.
 - This is a source-only planning reconciliation. It does not alter a visitor-facing route or create public rollout evidence.
+
+## 2026-11-05 contract-abstraction candidate preflight
+
+- Source route: `/research/legalservicesoffshore-measuring-contract-abstraction-accuracy-against-the-source-clause`. Destination: `/services/contract-administration`.
+- Fresh local artifacts confirm both generated routes have their expected H1s and self-canonicals and both occur in the sitemap, which intentionally has no `lastmod`. The source route has zero route-local `<main>` anchors to the destination.
+- Candidate state: hold. The research record sets out a review method but does not publish a site-owned cohort, result set, or transparent completed study. Do not add a service CTA until the source records the actual population, observation period, method, and bounded findings or is revised as a transparent research plan.
+- Reader question: How can a Philippines-based support team prepare clause-linked abstraction evidence while counsel retains interpretation and contract decisions?
+- Future handoff boundary: one route-local link only, placed beside the sentence that reserves interpretation, enforceability, notice, and commercial decisions for counsel. The support role may prepare source-linked records and a review log; it may not decide contract meaning, commitments, price, approval, or exceptions.
+- This source-only ledger entry preserves the candidate and prevents a generic CTA from amplifying an unproven research claim. It changes no rendered route and creates no public rollout evidence.
