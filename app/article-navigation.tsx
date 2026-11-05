@@ -29,11 +29,17 @@ export function ArticleNavigator({ items = [], related = [], serviceHref = '/ser
     return () => observer.disconnect();
   }, []);
 
+  const tocList = headings.length ? <ol>{headings.map(item => <li key={item.id} className={item.level === 3 ? 'toc-sub' : ''}><a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined}>{item.label}</a></li>)}</ol> : <p className="toc-loading">Article sections load here.</p>;
+
   return <aside className="article-sidebar" data-article-sidebar aria-label="Article tools">
-    <details className="toc-disclosure">
+    <nav className="toc-desktop" aria-label="Table of contents">
+      <h2>In this article</h2>
+      {tocList}
+    </nav>
+    <details className="toc-disclosure" aria-label="Table of contents">
       <summary>In this article</summary>
       <nav aria-label="Table of contents">
-        {headings.length ? <ol>{headings.map(item => <li key={item.id} className={item.level === 3 ? 'toc-sub' : ''}><a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined} onClick={(event) => { const details = event.currentTarget.closest('details'); if (details) details.removeAttribute('open'); }}>{item.label}</a></li>)}</ol> : <p className="toc-loading">Article sections load here.</p>}
+        {tocList}
       </nav>
     </details>
     <section className="sidebar-module"><h2>Publisher</h2><p><strong>Legal Services Offshore</strong><br />Powered by StealthAgents</p><p>Operational guidance for supervised Philippines-based legal support.</p></section>
