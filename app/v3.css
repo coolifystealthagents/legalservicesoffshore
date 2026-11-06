@@ -59,7 +59,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}body{background:#fffdf8}.ski
 .research-hero-photo{position:relative}
 .research-hero-photo img{box-shadow:18px 18px 0 rgba(183,243,74,.72)}
 .research-hero-photo figcaption{margin-top:30px;color:#dbe5ff;font-size:13px}
-.research-card-image{width:calc(100% + 48px);max-width:none;aspect-ratio:16/9;margin:-24px -24px 20px;object-fit:cover;background:#e8edf4;border-radius:16px 16px 0 0}
+.research-card-image{width:calc(100% + 48px);max-width:none;height:auto;aspect-ratio:16/9;margin:-24px -24px 20px;object-fit:cover;background:#e8edf4;border-radius:16px 16px 0 0}
 @media(max-width:900px){
   .editorial-index-hero-grid{grid-template-columns:1fr}
   .service-hero,.services-index-hero{padding:40px 0}
