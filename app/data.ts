@@ -109,6 +109,7 @@ import { october26BlogPosts } from './blog/blog-2026-10-26';
 import { october25BlogPosts } from './blog/blog-2026-10-25';
 import { october22BlogPosts } from './blog/blog-2026-10-22';
 import { november06BlogPosts } from './blog/blog-2026-11-06';
+import { november07BlogPosts } from './blog/blog-2026-11-07';
 import { november05BlogPosts } from './blog/blog-2026-11-05';
 import { november04BlogPosts } from './blog/blog-2026-11-04';
 import { november03BlogPosts } from './blog/blog-2026-11-03';
@@ -377,6 +378,7 @@ blogPosts.unshift(...(november03BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(november04BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(november05BlogPosts as unknown as typeof blogPosts));
 blogPosts.unshift(...(november06BlogPosts as unknown as typeof blogPosts));
+blogPosts.unshift(...(november07BlogPosts as unknown as typeof blogPosts));
 blogPosts.sort((a: any, b: any) => String(b.published ?? b.date ?? "").localeCompare(String(a.published ?? a.date ?? "")));
 
 export const blogDetails = {
