@@ -28,7 +28,6 @@ export const november09BlogPosts = [
     "body": [
      "A client update should distinguish what has happened from what the firm expects to happen. Use plain labels such as confirmed, filed, scheduled, or awaiting. Do not write we will file by Friday unless the responsible lawyer has committed to that plan. An expectation presented as a fact becomes a broken promise when the schedule changes.",
      "If the timing is uncertain, say what the uncertainty depends on. A witness availability, a court ruling, or a client document can change the date. Give the client the next checkpoint rather than a false precision. The update should leave the client knowing when they will hear again.",
-     "Ask the client whether they want the next checkpoint as a date or as an event. Some clients prefer a calendar date, while others want to hear when a filing is accepted or a hearing concludes. Record the preference in the matter record and use it consistently. A checkpoint that matches the client's decision process is more useful than a generic follow-up promise.",
      "Ask the client whether they want the next checkpoint as a date or as an event. Some clients prefer a calendar date, while others want to hear when a filing is accepted or a hearing concludes. Record the preference in the matter record and use it consistently. A checkpoint that matches the client's decision process is more useful than a generic follow-up promise."
     ]
    },
@@ -38,8 +37,7 @@ export const november09BlogPosts = [
      "A delay message should state what changed, when the firm learned it, and what happens next. Do not speculate about the other side's motives or the court's reasoning. If the cause is unknown, say that the firm is checking and name the date it will report back. A calm, specific message is more credible than a confident story that later collapses.",
      "Avoid blaming a staff member or a client in the update. Describe the process event, not the person. If the firm missed an internal step, say that the step is being corrected and give the new date. The client needs a path forward more than an explanation of whose fault it was.",
      "If the delay involves a third party, name the party and the step that is waiting without characterizing their conduct. The client can understand that a response is outstanding without hearing that the other side is playing games. Record the last contact and the next follow-up date. The update should give the client a realistic sense of the wait.",
-     "Avoid giving a new date unless the source supports it. If the client asks for a date the firm cannot confirm, say what must happen before the date can be set. A holding answer with a concrete next step is better than a guess. Record the condition and the person who will confirm it.",
-     "If the delay involves a third party, name the party and the step that is waiting without characterizing their conduct. The client can understand that a response is outstanding without hearing that the other side is playing games. Record the last contact and the next follow-up date. The update should give the client a realistic sense of the wait."
+     "Avoid giving a new date unless the source supports it. If the client asks for a date the firm cannot confirm, say what must happen before the date can be set. A holding answer with a concrete next step is better than a guess. Record the condition and the person who will confirm it."
     ]
    },
    {
@@ -47,7 +45,6 @@ export const november09BlogPosts = [
     "body": [
      "Keep the sent message with the matter record and note the date, channel, and recipient. If the client replies, record the reply rather than only the original update. A later reader should be able to see what the client was told and what the client asked in return. That record prevents contradictory messages.",
      "If the update includes a document, record the version that was sent. A client may rely on an early draft if the final version is not clearly labeled. Use a version date and a short description of the change. The matter record should show which version the client actually received.",
-     "Use the same subject line and thread for the update so the client can find the history. A new thread for every message scatters the record and makes the client search for the last version. If the matter has a client portal, put the update there as well. Record which channel is authoritative when the two differ.",
      "Use the same subject line and thread for the update so the client can find the history. A new thread for every message scatters the record and makes the client search for the last version. If the matter has a client portal, put the update there as well. Record which channel is authoritative when the two differ."
     ]
    },
@@ -110,7 +107,6 @@ export const november09BlogPosts = [
     "body": [
      "The reminder schedule should follow the hold notice and any court order, not a generic monthly habit. Record the initial notice date, the reminder interval, and the next reminder date. If the order requires a specific acknowledgment, put that requirement in the same row. A cadence invented by the team may not match the obligation.",
      "Choose a reminder channel the custodian actually uses and can respond to. Email may be sufficient for one group, while a system prompt or a manager meeting may work better for another. Record the channel and the person responsible for sending. A reminder that disappears into an unread folder is not a reminder.",
-     "Check whether the hold notice tells custodians how to ask a question. A custodian who does not know where to send a question may ignore the reminder or reply to the wrong person. Record the contact route and the expected response time. A clear question route reduces the number of reminders that go unanswered.",
      "Check whether the hold notice tells custodians how to ask a question. A custodian who does not know where to send a question may ignore the reminder or reply to the wrong person. Record the contact route and the expected response time. A clear question route reduces the number of reminders that go unanswered."
     ]
    },
@@ -119,7 +115,6 @@ export const november09BlogPosts = [
     "body": [
      "For each reminder, record the date sent, the recipients, and the responses received. Do not mark a custodian as acknowledged because the message was delivered. An acknowledgment is a response from the custodian, not a delivery receipt. If a response is ambiguous, ask for a clear confirmation and record the follow-up.",
      "Keep the reminder and the response together in the hold file. If a custodian confirms by phone, write a short note with the date and the person who took the call. A verbal confirmation that never reaches the file is difficult to rely on. The record should let a new owner see who has confirmed and who has not.",
-     "Keep the reminder template short enough that a custodian can see the action, the deadline, and the contact route in one screen. Long policy attachments may be necessary, but the message should not bury the request. Record the template version with the reminder log. A template that changes without a version note makes the history hard to compare.",
      "Keep the reminder template short enough that a custodian can see the action, the deadline, and the contact route in one screen. Long policy attachments may be necessary, but the message should not bury the request. Record the template version with the reminder log. A template that changes without a version note makes the history hard to compare."
     ]
    },
@@ -128,8 +123,6 @@ export const november09BlogPosts = [
     "body": [
      "When a custodian leaves, the schedule needs a new owner for their records and a check on their accounts. Record the departure date, the systems that were disabled, and the person who confirmed the preservation step. Do not assume that a disabled account means the records are preserved. The data may be deleted on a schedule that the hold is supposed to stop.",
      "If the departing custodian had unique knowledge, record who can answer questions about their files. A replacement may not know where the records were kept. Update the custodian list and the reminder route. The hold should survive the person even when the person is no longer available.",
-     "When a custodian changes role but remains employed, check whether their systems changed. A new role may remove access to the records the hold covers. Record the new role, the systems affected, and the person who confirmed the preservation step. A role change is not the same as a departure, but it can create the same gap.",
-     "When a custodian changes role but remains employed, check whether their systems changed. A new role may remove access to the records the hold covers. Record the new role, the systems affected, and the person who confirmed the preservation step. A role change is not the same as a departure, but it can create the same gap.",
      "When a custodian changes role but remains employed, check whether their systems changed. A new role may remove access to the records the hold covers. Record the new role, the systems affected, and the person who confirmed the preservation step. A role change is not the same as a departure, but it can create the same gap."
     ]
    },
@@ -138,7 +131,6 @@ export const november09BlogPosts = [
     "body": [
      "A missed acknowledgment is a signal, not a clerical error. Record how many reminders were sent, the dates, and the response. Escalate to the responsible lawyer or the custodian's manager when the agreed window passes. Do not keep sending reminders indefinitely without telling anyone. The escalation should name the person who will follow up.",
      "If the custodian says they cannot comply, record the reason and the proposed alternative. A technical limitation, a leave, or a misunderstanding may need a different route. The lawyer decides whether the alternative is acceptable. The schedule should show the decision and the date, not only the original reminder.",
-     "If the lawyer decides that a missed acknowledgment is acceptable because the custodian has confirmed preservation another way, record that decision. The schedule should show the alternative evidence and the date. Do not leave the reminder marked as missed without an explanation. A later reviewer should see why the item was closed.",
      "If the lawyer decides that a missed acknowledgment is acceptable because the custodian has confirmed preservation another way, record that decision. The schedule should show the alternative evidence and the date. Do not leave the reminder marked as missed without an explanation. A later reviewer should see why the item was closed."
     ]
    },
@@ -201,7 +193,6 @@ export const november09BlogPosts = [
     "body": [
      "Use one identifier per document and keep it consistent across systems. If the review platform assigns a control number, record it beside the Bates number. If the document has multiple versions, give each version its own row and note the relationship. A log that merges versions cannot answer which one was produced.",
      "Record the file name, the page count, and the source location for each document. These fields let a reviewer confirm that the produced image matches the reviewed file. If a document is a compilation, list the component parts or attach an index. A short description is not a substitute for a stable link to the source.",
-     "Record whether a document was collected from a live system or an archive. An archived file may have different metadata and a different version history. If the collection method changed during the matter, note the change and the date. The production log should let a reviewer compare like with like.",
      "Record whether a document was collected from a live system or an archive. An archived file may have different metadata and a different version history. If the collection method changed during the matter, note the change and the date. The production log should let a reviewer compare like with like."
     ]
    },
@@ -210,7 +201,6 @@ export const november09BlogPosts = [
     "body": [
      "For each document withheld or redacted, record the privilege basis, the reviewer, and the date. Use the firm's categories consistently and do not invent a new label for each document. If the decision is a judgment call, note the facts the reviewer relied on. A bare privileged stamp cannot be reviewed later.",
      "Keep the privilege log separate from the production log but link the two by identifier. The production log shows what was released, while the privilege log explains what was withheld. A reviewer should be able to move from one to the other without searching. If a document is partially redacted, record both the released and withheld portions.",
-     "Use a short description that helps a reader identify the document without reading it. The description should not reveal privileged content. A neutral phrase such as email chain about scheduling is enough. If the document is a draft, label it as a draft and record the version. The log is a finding aid, not a second copy of the file.",
      "Use a short description that helps a reader identify the document without reading it. The description should not reveal privileged content. A neutral phrase such as email chain about scheduling is enough. If the document is a draft, label it as a draft and record the version. The log is a finding aid, not a second copy of the file."
     ]
    },
@@ -220,8 +210,7 @@ export const november09BlogPosts = [
      "A redaction should be tied to the exact page and the reason. Record the page, the redaction category, and the reviewer who approved it. If the redaction removes a name, a figure, or a sentence, note the type without reproducing the privileged content. The record should be specific enough to defend the redaction without becoming a second copy.",
      "Check the redacted image against the source before production. A redaction box that covers the wrong line or leaves metadata visible is a common error. Record the check and the person who performed it. If the error is found after production, record the correction path and the recipient who was notified.",
      "Check whether the redaction tool preserves the underlying text or metadata. A visually redacted page can still carry the original text in a layer. Record the tool and the export setting. If the team cannot verify the setting, use a flattened image and record the conversion. The production should not depend on a setting nobody checked.",
-     "Record the redaction tool and the export setting with the production. A visual redaction can leave text in a layer, and a flattened image can lose searchable text. The team should know which trade-off was chosen. If the setting changed during the matter, note the change and the date.",
-     "Check whether the redaction tool preserves the underlying text or metadata. A visually redacted page can still carry the original text in a layer. Record the tool and the export setting. If the team cannot verify the setting, use a flattened image and record the conversion. The production should not depend on a setting nobody checked."
+     "Record the redaction tool and the export setting with the production. A visual redaction can leave text in a layer, and a flattened image can lose searchable text. The team should know which trade-off was chosen. If the setting changed during the matter, note the change and the date."
     ]
    },
    {
@@ -229,7 +218,6 @@ export const november09BlogPosts = [
     "body": [
      "The transmittal identifies what was sent, when, and to whom. Attach it to the production log and record the delivery method. If the production was sent in several parts, list each part and its identifier range. A transmittal without the log cannot show which documents were included in which delivery.",
      "Record any replacement or supplemental production with the same care. Note the reason, the new identifier range, and the recipient. If a document was withdrawn, record the withdrawal and the instruction to the recipient. The production history should show the sequence rather than only the latest state.",
-     "If a recipient asks for a replacement copy, record the request and the new transmittal. Do not resend the original file without checking whether it contains the error. Note the recipient, the date, and the corrected range. The production history should show why a second copy exists.",
      "If a recipient asks for a replacement copy, record the request and the new transmittal. Do not resend the original file without checking whether it contains the error. Note the recipient, the date, and the corrected range. The production history should show why a second copy exists."
     ]
    },
@@ -292,7 +280,6 @@ export const november09BlogPosts = [
     "body": [
      "Replace internal shorthand with a short description the client can understand. Reviewed motion is less useful than reviewed the draft motion for the hearing date and flagged two factual gaps. Keep the description factual and avoid adjectives that claim a result. The narrative should explain the work, not sell it.",
      "Name the document or the event the work relates to. If the work was a call, say who was on the call and what it covered, without disclosing privileged strategy. If the work was research, name the question rather than the database. A client who can connect the line to a matter event is less likely to dispute it.",
-     "Read the narrative aloud and mark any phrase that a client would have to ask about. A phrase like case development is too vague to audit. Replace it with the specific task, such as reviewed the client's draft response and identified two missing exhibits. The client should not need a glossary to understand the invoice.",
      "Read the narrative aloud and mark any phrase that a client would have to ask about. A phrase like case development is too vague to audit. Replace it with the specific task, such as reviewed the client's draft response and identified two missing exhibits. The client should not need a glossary to understand the invoice."
     ]
    },
@@ -301,7 +288,6 @@ export const november09BlogPosts = [
     "body": [
      "Preparation work and legal advice may need different descriptions and different review. A paralegal may prepare a chronology, while the lawyer analyzes it and advises the client. Record the role of the timekeeper and the part of the work they performed. Do not describe preparation as advice or advice as routine administration.",
      "If a line combines preparation and advice, split it when the time entries allow. If the entries cannot be split, describe the combined work accurately and let the lawyer review the allocation. A narrative that blurs the boundary can confuse the client and weaken the invoice if it is challenged. Record the source and the date with the entry.",
-     "If the time entry combines two timekeepers, split the narrative by role rather than by name alone. The client may not know who did what, and the role explains the rate. Record the allocation and the source of the split. If the entries cannot be split, describe the combined work and note the review.",
      "If the time entry combines two timekeepers, split the narrative by role rather than by name alone. The client may not know who did what, and the role explains the rate. Record the allocation and the source of the split. If the entries cannot be split, describe the combined work and note the review."
     ]
    },
@@ -311,8 +297,7 @@ export const november09BlogPosts = [
      "Block billing is easier to question when the narrative does not explain what the block contains. If the firm uses a block, list the component tasks in the description or attach a short breakdown. Record the timekeeper and the date range. The client should not have to guess what happened inside a ten-hour line.",
      "If the block combines several days, explain why the work was continuous or why the entries were grouped. A research project, a hearing preparation, or a document review may justify a block. A block that hides routine calls and drafting is harder to defend. Ask the lawyer before changing the billing format.",
      "Check whether the firm's billing guidelines require a task code or a phase code. A narrative that ignores the required code may be rejected even when the description is clear. Record the code and the guideline version. If the client has no guideline, agree on a small set of labels before the next invoice.",
-     "Ask the timekeeper to explain any entry that cannot be described in one sentence. A long explanation may reveal that the entry combines several tasks. Split the entry or write a clear combined description. Record the clarification with the invoice.",
-     "Check whether the firm's billing guidelines require a task code or a phase code. A narrative that ignores the required code may be rejected even when the description is clear. Record the code and the guideline version. If the client has no guideline, agree on a small set of labels before the next invoice."
+     "Ask the timekeeper to explain any entry that cannot be described in one sentence. A long explanation may reveal that the entry combines several tasks. Split the entry or write a clear combined description. Record the clarification with the invoice."
     ]
    },
    {
@@ -320,7 +305,6 @@ export const november09BlogPosts = [
     "body": [
      "Use the matter's own phase labels so the client can compare the invoice with the budget or the status update. A phase such as discovery, mediation, or closing is easier to follow than an internal task code. If the matter has no phases, agree on a small set before the next invoice. Record the source and the date with the entry.",
      "Record the phase on each line and check that the totals reconcile with the phase summary. A line assigned to the wrong phase can make the budget look overrun or underused. If a phase changed during the period, note the change and the reason. The narrative and the summary should tell the same story.",
-     "Ask the lawyer whether any line reflects a written-off or discounted amount. The narrative should not describe work that the client is not being charged for, and the totals should match the approved invoice. Record the adjustment and the reason. A mismatch between the narrative and the total is a common source of client questions.",
      "Ask the lawyer whether any line reflects a written-off or discounted amount. The narrative should not describe work that the client is not being charged for, and the totals should match the approved invoice. Record the adjustment and the reason. A mismatch between the narrative and the total is a common source of client questions."
     ]
    },
@@ -383,7 +367,6 @@ export const november09BlogPosts = [
     "body": [
      "Record the rule used to compute the date, including the day count and any weekend or holiday adjustment. If the court has a local rule that changes the calculation, note it and the source. A calendar entry without the rule cannot be checked when the date is questioned. Record the source and the date with the entry.",
      "Have a second person recompute the date from the source. Compare the result and record any difference. If the two calculations disagree, resolve the difference before the deadline is published. A single calculation is a draft; a checked calculation is a calendar entry.",
-     "Record the time zone used for the deadline. A court may set a filing deadline in its local time, while the firm's calendar may use another zone. A one-hour difference can change the operative date near midnight. Put the zone in the entry and check it against the order.",
      "Record the time zone used for the deadline. A court may set a filing deadline in its local time, while the firm's calendar may use another zone. A one-hour difference can change the operative date near midnight. Put the zone in the entry and check it against the order."
     ]
    },
@@ -392,7 +375,6 @@ export const november09BlogPosts = [
     "body": [
      "Every deadline needs a primary owner and a backup who can act if the primary is unavailable. Record both names and the date they accepted the assignment. A backup who is named only in an emergency is not prepared. The backup should know where the source order and the draft are stored.",
      "Record the owner's role as well as their name so the calendar survives a team change. If the primary leaves or changes role, update the entry and tell the backup. A deadline with no current owner is an open risk. Review the owner list when the matter team changes.",
-     "If the deadline depends on a service date, keep the proof of service with the calendar entry. The date of service may be disputed, and the calendar should show the document that supports it. Record the method of service and the person who confirmed it. A deadline calculation without the trigger evidence is incomplete.",
      "If the deadline depends on a service date, keep the proof of service with the calendar entry. The date of service may be disputed, and the calendar should show the document that supports it. Record the method of service and the person who confirmed it. A deadline calculation without the trigger evidence is incomplete."
     ]
    },
@@ -402,8 +384,7 @@ export const november09BlogPosts = [
      "Ask the primary and the backup to confirm the date and their availability. Record the confirmation date and any caveat, such as a planned leave. A confirmation that is assumed is not a confirmation. If an owner cannot confirm, assign a different person before the deadline window opens.",
      "Keep the confirmation with the calendar entry, not in a separate chat. If the owner confirms by phone, write a short note with the date. The record should show that a named person accepted the deadline. A later review can then see whether the handoff actually happened.",
      "Review the owner list when a matter is reassigned, not only when a person leaves. A new lead may assume the deadline is someone else's responsibility. Record the reassignment date and the confirmation from both owners. The calendar should show the current team, not the team at intake.",
-     "Ask the backup owner to confirm the location of the draft, the source order, and the filing credentials. A backup who knows the date but cannot find the file is not prepared. Record the confirmation and any missing item. The calendar entry should point to the same materials.",
-     "Review the owner list when a matter is reassigned, not only when a person leaves. A new lead may assume the deadline is someone else's responsibility. Record the reassignment date and the confirmation from both owners. The calendar should show the current team, not the team at intake."
+     "Ask the backup owner to confirm the location of the draft, the source order, and the filing credentials. A backup who knows the date but cannot find the file is not prepared. Record the confirmation and any missing item. The calendar entry should point to the same materials."
     ]
    },
    {
@@ -411,7 +392,6 @@ export const november09BlogPosts = [
     "body": [
      "When two deadlines fall on the same day or an owner is double-booked, record the conflict and the decision. Decide which filing takes priority and who will handle the other. Do not resolve the conflict by quietly moving a date. The calendar should show the original date and the plan.",
      "If a deadline must be extended, record the request, the new date, and the court's response. Do not treat a requested extension as granted. Keep the original date visible until the court acts. The owner should know which date is currently operative.",
-     "If the court grants an extension, record the order and the new date before removing the old one. Keep the original date in the history and mark it superseded. The owner should know which date is operative and which is historical. A calendar that erases the old date cannot explain the change.",
      "If the court grants an extension, record the order and the new date before removing the old one. Keep the original date in the history and mark it superseded. The owner should know which date is operative and which is historical. A calendar that erases the old date cannot explain the change."
     ]
    },

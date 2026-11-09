@@ -22,7 +22,6 @@ export const november09ResearchPosts = [
     "body": [
      "Define a sourced date change as one where the update or its internal support identifies the court notice, filed document, calendar entry, or written instruction behind the new date. A change is unsourced when the update gives a date but no record can be tied to it. A change is partially sourced when the record exists but the update does not identify it. Record the source and the date with the entry.",
      "Use the sent message, the matter calendar, and the source document as the evidence. If the date came from a phone call, record who confirmed it and when. A date that cannot be reconstructed from the file is unsourced even if the writer remembers the conversation. The study measures the record, not the writer's confidence.",
-     "Record whether the update was written from the calendar or from the matter file. A calendar-only update may miss the source document, while a file-based update may be slower but easier to verify. Report the source workflow with the result. That variable helps separate a template problem from a research habit.",
      "Record whether the update was written from the calendar or from the matter file. A calendar-only update may miss the source document, while a file-based update may be slower but easier to verify. Report the source workflow with the result. That variable helps separate a template problem from a research habit."
     ]
    },
@@ -31,7 +30,6 @@ export const november09ResearchPosts = [
     "body": [
      "Select client updates from the window and freeze the list before review. Include updates from more than one matter type and more than one writer. If the firm sends both routine and event-driven updates, report them separately. Record the number of updates and the number of date changes.",
      "Measure the number of changes with a complete source, a partial source, and no source. Add the number of updates that explained the reason for the change. Report the counts by matter type and by writer role. A rate without these counts can make a small sample look more precise than it is.",
-     "If a date change was reported in a phone call and confirmed in writing later, record both events. The written confirmation may be the source, but the timing of the call matters. Report the confirmation date with the source category. A later confirmation should not be treated as if it existed when the update was sent.",
      "If a date change was reported in a phone call and confirmed in writing later, record both events. The written confirmation may be the source, but the timing of the call matters. Report the confirmation date with the source category. A later confirmation should not be treated as if it existed when the update was sent."
     ]
    },
@@ -41,8 +39,7 @@ export const november09ResearchPosts = [
      "Present the distribution before suggesting a cause. A cluster of unsourced changes in one matter type may mean the calendar is not linked to the update template. A cluster under one writer may mean the source is kept in a personal note. A cluster around hearing dates may mean the court notice is not being saved with the update.",
      "Read the updates behind the largest gaps and compare them with the source record. Record whether the source was missing, hard to find, or simply not cited. A writer may know the source but omit it because the template has no field. Distinguish a knowledge problem from a template problem before recommending a fix.",
      "Compare the unsourced rate with the number of date changes in each update. An update with several changes has more chances for a missing source. Report the count beside the rate. A simple update and a complex one should not be judged as if they carried the same burden.",
-     "Compare the unsourced rate with the number of reviewers who touched the update. A second reviewer may add a date without adding the source. Report the reviewer count beside the rate. The review step is part of the evidence path.",
-     "Compare the unsourced rate with the number of date changes in each update. An update with several changes has more chances for a missing source. Report the count beside the rate. A simple update and a complex one should not be judged as if they carried the same burden."
+     "Compare the unsourced rate with the number of reviewers who touched the update. A second reviewer may add a date without adding the source. Report the reviewer count beside the rate. The review step is part of the evidence path."
     ]
    },
    {
@@ -58,7 +55,6 @@ export const november09ResearchPosts = [
     "body": [
      "Choose one control that matches the most common gap, such as a required source field, a calendar link, or a second-reader check. Write the change, the owner, and the start date. Define the measure that will show whether it helped, using the same source categories. Test it on the next set of updates.",
      "Keep the before and after updates separate so the comparison is honest. Record the updates that were excluded and why. Review the result with the lawyers and the client team. If the change does not help, record that result too. The purpose is a dated, checkable update, not a longer message.",
-     "Test the source field on one update type before applying it to every client message. A routine update may need only a date source, while an event-driven update may need the order and the trigger. Record the test group and the result. A type-specific field is easier to use than a universal form.",
      "Test the source field on one update type before applying it to every client message. A routine update may need only a date source, while an event-driven update may need the order and the trigger. Record the test group and the result. A type-specific field is easier to use than a universal form."
     ]
    },
@@ -76,7 +72,6 @@ export const november09ResearchPosts = [
     "body": [
      "The study does not establish that a client relied on the unsourced date or that the firm missed a deadline. It also does not measure whether the date itself was correct. Those questions need a separate review. A missing source is a communication-record observation, not a legal conclusion.",
      "Do not use the result to promise a client that every update will be sourced or that no date will ever change. Do not publish client names or matter details. Keep the sample size, the source definitions, and the review decisions with the result. If the firm needs a legal conclusion, it should ask counsel.",
-     "Review the result with the lawyer who sent the updates, not only with the support team. The lawyer may have a different view of which source is authoritative. Record the disagreement and the agreed rule. The study should improve the record, not create a parallel standard.",
      "Review the result with the lawyer who sent the updates, not only with the support team. The lawyer may have a different view of which source is authoritative. Record the disagreement and the agreed rule. The study should improve the record, not create a parallel standard."
     ]
    },
@@ -143,7 +138,6 @@ export const november09ResearchPosts = [
     "body": [
      "Define on-time delivery as a reminder sent to the named custodian on or before the scheduled date through the approved channel. A reminder sent to a manager instead is a different event unless the schedule allows it. A reminder that bounced or went to an inactive address is not delivered. Record the distinction.",
      "Define acknowledgment separately from delivery. A delivered reminder with no response is not acknowledged. Use the reply, the system receipt, or a dated note from the custodian as evidence. If the custodian confirms by phone, record who took the call and when. The study should not treat a delivery log as a response log.",
-     "Record whether the reminder was sent by a person or an automated system. An automated reminder may be consistent but easy for the custodian to ignore. A personal reminder may carry more weight but depend on one sender. Report the sender type with the delivery result.",
      "Record whether the reminder was sent by a person or an automated system. An automated reminder may be consistent but easy for the custodian to ignore. A personal reminder may carry more weight but depend on one sender. Report the sender type with the delivery result."
     ]
    },
@@ -152,7 +146,6 @@ export const november09ResearchPosts = [
     "body": [
      "Select holds and reminder cycles from the window and freeze the list before review. Include different custodian roles and different reminder channels. If the firm uses more than one hold system, report each separately. Record the number of reminders and the number of custodians.",
      "Measure the number delivered on time, the number delivered late, the number not delivered, and the number acknowledged. Report the counts by channel and by custodian role. Add the number of reminders sent to a departed custodian. A single on-time rate hides which failure occurred.",
-     "If a reminder is sent to a distribution list, record the list name and the owner. A list can hide a departed custodian or a person who should not receive the hold. Report list-based reminders separately from named-recipient reminders. The distinction matters for both delivery and confidentiality.",
      "If a reminder is sent to a distribution list, record the list name and the owner. A list can hide a departed custodian or a person who should not receive the hold. Report list-based reminders separately from named-recipient reminders. The distinction matters for both delivery and confidentiality."
     ]
    },
@@ -162,8 +155,7 @@ export const november09ResearchPosts = [
      "Present the distribution before suggesting a cause. A cluster of late deliveries in one channel may mean the address list is stale. A cluster of unacknowledged reminders may mean the message is unclear or the custodian is not reading it. A cluster around departed custodians may mean the offboarding step is missing.",
      "Read the reminders behind the largest gaps and compare them with the custodian list. Record whether the address was current, whether the message asked for a reply, and whether a follow-up happened. The pattern should point to a specific control, such as an address check or an escalation rule. Record the source and the date with the entry.",
      "Compare the on-time rate with the number of custodians in each hold. A large hold has more recipients and more chances for a delivery failure. Report the count beside the rate. Do not compare a small hold with a large one as if they carried the same coordination burden.",
-     "Compare the on-time rate with the number of reminders in each cycle. A cycle with several reminders has more chances for a late send. Report the count beside the rate. Do not compare a single reminder with a multi-reminder cycle as if they carried the same burden.",
-     "Compare the on-time rate with the number of custodians in each hold. A large hold has more recipients and more chances for a delivery failure. Report the count beside the rate. Do not compare a small hold with a large one as if they carried the same coordination burden."
+     "Compare the on-time rate with the number of reminders in each cycle. A cycle with several reminders has more chances for a late send. Report the count beside the rate. Do not compare a single reminder with a multi-reminder cycle as if they carried the same burden."
     ]
    },
    {
@@ -179,7 +171,6 @@ export const november09ResearchPosts = [
     "body": [
      "Choose one repair that matches the most common failure, such as an address check, a clearer acknowledgment request, or a departed-custodian step. Write the change, the owner, and the start date. Define the measure that will show whether it helped, using the same delivery and acknowledgment categories. Test it on the next reminder cycle.",
      "Keep the before and after cycles separate so the comparison is honest. Record the reminders that were excluded and why. Review the result with the lawyer who owns the hold and the person who sends the reminders. If the change does not help, record that result too.",
-     "Test the revised reminder with one custodian group before applying it to every hold. A group that uses email may not respond to a system prompt. Record the group and the result. The next cycle can compare the same delivery categories.",
      "Test the revised reminder with one custodian group before applying it to every hold. A group that uses email may not respond to a system prompt. Record the group and the result. The next cycle can compare the same delivery categories."
     ]
    },
@@ -197,7 +188,6 @@ export const november09ResearchPosts = [
     "body": [
      "The study does not establish that a late reminder caused a loss of documents or a discovery problem. It also does not measure whether the custodian understood the hold. Those questions need a separate review. Timing is a control observation, not a compliance finding.",
      "Do not use the result to promise a client that every reminder will be acknowledged or that no record will ever be lost. Do not publish custodian names or matter details. Keep the sample size, the definitions, and the review decisions with the result. If the firm needs a legal conclusion, it should ask counsel.",
-     "Ask the lawyer whether a missed acknowledgment should trigger a preservation audit. The answer may depend on the custodian and the records. Record the decision rule with the result. Not every missed reminder carries the same risk.",
      "Ask the lawyer whether a missed acknowledgment should trigger a preservation audit. The answer may depend on the custodian and the records. Record the decision rule with the result. Not every missed reminder carries the same risk."
     ]
    },
@@ -264,7 +254,6 @@ export const november09ResearchPosts = [
     "body": [
      "Define each stage before timing. Reading includes opening and reviewing the document. Coding includes selecting the privilege category and recording the basis. Redaction includes applying the redaction and checking the image. Escalation includes stopping, writing the question, and routing it to the lawyer. Log writing includes completing the production and privilege fields.",
      "Use a time record that the reviewer can complete without disrupting the work. A start and stop timestamp per stage is more reliable than a daily estimate. If the review tool logs activity, use the log and check a sample against the reviewer's note. Do not infer time from the page count alone.",
-     "Record whether the reviewer worked from a native file or a rendered image. A native file may show metadata and comments that an image hides. Report the file type with the stage time. The tool affects the review and should not be pooled silently.",
      "Record whether the reviewer worked from a native file or a rendered image. A native file may show metadata and comments that an image hides. Report the file type with the stage time. The tool affects the review and should not be pooled silently."
     ]
    },
@@ -283,8 +272,7 @@ export const november09ResearchPosts = [
      "Present the stage distribution before suggesting a cause. A large escalation share may mean the privilege categories are unclear. A large log-writing share may mean the fields are poorly designed or duplicated. A large redaction share may reflect the document type. Read a sample of documents behind each stage.",
      "Compare the stages with the lawyer's response time for escalations. A reviewer may wait because the question is unclear or because the lawyer is unavailable. Report the wait separately from the active work. The finding should suggest a specific support change, such as a category guide or a faster escalation route.",
      "Compare the stage distribution with the number of privilege categories in the guide. A long category list may increase coding time without improving accuracy. Report the count beside the median. A simpler guide is easier to test and train.",
-     "Compare the escalation rate with the number of privilege categories. A long category list may produce more questions even when the documents are similar. Report the count beside the rate. A simpler guide is easier to test.",
-     "Compare the stage distribution with the number of privilege categories in the guide. A long category list may increase coding time without improving accuracy. Report the count beside the median. A simpler guide is easier to test and train."
+     "Compare the escalation rate with the number of privilege categories. A long category list may produce more questions even when the documents are similar. Report the count beside the rate. A simpler guide is easier to test."
     ]
    },
    {
@@ -300,7 +288,6 @@ export const november09ResearchPosts = [
     "body": [
      "Choose one change that matches the largest avoidable stage, such as a category guide, a log template, or an escalation queue. Write the change, the owner, and the start date. Define the measure that will show whether it helped, using the same stage definitions. Test it on a comparable set of sessions.",
      "Keep the before and after observations separate so the comparison is honest. Record the sessions that were excluded and why. Review the result with the reviewers and the lawyer who owns the production. If the change does not help, record that result too.",
-     "Test the revised guide on one document type before applying it to the whole production. A guide for emails may not fit contracts. Record the type and the result. The next round can compare the same stages.",
      "Test the revised guide on one document type before applying it to the whole production. A guide for emails may not fit contracts. Record the type and the result. The next round can compare the same stages."
     ]
    },
@@ -318,7 +305,6 @@ export const november09ResearchPosts = [
     "body": [
      "The study does not establish that a faster stage is a better stage. It also does not measure whether a privilege call was correct. Those are quality questions that need a separate sample. Time is one input to planning, not a verdict on the review.",
      "Do not use the result to promise a client that a production will finish by a certain date or that every document will be reviewed in a certain way. Do not publish document content or reviewer identities. Keep the sample size, the stage definitions, and the review decisions with the result. Record the source and the date with the entry.",
-     "Ask the lawyer which stage most often delays a production decision. The answer may differ from the reviewer's view. Record both perspectives with the result. The support change should address the stage that actually controls the deadline.",
      "Ask the lawyer which stage most often delays a production decision. The answer may differ from the reviewer's view. Record both perspectives with the result. The support change should address the stage that actually controls the deadline."
     ]
    },
@@ -385,7 +371,6 @@ export const november09ResearchPosts = [
     "body": [
      "Define reproduction before checking. A narrative is reproducible when a second reviewer can read the time entry and the matter record, identify the task and the phase, and confirm that the narrative describes the same work. A narrative is partially reproducible when the task can be found but the phase or the document is unclear. A narrative fails when the entry does not support it.",
      "Use the time entry, the invoice narrative, and the matter phase record as the evidence. Record the invoice version and the date it was issued. If the narrative was edited after the time entry, note the edit and the reason. A later clarification should not be used to judge an earlier invoice without recording the timing.",
-     "Record whether the narrative was written by the timekeeper or by a billing assistant. A billing assistant may produce a clearer description but may not know the task. Report the writer role with the reproduction result. The source of the narrative affects which fix is appropriate.",
      "Record whether the narrative was written by the timekeeper or by a billing assistant. A billing assistant may produce a clearer description but may not know the task. Report the writer role with the reproduction result. The source of the narrative affects which fix is appropriate."
     ]
    },
@@ -394,7 +379,6 @@ export const november09ResearchPosts = [
     "body": [
      "Select invoices from the window and freeze the list before review. Include more than one timekeeper and more than one matter type. If the firm uses block billing, report those lines separately. Record the number of invoices and the number of lines.",
      "Measure the number of lines fully reproducible, partially reproducible, and failed. Report the counts by timekeeper role and by matter phase. Add the number of lines with no supporting entry. A single percentage without these counts hides where the narrative breaks down.",
-     "If a line has more than one time entry, record whether the entries cover the same task or different tasks. A line that combines unrelated work is harder to reproduce. Report the entry count and the task count separately. That distinction points to a grouping problem rather than a writing problem.",
      "If a line has more than one time entry, record whether the entries cover the same task or different tasks. A line that combines unrelated work is harder to reproduce. Report the entry count and the task count separately. That distinction points to a grouping problem rather than a writing problem."
     ]
    },
@@ -404,8 +388,7 @@ export const november09ResearchPosts = [
      "Present the distribution before suggesting a cause. A cluster of failures in one phase may mean the phase labels are unclear. A cluster under one timekeeper may mean the entries are too terse. A cluster in block-billed lines may mean the narrative compresses several tasks without a breakdown. Read the lines behind the largest cluster.",
      "Compare the narrative with the entry wording and the matter record. Record whether the task was missing, the document was unnamed, or the phase was wrong. A vague entry can produce a vague narrative even when the writer is careful. The finding should point to a specific entry field or review step.",
      "Compare the reproduction rate with the length of the narrative. A very short narrative may omit the document, while a very long one may bury the task. Report the length band beside the rate. Neither extreme is automatically better.",
-     "Compare the reproduction rate with the number of time entries per line. A line with several entries may be harder to summarize than a single entry. Report the count beside the rate. Do not compare a simple line with a complex one as if they carried the same burden.",
-     "Compare the reproduction rate with the length of the narrative. A very short narrative may omit the document, while a very long one may bury the task. Report the length band beside the rate. Neither extreme is automatically better."
+     "Compare the reproduction rate with the number of time entries per line. A line with several entries may be harder to summarize than a single entry. Report the count beside the rate. Do not compare a simple line with a complex one as if they carried the same burden."
     ]
    },
    {
@@ -421,7 +404,6 @@ export const november09ResearchPosts = [
     "body": [
      "Choose one repair that matches the most common failure, such as a required document field, a phase label, or a narrative template. Write the change, the owner, and the start date. Define the measure that will show whether it helped, using the same reproduction categories. Test it on the next set of invoices.",
      "Keep the before and after invoices separate so the comparison is honest. Record the lines that were excluded and why. Review the result with the timekeepers and the billing reviewer. If the change does not help, record that result too.",
-     "Test the revised template on one matter phase before applying it to every invoice. A discovery phase may need a different description from a closing phase. Record the phase and the result. The next study can compare the same categories.",
      "Test the revised template on one matter phase before applying it to every invoice. A discovery phase may need a different description from a closing phase. Record the phase and the result. The next study can compare the same categories."
     ]
    },
@@ -439,7 +421,6 @@ export const november09ResearchPosts = [
     "body": [
      "The study does not establish that a non-reproducible line was improper or that a reproducible line was appropriate. It also does not measure whether the client disputed the invoice. Those questions need a separate review. Reproduction is a records property, not a billing verdict.",
      "Do not use the result to promise a client that every invoice will be reproducible or that no line will ever need clarification. Do not publish client names or fee details. Keep the sample size, the definitions, and the review decisions with the result. Record the source and the date with the entry.",
-     "Ask the billing reviewer which line most often requires a client explanation. The answer helps the team choose the first template change. Record the line type and the reason. The goal is fewer questions, not a longer narrative.",
      "Ask the billing reviewer which line most often requires a client explanation. The answer helps the team choose the first template change. Record the line type and the reason. The goal is fewer questions, not a longer narrative."
     ]
    },
@@ -506,7 +487,6 @@ export const november09ResearchPosts = [
     "body": [
      "Define a current backup as a named person who has accepted the backup role and is available for the deadline window. A name in a template is not a current backup if the person has left or never confirmed. A backup who is on leave during the deadline window is also not current unless another person is named. Record the source and the date with the entry.",
      "Use the calendar entry, the owner confirmation, and the matter team record as the evidence. Record the date the confirmation was given. If the backup was assigned verbally, write down who gave the assignment and when. The study should distinguish a missing name from an unprepared person.",
-     "Record whether the deadline was entered by a lawyer, a paralegal, or an assistant. The entry role may affect the source check and the backup assignment. Report the role with the ownership result. That variable helps explain a gap without ranking the person.",
      "Record whether the deadline was entered by a lawyer, a paralegal, or an assistant. The entry role may affect the source check and the backup assignment. Report the role with the ownership result. That variable helps explain a gap without ranking the person."
     ]
    },
@@ -515,7 +495,6 @@ export const november09ResearchPosts = [
     "body": [
      "Select matters and deadlines from the review date and freeze the list. Include different matter types and deadline sources. If the firm has more than one calendar system, report each separately. Record the number of matters and the number of deadlines.",
      "Measure the number of deadlines with a confirmed primary and backup, the number with a primary only, the number with no primary, and the number with a backup who could not be reached. Report the counts by matter type. Add the number of deadlines that changed in the last 30 days. Record the source and the date with the entry.",
-     "If a deadline is calculated by a calendar tool, record the tool and the rule settings. A tool can apply a holiday calendar that differs from the court's. Report the tool with the source. The calculation should be reproducible outside the tool.",
      "If a deadline is calculated by a calendar tool, record the tool and the rule settings. A tool can apply a holiday calendar that differs from the court's. Report the tool with the source. The calculation should be reproducible outside the tool."
     ]
    },
@@ -525,8 +504,7 @@ export const november09ResearchPosts = [
      "Present the distribution before suggesting a cause. A cluster of primary-only deadlines in one matter type may mean the team never assigns backups for that work. A cluster of unreachable backups may mean the calendar is not reviewed after a role change. A cluster of changed deadlines may mean the update process does not reassign owners.",
      "Read the entries behind the largest gaps and compare them with the matter team record. Record whether the backup left, changed role, or was never asked. A missing name may be a template problem, while an unreachable backup is a preparation problem. The finding should point to a specific review step.",
      "Compare the backup rate with the number of deadlines in each matter. A matter with many deadlines has more chances for a missing backup. Report the count beside the rate. Do not compare a single-deadline matter with a complex one as if they carried the same risk.",
-     "Compare the backup rate with the number of owners who changed role during the window. A role change can leave a name in the calendar after the person has moved. Report the change count beside the rate. That variable helps explain a gap without blaming the owner.",
-     "Compare the backup rate with the number of deadlines in each matter. A matter with many deadlines has more chances for a missing backup. Report the count beside the rate. Do not compare a single-deadline matter with a complex one as if they carried the same risk."
+     "Compare the backup rate with the number of owners who changed role during the window. A role change can leave a name in the calendar after the person has moved. Report the change count beside the rate. That variable helps explain a gap without blaming the owner."
     ]
    },
    {
@@ -542,7 +520,6 @@ export const november09ResearchPosts = [
     "body": [
      "Choose one control that matches the most common gap, such as a required backup field, an owner confirmation, or a role-change review. Write the change, the owner, and the start date. Define the measure that will show whether it helped, using the same ownership categories. Test it on the next calendar review.",
      "Keep the before and after entries separate so the comparison is honest. Record the entries that were excluded and why. Review the result with the lawyers and the calendar owner. If the change does not help, record that result too.",
-     "Test the backup field on one deadline source before applying it to every entry. A court order and a scheduling notice may arrive through different routes. Record the source and the result. The next review can compare the same ownership categories.",
      "Test the backup field on one deadline source before applying it to every entry. A court order and a scheduling notice may arrive through different routes. Record the source and the result. The next review can compare the same ownership categories."
     ]
    },
@@ -560,7 +537,6 @@ export const november09ResearchPosts = [
     "body": [
      "The study does not establish that a missing backup caused a missed deadline or a client harm. It also does not measure whether the primary owner was competent. Those questions need a separate review. Ownership is a calendar-record observation, not a legal conclusion.",
      "Do not use the result to promise a client that every deadline has a backup or that no date will ever be missed. Do not publish matter names or lawyer names. Keep the sample size, the definitions, and the review decisions with the result. Record the source and the date with the entry.",
-     "Ask the backup owner whether they could actually file or act if the primary were unavailable. A name on a list is not proof of readiness. Record the answer with the ownership result. The next review should test readiness, not only presence.",
      "Ask the backup owner whether they could actually file or act if the primary were unavailable. A name on a list is not proof of readiness. Record the answer with the ownership result. The next review should test readiness, not only presence."
     ]
    },
