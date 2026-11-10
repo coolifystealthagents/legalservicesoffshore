@@ -113,3 +113,6 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}body{background:#fffdf8}.ski
   .service-intro,.service-scope,.service-workflow,.service-boundaries,.service-scenarios,.services-principles,.services-decision,.services-launch{padding-top:44px;padding-bottom:44px}
   .service-directory{padding-bottom:48px}
 }
+
+/* Keep the homepage hero flush with the navigation at every viewport. */
+.lso-hero{padding-top:0}
