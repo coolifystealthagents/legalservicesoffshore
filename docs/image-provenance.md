@@ -20,4 +20,6 @@ The editorial photographs in `public/images/editorial/` are locally hosted copie
 | Blog hero | `1486312338219-ce68d2c6f44d` |
 | Research hero and card fallback | `1454165804606-c3d57bc86b40`, `1434030216411-0b793f4b4173` |
 
+`public/images/editorial/home-legal-operations-handoff.webp` was generated with the OpenAI image tool on 2026-11-10 for this site. It is illustrative editorial photography of two legal operations colleagues reviewing a document queue at adjacent workstations; the people are not presented as employees, attorneys, customers, or testimonial subjects. The production WebP preserves the generated 1536 × 1024 source dimensions.
+
 `public/images/stealth-agents-team-bacolod.jpg` is the approved official Stealth Agents Bacolod team photograph, copied from the organization’s existing approved brand asset. Its SHA-256 digest at import is `19543866547bd6bb5b5eb9a329db2e8495ea580a87016c8cb48b1ccdca916736`.

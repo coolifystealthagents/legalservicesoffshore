@@ -74,3 +74,42 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}body{background:#fffdf8}.ski
 
 /* 2026-11-06: keep long article titles inside the phone viewport. */
 @media(max-width:600px){.article-shell>h1{font-size:clamp(32px,9vw,40px);overflow-wrap:break-word}}
+
+/* Compact page rhythm and a scan-first services directory. */
+.lso-problem{padding:72px 0}
+.lso-services{padding-bottom:76px}
+.lso-control{padding:78px 0}
+.lso-process,.lso-guides{padding:72px 0}
+.lso-final{margin-top:76px;margin-bottom:76px;padding:48px}
+.lso-service-card{min-height:205px;padding:26px 30px}
+.service-intro{padding-top:56px;padding-bottom:56px}
+.service-scope{padding:58px 0}
+.service-workflow,.service-boundaries{padding-top:60px;padding-bottom:60px}
+.service-scenarios{padding-top:60px;padding-bottom:48px}
+.service-faq,.related-services{padding-bottom:58px}
+.services-principles{padding:58px 0}
+.service-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;padding-bottom:58px}
+.service-directory>h2{grid-column:1/-1;margin-bottom:18px}
+.service-directory>article{grid-template-columns:1fr;gap:10px;align-content:start;padding:18px 0}
+.service-directory>article:nth-last-child(2){border-bottom:1px solid #d9d2c5}
+.service-directory h3{font-size:25px}
+.service-directory p{line-height:1.55}
+.service-directory a{margin-top:auto;font-size:13px}
+.services-decision{padding:60px 0}
+.services-launch{padding-top:60px;padding-bottom:60px}
+@media(max-width:900px){
+  .lso-problem,.lso-control,.lso-process,.lso-guides{padding:56px 0}
+  .lso-final{margin-top:56px;margin-bottom:56px;padding:40px}
+}
+@media(max-width:700px){
+  .service-directory{grid-template-columns:1fr}
+  .service-directory>article:nth-last-child(2){border-bottom:0}
+}
+@media(max-width:600px){
+  .lso-problem,.lso-control,.lso-process,.lso-guides{padding:48px 0}
+  .lso-services{padding-bottom:52px}
+  .lso-service-card{min-height:0;padding:24px 22px}
+  .lso-final{margin-top:48px;margin-bottom:48px;padding:34px 24px}
+  .service-intro,.service-scope,.service-workflow,.service-boundaries,.service-scenarios,.services-principles,.services-decision,.services-launch{padding-top:44px;padding-bottom:44px}
+  .service-directory{padding-bottom:48px}
+}
