@@ -1,0 +1,81 @@
+.compact-parent-proof {
+  padding: 36px 0;
+}
+
+.compact-parent-proof .parent-proof-grid {
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 40px;
+  max-width: 980px;
+}
+
+.compact-parent-proof .team-photo {
+  padding: 0 18px 18px 0;
+}
+
+.compact-parent-proof .team-photo > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.compact-parent-proof .official-plate {
+  gap: 8px;
+  padding: 7px 10px;
+  border-left-width: 4px;
+}
+
+.compact-parent-proof .official-plate img {
+  width: 54px;
+}
+
+.compact-parent-proof .official-plate strong {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.compact-parent-proof .parent-proof-copy {
+  max-width: 610px;
+}
+
+.compact-parent-proof h2 {
+  margin-bottom: 10px;
+  font-size: clamp(34px, 4vw, 48px);
+}
+
+.compact-parent-proof .parent-proof-copy > p:not(.contact-kicker) {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.compact-parent-proof .text-action {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .compact-parent-proof {
+    padding: 32px 0;
+  }
+
+  .compact-parent-proof .parent-proof-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .compact-parent-proof .team-photo {
+    width: min(100%, 340px);
+    padding: 0 14px 16px 0;
+  }
+
+  .compact-parent-proof .official-plate {
+    left: auto;
+    right: 0;
+    justify-content: flex-start;
+  }
+
+  .compact-parent-proof .official-plate img {
+    width: 50px;
+  }
+}
