@@ -1,119 +1,108 @@
-import { Header, Footer } from "../components";
-import { researchPosts } from "../fleet-data";
-import { site } from "../data";
-const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+import type { CSSProperties } from 'react';
+import { Footer, Header, PageHero } from '../components';
+import { researchPosts } from '../fleet-data';
+import { site } from '../data';
+
+const formatDate = (date: string) =>
+  new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date(`${date}T00:00:00Z`));
+
+const researchImages = [
+  '/images/editorial/research-hero.webp',
+  '/images/editorial/legal-research.jpg',
+  '/images/editorial/reporting-qa.webp',
+  '/images/editorial/case-file-management.webp',
+  '/images/editorial/litigation-review.jpg',
+  '/images/editorial/e-discovery.jpg',
+] as const;
+
 const sortedResearchPosts = [...researchPosts].sort(
-  (a, b) =>
-    b.published.localeCompare(a.published) || a.title.localeCompare(b.title),
+  (a, b) => b.published.localeCompare(a.published) || a.title.localeCompare(b.title)
 );
+
 export const metadata = {
-  title: `Research | ${site.brand}`,
-  description:
-    "Original research and source-backed analysis for planning Philippines-based support.",
+  title: 'Research',
+  description: 'Original research and source-backed analysis for planning Philippines-based legal support.',
   alternates: { canonical: '/research' },
 };
+
 export default function Research() {
-  const clusters = [
-    "All Research",
-    "Hiring Controls",
-    "Scope Benchmarks",
-    "Workflow Design",
-  ];
+  const featured = sortedResearchPosts.slice(0, 6);
+  const archive = sortedResearchPosts.slice(featured.length);
+  const clusters = Array.from(new Set(archive.map((post) => post.cluster)));
+
   return (
     <>
       <Header />
-      <main id="main-content" tabIndex={-1} className="research-index-page">
-        <section className="research-hero">
-          <div className="container research-hero-grid">
-            <div>
-              <p className="eyebrow">Research Library</p>
-              <h1>Source-backed research for better staffing decisions</h1>
-              <p className="lead">
-                Use these reports to compare roles, costs, controls, and
-                onboarding decisions before building a Philippines-based support
-                team.
-              </p>
-              <div className="research-meta">
-                <span>{researchPosts.length || 0} reports</span>
-                <span>Methodology notes</span>
-                <span>12-source reports</span>
-              </div>
-            </div>
-            <figure className="research-hero-photo">
-              <img src="/images/editorial/research-hero.webp" width="1400" height="934" alt="Professional reviewing research notes and source material" fetchPriority="high" />
-              <figcaption>Source material, notes, and review questions kept together.</figcaption>
-            </figure>
+      <main id="main-content" tabIndex={-1} className="cf-page cf-index research-index-page">
+        <PageHero
+          eyebrow="Research library"
+          title={<>Source-backed research for better support decisions.</>}
+          lead="Use these reports to compare roles, controls, review cadence, and onboarding decisions before building a Philippines-based legal support team."
+          image="/images/editorial/research-hero.webp"
+          imageAlt="Professional reviewing research notes and source material"
+          imageCaption="Source material, notes, and review questions kept together."
+          breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Research' }]}
+          actions={<a className="cf-btn cf-btn--light" href="/blog">Read the practical guides ↗</a>}
+        >
+          <div className="research-meta" style={{ display: 'flex', flexWrap: 'wrap', gap: 7, marginTop: 18 }}>
+            <span style={{ padding: '5px 9px', border: '1px solid rgba(255,255,255,.2)', color: '#d4ded7', fontFamily: 'var(--cf-mono)', fontSize: 7.5 }}>{sortedResearchPosts.length} reports</span>
+            <span style={{ padding: '5px 9px', border: '1px solid rgba(255,255,255,.2)', color: '#d4ded7', fontFamily: 'var(--cf-mono)', fontSize: 7.5 }}>Methodology notes</span>
+            <span style={{ padding: '5px 9px', border: '1px solid rgba(255,255,255,.2)', color: '#d4ded7', fontFamily: 'var(--cf-mono)', fontSize: 7.5 }}>Source-backed</span>
           </div>
-        </section>
-        <section className="section research-library-section">
-          <div className="container">
-            <nav
-              className="research-cluster-tabs"
-              aria-label="Research topic filters"
-            >
-              {clusters.map((cluster, i) => (
+        </PageHero>
+
+        <section className="cf-section research-library-section">
+          <div className="cf-container">
+            <div className="cf-index-bar">
+              <p>Each brief pairs a source review with the operating implications for a buyer.</p>
+              <span>{sortedResearchPosts.length} research briefs</span>
+            </div>
+
+            <div className="research-card-grid">
+              {featured.map((post, index) => (
                 <a
-                  className={i === 0 ? "active" : ""}
-                  href="/research"
-                  key={cluster}
+                  className="research-library-card"
+                  href={`/research/${post.slug}`}
+                  key={post.slug}
+                  data-reveal
+                  style={{ '--cf-delay': `${(index % 3) * 60}ms` } as CSSProperties}
                 >
-                  {cluster}
-                  <small>
-                    {i === 0
-                      ? researchPosts.length
-                      : Math.max(1, Math.ceil((researchPosts.length || 1) / 3))}
-                  </small>
+                  <img className="research-card-image" src={researchImages[index % researchImages.length]} width="1200" height="630" alt="" loading="lazy" />
+                  <span className="research-card-badge">{post.cluster}</span>
+                  <h2>{post.title}</h2>
+                  <p className="research-card-highlight">{post.headlineStat}</p>
+                  <p className="research-card-excerpt">{post.excerpt}</p>
+                  <div className="research-card-meta">
+                    <span>{formatDate(post.published)}</span>
+                    <span>Read brief ↗</span>
+                  </div>
                 </a>
               ))}
-            </nav>
-            <div className="research-card-grid">
-              {sortedResearchPosts.length ? (
-                sortedResearchPosts.map((p) => (
-                  <a
-                    className="research-library-card"
-                    href={`/research/${p.slug}`}
-                    key={p.slug}
-                  >
-                    <img className="research-card-image" src={p.thumbnail || "/images/editorial/research-card.webp"} width="1200" height="630" alt="" loading="lazy" />
-                    <span className="research-card-badge">{p.cluster}</span>
-                    <h2>{p.title}</h2>
-                    <p className="research-card-highlight">{p.headlineStat}</p>
-                    <p className="research-card-excerpt">{p.excerpt}</p>
-                    <div className="research-card-meta">
-                      <span>{site.brand} Research</span>
-                      <span>Published <time dateTime={p.published}>{formatDate(p.published)}</time></span>
-                      <span>{p.sources.length} sources</span>
-                    </div>
-                  </a>
-                ))
-              ) : (
-                <div className="research-library-card empty-state">
-                  <span className="research-card-badge">Coming soon</span>
-                  <h2>Research is being prepared</h2>
-                  <p className="research-card-highlight">
-                    The library will group reports by buyer controls,
-                    benchmarks, and workflow design.
-                  </p>
-                  <p className="research-card-excerpt">
-                    Visit the blog for practical planning guides while formal
-                    research pages are prepared.
-                  </p>
-                  <a className="btn primary" href="/blog">
-                    Visit the blog
-                  </a>
-                </div>
-              )}
             </div>
-          </div>
-        </section>
-        <section className="section research-methodology">
-          <div className="container">
-            <h2>Methodology and use</h2>
-            <p>
-              Each research page should make assumptions visible, separate
-              sourced facts from recommendations, and translate findings into a
-              role brief your team can review.
-            </p>
+
+            <div className="cf-archive" id="research-archive">
+              <h2>Complete archive</h2>
+              {clusters.map((cluster) => {
+                const items = archive.filter((post) => post.cluster === cluster);
+                return (
+                  <details key={cluster}>
+                    <summary>
+                      <span>{cluster}</span>
+                      <small>{items.length} {items.length === 1 ? 'brief' : 'briefs'}</small>
+                    </summary>
+                    <div className="cf-archive-links">
+                      {items.map((post) => (
+                        <a href={`/research/${post.slug}`} key={post.slug}>
+                          <span style={{ color: '#405048', fontFamily: 'var(--cf-body)', fontSize: 12, letterSpacing: 0, textTransform: 'none' }}>{post.title}</span>
+                          <span>Read ↗</span>
+                        </a>
+                      ))}
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
           </div>
         </section>
       </main>

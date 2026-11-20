@@ -4,6 +4,7 @@ import { Footer, Header, CTA, JsonLd } from '../../components';
 import { blogPosts, site } from '../../data';
 import { richArticle } from '../article-data';
 import { ArticleNavigator } from '../../article-navigation';
+import { getArticleImage } from '../article-image';
 
 const base = 'https://legalservicesoffshore.com';
 
@@ -267,7 +268,7 @@ function paragraphList(value: string | readonly string[]) {
 function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
   const related = blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
   const fallbackImages = ['/aug19-heroes/legal-support-source-of-truth-map.webp','/aug19-heroes/legal-support-change-control-record.webp','/aug23-heroes/document-version-ledgers.png','/aug23-heroes/client-update-digests.png','/sep3-heroes/legal-mail-service-proof-packet.png'];
-  const heroImage = 'featuredImage' in post ? post.featuredImage : fallbackImages[Math.abs(post.slug.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0)) % fallbackImages.length];
+  const heroImage = getArticleImage(post.slug, post.title);
   const sourceUrl = 'https://www.americanbar.org/groups/law_practice/resources/law-practice-today/2023/january/outsourcing-legal-work/';
   const published = (post as { published?: string }).published;
   const modified = (post as { modified?: string }).modified ?? published;
@@ -290,11 +291,13 @@ function StandardArticle({ post }: { post: (typeof blogPosts)[number] }) {
       <Header />
       <main id="main-content" tabIndex={-1}>
         <article className="section" data-article-body="true"><div className="container article-shell">
-          <p className="eyebrow">{site.brand} blog</p>
-          <h1>{post.title}</h1>
-          <p className="lead">{post.excerpt}</p>
-          <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
-          <img className="article-hero-image" src={heroImage} alt={`${post.title} editorial illustration`} width="1536" height="1024" fetchPriority="high" />
+          <header className="cf-article-head">
+            <p className="eyebrow">{site.brand} blog</p>
+            <h1>{post.title}</h1>
+            <p className="lead">{post.excerpt}</p>
+            <div className="article-meta"><span>Source-backed planning guide</span><span>{post.minutes} minute read</span>{published ? <time dateTime={published}>Published {new Date(`${published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : <span>Reviewed July 2026</span>}</div>
+            <img className="article-hero-image" src={heroImage} alt={`${post.title} editorial illustration`} width="1536" height="1024" fetchPriority="high" />
+          </header>
           <JsonLd data={articleSchema} />
           <div className='blog-standards-strip' aria-label='Article standards'><span>Defined workflow</span><span>Attorney review gates</span><span>Practical escalation</span></div>
           <aside className='article-rotation-banner article-rotation-banner-top' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside>

@@ -31,21 +31,33 @@ export function SiteHeader() {
 
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>
-    <header className="nav" data-site-header>
-      <div className="nav-inner">
-        <a className="logo" href="/" aria-label="Legal Services Offshore home">
-          <img className="logo-img" src="/logo.svg" alt="" width="42" height="42" />
-          <span className="logo-text"><span className="logo-name">Legal Services Offshore</span><span className="parent-attribution">Powered by <strong>StealthAgents</strong></span></span>
+    <header className="cf-header">
+      <div className="cf-nav">
+        <a className="cf-brand" href="/" aria-label="Legal Services Offshore home">
+          <img src="/logo.svg" alt="" width="40" height="40" />
+          <span className="cf-brand-text">
+            <span className="cf-brand-name">Legal Services Offshore</span>
+            <span className="cf-brand-sub">Powered by StealthAgents</span>
+          </span>
         </a>
-        <nav className="desktop-primary" aria-label="Primary navigation">
-          <a href="/">Home</a><a href="/services">Services</a><a href="/contact-us">Contact Us</a>
+        <nav className="cf-nav-links" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/contact-us">Contact Us</a>
         </nav>
-        <button ref={buttonRef} className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-primary" onClick={() => setOpen(v => !v)}>
-          <span aria-hidden="true">{open ? 'Close' : 'Menu'}</span><span className="sr-only">{open ? 'Close navigation' : 'Open navigation'}</span>
+        <a className="cf-nav-cta" href="/contact-us" id="cta-global-header-contact">Request a support plan <span aria-hidden="true">↗</span></a>
+        <button ref={buttonRef} className="cf-menu-button" type="button" aria-expanded={open} aria-controls="cf-mobile-primary" onClick={() => setOpen(v => !v)}>
+          <span aria-hidden="true">{open ? 'Close' : 'Menu'}</span><span className="cf-sr">{open ? 'Close navigation' : 'Open navigation'}</span>
         </button>
       </div>
-      {open ? <div className="mobile-panel" id="mobile-primary" ref={panelRef} role="dialog" aria-modal="true" aria-label="Site navigation">
-        <nav aria-label="Mobile primary navigation"><a href="/" onClick={() => setOpen(false)}>Home</a><a href="/services" onClick={() => setOpen(false)}>Services</a><a href="/contact-us" onClick={() => setOpen(false)}>Contact Us</a></nav>
+      {open ? <div className="cf-mobile-panel" id="cf-mobile-primary" ref={panelRef} role="dialog" aria-modal="true" aria-label="Site navigation">
+        <nav aria-label="Mobile primary navigation">
+          <a href="/" onClick={() => setOpen(false)}>Home</a>
+          <a href="/services" onClick={() => setOpen(false)}>Services</a>
+          <a href="/contact-us" onClick={() => setOpen(false)}>Contact Us</a>
+          <a href="/blog" onClick={() => setOpen(false)}>Blog</a>
+          <a href="/research" onClick={() => setOpen(false)}>Research</a>
+        </nav>
       </div> : null}
     </header>
   </>;

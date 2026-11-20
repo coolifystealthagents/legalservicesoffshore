@@ -1,17 +1,61 @@
+import type { CSSProperties } from 'react';
 import { blogPosts, services, site, staffingProcess } from './data';
-import { Footer, Header, JsonLd } from './components';
+import { fleetServices } from './fleet-data';
+import { Footer, Header, JsonLd, Marquee, ReviewRail, SectionHead } from './components';
+import { getCardImage } from './blog/card-image';
 
-const serviceNotes = [
-  'Give every routine matter update a clear next step.',
-  'Keep intake facts complete and urgent messages moving.',
-  'Prepare files from firm-approved templates and rules.',
-  'See output, rework, and exceptions in one short report.',
+const marqueeItems = [
+  'Client intake',
+  'Matter files',
+  'Document preparation',
+  'Billing support',
+  'Records cleanup',
+  'Legal research',
+  'E-discovery',
+  'Immigration administration',
+  'Corporate records',
+  'Quality reporting',
 ];
-const legalIcons = [
-  '/icons/getillustrations/sharpie-office-icons-svg/intake-checklist.svg',
-  '/icons/getillustrations/sharpie-office-icons-svg/matter-files.svg',
-  '/icons/getillustrations/sharpie-office-icons-svg/document-prep.svg',
-  '/icons/getillustrations/sharpie-office-icons-svg/quality-reporting.svg',
+
+const laneLabels: Record<string, string> = {
+  'legal-intake-support': 'Intake',
+  'litigation-document-review': 'Litigation',
+  'contract-administration': 'Contracts',
+  'legal-research-support': 'Research',
+  'case-file-management': 'Matters',
+  'e-discovery-support': 'E-discovery',
+  'immigration-case-administration': 'Immigration',
+  'real-estate-legal-support': 'Real estate',
+  'corporate-records-support': 'Corporate',
+  'billing-and-time-entry-support': 'Billing',
+  'reporting-and-qa': 'Quality',
+};
+
+const laneTags: Record<string, string[]> = {
+  'legal-intake-support': ['Approved scripts', 'Conflict fields', 'Escalation path'],
+  'litigation-document-review': ['Indexing', 'Tagging', 'Privilege flags'],
+  'contract-administration': ['Templates', 'Versions', 'Renewals'],
+  'legal-research-support': ['Source log', 'Citations', 'Date limits'],
+  'case-file-management': ['Matter taxonomy', 'Naming', 'Closeout'],
+  'e-discovery-support': ['Custodians', 'Transfers', 'Production checks'],
+  'immigration-case-administration': ['Evidence', 'Forms', 'Notices'],
+  'real-estate-legal-support': ['Diligence', 'Signatures', 'Closing'],
+  'corporate-records-support': ['Entity files', 'Minutes', 'Filings'],
+  'billing-and-time-entry-support': ['Narratives', 'Exceptions', 'Follow-up'],
+  'reporting-and-qa': ['Scorecards', 'Samples', 'Rework log'],
+};
+
+const ledger = [
+  { strong: 'Attorney review', span: 'Legal judgment, privilege, and client advice stay inside the firm' },
+  { strong: 'Narrow access', span: 'Named accounts and the minimum tools for one queue' },
+  { strong: 'Written handoffs', span: 'Source record, prepared output, and open questions' },
+  { strong: 'Visible quality', span: 'Samples, scorecards, rework reasons, and exceptions' },
+];
+
+const boundaryRules = [
+  { label: '01', text: 'Give the support team one finished example that already meets the firm standard.' },
+  { label: '02', text: 'Open only the folders and systems required for the first queue, then expand after review.' },
+  { label: '03', text: 'Name the attorney or manager who decides exceptions, privilege, and client-facing next steps.' },
 ];
 
 export default function Home() {
@@ -44,159 +88,273 @@ export default function Home() {
     ],
   };
 
+  const featuredLanes = fleetServices.slice(0, 8);
+  const latestPosts = blogPosts.slice(0, 3);
+
   return (
     <>
       <Header />
-      <main id="main-content" tabIndex={-1} className="lso-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
+      <main id="main-content" tabIndex={-1} className="cf-home">
         <JsonLd data={schema} />
 
-        <section className="lso-hero">
-          <div className="container lso-hero-grid">
-            <div className="lso-hero-copy">
-              <p className="lso-kicker">Offshore legal support, built around your rules</p>
-              <h1>Give legal admin work a clear owner.</h1>
-              <p className="lso-intro">
-                Build a remote support role for the repeat work that slows your firm down. Your attorneys keep legal judgment. Your support team keeps the handoff moving.
+        <section className="cf-hero">
+          <div className="cf-container cf-hero-grid">
+            <div className="cf-hero-copy">
+              <p className="cf-eyebrow">Offshore legal support, built around your rules</p>
+              <h1>
+                Give legal admin work a
+                <em>clear owner.</em>
+              </h1>
+              <p className="cf-hero-lead">
+                Build a remote support role for the repeat work that slows your firm down.
+                Your attorneys keep legal judgment. Your support team keeps the handoff moving.
               </p>
-              <ul className="lso-hero-list">
+              <ul className="cf-hero-list">
                 <li>Client intake notes and follow-up</li>
                 <li>Matter status and deadlines</li>
                 <li>Document prep from templates</li>
                 <li>Billing and records cleanup</li>
               </ul>
-              <a className="lso-button lso-button-primary" href="/contact-us" id="cta-page-action-1">Request support plan</a>
-              <p className="lso-micro">Start with one role, a short task list, and firm-set review rules.</p>
+              <div className="cf-actions">
+                <a className="cf-btn" href="/contact-us" id="cta-page-action-1">Request a support plan ↗</a>
+                <a className="cf-btn cf-btn--ghost" href="/services">Review the legal lanes</a>
+              </div>
+              <p className="cf-micro">Start with one role, a short task list, and firm-set review rules.</p>
             </div>
 
-            <div className="lso-hero-visual" aria-label="Legal support work organized around firm review">
-              <div className="lso-image-frame">
-                <img src="/images/editorial/home-international-legal-advisory-v3.webp" width="1536" height="1024" alt="Three international legal advisers in dark suits reviewing a contract in a boardroom" fetchPriority="high" />
-
+            <div className="cf-scene" aria-label="A legal matter file prepared for attorney review">
+              <div className="cf-seal" aria-hidden="true">
+                <span>Legal operations · Philippines · review gate</span>
               </div>
-              <div className="lso-docket-card">
-                <span>First role file</span>
-                <strong>Intake + matter admin</strong>
+              <figure className="cf-photo-sheet" data-depth="9">
+                <img
+                  src="/images/editorial/home-international-legal-advisory-v3.webp"
+                  width="1536"
+                  height="1024"
+                  alt="Three international legal advisers reviewing a contract in a boardroom"
+                  fetchPriority="high"
+                />
+                <figcaption>Prepared work, kept inside firm review.</figcaption>
+              </figure>
+              <article className="cf-file" data-tilt data-tilt-strength="4">
+                <div className="cf-file-head">
+                  <span>Matter file</span>
+                  <b>LSO-042</b>
+                </div>
+                <h3>Intake + matter admin</h3>
                 <ul>
-                  <li>Approved scripts</li>
+                  <li>Approved intake scripts</li>
                   <li>Limited tool access</li>
+                  <li>Source records attached</li>
                   <li>Named review owner</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="container lso-trust-strip">
-            <p>Control stays with your firm</p>
-            <span>Attorney review for legal judgment</span>
-            <span>Access starts narrow</span>
-            <span>Quality checks are written down</span>
-          </div>
-        </section>
-
-        <section className="lso-problem">
-          <div className="container lso-problem-grid">
-            <div>
-              <p className="lso-kicker">Routine work still needs care</p>
-              <h2>Your attorneys should not be chasing every update.</h2>
-            </div>
-            <div className="lso-problem-copy">
-              <p>New leads wait for a call back. Matter notes sit in an inbox. Files need the same cleanup every week. None of this is legal strategy, but missed details still hurt the client experience.</p>
-              <p>A well-scoped offshore role gives that work an owner. The firm sets the script, access, deadline rules, and review point before the first task goes live.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="container lso-services" id="tasks">
-          <div className="lso-section-head">
-            <div>
-              <p className="lso-kicker">Choose the first work lane</p>
-              <h2>Support roles shaped for legal teams.</h2>
-            </div>
-            <p>Start with the work that repeats and already has a good example. Add more only after the first lane is steady.</p>
-          </div>
-          <div className="lso-service-grid">
-            {services.map((service, index) => (
-              <a id={`cta-home-services-open-${service.slug}`} className="lso-service-card" href={`/services/${service.slug}`} key={service.slug}>
-                <span className="lso-card-number"><img src={legalIcons[index]} alt="" width="32" height="32" /></span>
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{serviceNotes[index]}</p>
+                <div className="cf-file-foot">
+                  <span>Review gate</span>
+                  <b>Attorney</b>
                 </div>
-                <strong>See the role scope <span aria-hidden="true">→</span></strong>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="lso-control">
-          <div className="container lso-control-grid">
-            <div className="lso-control-photo">
-              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/legal-document-handoff.svg" alt="Legal document handoff prepared for attorney review" />
-              <div className="lso-photo-caption">
-                <span>Firm review gate</span>
-                <strong>Prep work moves. Legal calls stay with counsel.</strong>
-              </div>
-            </div>
-            <div className="lso-control-copy">
-              <p className="lso-kicker">A safer way to hand off work</p>
-              <h2>Write the boundary before you share the login.</h2>
-              <p>Your first role plan should name the task, the source file, the expected output, and the person who approves exceptions. That is much safer than a vague job description.</p>
-              <div className="lso-rule-list">
-                <div><p><strong>Show a clean example.</strong> Give the support team a finished file or note that meets the firm's standard.</p></div>
-                <div><p><strong>Limit the first access.</strong> Open only the tools and folders needed for the pilot.</p></div>
-                <div><p><strong>Review early work.</strong> Check the first batch before moving from daily review to weekly samples.</p></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="container lso-process">
-          <div className="lso-section-head">
-            <div>
-              <p className="lso-kicker">From task list to working role</p>
-              <h2>A plain four-step launch.</h2>
-            </div>
-            <a className="lso-text-link" href="/contact-us" id="cta-page-action-2">Request support plan →</a>
-          </div>
-          <div className="lso-process-grid">
-            {staffingProcess.map((item) => (
-              <article key={item.step}>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
+                <span className="cf-redact" aria-hidden="true" />
               </article>
-            ))}
+              <span className="cf-tab" aria-hidden="true">Confidential</span>
+              <span className="cf-stamp" aria-hidden="true">Attorney review required</span>
+            </div>
+          </div>
+          <Marquee items={marqueeItems} />
+        </section>
+
+        <section className="cf-section cf-section--paper">
+          <div className="cf-container">
+            <div className="cf-statement">
+              <h2 data-reveal>Routine work still needs <em>care.</em></h2>
+              <div className="cf-statement-copy" data-reveal style={{ '--cf-delay': '90ms' } as CSSProperties}>
+                <p>
+                  New leads wait for a call back. Matter notes sit in an inbox. Files need
+                  the same cleanup every week. None of this is legal strategy, but missed
+                  details still hurt the client experience.
+                </p>
+                <p>
+                  A well-scoped offshore role gives that work an owner. The firm sets the
+                  script, access, deadline rules, and review point before the first task
+                  goes live.
+                </p>
+              </div>
+            </div>
+            <div className="cf-ledger" data-reveal>
+              {ledger.map((item) => (
+                <div key={item.strong}>
+                  <strong>{item.strong}</strong>
+                  <span>{item.span}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        <section className="lso-guides">
-          <div className="container">
-            <div className="lso-section-head">
-              <div>
-                <p className="lso-kicker">Read before you hire</p>
-                <h2>Useful notes for the planning call.</h2>
-              </div>
-              <a className="lso-text-link" href="/blog" id="cta-page-action-3">View all guides →</a>
+        <section className="cf-section" id="tasks">
+          <div className="cf-container">
+            <SectionHead
+              eyebrow="The matter index"
+              title={<>Support lanes shaped for legal teams.</>}
+              copy="Start with the work that repeats and already has a good example. Add more only after the first lane is steady."
+            />
+            <div className="cf-lanes">
+              {featuredLanes.map((service, index) => (
+                <a
+                  className="cf-lane"
+                  href={`/services/${service.slug}`}
+                  key={service.slug}
+                  data-tilt
+                  data-tilt-strength="3"
+                  data-reveal
+                  style={{ '--cf-delay': `${(index % 2) * 70}ms` } as CSSProperties}
+                >
+                  <span className="cf-lane-label">Legal lane · {laneLabels[service.slug] || 'Operations'}</span>
+                  <div>
+                    <h3>{service.title}</h3>
+                    <p>{service.desc}</p>
+                    <div className="cf-lane-tags">
+                      {(laneTags[service.slug] || []).map((tag) => <span key={tag}>{tag}</span>)}
+                    </div>
+                  </div>
+                  <span className="cf-lane-arrow" aria-hidden="true">↗</span>
+                  <div className="cf-lane-foot">
+                    <span>Review the scope and controls</span>
+                  </div>
+                </a>
+              ))}
             </div>
-            <div className="lso-guide-grid">
-              {blogPosts.slice(0, 3).map((post) => (
-                <a href={`/blog/${post.slug}`} key={post.slug}>
-                  <span>{post.minutes} minute guide</span>
-                  <h3>{post.title.replace('Legal Services Offshore: ', '')}</h3>
-                  <p>{post.excerpt}</p>
+            <div className="cf-index-bar" style={{ marginTop: 30, marginBottom: 0, paddingBottom: 0, borderBottom: 0 }}>
+              <p>Eleven legal support lanes, one recruiting and employment team behind them.</p>
+              <a className="cf-link" href="/services">Compare every service</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="cf-section cf-section--deep">
+          <div className="cf-container cf-boundary">
+            <div className="cf-boundary-copy" data-reveal>
+              <p className="cf-eyebrow cf-eyebrow--light">A safer way to hand off work</p>
+              <h2>Write the boundary before you share the login.</h2>
+              <p>
+                Your first role plan should name the task, the source file, the expected
+                output, and the person who approves exceptions. That is much safer than
+                a vague job description.
+              </p>
+              <div className="cf-rule-list">
+                {boundaryRules.map((rule) => (
+                  <div className="cf-rule" key={rule.label}>
+                    <span>{rule.label}</span>
+                    <p>{rule.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="cf-privilege" aria-hidden="true">
+              <div className="cf-privilege-sheet" data-tilt data-tilt-strength="3">
+                <p className="cf-mono">Privilege and review</p>
+                <h3>Preparation moves.<br />Legal calls stay with counsel.</h3>
+                <div className="cf-privilege-lines"><span /><span /><span /></div>
+                <div className="cf-privilege-stamp">Attorney review</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="cf-section cf-section--paper">
+          <div className="cf-container">
+            <SectionHead
+              eyebrow="From task list to working role"
+              title={<>A plain four-step launch.</>}
+              copy="A short pilot is more useful than a long interview loop. Keep the lane bounded and the review owner named."
+            />
+            <div className="cf-process">
+              {staffingProcess.map((item, index) => (
+                <article
+                  className="cf-step"
+                  key={item.step}
+                  data-reveal
+                  style={{ '--cf-delay': `${index * 90}ms` } as CSSProperties}
+                >
+                  <span className="cf-step-dot" aria-hidden="true">{item.step}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="cf-section">
+          <div className="cf-container cf-team">
+            <figure className="cf-team-media" data-reveal data-tilt data-tilt-strength="2">
+              <img
+                src="/images/stealth-agents-team-bacolod.jpg"
+                alt="Official Stealth Agents team together in Bacolod, Philippines"
+                loading="lazy"
+              />
+              <figcaption>StealthAgents team · Bacolod City, Philippines</figcaption>
+            </figure>
+            <div className="cf-team-copy" data-reveal style={{ '--cf-delay': '90ms' } as CSSProperties}>
+              <p className="cf-eyebrow">The managed team behind the service</p>
+              <h2>Recruiting, employment, and support in one place.</h2>
+              <p>
+                StealthAgents recruits and supports the Philippines-based professionals
+                delivered through Legal Services Offshore. Your firm keeps legal
+                judgment, access approval, and final review.
+              </p>
+              <p>
+                The role works inside your practice tools, follows written preparation
+                rules, and sends exceptions to the named owner instead of improvising.
+              </p>
+              <a className="cf-link" href="/about">Meet the operating model ↗</a>
+            </div>
+          </div>
+        </section>
+
+        <ReviewRail />
+
+        <section className="cf-section">
+          <div className="cf-container">
+            <SectionHead
+              eyebrow="Read before you hire"
+              title={<>Useful notes for the planning call.</>}
+              copy="Practical guidance for scoping the queue, protecting access, and reviewing the first handoffs."
+            />
+            <div className="cf-posts">
+              {latestPosts.map((post, index) => (
+                <a
+                  className="cf-post"
+                  href={`/blog/${post.slug}`}
+                  key={post.slug}
+                  data-reveal
+                  style={{ '--cf-delay': `${index * 70}ms` } as CSSProperties}
+                >
+                  <img src={getCardImage(index)} alt="" loading="lazy" />
+                  <div className="cf-post-body">
+                    <span className="cf-post-meta">{post.minutes} minute guide</span>
+                    <h3>{post.title.replace('Legal Services Offshore: ', '')}</h3>
+                    <p>{post.excerpt}</p>
+                    <span className="cf-link">Read the guide ↗</span>
+                  </div>
                 </a>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="container lso-final">
-          <div>
-            <p className="lso-kicker">Bring the messy task list</p>
-            <h2>We will help turn it into one clear legal support role.</h2>
-          </div>
-          <div>
-            <p>Share the work, tools, hours, and review needs. The next step is a practical staffing scope, not a public rate card.</p>
-            <a className="lso-button lso-button-light" href="/contact-us" id="cta-page-action-4">Request support plan</a>
+        <section className="cf-cta">
+          <div className="cf-container cf-cta-inner">
+            <div data-reveal>
+              <p className="cf-eyebrow cf-eyebrow--light">Bring the messy task list</p>
+              <h2>We will help turn it into one clear legal support role.</h2>
+              <p>
+                Share the work, tools, hours, and review needs. The next step is a
+                practical staffing scope, not a public rate card.
+              </p>
+            </div>
+            <div className="cf-cta-actions" data-reveal style={{ '--cf-delay': '100ms' } as CSSProperties}>
+              <a className="cf-btn" href="/contact-us" id="cta-page-action-4">Request a support plan</a>
+              <a className="cf-link" href="/blog">Browse the planning guides</a>
+            </div>
           </div>
         </section>
       </main>
