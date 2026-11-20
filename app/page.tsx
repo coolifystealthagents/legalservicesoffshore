@@ -152,7 +152,6 @@ export default function Home() {
                   <span>Review gate</span>
                   <b>Attorney</b>
                 </div>
-                <span className="cf-redact" aria-hidden="true" />
               </article>
               <span className="cf-tab" aria-hidden="true">Confidential</span>
               <span className="cf-stamp" aria-hidden="true">Attorney review required</span>
