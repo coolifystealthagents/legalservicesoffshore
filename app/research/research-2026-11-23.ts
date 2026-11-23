@@ -46,7 +46,7 @@ export const november23ResearchPosts = [
    {
     "heading": "Question and scope",
     "body": [
-     "Include records created during the review window for the process in scope. Exclude records that cannot be matched to a matter. Record the source and the date. If the firm changes its procedure during the period, split the sample.",
+     "Use records opened in the review window for the process under study. Leave out records that cannot be tied to a matter. Note the source and the date. When the firm changes its procedure, split the period so the comparison stays honest.",
      "Define the element before reviewing any record. A value without a date, an owner, or a source is not complete. Record a missing element separately from an element that is present but weak. The entry should be dated and signed by the reviewer."
     ]
    },
@@ -127,7 +127,7 @@ export const november23ResearchPosts = [
    {
     "heading": "Question and scope",
     "body": [
-     "Include records created during the review window for the process in scope. Exclude records that cannot be matched to a matter. Record the source and the date. If the firm changes its procedure during the period, split the sample.",
+     "Use records opened in the review window for the process under study. Leave out records that cannot be tied to a matter. Note the source and the date. When the firm changes its procedure, split the period so the comparison stays honest.",
      "Define the element before reviewing any record. A value without a date, an owner, or a source is not complete. Record a missing element separately from an element that is present but weak. The entry should be dated and signed by the reviewer."
     ]
    },
@@ -208,7 +208,7 @@ export const november23ResearchPosts = [
    {
     "heading": "Question and scope",
     "body": [
-     "Include records created during the review window for the process in scope. Exclude records that cannot be matched to a matter. Record the source and the date. If the firm changes its procedure during the period, split the sample.",
+     "Use records opened in the review window for the process under study. Leave out records that cannot be tied to a matter. Note the source and the date. When the firm changes its procedure, split the period so the comparison stays honest.",
      "Define the element before reviewing any record. A value without a date, an owner, or a source is not complete. Record a missing element separately from an element that is present but weak. The entry should be dated and signed by the reviewer."
     ]
    },
@@ -289,7 +289,7 @@ export const november23ResearchPosts = [
    {
     "heading": "Question and scope",
     "body": [
-     "Include records created during the review window for the process in scope. Exclude records that cannot be matched to a matter. Record the source and the date. If the firm changes its procedure during the period, split the sample.",
+     "Use records opened in the review window for the process under study. Leave out records that cannot be tied to a matter. Note the source and the date. When the firm changes its procedure, split the period so the comparison stays honest.",
      "Define the element before reviewing any record. A value without a date, an owner, or a source is not complete. Record a missing element separately from an element that is present but weak. The entry should be dated and signed by the reviewer."
     ]
    },
@@ -370,7 +370,7 @@ export const november23ResearchPosts = [
    {
     "heading": "Question and scope",
     "body": [
-     "Include records created during the review window for the process in scope. Exclude records that cannot be matched to a matter. Record the source and the date. If the firm changes its procedure during the period, split the sample.",
+     "Use records opened in the review window for the process under study. Leave out records that cannot be tied to a matter. Note the source and the date. When the firm changes its procedure, split the period so the comparison stays honest.",
      "Define the element before reviewing any record. A value without a date, an owner, or a source is not complete. Record a missing element separately from an element that is present but weak. The entry should be dated and signed by the reviewer."
     ]
    },
