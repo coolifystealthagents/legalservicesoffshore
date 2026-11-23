@@ -4239,3 +4239,75 @@ body > div {
     opacity: 0;
   }
 }
+
+/* Service dossier facts and jump rail */
+.cf-service-facts {
+  background: var(--cf-card);
+  border-bottom: 1px solid var(--cf-line);
+}
+
+.cf-service-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.cf-service-facts article {
+  min-height: 112px;
+  padding: 20px;
+  border-left: 1px solid var(--cf-line);
+}
+
+.cf-service-facts article:first-child {
+  border-left: 0;
+}
+
+.cf-service-facts span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--cf-rust);
+  font-family: var(--cf-mono);
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cf-service-facts strong {
+  display: block;
+  color: var(--cf-ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.service-jump .service-jump-cta {
+  margin-left: auto;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--cf-rust);
+  color: #fff;
+  font-weight: 600;
+}
+
+.ob-service-detail [id],
+.service-detail-page [id] {
+  scroll-margin-top: 130px;
+}
+
+@media (max-width: 760px) {
+  .cf-service-facts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cf-service-facts article:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--cf-line);
+  }
+
+  .cf-service-facts article:nth-child(4) {
+    border-top: 1px solid var(--cf-line);
+  }
+
+  .service-jump .service-jump-cta {
+    display: none;
+  }
+}
