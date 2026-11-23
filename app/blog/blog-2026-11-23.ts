@@ -42,7 +42,34 @@ export const november23BlogPosts = [
      "Review the log when the bank, the software, or the account signer changes. Record the change and the date. The next month should start from the reviewed procedure. The entry should be dated and signed by the reviewer."
     ]
    }
-  ]
+  ],
+  "sources": [
+   {
+    "name": "American Bar Association, Model Rules of Professional Conduct",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
+   },
+   {
+    "name": "GAO, Standards for Internal Control in the Federal Government",
+    "url": "https://www.gao.gov/products/gao-14-704g"
+   },
+   {
+    "name": "Uniform Law Commission",
+    "url": "https://www.uniformlaws.org/"
+   }
+  ],
+  "relatedSlugs": [
+   "legal-support-matter-intake-evidence-register",
+   "legal-support-source-of-truth-map",
+   "legal-support-work-queue-ownership"
+  ],
+  "contextualService": {
+   "slug": "case-file-management",
+   "label": "Explore case file management support",
+   "copy": "A supervised support lane can keep the record, the source, and the review date current while the lawyer decides the legal question."
+  },
+  "published": "2026-11-23",
+  "modified": "2026-11-23",
+  "featuredImage": "/thumbnails/november-23/legalservicesoffshore-build-a-trust-account-reconciliation-log-with-a-named-reviewer.png"
  },
  {
   "slug": "track-a-client-s-power-of-attorney-document-through-intake",
@@ -87,7 +114,34 @@ export const november23BlogPosts = [
      "Review the log when the client, the agent, or the jurisdiction changes. Record the change and the date. The next intake should start from the reviewed list. The entry should be dated and signed by the reviewer."
     ]
    }
-  ]
+  ],
+  "sources": [
+   {
+    "name": "American Bar Association, Model Rules of Professional Conduct",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
+   },
+   {
+    "name": "GAO, Standards for Internal Control in the Federal Government",
+    "url": "https://www.gao.gov/products/gao-14-704g"
+   },
+   {
+    "name": "Uniform Law Commission",
+    "url": "https://www.uniformlaws.org/"
+   }
+  ],
+  "relatedSlugs": [
+   "legal-support-matter-intake-evidence-register",
+   "legal-support-source-of-truth-map",
+   "legal-support-work-queue-ownership"
+  ],
+  "contextualService": {
+   "slug": "case-file-management",
+   "label": "Explore case file management support",
+   "copy": "A supervised support lane can keep the record, the source, and the review date current while the lawyer decides the legal question."
+  },
+  "published": "2026-11-23",
+  "modified": "2026-11-23",
+  "featuredImage": "/thumbnails/november-23/legalservicesoffshore-track-a-client-s-power-of-attorney-document-through-intake.png"
  },
  {
   "slug": "create-a-litigation-calendar-change-log-with-a-source-date",
@@ -132,7 +186,34 @@ export const november23BlogPosts = [
      "Check that every change has a source and a reviewer. A change without either is the finding. Record the gap and the owner. The next review should show a cleaner log."
     ]
    }
-  ]
+  ],
+  "sources": [
+   {
+    "name": "American Bar Association, Model Rules of Professional Conduct",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
+   },
+   {
+    "name": "GAO, Standards for Internal Control in the Federal Government",
+    "url": "https://www.gao.gov/products/gao-14-704g"
+   },
+   {
+    "name": "Uniform Law Commission",
+    "url": "https://www.uniformlaws.org/"
+   }
+  ],
+  "relatedSlugs": [
+   "legal-support-matter-intake-evidence-register",
+   "legal-support-source-of-truth-map",
+   "legal-support-work-queue-ownership"
+  ],
+  "contextualService": {
+   "slug": "case-file-management",
+   "label": "Explore case file management support",
+   "copy": "A supervised support lane can keep the record, the source, and the review date current while the lawyer decides the legal question."
+  },
+  "published": "2026-11-23",
+  "modified": "2026-11-23",
+  "featuredImage": "/thumbnails/november-23/legalservicesoffshore-create-a-litigation-calendar-change-log-with-a-source-date.png"
  },
  {
   "slug": "build-a-legal-vendor-confidentiality-checklist",
@@ -177,7 +258,34 @@ export const november23BlogPosts = [
      "Review the checklist when the vendor, the service, or the data changes. Record the change and the date. The next vendor should start from the reviewed template. The entry should be dated and signed by the reviewer."
     ]
    }
-  ]
+  ],
+  "sources": [
+   {
+    "name": "American Bar Association, Model Rules of Professional Conduct",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
+   },
+   {
+    "name": "GAO, Standards for Internal Control in the Federal Government",
+    "url": "https://www.gao.gov/products/gao-14-704g"
+   },
+   {
+    "name": "Uniform Law Commission",
+    "url": "https://www.uniformlaws.org/"
+   }
+  ],
+  "relatedSlugs": [
+   "legal-support-matter-intake-evidence-register",
+   "legal-support-source-of-truth-map",
+   "legal-support-work-queue-ownership"
+  ],
+  "contextualService": {
+   "slug": "case-file-management",
+   "label": "Explore case file management support",
+   "copy": "A supervised support lane can keep the record, the source, and the review date current while the lawyer decides the legal question."
+  },
+  "published": "2026-11-23",
+  "modified": "2026-11-23",
+  "featuredImage": "/thumbnails/november-23/legalservicesoffshore-build-a-legal-vendor-confidentiality-checklist.png"
  },
  {
   "slug": "track-a-court-notice-that-arrives-after-the-deadline",
@@ -222,6 +330,33 @@ export const november23BlogPosts = [
      "Check that every late notice has a source, a rule check, and a response. A notice without a response is the finding. Record the gap and the owner. The next review should show a cleaner log."
     ]
    }
-  ]
+  ],
+  "sources": [
+   {
+    "name": "American Bar Association, Model Rules of Professional Conduct",
+    "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
+   },
+   {
+    "name": "GAO, Standards for Internal Control in the Federal Government",
+    "url": "https://www.gao.gov/products/gao-14-704g"
+   },
+   {
+    "name": "Uniform Law Commission",
+    "url": "https://www.uniformlaws.org/"
+   }
+  ],
+  "relatedSlugs": [
+   "legal-support-matter-intake-evidence-register",
+   "legal-support-source-of-truth-map",
+   "legal-support-work-queue-ownership"
+  ],
+  "contextualService": {
+   "slug": "case-file-management",
+   "label": "Explore case file management support",
+   "copy": "A supervised support lane can keep the record, the source, and the review date current while the lawyer decides the legal question."
+  },
+  "published": "2026-11-23",
+  "modified": "2026-11-23",
+  "featuredImage": "/thumbnails/november-23/legalservicesoffshore-track-a-court-notice-that-arrives-after-the-deadline.png"
  }
 ];
