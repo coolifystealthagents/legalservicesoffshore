@@ -38,15 +38,15 @@ export function ReviewMarquee() {
       previous = time;
       frame = requestAnimationFrame(move);
     };
-    viewport.addEventListener('pointerenter', pause);
-    viewport.addEventListener('pointerleave', resume);
+    
+    
     viewport.addEventListener('focusin', pause);
     viewport.addEventListener('focusout', resume);
     frame = requestAnimationFrame(move);
     return () => {
       cancelAnimationFrame(frame);
-      viewport.removeEventListener('pointerenter', pause);
-      viewport.removeEventListener('pointerleave', resume);
+      
+      
       viewport.removeEventListener('focusin', pause);
       viewport.removeEventListener('focusout', resume);
     };

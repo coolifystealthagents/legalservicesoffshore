@@ -31,7 +31,7 @@ export function SiteHeader() {
 
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>
-    <header className="cf-header">
+    <header data-site-header="sticky" className="cf-header">
       <div className="cf-nav">
         <a className="cf-brand" href="/" aria-label="Legal Services Offshore home">
           <img src="/logo.svg" alt="" width="40" height="40" />

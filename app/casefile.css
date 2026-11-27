@@ -993,10 +993,6 @@ body > div {
   animation: cf-marquee 42s linear infinite;
 }
 
-.cf-marquee:hover .cf-marquee-track {
-  animation-play-state: paused;
-}
-
 .cf-marquee-group {
   display: flex;
   align-items: center;
@@ -1560,10 +1556,6 @@ body > div {
   width: max-content;
   gap: 14px;
   animation: cf-marquee 58s linear infinite;
-}
-
-.cf-review-track:hover {
-  animation-play-state: paused;
 }
 
 .cf-review-card {

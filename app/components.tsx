@@ -11,7 +11,7 @@ export function Header() {
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="cf-footer">
+    <footer data-site-footer="true" className="cf-footer">
       <div className="cf-footer-inner cf-container">
         <div className="cf-footer-top">
           <div className="cf-footer-brand">
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
           <div>
             <h3>Explore</h3>
-            <div className="cf-footer-links">
+            <div data-footer-menu="true" className="cf-footer-links">
               <a href="/services">All services</a>
               <a href="/about">About</a>
               <a href="/blog">Blog</a>

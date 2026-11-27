@@ -7,6 +7,8 @@ import './casefile.css';
 import CaseMotion from './CaseMotion';
 import type { Metadata, Viewport } from 'next';
 
+import "./site-chrome-fixes.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://legalservicesoffshore.com'),
   title: {
